@@ -1,0 +1,59 @@
+body
+{
+	background-color: black;
+	color: tomato;
+	font-size: 20px;
+	line-height: 130%;
+	opacity: 0.95;
+}
+#tresc
+{
+	float: left;
+	width: 50%;
+}
+#obrazek
+{
+	width: 50%;
+	float: left;
+}
+a
+{
+	text-decoration: none;
+	color: green;
+}
+a:hover
+{
+	color: green;
+}
+a:visited
+{
+	color: green;
+}
+.dzial
+{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 10px;
+	border: 3px solid white;
+	padding: 10px;
+	color: gold;
+}
+.zagadnienie
+{
+	display: inline-block;
+	border: 2px solid gray;
+	width: 18.4%;
+	padding: 10px;
+}
+.pytanie
+{
+	border-bottom: 1px dotted white;
+	font-style: italic;
+	text-align: center;
+	color: cyan;
+	font-size: 25px;
+}
+.odpowiedz
+{
+}

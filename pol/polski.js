@@ -1,0 +1,35 @@
+var zagadnienia = [["klasa V","Wyjaśnia pojęcia i potrafi wskazać w tekście: epitet, porównanie, przenośnię", "Wyjaśnia pojęcia i podaje przykłady: mit, dziennik, pamiętnik, powieść, nowela, przypowieść", "Rozpoznaje odmiany powieści i opowiadania", "Zna części mowy i ich cechy: czasownik, rzeczownik, przymiotnik, przysłówek, liczebnik, zaimek, przyimek, spójnik", "Rozpoznaje znaczenie niewerbalnych środków komunikacji (np. gest, mimika, postawa ciała)", "Nazywa i wyróżnia w tekście części zdania (podmiot, orzeczenie, dopełnienie, przydawka, okolicznik)", "Rozpoznaje w zdaniu związki główne i poboczne wyrazów", "Rozpoznaje w tekście typy wypowiedzeń: zdanie pojedyncze, zdania złożone (podrzędniei współrzędnie), równoważniki zdań", "Dokonuje rozbioru logicznego zdania pojedynczego", "Potrafi napisać: opis, list, zaproszenie, ogłoszenie, notatka, dedykacja, sprawozdanie, podziękowanie, instrukcja, charakterystyka"],
+["klasa IV","Znajomość pojęć i umiejętność wskazania w tekście: wersu, rymu, strofy, refrenu, liczb sylab w wersie", "Znajomość pojęć i wskazanie przykładów: legend, baśni, opowiadań, komiksów, monologów, dialogów", "Umiejętność opowiadania o wydarzeniach fabuły oraz ustalania kolejności zdarzeń (plan wydarzeń ogólny i szczegółowy)", "Części mowy i ich cechy: czasownik, rzeczownik, przymiotnik, przysłówek, liczebnik", "Typy wypowiedzeń: oznajmujące, pytające i rozkazujące", "Wyjaśnianie i rozpoznawanie w wypowiedziach (związki frazeologiczne, wyrazy neutralne, zdrobnienia, zgrubienia, synonimy, antonimy, nadawca i odbiorca komunikatu", "Znajomość pojęć: głoska, litera, sylaba, akcent", "Zastosowanie reguł akcentowania wyrazów", "Znajomość i umiejętność zastosowania zasad ortograficznych i reguł pisowni", "Poprawne używanie znaków interpunkcyjnych: kropki, przecinka, znaku zapytania, znaku wykrzyknika, cudzysłowu, dwukropka, średnika, nawiasu", "Umiejętność pisania tekstów (dialog, opowiadanie, życzenia, plan wydarzeń)", "Wygłaszanie z pamięci tekstów poetyckich", "Umiejętność korzystania z informacji zawartych w różnych źródłach, gromadzenia wiadomości, selekcjonowania informacji", "Znajomość i umiejętność zastosowania zasad korzystania z zasobów bibliotecznych: Umiejętność korzystania ze słowników ogólnych i specjalistycznych języka polskiego (słownik języka polskiego, słownik ortograficzny, słownik frazeologiczny, słownik synonimów)", "Rozwijanie umiejętności krytycznej oceny pozyskanych informacji", "Poznawanie życia kulturalnego swojego regionu", "Rozwijanie umiejętności efektywnego posługiwania się technologią informacyjną oraz zasobami internetowymi i wykorzystywania tych umiejętności do prezentowania własnych zainteresowań"],
+["klasa III","części mowy (rzeczownik, czasownik, przymiotnik)" , "wyjątkowi Polacy, np. Jan Paweł II, św. Faustyna Kowalska, Mikołaj Kopernik...", "krótkie formy wypowiedzi pisemnej: krótkie opowiadanie (6-10 zdań), opis osoby, list"],
+["klasa II","liczba pojedyncza i mnoga", "znajomość tradycji Bożonarodzeniowych i Wielkanocnych", "krótkie formy wypowiedzi pisemnej: ogłoszenie, zaproszenie"],
+["klasa I","wybrany wiersz na pamięć", "znajomość alfabetu", "rozróżnianie spółgłosek i samogłosek", "wyróżnianie zdań w tekście i wyrazów w zdaniu", "czytanie ze zrozumieniem krótkich tekstów", "kaligrafowanie", "zasady używania wielkich i małych liter", "znajomość dni tygodnia, nazwy miesięcy, pór roku"]];
+
+var lektury = [["klasa V","Clive Staples Lewis, Opowieści z Narnii. Lew, czarownica i stara szafa (+ cała seria)", "Przypowieści ewangeliczne: o siewcy, o talentach, o pannach roztropnych, o miłosiernym samarytaninie", "Ferenc Molnar, Chłopcy z Placu Broni", "Bolesław Prus, Katarynka", "Seweryna Szmaglewska, Czarne Stopy", "Wybrane wiersze Jana Twardowskiego, Leopolda Staffa, Anny Kamieńskiej, Czesława Miłosza, Tadeusza Różewicza", "Małgorzata Musierowicz, wybrane z serii Jeżycjada", "Małgorzata Strękowska-Zaremba, Rotmistrz Witold Pilecki", "Edmund Niziurski, Sposób na Alcybiadesa", "Bolesław Prus, Kamizelka", "Mark Twain, Przygody Tomka Sawyera"],
+["klasa IV","Adam Mickiewicz: Powrót taty, Pani Twardowska;", "Józef Wybicki, Mazurek Dąbrowskiego", "Wybrane podania i legendy polskie (legendy o: Lechu, Piaście, Kraku i Wandzie)", "Wybrane baśnie polskie i europejskie, (np. Charles Perrault, Kopciuszek, Kot w butach, Sinobrody)", "Aleksander Puszkin, Bajka o rybaku i rybce", "Jeanne Marie Leprince de Beaumont, Piękna i Bestia)", "Księga Rodzaju, Opis stworzenia świata", "Wybrane wiersze Władysława Bełzy, Jana Brzechwy, Konstantego Ildefonsa Gałczyńskiego, Joanny Kulmowej, Juliana Tuwima", "Pieśni i piosenki patriotyczne", "Frances Hodgson Burnett, Tajemniczy ogród, lub inna powieść", "Henryk Sienkiewicz, W pustyni i w puszczy", "Maria Kownacka i Zofia Malicka, Dzieci z Leszczynowej Górki", "Selma Lagerlöf, Cudowna podróż"],
+["klasa III","Justyna Bednarek, Niesamowite przygody dziesięciu skarpetek (czterech prawych i sześciu lewych)", "Łukasz Wierzbicki: Niesłychana wyprawa Benedykta i Jana, Dziadek i Niedźwiadek, Afryka Kazika", "Artur Oppman, Legendy warszawskie", "Ks. Jan Twardowski: Wielkanocne idą święta, Święta dobrych życzeń, Patyki i patyczki", "Joanna Papuzińska, Asiunia", "Agnieszka Frączek, Rany Julek! O tym, jak Julian Tuwim został poetą", "Leszek Kołakowski, Kto z was chciałby rozweselić pechowego nosorożca?", "Mary Fabyan Windeatt, Dzieci z Fatimy", "Ewa Skarzyńska, Paweł Kołodziejski, O polskich świętych dzieciom", "Barbara Tylicka, O krakowskich psach i kleparskich kotach. Polskie miasta w baśni i legendzie", "Dorota Żarska, Tomasz M. Wiśniewski, Ptaki Pana Boga"],
+["klasa II","Hans Christian Andersen, Baśnie (do wyboru)", "Alina i Czesław Centkiewiczowie, Zaczarowana zagroda", "Maria Kruger, Karolcia", "Astrid Lindgren, Dzieci z Bullerbyn", "Ewa Hanter, Mali przyjaciele Jezusa Eucharystycznego", "Janina Porazińska, Pamiętnik Czarnego Noska", "Maria Buyno-Arctova: Słoneczko, Kocia Mama", "Erika Gosker, Przygody Piotrka i Uli, czyli jak przygotować się do I Komunii Świętej"],
+["klasa I","Jan Brzechwa, Brzechwa dzieciom", "Władysław Bełza, Katechizm polskiego dziecka", "Julian Tuwim, Wiersze dla dzieci", "Maria Konopnicka, Co słonko widziało"]];
+
+function wyswietl()
+{
+	for (let i = 0; i < lektury.length; i++) 
+	{
+		for (let j = 0; j < lektury[i].length; j++)
+		{
+			if (j == 0)
+				$('#lektury').append('<div class="naglowek">' + lektury[i][j] + '</div>');
+			else
+				$('#lektury').append('<div class="zagadnienie">' + lektury[i][j] + '</div>');
+		}
+	}
+	for (let i = 0; i < zagadnienia.length; i++) 
+	{
+		for (let j = 0; j < zagadnienia[i].length; j++)
+		{
+			if (j == 0)
+				$('#zagadnienia').append('<div class="naglowek">' + zagadnienia[i][j] + '</div>');
+			else
+				$('#zagadnienia').append('<div class="zagadnienie">' + zagadnienia[i][j] + '</div>');
+		}
+	}
+}
