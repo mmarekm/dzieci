@@ -1,6 +1,6 @@
 body
 {
-	background-color: black;
+	background-color: gray;
 	color: tomato;
 	font-size: 20px;
 	line-height: 130%;
@@ -56,4 +56,11 @@ a:visited
 }
 .odpowiedz
 {
+}
+.czesc
+{
+	border: 5px solid green;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: black;
 }
