@@ -1,0 +1,37 @@
+JEDZENIE
+ZALICZONE
+"banan","ziemniak","cebula","papryka","mięso","makaron","śliwka","brzoskwinia","cytryna","mleko","herbata","kawa","śniadanie","kolacja","jagoda","owoc","ciasto","deser","masło","jedzenie","głodny","pić","jabłko","pomidor","marchewka","czosnek","ogórek","ryż","chleb","pomarańcza","jajko","sok","woda","warzywo","sól","ser żółty","zupa","wiśnia","spragniony","gotować"
+BŁĘDY
+"arbuz(water melon)","truskawka(sruwbery)","jeść(yet)"
+NIEZNANE
+"gruszka","wino","obiad","malina","garnek","czajnik","talerz","łyżka","widelec","nóż","kubek","filiżanka","szklanka","pokrywka","patelnia","przyprawa","kiełbasa","wołowina","wieprzowina","ananas","winogrona","sałatka","frytki","sos do sałatki","szynka","czipsy","piwo","posiłek","olej","guma do żucia","ciastko","słodycze","galaretka","dżem","serek wiejski","bułka","mąka","tuńczyk","miód","rodzynka","nasiono, pestka","orzech","brokuły","fasola","groszek","szpinak","kapusta","sałata","danie","porcja","wegetarianin","słodki","słony","kwaśny","gorzki","smaczny","ostry pikantny","soczysty","dojrzały (o owocu)","świeży","tłusty (o jedzeniu)","niskotłuszczowy","piec","smażyć","kroić","kroić w plastry","obierać","siekać"
+
+ZWIERZĘTA
+ZALICZONE
+"zwierzak domowy","zwierzę","kot","pies","ryba","koń","osioł","małpa","papuga","motyl","mucha","mysz","wilk","lis","żaba"
+BŁĘDY
+"chomik(humster)","kurczak(kichen)","królik(rubbit)","pingwin(pegwen)"
+NIEZNANE
+"krowa","kaczka","ptak","ślimak","lew","słoń","pszczoła","komar","świnia","tygrys","owca","kotek, kocię","szczeniak","żółw","jeleń, sarna","żyrafa","szczur","indyk","koza","sowa","gołąb","orzeł","krokodyl","rekin","delfin","niedźwiedź","mrówka","pająk","wiewiórka","wąż"
+
+RODZINA
+ZALICZONE
+"matka","wujek","ciocia","siostra","rodzic","mężczyzna","kobieta","żona","dziecko","chłopiec","dziewczynka","wdowa","przyjaciel"
+BŁĘDY
+"rodzina(family)","ojciec(fouther)","córka(dother)","brat(brouther)","babcia(gruntmuther)","dziadek(gruntfather)","kuzyn(cousin)","żonaty/mężatka(merid)","być razem(toogether)"
+NIEZNANE
+"syn","mąż","chłopak (sympatia)","dziewczyna (sympatia)","rozwiedziony","wnuk, wnuczka","teść","szwagierka","szwagier","matka chrzestna","krewna, krewny","siostrzeniec, bratanek","siostrzenica, bratanica","rodzeństwo","jedynak","bliźnięta","narzeczony","narzeczona","ślub","w ciąży","były chłopak","urodzić się","być spokrewnionym","poślubić kogoś","zaręczyć się","oświadczyć się","zakochać się","całować","przytulać (obejmować)","przytulać się","iść na randkę","zerwać (z kimś)","zejść się","kochać się","wychowywać","dorastać","para","związek"
+
+UBRANIA
+ZALICZONE
+BŁĘDY
+NIEZNANE
+"kurtka","skarpetka","pasek","okulary","szalik","rękawiczka","but","spodnie","parasol","koszulka","sukienka","czapka","kapelusz","spódnica","koszula","płaszcz","torebka","guzik","wysokie obcasy","ubierać się","leginsy","dres","bluza","golf","sweter","pierścionek","naszyjnik","kolczyk","krawat","bielizna","bluzka","ubrania","futro","jedwab, jedwabny","wełna","bawełna, bawełniany","łańcuszek","bransoletka","kąpielówki","kostium kąpielowy","biustonosz","kozaki, buty z wysoką cholewą","sandały","maska","kostium","przymierzać","nosić (na sobie)","zdejmować","zakładać","zapinać, zawiązywać","zapinać guziki","pasować"
+
+CIAŁO, wygląd i czynności życia codziennego
+ZALICZONE
+"głowa","włosy","ucho","oko","nos","ząb","usta","twarz","brzuch","plecy","noga","stopa","broda","ciało","budzić się","śpieszyć się"
+BŁĘDY
+"szyja(neak)","kolano(nea)"
+NIEZNANE
+"ramię","ręka","palec u nogi","palec u ręki","łokieć","opalenizna","skóra","mięsień","policzek","podbródek","czoło","nadgarstek","kostka","pryszcz","piegi","grzywka","warkocz","kucyk","fryzura","wąsy","paznokieć","klatka piersiowa","usta, buzia","czesać się","robić krok","skakać","stać","myć","spać","machać","wskazywać","trząść","upadać","upuścić","trzymać","siadać","wstawać","położyć się","podawać (piłkę)","uderzać","schylać się","zginać","odstawiać, odkładać","podnosić (np. z ziemi)","ciągnąć","pchać","dotykać","wydawać się","próbować, smakować","pachnieć, wąchać","brzmieć","słyszeć","wyczuwać","rozglądać się","wyglądać jak","patrzeć na","widzieć, zobaczyć","przeciętny","przystojny","ładny","elegancki","prosty","kręcony","piękny","brzydki","gruby","szczupły","blady","delikatny","wysportowany","figura","chudy","z nadwagą","otyły","łysy","jasny","ciemny","falowane","gruby, gęsty","przetłuszczony","w dobrej formie","dobrze zbudowany","barczysty","średni wzrost","atrakcyjny","przystojny","przepiękny","przekłuty","tatuaż","zmarszczki","malutki","ogromny","skóra i kości","blondynka","brunetka","rude włosy","lakier do paznokci","makijaż","zainteresowania","relaksować się","śpiewać","pływać","bawić się","robić zdjęcia","malować","słuchać","czytać","oglądać","uprawiać sporty","biegać","tańczyć","leżeć","siedzieć","dobrze się bawić","odpocząć","plotkować","spotkać się z przyjaciółmi","poznawać nowe osoby","zapraszać","przedstawiać","imprezować","układać puzzle","rysować","wyjechać z miasta","zobaczyć sztukę","nie śpieszyć się","wysypiać się","jeździć na deskorolce","nurkować","kłaść się, iść spać","wstawać","golić się","myć zęby","rozbierać się","odpoczywać"
