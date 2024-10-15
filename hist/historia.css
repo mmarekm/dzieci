@@ -5,6 +5,11 @@ body
 	font-size: 20px;
 	line-height: 130%;
 	opacity: 0.94;
+	background-color: slategray;
+	color: tomato;
+	font-size: 20px;
+	line-height: 130%;
+	opacity: 0.95;
 }
 #tresc
 {
