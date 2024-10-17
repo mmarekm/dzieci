@@ -24,9 +24,11 @@ NIEZNANE
 
 UBRANIA
 ZALICZONE
+"pasek","okulary","spodnie","parasol","sukienka","czapka","płaszcz","torebka"
 BŁĘDY
+"kurtka(jucket)","skarpetka(soc)","rękawiczka(glow)","but(sho)","koszulka(te shert)","kapelusz(chat)","koszula(shert)","przymierzać(to try one)"
 NIEZNANE
-"kurtka","skarpetka","pasek","okulary","szalik","rękawiczka","but","spodnie","parasol","koszulka","sukienka","czapka","kapelusz","spódnica","koszula","płaszcz","torebka","guzik","wysokie obcasy","ubierać się","leginsy","dres","bluza","golf","sweter","pierścionek","naszyjnik","kolczyk","krawat","bielizna","bluzka","ubrania","futro","jedwab, jedwabny","wełna","bawełna, bawełniany","łańcuszek","bransoletka","kąpielówki","kostium kąpielowy","biustonosz","kozaki, buty z wysoką cholewą","sandały","maska","kostium","przymierzać","nosić (na sobie)","zdejmować","zakładać","zapinać, zawiązywać","zapinać guziki","pasować"
+"szalik","spódnica","guzik","wysokie obcasy","ubierać się","leginsy","dres","bluza","golf","sweter","pierścionek","naszyjnik","kolczyk","krawat","bielizna","bluzka","ubrania","futro","jedwab, jedwabny","wełna","bawełna, bawełniany","łańcuszek","bransoletka","kąpielówki","kostium kąpielowy","biustonosz","kozaki, buty z wysoką cholewą","sandały","maska","kostium","nosić (na sobie)","zdejmować","zakładać","zapinać, zawiązywać","zapinać guziki","pasować"
 
 CIAŁO, wygląd i czynności życia codziennego
 ZALICZONE
