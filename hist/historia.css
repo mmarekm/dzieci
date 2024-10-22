@@ -5,15 +5,11 @@ html
 body
 {
 	background-color: dimgray;
-	color: tomato;
+	color: lightcoral;
 	font-size: 20px;
 	line-height: 130%;
 	opacity: 0.94;
-	background-color: slategray;
-	color: tomato;
-	font-size: 20px;
-	line-height: 130%;
-	opacity: 0.95;
+	text-shadow: 1px 1px 1px rgba(255, 215, 0, 0.5);
 }
 #tresc
 {
@@ -28,15 +24,15 @@ body
 a
 {
 	text-decoration: none;
-	color: lime;
+	color: lightgreen;
 }
 a:hover
 {
-	color: lime;
+	color: lightgreen;
 }
 a:visited
 {
-	color: lime;
+	color: lightgreen;
 }
 .dzial
 {
@@ -44,10 +40,11 @@ a:visited
 	font-size: 30px;
 	font-weight: 700;
 	margin: 10px;
-	border: 3px solid white;
+	border: 3px solid transparent;
 	padding: 10px;
 	color: gold;
 }
+
 .zagadnienie
 {
 	display: inline-block;
@@ -62,7 +59,9 @@ a:visited
 	font-style: italic;
 	text-align: center;
 	color: cyan;
-	font-size: 25px;
+	font-size: 22px;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .czesc
@@ -74,6 +73,10 @@ a:visited
 	margin-right: auto;
 	background-color: black;
 	transition: transform 0.5s ease-in-out;
+	color: lightyellow;
+}
+.czesc, .dzial {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 .tytul
 {
