@@ -24,6 +24,12 @@ a:visited
 {
 	color: lightgreen;
 }
+.czesc
+{
+	border: 2px solid yellow;
+	padding: 5px;
+	margin: 10px;
+}
 .kierunek
 {
 	display: inline-block;
@@ -34,11 +40,24 @@ a:visited
 	padding: 30px;
 	border-radius: 30px;
 }
+.dzial
+{
+	text-align: center;
+	margin: 20px;
+	color: white;
+	font-size: 33px;
+}
+.tytulm
+{
+	display: inline-block;
+	border: 1px solid white;
+	margin: 2px;
+}
 .zagadnienie
 {
 	display: inline-block;
 	border: 2px solid gray;
-	width: calc(33% - 10px);
+	width: calc(49% - 10px);
 	padding: 10px;
 	box-sizing: border-box;
 }
