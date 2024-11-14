@@ -40,12 +40,21 @@ NIEZNANE
 
 CZAS
 ZALICZONE
+"połowa","czas","noc","popołudnie","pora roku","rok","miesiąc","tydzień","dzień","godzina","minuta","sekunda","poniedziałek","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","wiosna","lato","jesień","zima","dzisiaj","wczoraj","późno","wcześnie"
 BŁĘDY
+"rano(moriing)","wieczór(evning)","wtorek(thusday)","środa(wensday)","czwartek(thirsday)","sobota(saterday)","niedziela(sandy)","listopad(nowember)","jutro(tomorow)","kwadrans(quater)","wakacje(hollyday)"
 NIEZNANE
-"połowa","czas","noc","rano","popołudnie","wieczór","pora roku","rok","miesiąc","tydzień","dzień","godzina","minuta","sekunda","poniedziałek","wtorek","środa","czwartek","piątek","sobota","niedziela","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień","wiosna","lato","jesień","zima","dzisiaj","wczoraj","jutro","wakacje","data","kwadrans","zegar się późni","zegar się śpieszy","zegar","nastawić budzik","południe (godzina)","północ (godzina)","ostatnio","przedwczoraj","pojutrze","co drugi wieczór (drugą noc)","co dwa dni","jakiś czas temu","era, epoka","teraźniejszość","przeszłość","przyszłość","zeszły","późno","wcześnie"
-
+"piątek","grudzień","data","zegar się późni","zegar się śpieszy","zegar","nastawić budzik","południe (godzina)","północ (godzina)","ostatnio","przedwczoraj","pojutrze","co drugi wieczór (drugą noc)","co dwa dni","jakiś czas temu","era, epoka","teraźniejszość","przeszłość","przyszłość","zeszły"
 LICZBY i miary
+ZALICZONE
+"zero","jeden","dwa","trzy","cztery","pięć","sześć","siedem","osiem","dziewięć","dziesięć","jedenaście","dwanaście","trzynaście","czternaście","szesnaście","siedemnaście","osiemnaście","dziewiętnaście","dwadzieścia","trzydzieści","sześćdziesiąt","siedemdziesiąt","osiemdziesiąt","dziewięćdziesiąt","numer","drugi"
+BŁĘDY
+"piętnaście(fivteen)","czterdzieści(fourty)","pięćdziesiąt(fifty)","sto(hundread)","tysiąc(touseand)","milion(milion)","pierwszy(thirst)","metr(meetr)"
+NIEZNANE
+"trzeci","czwarty","piąty","dziewiąty","dwunasty","dwudziesty","dwudziesty pierwszy","trzydziesty","metr kwadratowy","milimetr","centymetr","cal","kropla","litr","mila","kilometr","stopień temperatury"
+
+DOM
 ZALICZONE
 BŁĘDY
 NIEZNANE
-"zero","jeden","dwa","trzy","cztery","pięć","sześć","siedem","osiem","dziewięć","dziesięć","jedenaście","dwanaście","trzynaście","czternaście","piętnaście","szesnaście","siedemnaście","osiemnaście","dziewiętnaście","dwadzieścia","trzydzieści","czterdzieści","pięćdziesiąt","sześćdziesiąt","siedemdziesiąt","osiemdziesiąt","dziewięćdziesiąt","sto","tysiąc","milion","numer","pierwszy","drugi","trzeci","czwarty","piąty","dziewiąty","dwunasty","dwudziesty","dwudziesty pierwszy","trzydziesty","metr","metr kwadratowy","milimetr","centymetr","cal","kropla","litr","mila","kilometr","stopień temperatury"
+"ogród","klucz","pokój","lodówka","salon","sypialnia","łazienka","kuchnia","szafa","książka","regał","pralka","zlew","prysznic","wanna","stół","krzesło","łóżko","kanapa","okno","ściana","podłoga","parter","drzwi","sufit","dywan","garaż","piwnica","lustro","dom","mieszkanie","zasłony","podwórko (dziedziniec)","drabina","grzejnik","półka","odkurzacz","tapeta","toaleta","schody","fotel","biurko","meble","wazon","winda","śmieci","koc","prześcieradło","poduszka","ręcznik","trawnik","taras","balkon","kominek","komin","dach","strych","pudełko","wiadro","butelka","nożyczki","młotek","narzędzie","automatyczna sekretarka","wieszak","suszarka do włosów","ogrzewanie centralne","kaloryfer","klimatyzacja","doniczka","otwieracz do puszek","robot kuchenny","ekspres do kawy","sokowirówka","zamrażarka","zmywarka","mikrofalówka","piekarnik","kuchenka","toster","miska","plama","bałagan","ścierka","gąbka","płyn do zmywania naczyń","proszek do prania","mydło","prace domowe","szczoteczka do zębów","posprzątany","niechlujny","przytulny","wygodny","mierzyć, robić pomiar","otwierać","zamykać","budować","odnawiać","dekorować","wynajmować (komuś)","wynajmować (od kogoś)","podlewać rośliny","wyprowadzać psa na spacer","posprzątać zabawki","wieszać pranie","składać ubrania","zamiatać podłogę","robić pranie","uprzątnąć","czyścić","myć naczynia","prasować","hodować zwierzęta","mieszkać","ścielić łóżko","ścierać kurz","sprzątać"
