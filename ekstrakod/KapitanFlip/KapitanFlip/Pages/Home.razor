@@ -1,0 +1,1472 @@
+﻿@inject IJSRuntime JSRuntime
+@page "/"
+<div id="all">
+
+    <div id="containerBefore" class="@(widocznyBefore ? "" : "hidden")">
+        <div id="startowe" class=" @(widocznyStart ? "" : "hidden")">
+            <p class="wysrodkowane">Ilu będzie graczy?</p>
+            <div class="guzikiStartowe">
+                <button @onclick="() => LicznikGraczy(2)" class="guzikPierwszy">2</button>
+                <button @onclick="() => LicznikGraczy(3)" class="guzikPierwszy">3</button>
+                <button @onclick="() => LicznikGraczy(4)" class="guzikPierwszy">4</button>
+            </div>
+            <div class="wyborPlanszy">
+                <label><input type="radio" name="wyborPlanszy" value="plansza1" @onchange="@(() => plansza = "plansza1")" /><img src="Images/plansza1.jpg" width="100" height="100" /></label>
+                <label><input type="radio" name="wyborPlanszy" value="plansza2" @onchange="@(() => plansza = "plansza2")" /><img src="Images/plansza2.jpg" width="100" height="100" /></label>
+                <label><input type="radio" name="wyborPlanszy" value="plansza3" @onchange="@(() => plansza = "plansza3")" /><img src="Images/plansza3.jpg" width="100" height="100" /></label><br />
+                <label><input type="radio" name="wyborPlanszy" value="plansza4" @onchange="@(() => plansza = "plansza4")" /><img src="Images/plansza4.jpg" width="100" height="100" /></label>
+                <label><input type="radio" name="wyborPlanszy" value="plansza5" @onchange="@(() => plansza = "plansza5")" /><img src="Images/plansza5.jpg" width="100" height="100" /></label>
+                <label><input type="radio" name="wyborPlanszy" value="losowo" @onchange="@(() => plansza = "losowo")" checked/><img src="Images/losowo.jpg" width="100" height="100" /></label><br /><br />
+                <label for="losowo"><input type="checkbox" id="losowo" @bind="@losowaKolejnosc" /> losowa kolejność</label>
+            </div>
+        </div>
+        <div id="nazwyGraczy" class="wysrodkowane @(widoczneNazwyGraczy ? "" : "hidden")">
+            @for (int i = 0; i < liczbaGraczy; i++)
+            {
+                int index = i;
+                <div class="player-input">
+                    <label for="player-@(index + 1)"></label>
+                    <input type="text" id="player-@(index + 10)" @bind="nazwyGraczy[index]" @bind:event="oninput" />
+                </div>
+            }
+            <div class="miejsceGuzikaStartu">
+                <button @onclick="StartGry" class="guzikDrugi">Gramy!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="containerAfter" class="@(widocznyAfter ? "" : "hidden")">
+        @if (liczbaGraczy > 0 && kolejGracza < gracze.Count)
+        {
+            <div id="obslugaGry">
+                <div class="wysrodkowane @(widocznyRozpocznijRuch ? "" : "hidden")">
+                    <button class="guzikRozpoczeciaTury" @onclick="RozpocznijRuch">
+                        <span class="ruch"><em>Ruch gracza nr @(kolejGracza + 1)</em>,</span> graj <span class="imie"><strong> @gracze[kolejGracza].Nazwa </strong></span>!
+                    </button>
+                </div>
+                <div class="widocznejKolejki @(widocznaKolejka ? "" : "hidden")">
+                    @if (wylosowanaPlytka != null)
+                    {
+                        <div id="obrazek">
+                            @if (czyOdwroconaPlytka)
+                            {
+                                <img src="@wylosowanaPlytka.Rewers.PobierzSciezkeObrazka()" />
+                            }
+                            else
+                            {
+                                <img src="@wylosowanaPlytka.Awers.PobierzSciezkeObrazka()" />
+                            }
+                        </div>
+                    }
+                    <div id="guzikOdwrocenia">
+                        <button class="@(widocznyGuzikOdwrocenia ? "" : "hidden")" @onclick="OdwrocPlytke">
+                            Odwracamy płytkę?
+                        </button>
+                    </div>
+                    <div class="guzikiKolumn">
+                        <div class="guzikKolumny">
+                            <button @onclick="() => SkutkiRuchu(1, 1)">
+                                Kolumna 1
+                            </button>
+                        </div>
+                        <div class="guzikKolumny">
+                            <button @onclick="() => SkutkiRuchu(2, 1)">
+                                Kolumna 2
+                            </button>
+                        </div>
+                        <div class="guzikKolumny">
+                            <button @onclick="() => SkutkiRuchu(3, 1)">
+                                Kolumna 3
+                            </button>
+                        </div>
+                        <div class="guzikKolumny">
+                            <button @onclick="() => SkutkiRuchu(4, 1)">
+                                Kolumna 4
+                            </button>
+                        </div>
+                        @if (!(plansza == "plansza4" && gracze[kolejGracza].Punkty < 1))
+                        {
+                            <div class="guzikKolumny">
+                                <button @onclick="() => SkutkiRuchu(5, 1)">
+                                    Kolumna 5
+                                </button>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="malpa @(widoczneDzialanieMalpy ? "" : "hidden")">
+                    <div class="tlo">
+                        Gdzie odwracamy?
+                    </div>
+                    <div class="guzikMalpy">
+                        <button @onclick="() => DzialanieMalpy(Kierunek.Lewo)">
+                            po lewej
+                        </button>
+                    </div>
+                    <div class="guzikMalpy">
+                        <button @onclick="() => DzialanieMalpy(Kierunek.Gora)">
+                            na górze
+                        </button>
+                    </div>
+                    <div class="guzikMalpy">
+                        <button @onclick="() => DzialanieMalpy(Kierunek.Prawo)">
+                            po prawej
+                        </button>
+                    </div>
+                    <div class="guzikMalpy">
+                        <button @onclick="() => DzialanieMalpy(Kierunek.Dol)">
+                            na dole
+                        </button>
+                    </div>
+                </div>
+                <div class="ekstrazmiana @(widocznaEkstraZmiana ? "" : "hidden")">
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 5; j++)
+                        {
+                            if (gracze[kolejGracza].TablicaPlansza[i, j] != 0)
+                            {
+                                var biezaceI = i;
+                                var biezaceJ = j;
+                                <div class="guzikOdwrocenia5">
+                                    <button @onclick="() => OdwracaniePlytki(biezaceI,biezaceJ)">
+                                        @i , @j , @((Marynarze)gracze[kolejGracza].TablicaPlansza[biezaceI, biezaceJ])
+                                    </button>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            </div>
+            <div id="gra">
+                @for (int i = 0; i < liczbaGraczy; i++)
+                {
+                    var graczIndex = i;
+                    var graczWyswietlany = (graczIndex - kolejGracza) % liczbaGraczy;
+                    <div class="gracz gracz@(graczWyswietlany + 1)">
+                        <h3><span style="color: red; font-size: 4.5vh;">@gracze[graczIndex].Nazwa</span></h3>
+                        <h3><span style="color: white; font-size: 3.5vh;">Punkty z planszy: @gracze[graczIndex].Punkty</span></h3>
+                        <h3>Majtkowie: @gracze[graczIndex].KoncoweMajtek()</h3>
+                        <h3>Bocianie gniazda: @gracze[graczIndex].KoncoweBocianieGniazdo()</h3>
+                        <h3>Cieśle: @gracze[graczIndex].KoncoweCiesli()</h3>
+                        <h3>Papugi: @gracze[graczIndex].KoncowePapugi()</h3>
+                        @if (plansza == "plansza3")
+                        {
+                            <h3>Druga kolumna: @gracze[graczIndex].KoncowePlansza3Kolumna2()</h3>
+                            <h3>Czwarta kolumna: @gracze[graczIndex].KoncowePlansza3Kolumna4()</h3>
+                        }
+                        @if (plansza != "plansza3")
+                        {
+                            <h3><span style="color: white; font-size: 3.5vh;">Suma dodatkowych punktów: @gracze[graczIndex].SumaKoncowych()</span></h3>
+                        }
+                        else
+                        {
+                            <h3><span style="color: white; font-size: 3.5vh;">Suma dodatkowych punktów: @gracze[graczIndex].SumaKoncowychPlanszy3()</span></h3>
+                        }
+                        <h3>@gracze[graczIndex].KomentarzBombardiera()</h3>
+                        @if (plansza != "plansza3")
+                        {
+                            <h3><span style="color: red; font-size: 4.5vh;">@gracze[graczIndex].OstatecznePunkty()</span></h3>
+                        }
+                        else
+                        {
+                            <h3><span style="color: red; font-size: 4.5vh;">@gracze[graczIndex].OstatecznePunktyPlanszy3()</span></h3>
+                        }
+                        <div class="mapa @(gracze[graczIndex].PosiadaczMapy ? "" : "hidden")">
+                            <img src="/Images/mapa.jpg" />
+                        </div>
+                        @if (plansza == "plansza1")
+                        {
+                            <div class="plansza1">
+                                <div id="pola">
+                                    <div class="pole" style="grid-column: 1; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 1), out var pozycja11))
+                                        {
+                                            @if (pozycja11 != null)
+                                            {
+                                                <img src="@pozycja11.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 2), out var pozycja12))
+                                        {
+                                            @if (pozycja12 != null)
+                                            {
+                                                <img src="@pozycja12.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 1), out var pozycja21))
+                                        {
+                                            @if (pozycja21 != null)
+                                            {
+                                                <img src="@pozycja21.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 2), out var pozycja22))
+                                        {
+                                            @if (pozycja22 != null)
+                                            {
+                                                <img src="@pozycja22.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 3), out var pozycja23))
+                                        {
+                                            @if (pozycja23 != null)
+                                            {
+                                                <img src="@pozycja23.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 1), out var pozycja31))
+                                        {
+                                            @if (pozycja31 != null)
+                                            {
+                                                <img src="@pozycja31.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 2), out var pozycja32))
+                                        {
+                                            @if (pozycja32 != null)
+                                            {
+                                                <img src="@pozycja32.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 3), out var pozycja33))
+                                        {
+                                            @if (pozycja33 != null)
+                                            {
+                                                <img src="@pozycja33.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 4), out var pozycja34))
+                                        {
+                                            @if (pozycja34 != null)
+                                            {
+                                                <img src="@pozycja34.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 1;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 5), out var pozycja35))
+                                        {
+                                            @if (pozycja35 != null)
+                                            {
+                                                <img src="@pozycja35.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 3), out var pozycja43))
+                                        {
+                                            @if (pozycja43 != null)
+                                            {
+                                                <img src="@pozycja43.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 4), out var pozycja44))
+                                        {
+                                            @if (pozycja44 != null)
+                                            {
+                                                <img src="@pozycja44.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 1), out var pozycja51))
+                                        {
+                                            @if (pozycja51 != null)
+                                            {
+                                                <img src="@pozycja51.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 2), out var pozycja52))
+                                        {
+                                            @if (pozycja52 != null)
+                                            {
+                                                <img src="@pozycja52.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 3), out var pozycja53))
+                                        {
+                                            @if (pozycja53 != null)
+                                            {
+                                                <img src="@pozycja53.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (plansza == "plansza2")
+                        {
+                            <div class="plansza2">
+                                <div id="pola">
+                                    <div class="pole" style="grid-column: 1; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 1), out var pozycja11))
+                                        {
+                                            @if (pozycja11 != null)
+                                            {
+                                                <img src="@pozycja11.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 2), out var pozycja12))
+                                        {
+                                            @if (pozycja12 != null)
+                                            {
+                                                <img src="@pozycja12.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 1), out var pozycja21))
+                                        {
+                                            @if (pozycja21 != null)
+                                            {
+                                                <img src="@pozycja21.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 2), out var pozycja22))
+                                        {
+                                            @if (pozycja22 != null)
+                                            {
+                                                <img src="@pozycja22.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 3), out var pozycja23))
+                                        {
+                                            @if (pozycja23 != null)
+                                            {
+                                                <img src="@pozycja23.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 1), out var pozycja31))
+                                        {
+                                            @if (pozycja31 != null)
+                                            {
+                                                <img src="@pozycja31.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 2), out var pozycja32))
+                                        {
+                                            @if (pozycja32 != null)
+                                            {
+                                                <img src="@pozycja32.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 3), out var pozycja33))
+                                        {
+                                            @if (pozycja33 != null)
+                                            {
+                                                <img src="@pozycja33.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 4), out var pozycja34))
+                                        {
+                                            @if (pozycja34 != null)
+                                            {
+                                                <img src="@pozycja34.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 1;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 5), out var pozycja35))
+                                        {
+                                            @if (pozycja35 != null)
+                                            {
+                                                <img src="@pozycja35.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 1), out var pozycja41))
+                                        {
+                                            @if (pozycja41 != null)
+                                            {
+                                                <img src="@pozycja41.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 1), out var pozycja51))
+                                        {
+                                            @if (pozycja51 != null)
+                                            {
+                                                <img src="@pozycja51.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 2), out var pozycja52))
+                                        {
+                                            @if (pozycja52 != null)
+                                            {
+                                                <img src="@pozycja52.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 3), out var pozycja53))
+                                        {
+                                            @if (pozycja53 != null)
+                                            {
+                                                <img src="@pozycja53.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 4), out var pozycja54))
+                                        {
+                                            @if (pozycja54 != null)
+                                            {
+                                                <img src="@pozycja54.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (plansza == "plansza3")
+                        {
+                            <div class="plansza3">
+                                <div id="pola">
+                                    <div class="pole" style="grid-column: 1; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 1), out var pozycja11))
+                                        {
+                                            @if (pozycja11 != null)
+                                            {
+                                                <img src="@pozycja11.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 2), out var pozycja12))
+                                        {
+                                            @if (pozycja12 != null)
+                                            {
+                                                <img src="@pozycja12.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 3), out var pozycja13))
+                                        {
+                                            @if (pozycja13 != null)
+                                            {
+                                                <img src="@pozycja13.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 1), out var pozycja21))
+                                        {
+                                            @if (pozycja21 != null)
+                                            {
+                                                <img src="@pozycja21.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 2), out var pozycja22))
+                                        {
+                                            @if (pozycja22 != null)
+                                            {
+                                                <img src="@pozycja22.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 3), out var pozycja23))
+                                        {
+                                            @if (pozycja23 != null)
+                                            {
+                                                <img src="@pozycja23.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 1), out var pozycja31))
+                                        {
+                                            @if (pozycja31 != null)
+                                            {
+                                                <img src="@pozycja31.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 2), out var pozycja32))
+                                        {
+                                            @if (pozycja32 != null)
+                                            {
+                                                <img src="@pozycja32.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 1), out var pozycja41))
+                                        {
+                                            @if (pozycja41 != null)
+                                            {
+                                                <img src="@pozycja41.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 2), out var pozycja42))
+                                        {
+                                            @if (pozycja42 != null)
+                                            {
+                                                <img src="@pozycja42.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 3), out var pozycja43))
+                                        {
+                                            @if (pozycja43 != null)
+                                            {
+                                                <img src="@pozycja43.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 4), out var pozycja44))
+                                        {
+                                            @if (pozycja44 != null)
+                                            {
+                                                <img src="@pozycja44.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 1;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 5), out var pozycja45))
+                                        {
+                                            @if (pozycja45 != null)
+                                            {
+                                                <img src="@pozycja45.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 1), out var pozycja51))
+                                        {
+                                            @if (pozycja51 != null)
+                                            {
+                                                <img src="@pozycja51.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 2), out var pozycja52))
+                                        {
+                                            @if (pozycja52 != null)
+                                            {
+                                                <img src="@pozycja52.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (plansza == "plansza4")
+                        {
+                            <div class="plansza4">
+                                <div id="pola">
+                                    <div class="pole" style="grid-column: 1; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 2), out var pozycja12))
+                                        {
+                                            @if (pozycja12 != null)
+                                            {
+                                                <img src="@pozycja12.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 3), out var pozycja13))
+                                        {
+                                            @if (pozycja13 != null)
+                                            {
+                                                <img src="@pozycja13.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 4), out var pozycja14))
+                                        {
+                                            @if (pozycja14 != null)
+                                            {
+                                                <img src="@pozycja14.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 1), out var pozycja21))
+                                        {
+                                            @if (pozycja21 != null)
+                                            {
+                                                <img src="@pozycja21.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 2), out var pozycja22))
+                                        {
+                                            @if (pozycja22 != null)
+                                            {
+                                                <img src="@pozycja22.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 3), out var pozycja23))
+                                        {
+                                            @if (pozycja23 != null)
+                                            {
+                                                <img src="@pozycja23.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 4), out var pozycja24))
+                                        {
+                                            @if (pozycja24 != null)
+                                            {
+                                                <img src="@pozycja24.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 1), out var pozycja31))
+                                        {
+                                            @if (pozycja31 != null)
+                                            {
+                                                <img src="@pozycja31.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 2), out var pozycja32))
+                                        {
+                                            @if (pozycja32 != null)
+                                            {
+                                                <img src="@pozycja32.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 3), out var pozycja33))
+                                        {
+                                            @if (pozycja33 != null)
+                                            {
+                                                <img src="@pozycja33.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 4), out var pozycja34))
+                                        {
+                                            @if (pozycja34 != null)
+                                            {
+                                                <img src="@pozycja34.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 1;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 5), out var pozycja35))
+                                        {
+                                            @if (pozycja35 != null)
+                                            {
+                                                <img src="@pozycja35.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 3), out var pozycja43))
+                                        {
+                                            @if (pozycja43 != null)
+                                            {
+                                                <img src="@pozycja43.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 4), out var pozycja44))
+                                        {
+                                            @if (pozycja44 != null)
+                                            {
+                                                <img src="@pozycja44.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 3), out var pozycja53))
+                                        {
+                                            @if (pozycja53 != null)
+                                            {
+                                                <img src="@pozycja53.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (plansza == "plansza5")
+                        {
+                            <div class="plansza5">
+                                <div id="pola">
+                                    <div class="pole" style="grid-column: 1; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 1), out var pozycja11))
+                                        {
+                                            @if (pozycja11 != null)
+                                            {
+                                                <img src="@pozycja11.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 2), out var pozycja12))
+                                        {
+                                            @if (pozycja12 != null)
+                                            {
+                                                <img src="@pozycja12.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 3), out var pozycja13))
+                                        {
+                                            @if (pozycja13 != null)
+                                            {
+                                                <img src="@pozycja13.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 1; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((1, 4), out var pozycja14))
+                                        {
+                                            @if (pozycja14 != null)
+                                            {
+                                                <img src="@pozycja14.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 1), out var pozycja21))
+                                        {
+                                            @if (pozycja21 != null)
+                                            {
+                                                <img src="@pozycja21.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 2; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((2, 2), out var pozycja22))
+                                        {
+                                            @if (pozycja22 != null)
+                                            {
+                                                <img src="@pozycja22.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 1), out var pozycja31))
+                                        {
+                                            @if (pozycja31 != null)
+                                            {
+                                                <img src="@pozycja31.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 2), out var pozycja32))
+                                        {
+                                            @if (pozycja32 != null)
+                                            {
+                                                <img src="@pozycja32.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 3; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((3, 3), out var pozycja33))
+                                        {
+                                            @if (pozycja33 != null)
+                                            {
+                                                <img src="@pozycja33.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 5;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 1), out var pozycja41))
+                                        {
+                                            @if (pozycja41 != null)
+                                            {
+                                                <img src="@pozycja41.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 2), out var pozycja42))
+                                        {
+                                            @if (pozycja42 != null)
+                                            {
+                                                <img src="@pozycja42.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 4; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((4, 3), out var pozycja43))
+                                        {
+                                            @if (pozycja43 != null)
+                                            {
+                                                <img src="@pozycja43.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 4;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 2), out var pozycja52))
+                                        {
+                                            @if (pozycja52 != null)
+                                            {
+                                                <img src="@pozycja52.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 3;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 3), out var pozycja53))
+                                        {
+                                            @if (pozycja53 != null)
+                                            {
+                                                <img src="@pozycja53.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                    <div class="pole" style="grid-column: 5; grid-row: 2;">
+                                        @if (gracze[graczIndex].Plansza.TryGetValue((5, 4), out var pozycja54))
+                                        {
+                                            @if (pozycja54 != null)
+                                            {
+                                                <img src="@pozycja54.WyswietlonyMarynarz.PobierzSciezkeObrazka()" />
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+    <div class="@(widocznaPunktacja ? "" : "hidden")">
+        <div class="koniec">
+            <span style="margin: 30px; letter-spacing: 7px; font-size: 5vh; color: cyan;">KONIEC GRY</span>
+            @if (plansza != "plansza3")
+            {
+                @foreach (var gracz in gracze.OrderByDescending(g => g.OstatecznePunkty()).ThenByDescending(g => g.PosiadaczMapy).ThenBy(g => g.Nazwa))
+                {
+                    <h3 style="color: white;">
+                        @gracz.Nazwa - @gracz.OstatecznePunkty() punktów @gracz.Interpunkcja @gracz.ZMapa
+                    </h3>
+                }
+            }
+            else
+            {
+                @foreach (var gracz in gracze.OrderByDescending(g => g.OstatecznePunktyPlanszy3()).ThenByDescending(g => g.PosiadaczMapy).ThenBy(g => g.Nazwa))
+                {
+                    <h3 style="color: white;">
+                        @gracz.Nazwa - @gracz.OstatecznePunktyPlanszy3() punktów @gracz.Interpunkcja @gracz.ZMapa
+                    </h3>
+                }
+            }
+        </div>
+    </div>
+    <audio @ref="graTlo" id="tlo" style="display:none;"></audio>
+    <audio @ref="graKlik" id="klik" style="display:none;"></audio>
+    <audio @ref="graRykMalpy" id="rykMalpy" style="display:none;"></audio>
+    <audio @ref="graSkrzekPapugi" id="skrzekPapugi" style="display:none;"></audio>
+    <audio @ref="graKrojenie" id="krojenie" style="display:none;"></audio>
+    <audio @ref="graBum" id="bum" style="display:none;"></audio>
+    <audio @ref="graBocianieGniazdo" id="bocianieGniazdo" style="display:none;"></audio>
+    <audio @ref="graCiesla" id="ciesla" style="display:none;"></audio>
+    <audio @ref="graKartograf" id="kartograf" style="display:none;"></audio>
+    <audio @ref="graPotrojnyBum" id="potrojnyBum" style="display:none;"></audio>
+</div>
+
+@code {
+    private ElementReference graTlo;
+    private ElementReference graKlik;
+    private ElementReference graRykMalpy;
+    private ElementReference graSkrzekPapugi;
+    private ElementReference graKrojenie;
+    private ElementReference graBum;
+    private ElementReference graBocianieGniazdo;
+    private ElementReference graCiesla;
+    private ElementReference graKartograf;
+    private ElementReference graPotrojnyBum;
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)        
+            await JSRuntime.InvokeVoidAsync("initializeAudio");       
+    }
+    private string plansza = "losowo";
+    private string punktacja = "";
+    private bool plansza2Osiagnieta1 = false;
+    private bool plansza2Osiagnieta2 = false;
+    private bool plansza2Osiagnieta3 = false;
+    private bool plansza2Osiagnieta4 = false;
+    private bool plansza2Osiagnieta5 = false;
+    private bool plansza5KolumnaPapuga = false;
+    private bool odwracanieDowolnejPlytki = false;
+    private int liczbaGraczy = 0;
+    private bool losowaKolejnosc = true;
+    private bool widocznyBefore = true;
+    private bool widocznyStart = true;
+    private bool widoczneNazwyGraczy = false;
+    private bool widocznyAfter = false;
+    private bool widocznyRozpocznijRuch = true;
+    private bool widocznaKolejka = false;
+    private bool widoczneDzialanieMalpy = false;
+    private bool widocznyGuzikOdwrocenia = false;
+    private bool widocznaPunktacja = false;
+    private bool widocznaEkstraZmiana = false;
+    private bool czyOdwroconaPlytka;
+    private int kolejGracza = 0;
+    private List<Gracz> gracze = new List<Gracz>();
+    private List<string> nazwyGraczy = new List<string>();
+    private Plytka wylosowanaPlytka;
+    private WszystkiePlytki wszystkiePlytki = new WszystkiePlytki();
+    private int kolumnaPlytki = 0;
+    private int wierszPlytki = 0;
+    private int enumMarynarza = 0;
+    private enum Kierunek { Lewo, Gora, Prawo, Dol }
+    private static readonly Random los = new Random();
+    private void LicznikGraczy(int iloscGraczy)
+    {
+        liczbaGraczy = iloscGraczy;
+        nazwyGraczy = new List<string>(new string[iloscGraczy]);
+        widocznyStart = false;
+        widoczneNazwyGraczy = true;
+    }
+    private async Task StartGry()
+    {
+        if (nazwyGraczy.All(name => !string.IsNullOrWhiteSpace(name)))
+        {
+            await JSRuntime.InvokeVoidAsync("playAudio", "tlo");
+            await JSRuntime.InvokeVoidAsync("setVolume", "tlo", 0.2);
+            gracze = nazwyGraczy.Select(nazwa => new Gracz(nazwa)).ToList();
+            if (losowaKolejnosc)
+                gracze = gracze.OrderBy(x => Random.Shared.Next()).ToList();
+            if (plansza == "losowo")
+            {
+                int numerPlanszy = los.Next(1, 6);
+                plansza = numerPlanszy switch
+                {
+                    1 => "plansza1",
+                    2 => "plansza2",
+                    3 => "plansza3",
+                    4 => "plansza4",
+                    5 => "plansza5",
+                    _ => plansza
+                };
+            }
+            foreach (var gracz in gracze)
+            {
+                gracz.Plansza = plansza switch
+                {
+                    "plansza1" => gracz.PlanszaA,
+                    "plansza2" => gracz.PlanszaB,
+                    "plansza3" => gracz.PlanszaC,
+                    "plansza4" => gracz.PlanszaD,
+                    _ => gracz.PlanszaE
+                };
+            }
+            widocznyBefore = false;
+            widoczneNazwyGraczy = false;
+            widocznyAfter = true;
+        }
+    }
+    private void RozpocznijRuch()
+    {
+        wylosowanaPlytka = wszystkiePlytki.LosujPlytke();
+        czyOdwroconaPlytka = LosujStronePlytki();
+        Console.WriteLine(LosujStronePlytki());
+        Console.WriteLine(wylosowanaPlytka.Awers);
+        widocznyRozpocznijRuch = false;
+        widocznaKolejka = true;
+        widocznyGuzikOdwrocenia = true;
+        StateHasChanged();
+    }
+    private bool LosujStronePlytki() => los.Next(2) == 0;
+    private void OdwrocPlytke()
+    {
+        widocznyGuzikOdwrocenia = false;
+        czyOdwroconaPlytka = !czyOdwroconaPlytka;
+        Console.WriteLine(wylosowanaPlytka.Rewers);
+        Console.WriteLine(LosujStronePlytki());
+        StateHasChanged();
+    }
+    private async Task SkutkiRuchu(int kolumna, int y)
+    {           
+        var (finalnaKolumna, finalnyWiersz) = MiejsceNowejPlytki(kolumna);
+        kolumnaPlytki = finalnaKolumna;
+        wierszPlytki = finalnyWiersz;
+        if (finalnyWiersz == -1) return;
+        var widocznyMarynarz = wszystkiePlytki.WyswietlonaStrona(wylosowanaPlytka);
+        gracze[kolejGracza].Plansza[(finalnaKolumna, finalnyWiersz)] = new PozycjaPlytki(wylosowanaPlytka, czyOdwroconaPlytka);
+        enumMarynarza = (int)gracze[kolejGracza].Plansza[(finalnaKolumna, finalnyWiersz)].WyswietlonyMarynarz;
+        if (enumMarynarza == 7)
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "skrzekPapugi", 1.0);
+            await JSRuntime.InvokeVoidAsync("playAudio", "skrzekPapugi");
+        }
+        else if (enumMarynarza == 9)
+        {
+            for (int licznik = 0; licznik < 2; licznik++)
+            {
+                await JSRuntime.InvokeVoidAsync("setVolume", "rykMalpy", 1.0);
+                await JSRuntime.InvokeVoidAsync("playAudio", "rykMalpy");
+                await Task.Delay(500);
+            }
+        }
+        else if (enumMarynarza == 2)
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "bum", 1.0);
+            await JSRuntime.InvokeVoidAsync("playAudio", "bum");
+        }
+        else if (enumMarynarza == 5)
+        {
+            for (int licznik = 0; licznik < 2; licznik++)
+            {
+                await JSRuntime.InvokeVoidAsync("setVolume", "krojenie", 0.3);
+                await JSRuntime.InvokeVoidAsync("playAudio", "krojenie");
+                await Task.Delay(700);
+            }
+        }
+        else if (enumMarynarza == 1)
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "bocianieGniazdo", 0.3);
+            await JSRuntime.InvokeVoidAsync("playAudio", "bocianieGniazdo");
+        }
+        else if (enumMarynarza == 3)
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "ciesla", 0.7);
+            await JSRuntime.InvokeVoidAsync("playAudio", "ciesla");
+        }
+        else if (enumMarynarza == 4)
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "kartograf", 1.0);
+            await JSRuntime.InvokeVoidAsync("playAudio", "kartograf");
+        }
+        else
+        {
+            await JSRuntime.InvokeVoidAsync("setVolume", "klik", 1.0);
+            await JSRuntime.InvokeVoidAsync("playAudio", "klik");
+        }
+        gracze[kolejGracza].TablicaPlansza[finalnaKolumna - 1, finalnyWiersz - 1] = enumMarynarza;
+        var efektyMarynarzy = new List<int> { 7, 9 };
+        if (enumMarynarza == 2)
+            gracze[kolejGracza].Punkty += 5;
+        if (enumMarynarza == 4)
+            PrzechwycenieMapy();
+        if (enumMarynarza == 5)
+            PunktyKucharza();
+        if (enumMarynarza == 8)
+            PunktyKartografa();
+        if (plansza == "plansza1")
+            EfektyPlansza1();
+        if (plansza == "plansza2")
+            EfektyPlansza2();
+        if (plansza == "plansza3")
+            EfektyPlansza3();
+        if (plansza == "plansza4")
+            EfektyPlansza4();
+        if (plansza == "plansza5")
+            EfektyPlanszy5();
+        NiezwyklaAkcja(enumMarynarza);
+    }
+    private void NiezwyklaAkcja(int enumMarynarza)
+    {
+        if (odwracanieDowolnejPlytki)
+        {
+            widocznaKolejka = false;
+            odwracanieDowolnejPlytki = false;
+            widocznaEkstraZmiana = true;
+        }
+        else
+        {
+            if (enumMarynarza == 7)
+                EfektMalpy(kolumnaPlytki - 1, wierszPlytki - 1);
+            else if (enumMarynarza == 9 || plansza5KolumnaPapuga)
+                EfektPapugi();
+            else
+                ZakonczenieRuchu();
+        }
+    }
+    private void EfektMalpy(int kolumnaTablicy, int wierszTablicy)
+    {
+        gracze[kolejGracza].Punkty += 1;
+        bool maSasiada = SprawdzSasiada();
+        bool SprawdzSasiada()
+        {
+            if (kolumnaTablicy > 0 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy - 1, wierszTablicy] != 0)
+                return true;
+            if (kolumnaTablicy < 4 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy + 1, wierszTablicy] != 0)
+                return true;
+            if (wierszTablicy > 0 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy, wierszTablicy - 1] != 0)
+                return true;
+            if (wierszTablicy < 4 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy, wierszTablicy + 1] != 0)
+                return true;
+            return false;
+        }
+        if (maSasiada)
+        {
+            widocznaKolejka = false;
+            widoczneDzialanieMalpy = true;
+        }
+        else
+            ZakonczenieRuchu();
+    }
+    private void DzialanieMalpy(Kierunek kierunek)
+    {
+        int kolumnaTablicy = kolumnaPlytki - 1;
+        int wierszTablicy = wierszPlytki - 1;
+        switch (kierunek)
+        {
+            case Kierunek.Lewo:
+                if (kolumnaTablicy > 0 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy - 1, wierszTablicy] != 0)
+                    MalpaOdwracaPlytke(kolumnaTablicy - 1, wierszTablicy);
+                break;
+            case Kierunek.Prawo:
+                if (kolumnaTablicy < 4 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy + 1, wierszTablicy] != 0)
+                    MalpaOdwracaPlytke(kolumnaTablicy + 1, wierszTablicy);
+                break;
+            case Kierunek.Gora:
+                if (wierszTablicy < 4 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy, wierszTablicy + 1] != 0)
+                    MalpaOdwracaPlytke(kolumnaTablicy, wierszTablicy + 1);
+                break;
+            case Kierunek.Dol:
+                if (wierszTablicy > 0 && gracze[kolejGracza].TablicaPlansza[kolumnaTablicy, wierszTablicy - 1] != 0)
+                    MalpaOdwracaPlytke(kolumnaTablicy, wierszTablicy - 1);
+                break;
+        }
+    }
+    private void MalpaOdwracaPlytke(int kolumnaTablicaMalpa, int wierszTablicaMalpa)
+    {
+        widoczneDzialanieMalpy = false;
+        int kolumnaMapa = kolumnaTablicaMalpa + 1;
+        int wierszMapa = wierszTablicaMalpa + 1;
+        if (gracze[kolejGracza].Plansza.TryGetValue((kolumnaMapa, wierszMapa), out var pozycjaPlytki))
+        {
+            pozycjaPlytki.CzyOdwrocona = !pozycjaPlytki.CzyOdwrocona;
+            int nowyMarynarz = (int)pozycjaPlytki.WyswietlonyMarynarz;
+            gracze[kolejGracza].TablicaPlansza[kolumnaTablicaMalpa, wierszTablicaMalpa] = nowyMarynarz;
+            StateHasChanged();
+            if (nowyMarynarz == 2)
+                gracze[kolejGracza].Punkty += 5;
+            if (nowyMarynarz == 4)
+                PrzechwycenieMapy();
+            if (nowyMarynarz == 5)
+                PunktyKucharza();
+            if (nowyMarynarz == 8)
+                PunktyKartografa();
+            if (nowyMarynarz == 9)
+                EfektPapugi();
+            else if (nowyMarynarz == 7)
+            {
+                kolumnaPlytki = kolumnaMapa;
+                wierszPlytki = wierszMapa;
+                EfektMalpy(kolumnaTablicaMalpa, wierszTablicaMalpa);
+            }
+            else
+                ZakonczenieRuchu();
+        }
+    }
+    private void OdwracaniePlytki(int kolumna, int wiersz)
+    {
+        widocznaEkstraZmiana = false;
+        int kolumnaMapa = kolumna + 1;
+        int wierszMapa = wiersz + 1;
+        if (gracze[kolejGracza].Plansza.TryGetValue((kolumnaMapa, wierszMapa), out var pozycjaPlytki))
+        {
+            pozycjaPlytki.CzyOdwrocona = !pozycjaPlytki.CzyOdwrocona;
+            int nowyMarynarz = (int)pozycjaPlytki.WyswietlonyMarynarz;
+            gracze[kolejGracza].TablicaPlansza[kolumna, wiersz] = nowyMarynarz;
+            StateHasChanged();
+            if (nowyMarynarz == 2)
+                gracze[kolejGracza].Punkty += 5;
+            if (nowyMarynarz == 4)
+                PrzechwycenieMapy();
+            if (nowyMarynarz == 5)
+                PunktyKucharza();
+            if (nowyMarynarz == 8)
+                PunktyKartografa();
+            if (nowyMarynarz == 9)
+                EfektPapugi();
+            else if (nowyMarynarz == 7)
+            {
+                kolumnaPlytki = kolumnaMapa;
+                wierszPlytki = wierszMapa;
+                EfektMalpy(kolumna, wiersz);
+            }
+            else
+                NiezwyklaAkcja(enumMarynarza);
+        }
+    }
+    private async Task ZakonczenieRuchu()
+    {
+        bool koncowka = false;
+        if (gracze[kolejGracza].PosiadaczMapy)
+            gracze[kolejGracza].Punkty += 1;
+        for (int i = 0; i < gracze.Count; i++)
+        {
+            if (gracze[i].Szczyty >= 4)
+                koncowka = true;
+        }
+        if (koncowka && kolejGracza == gracze.Count - 1)
+            KoniecGry();
+        else
+        {
+            widocznaKolejka = false;
+            gracze[kolejGracza].PunktyZPlanszy = gracze[kolejGracza].Punkty;
+            if (liczbaGraczy != 2)
+                await Task.Delay(3000);
+            widocznyRozpocznijRuch = true;
+            kolejGracza = (kolejGracza + 1) % gracze.Count;
+            wylosowanaPlytka = null;
+            StateHasChanged();
+        }
+    }
+    private void PrzechwycenieMapy()
+    {
+        foreach (Gracz gracz in gracze)
+            gracz.PosiadaczMapy = false;
+        gracze[kolejGracza].PosiadaczMapy = true;
+    }
+    private void PunktyKartografa()
+    {
+        int licznikKartografow = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 5; j++)
+            {
+                if (gracze[kolejGracza].TablicaPlansza[i, j] == 4)
+                    licznikKartografow++;
+            }
+        }
+        gracze[kolejGracza].Punkty += 2 * licznikKartografow;
+    }
+    private void PunktyKucharza()
+    {
+        int licznikMarynarzyWTymWierszu = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            if (gracze[kolejGracza].TablicaPlansza[i, wierszPlytki - 1] != 0)
+                licznikMarynarzyWTymWierszu++;
+        }
+        gracze[kolejGracza].Punkty += licznikMarynarzyWTymWierszu;
+    }
+    private void EfektPapugi()
+    {
+        plansza5KolumnaPapuga = false;
+        if (gracze[kolejGracza].Szczyty != 5)
+            RozpocznijRuch();
+        else
+            ZakonczenieRuchu();
+    }
+    private (int kolumna, int wiersz) MiejsceNowejPlytki(int kolumna)
+    {
+        for (int wiersz = 1; wiersz <= 5; wiersz++)
+        {
+            if (gracze[kolejGracza].Plansza.ContainsKey((kolumna, wiersz)) && gracze[kolejGracza].Plansza[(kolumna, wiersz)] == null)
+                return (kolumna, wiersz);
+        }
+        return (kolumna, -1);
+    }
+    private async Task KoniecGry()
+    {
+        foreach (Gracz gracz in gracze)
+        {
+            if (gracz.ZaDuzoBombardierow())
+            {
+                await JSRuntime.InvokeVoidAsync("setVolume", "potrojnyBum", 1.0);
+                await JSRuntime.InvokeVoidAsync("playAudio", "potrojnyBum");
+            }
+        }
+        widocznyAfter = false;
+        widocznaPunktacja = true;
+        for (int i = 1; i <= gracze.Count; i++)
+            punktacja += $"Gracz nr {i} zdobył {gracze[i - 1].OstatecznePunkty} punktów!";
+    }
+    private void EfektyPlansza1()
+    {
+        if (kolumnaPlytki == 1 && wierszPlytki == 2)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 4 && wierszPlytki == 4)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 3 && wierszPlytki == 5)
+        {
+            gracze[kolejGracza].Punkty += 5;
+            gracze[kolejGracza].Szczyty++;
+        }
+        if (kolumnaPlytki == 5 && wierszPlytki == 3)
+        {
+            gracze[kolejGracza].Punkty += 3;
+            gracze[kolejGracza].Szczyty++;
+        }
+        if (kolumnaPlytki == 2 && wierszPlytki == 3)
+        {
+            PrzechwycenieMapy();
+            gracze[kolejGracza].Szczyty++;
+        }
+    }
+    private void EfektyPlansza2()
+    {
+        if (kolumnaPlytki == 1 && wierszPlytki == 2)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (!plansza2Osiagnieta1)
+                gracze[kolejGracza].Punkty++;
+            plansza2Osiagnieta1 = true;
+        }
+        if (kolumnaPlytki == 4 && wierszPlytki == 1)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (plansza2Osiagnieta4)
+                gracze[kolejGracza].Punkty += 2;
+            plansza2Osiagnieta4 = true;
+        }
+        if (kolumnaPlytki == 3 && wierszPlytki == 5)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (plansza2Osiagnieta3)
+                gracze[kolejGracza].Punkty += 3;
+            else
+                gracze[kolejGracza].Punkty += 6;
+            plansza2Osiagnieta3 = true;
+        }
+        if (kolumnaPlytki == 5 && wierszPlytki == 4)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (plansza2Osiagnieta5)
+                gracze[kolejGracza].Punkty += 2;
+            else
+                gracze[kolejGracza].Punkty += 4;
+            plansza2Osiagnieta5 = true;
+        }
+        if (kolumnaPlytki == 2 && wierszPlytki == 3)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (plansza2Osiagnieta2)
+                gracze[kolejGracza].Punkty += 1;
+            else
+                gracze[kolejGracza].Punkty += 2;
+            plansza2Osiagnieta2 = true;
+        }
+    }
+    private void EfektyPlansza3()
+    {
+        if (kolumnaPlytki == 1 && wierszPlytki == 3)
+        {
+            PrzechwycenieMapy();
+            gracze[kolejGracza].Szczyty++;
+        }
+        if (kolumnaPlytki == 4 && wierszPlytki == 5)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 3 && wierszPlytki == 2)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 5 && wierszPlytki == 2)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 2 && wierszPlytki == 3)
+            gracze[kolejGracza].Szczyty++;
+    }
+    private void EfektyPlansza4()
+    {
+        if (kolumnaPlytki == 1 && wierszPlytki == 4)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty += 3;
+        }
+        if (kolumnaPlytki == 4 && wierszPlytki == 4)
+            gracze[kolejGracza].Szczyty++;
+        if (kolumnaPlytki == 3 && wierszPlytki == 5)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty += gracze[kolejGracza].LiczyRoznych();
+        }
+        if (kolumnaPlytki == 5 && wierszPlytki == 3)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty--;
+        }
+        if (kolumnaPlytki == 2 && wierszPlytki == 4)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty += gracze[kolejGracza].Szczyty * 2;
+        }
+    }
+    private void EfektyPlanszy5()
+    {
+        if (kolumnaPlytki == 1 && wierszPlytki == 4)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty += 4;
+        }
+        if (kolumnaPlytki == 4 && wierszPlytki == 3)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (gracze[kolejGracza].TablicaPlansza[3, 0] == gracze[kolejGracza].TablicaPlansza[3, 1] && gracze[kolejGracza].TablicaPlansza[3, 0] == gracze[kolejGracza].TablicaPlansza[3, 2])
+                plansza5KolumnaPapuga = true;
+        }
+        if (kolumnaPlytki == 3 && wierszPlytki == 3)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (gracze[kolejGracza].TablicaPlansza[2, 0] != gracze[kolejGracza].TablicaPlansza[2, 1] && gracze[kolejGracza].TablicaPlansza[2, 0] != gracze[kolejGracza].TablicaPlansza[2, 2]
+                && gracze[kolejGracza].TablicaPlansza[2, 1] != gracze[kolejGracza].TablicaPlansza[2, 2])
+                odwracanieDowolnejPlytki = true;
+        }
+        if (kolumnaPlytki == 5 && wierszPlytki == 4)
+        {
+            gracze[kolejGracza].Szczyty++;
+            gracze[kolejGracza].Punkty += 3;
+        }
+        if (kolumnaPlytki == 2 && wierszPlytki == 2)
+        {
+            gracze[kolejGracza].Szczyty++;
+            if (gracze[kolejGracza].TablicaPlansza[1, 0] == gracze[kolejGracza].TablicaPlansza[1, 1])
+                PrzechwycenieMapy();
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18F078A4-5DDD-4F66-8596-1F5FC4A7F726}|KapitanFlip\\KapitanFlip.csproj|d:\\rodzice\\programowanie\\nauka programowania\\projekt 7 kapitan flip\\kapitanflip\\kapitanflip\\wwwroot\\skrypty.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{18F078A4-5DDD-4F66-8596-1F5FC4A7F726}|KapitanFlip\\KapitanFlip.csproj|solutionrelative:kapitanflip\\wwwroot\\skrypty.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18F078A4-5DDD-4F66-8596-1F5FC4A7F726}|KapitanFlip\\KapitanFlip.csproj|d:\\rodzice\\programowanie\\nauka programowania\\projekt 7 kapitan flip\\kapitanflip\\kapitanflip\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18F078A4-5DDD-4F66-8596-1F5FC4A7F726}|KapitanFlip\\KapitanFlip.csproj|solutionrelative:kapitanflip\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "skrypty.js",
+              "DocumentMoniker": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\skrypty.js",
+              "RelativeDocumentMoniker": "KapitanFlip\\wwwroot\\skrypty.js",
+              "ToolTip": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\skrypty.js",
+              "RelativeToolTip": "KapitanFlip\\wwwroot\\skrypty.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-22T15:37:30.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "KapitanFlip\\Pages\\Home.razor",
+              "ToolTip": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\Pages\\Home.razor",
+              "RelativeToolTip": "KapitanFlip\\Pages\\Home.razor",
+              "ViewState": "AgIAACIEAAAAAAAAAAAAAOMEAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-19T09:20:33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

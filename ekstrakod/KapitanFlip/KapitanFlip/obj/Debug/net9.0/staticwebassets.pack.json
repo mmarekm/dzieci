@@ -1,0 +1,157 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\CaptainFlip.css",
+      "PackagePath": "staticwebassets\\CaptainFlip.css"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\bocianieGniazdo.jpg",
+      "PackagePath": "staticwebassets\\Images\\bocianieGniazdo.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\bombardier.jpg",
+      "PackagePath": "staticwebassets\\Images\\bombardier.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\ciesla.jpg",
+      "PackagePath": "staticwebassets\\Images\\ciesla.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\kapitanFlipTlo.jpg",
+      "PackagePath": "staticwebassets\\Images\\kapitanFlipTlo.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\kartograf.jpg",
+      "PackagePath": "staticwebassets\\Images\\kartograf.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\kucharz.jpg",
+      "PackagePath": "staticwebassets\\Images\\kucharz.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\losowo.jpg",
+      "PackagePath": "staticwebassets\\Images\\losowo.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\majtek.jpg",
+      "PackagePath": "staticwebassets\\Images\\majtek.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\malpa.jpg",
+      "PackagePath": "staticwebassets\\Images\\malpa.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\mapa.jpg",
+      "PackagePath": "staticwebassets\\Images\\mapa.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\nawigator.jpg",
+      "PackagePath": "staticwebassets\\Images\\nawigator.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\papuga.jpg",
+      "PackagePath": "staticwebassets\\Images\\papuga.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\plansza1.jpg",
+      "PackagePath": "staticwebassets\\Images\\plansza1.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\plansza2.jpg",
+      "PackagePath": "staticwebassets\\Images\\plansza2.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\plansza3.jpg",
+      "PackagePath": "staticwebassets\\Images\\plansza3.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\plansza4.jpg",
+      "PackagePath": "staticwebassets\\Images\\plansza4.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\Images\\plansza5.jpg",
+      "PackagePath": "staticwebassets\\Images\\plansza5.jpg"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\bocianieGniazdo.mp3",
+      "PackagePath": "staticwebassets\\mp3\\bocianieGniazdo.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\bum.mp3",
+      "PackagePath": "staticwebassets\\mp3\\bum.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\ciesla.mp3",
+      "PackagePath": "staticwebassets\\mp3\\ciesla.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\kartograf.mp3",
+      "PackagePath": "staticwebassets\\mp3\\kartograf.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\klik.mp3",
+      "PackagePath": "staticwebassets\\mp3\\klik.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\krojenie.mp3",
+      "PackagePath": "staticwebassets\\mp3\\krojenie.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\muzykaTlo.mp3",
+      "PackagePath": "staticwebassets\\mp3\\muzykaTlo.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\potrojnyBum.mp3",
+      "PackagePath": "staticwebassets\\mp3\\potrojnyBum.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\rykMalpy.mp3",
+      "PackagePath": "staticwebassets\\mp3\\rykMalpy.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\mp3\\skrzekPapugi.mp3",
+      "PackagePath": "staticwebassets\\mp3\\skrzekPapugi.mp3"
+    },
+    {
+      "Id": "D:\\RODZICE\\programowanie\\nauka programowania\\projekt 7 kapitan Flip\\KapitanFlip\\KapitanFlip\\wwwroot\\skrypty.js",
+      "PackagePath": "staticwebassets\\skrypty.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.KapitanFlip.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.KapitanFlip.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.KapitanFlip.props",
+      "PackagePath": "build\\KapitanFlip.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.KapitanFlip.props",
+      "PackagePath": "buildMultiTargeting\\KapitanFlip.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.KapitanFlip.props",
+      "PackagePath": "buildTransitive\\KapitanFlip.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
