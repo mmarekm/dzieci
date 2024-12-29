@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "KapitanFlip",
   "resources": {
-    "hash": "sha256-pgcwNAhqKoUj786gLsudj/0tsSxPbMbNJdkanqFzV/o=",
+    "hash": "sha256-s7u0P8+ANf8Gq0YILB7twy6r9mGv+ZT735g4QUFG04E=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.qe23mgxr71.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.flveird317.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "KapitanFlip.u2og78xukt.wasm": "KapitanFlip.wasm",
-      "KapitanFlip.udqkzh0grb.pdb": "KapitanFlip.pdb"
+      "KapitanFlip.jmi5rrqfn2.wasm": "KapitanFlip.wasm",
+      "KapitanFlip.sowjafi36e.pdb": "KapitanFlip.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -412,10 +412,10 @@
       "WindowsBase.377bly7twj.wasm": "sha256-0VmBdMjdc0nZGHDSfaGirT6y3mJTM0qx8eqCUC/rpiE=",
       "mscorlib.o0184ey5ia.wasm": "sha256-2GxNKZQJVJvYMUxSTuXa5V2qxawSMMHZtwG33SKVCZU=",
       "netstandard.hb3h2rr8mk.wasm": "sha256-DWn9+RH/ElZQ6imlYqVwZvir1KTzNwY18AzGmnyiymU=",
-      "KapitanFlip.u2og78xukt.wasm": "sha256-GgtnCfbsXjeCuTW4TzSJmtZliAXeYPthTFLf5vL2UOY="
+      "KapitanFlip.jmi5rrqfn2.wasm": "sha256-i5QzMY4JKzZEl7crHYsONKJKQBDquck/RVbKZRD10wU="
     },
     "pdb": {
-      "KapitanFlip.udqkzh0grb.pdb": "sha256-blbQrez/w7m8192DwI6+RMWKk8Ma4Vc5h1MmLrApjzo="
+      "KapitanFlip.sowjafi36e.pdb": "sha256-xA0KgT+ENjuyzcRScJLU20gSfoUlYpPujuuJdCF5cLg="
     }
   },
   "cacheBootResources": true,

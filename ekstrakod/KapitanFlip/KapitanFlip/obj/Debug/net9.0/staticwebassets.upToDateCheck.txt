@@ -1,10 +1,13 @@
-D:\RODZICE\programowanie\nauka programowania\projekt 7 kapitan Flip\KapitanFlip\KapitanFlip\wwwroot\CaptainFlip.css
-D:\RODZICE\programowanie\nauka programowania\projekt 7 kapitan Flip\KapitanFlip\KapitanFlip\wwwroot\index.html
-D:\RODZICE\programowanie\nauka programowania\projekt 7 kapitan Flip\KapitanFlip\KapitanFlip\wwwroot\css\app.css
-D:\RODZICE\programowanie\nauka programowania\projekt 7 kapitan Flip\KapitanFlip\KapitanFlip\wwwroot\skrypty.js
+D:\RODZICE\programowanie\gitHub\html\Dzieci\ekstrakod\KapitanFlip\KapitanFlip\wwwroot\CaptainFlip.css
+D:\RODZICE\programowanie\gitHub\html\Dzieci\ekstrakod\KapitanFlip\KapitanFlip\wwwroot\index.html
+D:\RODZICE\programowanie\gitHub\html\Dzieci\ekstrakod\KapitanFlip\KapitanFlip\wwwroot\css\app.css
+D:\RODZICE\programowanie\gitHub\html\Dzieci\ekstrakod\KapitanFlip\KapitanFlip\wwwroot\skrypty.js
 wwwroot\CaptainFlip.css
 wwwroot\css\app.css
 wwwroot\icon-192.png
+wwwroot\Images\20241224_161449.jpg
+wwwroot\Images\20241224_161504.jpg
+wwwroot\Images\20241224_161520.jpg
 wwwroot\Images\bocianieGniazdo.jpg
 wwwroot\Images\bombardier.jpg
 wwwroot\Images\ciesla.jpg

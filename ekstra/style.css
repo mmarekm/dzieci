@@ -1,0 +1,95 @@
+body
+{
+	background-image: url("tło.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	color: yellow;
+	font-size: 33px;
+}
+#info
+{
+	height: 90px;
+	width: 850px;
+	background-color: brown;
+	margin-top: 20px;
+	padding: 5px;
+	opacity: 0.85;
+}
+#gra
+{
+	width: 100 %;
+	margin-left: auto;
+	margin-right: auto;
+}
+#czyjaKolej
+{
+	width: 40 %;
+	height: 80px;
+	float: left;
+	margin-top: 20px;
+}
+#button
+{	
+	width: 30 %;
+	height: 80px;
+	margin-top: 25px;
+	float: left;
+}
+.kosc
+{
+	width: 5 %;
+	height: 80px;
+	float: left;
+	margin: 10px;
+	opacity: 0.8;
+}
+.kosc:hover
+{
+	opacity: 0.5;
+	cursor: pointer;
+}
+.pole
+{
+	margin-left: 10px;
+	opacity: 0.8;
+	margin-top: 20px;
+	width: 5.1%;
+	height: 380px;
+	border: 2px solid black;
+	float: left;
+}
+#plansza
+{
+	margin-top: 10px;
+}
+.pionBialy
+{
+	width: 5 %;
+	height: 20px;
+	background-color: tan;
+	margin: 5px;
+	border-radius:10px;
+}
+.pionCzarny
+{
+	width: 5 %;
+	height: 20px;
+	background-color: brown;
+	margin: 5px;
+	border-radius:10px;
+}
+.aktywnePole:hover
+{
+	background-color: darkred !important;
+	cursor: pointer;
+}
+.srodek
+{
+	margin-left: 10px;
+	opacity: 0.8;
+	margin-top: 20px;
+	width: 2%;
+	height: 384px;
+	background-color: darkgoldenrod;
+	float: left;
+}
