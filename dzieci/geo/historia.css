@@ -57,7 +57,7 @@ a:visited
 {
 	display: inline-block;
 	border: 2px solid gray;
-	width: calc(49% - 10px);
+	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
 }
@@ -84,12 +84,6 @@ a:visited
 	width: 70%;
 }
 @media (max-width: 768px) {
-  .div {
-    width: calc(20% - 10px);
-  }
-}
-
-@media (max-width: 480px) {
   .div {
     width: 100%;
   }
