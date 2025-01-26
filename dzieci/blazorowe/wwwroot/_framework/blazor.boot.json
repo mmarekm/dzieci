@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "KapitanFlip",
   "resources": {
-    "hash": "sha256-sJhr6eROHpThvYBTNfcN26E7vvyR+Le5yqilj1BvMHk=",
+    "hash": "sha256-AnriDpBWYKt2K4plYAjhi77p+GjI1tgnOAKxDWwX4L8=",
     "fingerprinting": {
-      "KapitanFlip.j3gd80iy90.wasm": "KapitanFlip.wasm",
+      "KapitanFlip.plf891u5j1.wasm": "KapitanFlip.wasm",
       "Microsoft.AspNetCore.Components.wm873ekk6z.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.pq7fdyw1tb.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
@@ -62,7 +62,7 @@
       "System.Runtime.InteropServices.JavaScript.x50649m5t2.wasm": "sha256-VS4CSyZJNRAj+SrJqgbXBFWlGMlNDgM4rbwJ6gTH5qg="
     },
     "assembly": {
-      "KapitanFlip.j3gd80iy90.wasm": "sha256-QcUMdYXy/S6HFGOI1j26UNq3rPioYu4GGBEeweJOwXg=",
+      "KapitanFlip.plf891u5j1.wasm": "sha256-/W1JsjIKglRWXfkUjJbx92lSPX9XfETqgI+eGodtnIg=",
       "Microsoft.AspNetCore.Components.wm873ekk6z.wasm": "sha256-eEIjpZ9ijMwRIvadX7sjBZXW+RsLX2xakviC3GHPXbc=",
       "Microsoft.AspNetCore.Components.Web.7yvofxhswa.wasm": "sha256-QaU3MCJZXUPpTg3z+sdNujuTSOqUW4O70/Rc6aQj1xU=",
       "Microsoft.AspNetCore.Components.WebAssembly.pq7fdyw1tb.wasm": "sha256-D/ZUWrvE7bqOtBfOWuLj+4RNqOvNZ0SnjD6QrBwUcb8=",
