@@ -168,20 +168,49 @@ a:visited
 }
 .tytulPlanu
 {
-	text-align: center;
+	position: relative;
+	min-height: 80px;
+}
+.tytulTytuluPlanu
+{
+	position: absolute;
+	left: 5%;
+	top: 10%;
 	font-size: 40px;
 	letter-spacing: 3px;
 	font-weight: 700;
 }
-.planSzczegolowy
+.ktoryTydzien
 {
-	display: flex;
+	position: absolute;
+	right: 5%;
+	top: 20%;
+	font-size: 40px;
+	letter-spacing: 3px;
+	color: gold;
+	font-style: italic;
 }
-.dzienSzczegoly
-{
-	display: flex;
+table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 2px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .zadanie {
+      padding: 4px;
+    }
+    .dzien {
+      font-weight: bold;
+    }
+	.foto {
+  text-align: center;
+  vertical-align: middle;
 }
-.foto
-{
-	border: 2px solid gold;
+.foto img {
+  display: block;
+  margin: 0 auto;
 }
