@@ -169,7 +169,6 @@ a:visited
 .planLekcji
 {
 	padding: 10px;
-	border: 3px solid red;
 }
 .tytulPlanu
 {
@@ -192,7 +191,7 @@ a:visited
 	top: 20%;
 	font-size: 33px;
 	letter-spacing: 3px;
-	color: gold;
+	color: beige;
 	font-style: italic;
 }
 table {
@@ -221,6 +220,15 @@ table {
   object-fit: cover;
   border-radius: 10%;
   border: 2px solid #ccc;
+}
+.biezacy td {
+    background-color: beige;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+  }
+.juzByl {
+	opacity: 0.5;
+	background-color: dimgray;
 }
 @media (max-width: 768px) {
 	body {
