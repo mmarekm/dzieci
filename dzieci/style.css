@@ -5,6 +5,7 @@ body
 	font-size: 14px;
 	color: brown;
 	text-align: center;
+	padding: 10px;
 }
 #wszystko
 {
@@ -161,6 +162,10 @@ a:visited
 	font-size: 40px;
 	letter-spacing: 2px;
 }
+.planLekcji, #wszystko {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .planLekcji
 {
 	padding: 10px;
@@ -176,7 +181,7 @@ a:visited
 	position: absolute;
 	left: 5%;
 	top: 10%;
-	font-size: 40px;
+	font-size: 33px;
 	letter-spacing: 3px;
 	font-weight: 700;
 }
@@ -185,7 +190,7 @@ a:visited
 	position: absolute;
 	right: 5%;
 	top: 20%;
-	font-size: 40px;
+	font-size: 33px;
 	letter-spacing: 3px;
 	color: gold;
 	font-style: italic;
@@ -211,6 +216,58 @@ table {
   vertical-align: middle;
 }
 .foto img {
-  display: block;
-  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid #ccc;
+}
+@media (max-width: 768px) {
+	body {
+    padding: 5px;
+  }
+  .planLekcji {
+    padding: 5px;
+    border-width: 2px;
+  }
+
+  .tytulTytuluPlanu,
+  .ktoryTydzien {
+    position: static;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .planSzczegolowy table {
+    font-size: 14px;
+  }
+
+  .foto img {
+    width: 100px;
+    height: 100px;
+  }
+
+  td, th {
+    padding: 4px;
+    font-size: 13px;
+  }
+
+  .zadanie {
+    padding: 4px;
+  }
+
+  #osTytul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .przedmiot {
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
 }
