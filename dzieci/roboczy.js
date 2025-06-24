@@ -11,4 +11,111 @@ function wyswietl()
 				$('#zawartosc').append('<div class="zagadnienie">' + j + ". " + zagadnienia[i][j] + '</div>');
 		}
 	}
+	$('#zawartosc').append('<div class="naglowek">kalendarium</div>');
+	let tydzien = 14;
+	let nazwa = "";
+	let pracujemy = true;
+	let indeks = 1;
+	for (let i = 1; tydzien < 35; i++)
+	{
+		if (i % 6 == 1)
+			nazwa = "poniedziałek ";
+		if (i % 6 == 2)
+			nazwa = "wtorek ";
+		if (i % 6 == 3)
+			nazwa = "środa ";
+		if (i % 6 == 4)
+			nazwa = "czwartek ";
+		if (i % 6 == 5)
+			nazwa = "piątek ";
+		if (i % 6 == 0)
+			nazwa = "sobota ";
+		if (tydzien == 16 && nazwa == "sobota " || tydzien == 19 && nazwa == "piątek " || tydzien == 23 && nazwa == "czwartek " || tydzien == 29 && nazwa == "czwartek " || tydzien == 30 && nazwa == "sobota " || tydzien == 31 && nazwa == "wtorek " || tydzien == 33 && nazwa == "sobota " || tydzien == 34 && nazwa == "poniedziałek ")
+			pracujemy = false;
+		else
+			pracujemy = true;
+		if (pracujemy)
+			$('#kalendarium').append('<div class="zagadnienie">' + indeks + ". " + nazwa + tydzien + '</div>');
+		if (i % 6 == 0)
+			tydzien++;
+		if (pracujemy)
+			indeks++;
+	}
+	tydzien = 1;
+	for (let i = 1; tydzien < 5; i++)
+	{
+		if (i % 6 == 1)
+			nazwa = "poniedziałek ";
+		if (i % 6 == 2)
+			nazwa = "wtorek ";
+		if (i % 6 == 3)
+			nazwa = "środa ";
+		if (i % 6 == 4)
+			nazwa = "czwartek ";
+		if (i % 6 == 5)
+			nazwa = "piątek ";
+		if (i % 6 == 0)
+			nazwa = "sobota ";
+		if (tydzien == 1 && nazwa == "czwartek " || tydzien == 1 && nazwa == "sobota " || tydzien == 2 && nazwa == "poniedziałek " || tydzien == 4 && nazwa != "poniedziałek " && nazwa != "wtorek ")
+			pracujemy = false;
+		else
+			pracujemy = true;
+		if (pracujemy)
+			$('#kalendarium').append('<div class="zagadnienie">' + indeks + ". " + nazwa + "Adwent " + tydzien + '</div>');
+		if (i % 6 == 0)
+			tydzien++;
+		if (pracujemy)
+			indeks++;
+	}
+	tydzien = 1;
+	/*$('#zawartosc').append('<div class="naglowek">kalendarium</div>');
+
+const dniTygodnia = ["sobota", "poniedziałek", "wtorek", "środa", "czwartek", "piątek"];
+let indeks = 1;
+
+// Funkcja pomocnicza do sprawdzenia czy dzień jest wolny
+function czyPracujemyZwykly(tydzien, dzien) {
+	const dniWolne = [
+		{ tydzien: 16, dzien: "sobota" },
+		{ tydzien: 19, dzien: "piątek" },
+		{ tydzien: 23, dzien: "czwartek" },
+		{ tydzien: 29, dzien: "czwartek" },
+		{ tydzien: 30, dzien: "sobota" },
+		{ tydzien: 31, dzien: "wtorek" },
+		{ tydzien: 33, dzien: "sobota" },
+		{ tydzien: 34, dzien: "poniedziałek" }
+	];
+	return !dniWolne.some(d => d.tydzien === tydzien && d.dzien === dzien);
+}
+
+function czyPracujemyAdwent(tydzien, dzien) {
+	if (tydzien === 1 && (dzien === "czwartek" || dzien === "sobota")) return false;
+	if (tydzien === 2 && dzien === "poniedziałek") return false;
+	if (tydzien === 4 && dzien !== "poniedziałek" && dzien !== "wtorek") return false;
+	return true;
+}
+
+function generujKalendarium(startTydzien, koniecTygodnia, trybAdwentu = false) {
+	let tydzien = startTydzien;
+	for (let i = 1; tydzien < koniecTygodnia; i++) {
+		const dzienTyg = dniTygodnia[i % 6];
+		const pracujemy = trybAdwentu
+			? czyPracujemyAdwent(tydzien, dzienTyg)
+			: czyPracujemyZwykly(tydzien, dzienTyg);
+
+		if (pracujemy) {
+			const tekst = trybAdwentu
+				? `${indeks}. ${dzienTyg} Adwent ${tydzien}`
+				: `${indeks}. ${dzienTyg} ${tydzien}`;
+			$('#kalendarium').append(`<div class="zagadnienie">${tekst}</div>`);
+			indeks++;
+		}
+		if (i % 6 === 0) tydzien++;
+	}
+}
+
+// Wywołania
+generujKalendarium(14, 35);       // normalny tryb
+generujKalendarium(1, 5, true);   // tryb Adwentu
+*/
 }
