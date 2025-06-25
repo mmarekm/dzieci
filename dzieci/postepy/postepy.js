@@ -2,7 +2,7 @@ var religiaUla = ["Wymień sposoby poznawania świata.", "Dlaczego ciało jest w
 var religiaBasia = ["Jak Pan Bóg do nas mówi?", "Kiedy podczas Mszy św. czytamy Słowo Boże?", "W jaki sposób powinniśmy słuchać Słowa Bożego? Jak je wprowadzać w życie?", "Kiedy Ty czytasz Słowo Boże?", "Jak Jezus przedstawiony jest w Piśmie Świętym?", "Przyjaźń z Jezusem umacnia się poprzez udział w Eucharystii - jak to rozumiesz?", "Co to jest przyjaźń?", "Jak możesz umacniać przyjaźń z Jezusem?", "Jak Przyjaciel Jezus(a?) traktuje innych ludzi?", "Jak została ustanowiona Eucharystia?", "Jakie są części Mszy Świętej? Co dzieje się podczas Mszy Świętej?", "Jak należy się zachować przed i po przyjęciu Pana Jezusa?", "Czym jest Adoracja Najświętszego Sakramentu?", "Co to jest wdzięczność?", "Za co najbardziej dziękujesz Panu Bogu? Pamiętasz o modlitwie dziękczynienia?", "Za co możesz byc wdzięczny innym ludziom?", "Kiedy i w jakich okolicznościach odmawiamy modlitwę dziękczynną?", "Jak dobrze przeżyć Sakrament Pokuty, o czym warto pamiętać?", "Jakie są konsekwencje grzechu?", "Grzeszymy złymi czynami, ale jak jeszcze?", "Opowiedz przypowieść, która przypomina, że Bóg zawsze jest gotowy nam przebaczyć. Jak my powinniśmy przebaczać innym?", "O co możesz prosić Jezusa?", "W którym momencie Mszy św. wypowiadamy modlitwę prośby?", "Co to jest modlitwa uwielbienia? Jak możesz wielbić Boga?", "Na jakie okresy dzieli się rok liturgiczny?", "Co oznaczają poszczególne kolory?", "Jakie są najważniejsze święta i uroczystości w ciągu roku? Co w sposób szczególny przeżywamy w danym miesiącu/okresie? (np. październik miesiącem różańcowym, itd.)", "Opowiedz o swoim patronie/ulubionym świętym.", "Opowiedz o św. Józefie.", "Kim był bł. Stefan Wyszyński?", "Kim była bł. matka Elżbieta Róża Czacka?", "W czym możemy ich naśladować?"]
 function wyswietlReligiaUla()
 {
-	$('#tabelaReligiaUla').append('<tr><th>zagadnienia</th><th>zaliczone</th></tr>');
+	$('#tabelaReligiaUla').append('<tr><th>zagadnienia</th><th>status</th></tr>');
 	for (let i = 0; i < religiaUla.length; i++) 
 	{
 		$('#tabelaReligiaUla').append('<tr><td>' + religiaUla[i] + '</td><td></td></tr>');
@@ -10,7 +10,7 @@ function wyswietlReligiaUla()
 }
 function wyswietlReligiaBasia()
 {
-	$('#tabelaReligiaBasia').append('<tr><th>zagadnienia</th><th>zaliczone</th></tr>');
+	$('#tabelaReligiaBasia').append('<tr><th>zagadnienia</th><th>status</th></tr>');
 	for (let i = 0; i < religiaBasia.length; i++) 
 	{
 		$('#tabelaReligiaBasia').append('<tr><td>' + religiaBasia[i] + '</td><td></td></tr>');
