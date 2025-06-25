@@ -61,6 +61,25 @@ table.zagadnienie {
   background-color: brown;
 }
 @media (max-width: 600px) {
+  .kontener {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .osoba {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .postepy {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .postep {
+    flex: none;
+    padding: 10px 0;
+  }
   .zagadnienie tr td:first-child {
     width: 100%;
     display: block;
