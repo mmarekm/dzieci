@@ -1,0 +1,73 @@
+body {
+	background-color: black;
+	color: gold;
+}
+.osoba {
+	width: 48%;
+	text-align: center;
+}
+.postepy {
+	display: flex;
+	margin-top: 30px;
+}
+.postep {
+	margin: 30px;
+	font-size: 40px;
+	border: 3px solid white;
+	padding: 20px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+	color: green;
+}
+.kontener {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+table.zagadnienie {
+  width: 100%;
+  max-width: 90vw;   
+  border-collapse: collapse;
+  margin: 30px auto;
+  display: block;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.zagadnienie th,
+.zagadnienie td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: left;
+}
+.zagadnienie tr td:first-child,
+.zagadnienie tr th:first-child {
+  width: 60%;
+}
+.zagadnienie tr td:nth-child(2),
+.zagadnienie tr td:nth-child(3),
+.zagadnienie tr td:nth-child(4),
+.zagadnienie tr th:nth-child(2),
+.zagadnienie tr th:nth-child(3),
+.zagadnienie tr th:nth-child(4) {
+  width: 13%;
+  text-align: center;
+}
+.zagadnienie th {
+  background-color: brown;
+}
+@media (max-width: 600px) {
+  .zagadnienie tr td:first-child {
+    width: 100%;
+    display: block;
+  }
+  .zagadnienie td,
+  .zagadnienie th {
+    display: block;
+    width: 100%;
+  }
+}

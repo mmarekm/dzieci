@@ -18,25 +18,23 @@ function wyswietl()
 	let indeks = 1;
 	for (let i = 1; tydzien < 35; i++)
 	{
-		if (i % 6 == 1)
+		if (i % 5 == 1)
 			nazwa = "poniedziałek ";
-		if (i % 6 == 2)
+		if (i % 5 == 2)
 			nazwa = "wtorek ";
-		if (i % 6 == 3)
+		if (i % 5 == 3)
 			nazwa = "środa ";
-		if (i % 6 == 4)
+		if (i % 5 == 4)
 			nazwa = "czwartek ";
-		if (i % 6 == 5)
-			nazwa = "piątek ";
-		if (i % 6 == 0)
-			nazwa = "sobota ";
-		if (tydzien == 16 && nazwa == "sobota " || tydzien == 19 && nazwa == "piątek " || tydzien == 23 && nazwa == "czwartek " || tydzien == 29 && nazwa == "czwartek " || tydzien == 30 && nazwa == "sobota " || tydzien == 31 && nazwa == "wtorek " || tydzien == 33 && nazwa == "sobota " || tydzien == 34 && nazwa == "poniedziałek ")
+		if (i % 5 == 0)
+			nazwa = "piątek ";	
+		if (tydzien == 19 && nazwa == "piątek " || tydzien == 23 && nazwa == "czwartek " || tydzien == 29 && nazwa == "czwartek " || tydzien == 31 && nazwa == "wtorek " || tydzien == 34 && nazwa == "poniedziałek ")
 			pracujemy = false;
 		else
 			pracujemy = true;
 		if (pracujemy)
 			$('#kalendarium').append('<div class="zagadnienie">' + indeks + ". " + nazwa + tydzien + '</div>');
-		if (i % 6 == 0)
+		if (i % 5 == 0)
 			tydzien++;
 		if (pracujemy)
 			indeks++;
@@ -44,25 +42,23 @@ function wyswietl()
 	tydzien = 1;
 	for (let i = 1; tydzien < 5; i++)
 	{
-		if (i % 6 == 1)
+		if (i % 5 == 1)
 			nazwa = "poniedziałek ";
-		if (i % 6 == 2)
+		if (i % 5 == 2)
 			nazwa = "wtorek ";
-		if (i % 6 == 3)
+		if (i % 5 == 3)
 			nazwa = "środa ";
-		if (i % 6 == 4)
+		if (i % 5 == 4)
 			nazwa = "czwartek ";
-		if (i % 6 == 5)
+		if (i % 5 == 0)
 			nazwa = "piątek ";
-		if (i % 6 == 0)
-			nazwa = "sobota ";
 		if (tydzien == 1 && nazwa == "czwartek " || tydzien == 1 && nazwa == "sobota " || tydzien == 2 && nazwa == "poniedziałek " || tydzien == 4 && nazwa != "poniedziałek " && nazwa != "wtorek ")
 			pracujemy = false;
 		else
 			pracujemy = true;
 		if (pracujemy)
 			$('#kalendarium').append('<div class="zagadnienie">' + indeks + ". " + nazwa + "Adwent " + tydzien + '</div>');
-		if (i % 6 == 0)
+		if (i % 5 == 0)
 			tydzien++;
 		if (pracujemy)
 			indeks++;
