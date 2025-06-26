@@ -40,6 +40,15 @@ body
 	font-size: 22px;
 	border: 1px dotted white;
 }
+.postepy
+{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+}
+.postepy a, .postepy a:visited {
+color: red;
+}
 #osUla
 {
 	width: 100%;
