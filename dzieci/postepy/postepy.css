@@ -30,32 +30,16 @@ a:hover {
 }
 
 table.zagadnienie {
-  width: 100%;
   max-width: 90vw;   
   border-collapse: collapse;
   margin: 30px auto;
-  display: block;
-  border: 1px solid #ccc;
+  border: 1px solid red;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
-.zagadnienie th,
-.zagadnienie td {
-  border: 1px solid #aaa;
+.zagadnienie th, .zagadnienie td {
+  border: 1px solid green;
   padding: 8px;
   text-align: left;
-}
-.zagadnienie tr td:first-child,
-.zagadnienie tr th:first-child {
-  width: 60%;
-}
-.zagadnienie tr td:nth-child(2),
-.zagadnienie tr td:nth-child(3),
-.zagadnienie tr td:nth-child(4),
-.zagadnienie tr th:nth-child(2),
-.zagadnienie tr th:nth-child(3),
-.zagadnienie tr th:nth-child(4) {
-  width: 13%;
-  text-align: center;
 }
 .zagadnienie th {
   background-color: brown;
