@@ -33,7 +33,6 @@ table.zagadnienie {
   max-width: 90vw;   
   border-collapse: collapse;
   margin: 30px auto;
-  border: 1px solid red;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .zagadnienie th, .zagadnienie td {
@@ -64,12 +63,7 @@ table.zagadnienie {
     flex: none;
     padding: 10px 0;
   }
-  .zagadnienie tr td:first-child {
-    width: 100%;
-    display: block;
-  }
-  .zagadnienie td,
-  .zagadnienie th {
+  .zagadnienie td, .zagadnienie th {
     display: block;
     width: 100%;
   }
