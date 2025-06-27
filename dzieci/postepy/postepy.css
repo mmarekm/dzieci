@@ -67,4 +67,10 @@ table.zagadnienie {
     display: block;
     width: 100%;
   }
+  .zagadnienie img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
 }
