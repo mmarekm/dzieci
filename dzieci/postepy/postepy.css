@@ -16,6 +16,9 @@ body {
 	border: 3px solid white;
 	padding: 20px;
 }
+.zal {
+	background-color: green;
+}
 a {
 	text-decoration: none;
 	color: white;
