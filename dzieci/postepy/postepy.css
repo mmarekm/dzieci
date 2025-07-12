@@ -2,6 +2,10 @@ body {
 	background-color: black;
 	color: gold;
 }
+p {
+	text-align: center;
+	color: white;
+}
 .osoba {
 	width: 48%;
 	text-align: center;
