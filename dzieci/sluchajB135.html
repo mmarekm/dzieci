@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>mp3 eng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <audio id="audioPlayer" preload="auto">
+            <source src="B135.mp3" type="audio/mpeg">
+            Twoja przeglądarka nie obsługuje elementu audio.
+        </audio>
+        
+        <div class="controls">
+            <button id="playBtn" onclick="playAudio()">Play</button>
+            <button id="stopBtn" onclick="stopAudio()">Stop</button>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audioPlayer');
+        const playBtn = document.getElementById('playBtn');
+        const stopBtn = document.getElementById('stopBtn');
+
+        function playAudio() {
+            audio.play();
+            playBtn.textContent = 'Pause';
+            playBtn.onclick = pauseAudio;
+        }
+
+        function pauseAudio() {
+            audio.pause();
+            playBtn.textContent = 'Play';
+            playBtn.onclick = playAudio;
+        }
+
+        function stopAudio() {
+            audio.pause();
+            audio.currentTime = 0;
+            playBtn.textContent = 'Play';
+            playBtn.onclick = playAudio;
+        }
+
+        audio.addEventListener('ended', function() {
+            playBtn.textContent = 'Play';
+            playBtn.onclick = playAudio;
+        });
+    </script>
+</body>
+</html>
