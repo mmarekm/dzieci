@@ -30,6 +30,9 @@ body
 {
 	width: 100%;
 }
+.alignCenter {
+	text-align: center;
+}
 .przedmiot
 {
 	width: 15%;
