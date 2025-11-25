@@ -1,0 +1,66 @@
+.temat {
+	display: inline-block;
+	border: 3px solid black;
+	padding: 5px;
+	margin: 10px;
+	width: 100%;
+}
+.tytul {
+	text-align: center;
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.rozkladNaCzynniki {
+	margin-right: 10px;
+	padding: 0 5px 0 0;
+	border-right: 2px solid black;
+}
+.liczbaNWDNWW {
+	display: flex;
+	flex-direction: row;
+	margin-right: 40px;
+}
+.wzor, .rozwiazanie {
+	display: flex;
+	flex-direction: row;
+}
+.etap {
+	margin-right: 40px;
+}
+.etapWezszy {
+	margin-right: 20px;
+}
+.spanZaznaczonyWKolku {
+	border : 1px solid black;
+	padding: 2px;
+	border-radius: 10px;
+}
+.spanMaly {
+	font-size: 10px;
+}
+.wyrazny {
+	margin-top: 20px;
+	font-size: 20px
+}
+.wynikPisemny {
+	border-top: 2px solid black;
+	width: 60%;
+}
+.spanDuzy {
+	font-size: 21px;
+}
+.wysrodkowany {
+	text-align: center;
+}
+.kreskaUlamkowa {
+	border: 2px solid black;
+}
+.ulamek, .znakRownosci, .iloraz {
+	font-size: 30px;
+	margin: 10px;
+}
+.iloraz, .znakRownosci, .informacja {
+	align-items: center;
+	display: flex;
+}

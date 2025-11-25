@@ -1,0 +1,77 @@
+JEDZENIE
+ZNANE
+"jabłko","pomidor","ogórek","ryż","pomarańcza","jajko","woda","wino","truskawka","warzywo","sól","widelec","szklanka","wiśnia","spragniony","jeść","chleb","banan","ziemniak","cebula","makaron","śliwka","mleko","herbata","kolacja","ciasto","masło","łyżka","nóż","filiżanka","głodny","słodki","pić"
+BŁĘDY
+"marchewka(carrott)","czosnek(garlick)","sok(juce)","obiad(diner)","ser żółty(chesee)","gotować(coock)","mięso(meet)","kawa(coffe)","śniadanie(breakwast)","owoc(fruite)","deser(dizert)","jedzenie(foot)","arbuz(water melon)"
+NIEZNANE
+"papryka","gruszka","brzoskwinia","cytryna","jagoda","malina","zupa","garnek","czajnik","talerz","kubek","pokrywka","patelnia","przyprawa","kiełbasa","wołowina","wieprzowina","ananas","winogrona","sałatka","frytki","sos do sałatki","szynka","czipsy","piwo","posiłek","olej","guma do żucia","ciastko","słodycze","galaretka","dżem","serek wiejski","bułka","mąka","tuńczyk","miód","rodzynka","nasiono, pestka","orzech","brokuły","fasola","groszek","szpinak","kapusta","sałata","danie","porcja","wegetarianin","słony","kwaśny","gorzki","smaczny","ostry pikantny","soczysty","dojrzały (o owocu)","świeży","tłusty (o jedzeniu)","niskotłuszczowy","piec","smażyć","kroić","kroić w plastry","obierać","siekać"
+
+ZWIERZĘTA
+ZALICZONE
+"zwierzak domowy","zwierzę","kot","pies","ryba","chomik","krowa","koń","kaczka","małpa","kurczak","ślimak","motyl","mucha","lew","mysz","słoń","pszczoła","wilk","lis","komar","żaba","tygrys","owca","szczeniak","niedźwiedź","pająk"
+BŁĘDY
+"osioł(dankey)","ptak(beard)","papuga(parrott)","królik(rabbitt)","świnia(peeg)","żółw(tortule)","wąż(snike)"
+NIEZNANE
+"kotek, kocię","jeleń, sarna","żyrafa","szczur","indyk","koza","sowa","gołąb","orzeł","krokodyl","rekin","delfin","pingwin","mrówka","wiewiórka"
+
+RODZINA
+ZALICZONE
+"rodzina","syn","wujek","ciocia","siostra","mężczyzna","kobieta","żona","dziecko","chłopiec","dziewczynka","wdowa","urodzić się"
+BŁĘDY
+"ojciec(fahder)","matka(mochder)","córka(daugchter)","brat(brohder)","babcia(groundma)","dziadek(groundpa)","mąż(husbant)","kuzyn(cosin)","chłopak (sympatia)(boyfreind)","dziewczyna (sympatia)(girlfreind)","rozwiedziony(divorest)","żonaty/mężatka(marieed)","przyjaciel(freind)","ślub(wedeeng)","być razem(be togeder)"
+NIEZNANE
+"rodzic","wnuk, wnuczka","teść","szwagierka","szwagier","matka chrzestna","krewna, krewny","siostrzeniec, bratanek","siostrzenica, bratanica","rodzeństwo","jedynak","bliźnięta","narzeczony","narzeczona","w ciąży","były chłopak","być spokrewnionym","poślubić kogoś","zaręczyć się","oświadczyć się","zakochać się","całować","przytulać (obejmować)","przytulać się","iść na randkę","zerwać (z kimś)","zejść się","kochać się","wychowywać","dorastać","para","związek"
+
+UBRANIA
+ZALICZONE
+"kurtka","skarpetka","pasek","szalik","but","spodnie","parasol","koszulka","sukienka","czapka","kapelusz","spódnica","koszula","płaszcz","torebka","ubierać się","przymierzać"
+BŁĘDY
+"okulary(glases)","rękawiczka(glas)","wysokie obcasy(hall)"
+NIEZNANE
+"guzik","leginsy","dres","bluza","golf","sweter","pierścionek","naszyjnik","kolczyk","krawat","bielizna","bluzka","ubrania","futro","jedwab, jedwabny","wełna","bawełna, bawełniany","łańcuszek","bransoletka","kąpielówki","kostium kąpielowy","biustonosz","kozaki, buty z wysoką cholewą","sandały","maska","kostium","nosić (na sobie)","zdejmować","zakładać","zapinać, zawiązywać","zapinać guziki","pasować"
+
+CIAŁO, wygląd i czynności życia codziennego
+ZALICZONE
+"głowa","włosy","ucho","oko","ząb","twarz","ramię","plecy","ręka","noga","kolano","palec u nogi","palec u ręki","broda","śpieszyć się","siadać","odpoczywać","piękny","brzydki","gruby","ciemny"
+BŁĘDY
+"nos(nouse)","usta(leeps)","szyja(neeck)","brzuch(stomage)",
+NIEZNANE
+"stopa","łokieć","opalenizna","skóra","mięsień","policzek","podbródek","czoło","nadgarstek","kostka","pryszcz","piegi","ciało","grzywka","warkocz","kucyk","fryzura","wąsy","paznokieć","klatka piersiowa","usta, buzia","czesać się","robić krok","skakać","stać","myć","budzić się","spać","machać","wskazywać","trząść","upadać","upuścić","trzymać","wstawać","położyć się","podawać (piłkę)","uderzać","schylać się","zginać","odstawiać, odkładać","podnosić (np. z ziemi)","ciągnąć","pchać","dotykać","wydawać się","próbować, smakować","pachnieć, wąchać","brzmieć","słyszeć","wyczuwać","rozglądać się","wyglądać jak","patrzeć na","widzieć, zobaczyć","przeciętny","przystojny","ładny","elegancki","prosty","kręcony","szczupły","blady","delikatny","wysportowany","figura","chudy","z nadwagą","otyły","łysy","jasny","falowane","gruby, gęsty","przetłuszczony","w dobrej formie","dobrze zbudowany","barczysty","średni wzrost","atrakcyjny","przystojny","przepiękny","przekłuty","tatuaż","zmarszczki","malutki","ogromny","skóra i kości","blondynka","brunetka","rude włosy","lakier do paznokci","makijaż","zainteresowania","relaksować się","śpiewać","pływać","bawić się","robić zdjęcia","malować","słuchać","czytać","oglądać","uprawiać sporty","biegać","tańczyć","leżeć","siedzieć","dobrze się bawić","odpocząć","plotkować","spotkać się z przyjaciółmi","poznawać nowe osoby","zapraszać","przedstawiać","imprezować","układać puzzle","rysować","wyjechać z miasta","zobaczyć sztukę","nie śpieszyć się","wysypiać się","jeździć na deskorolce","nurkować","kłaść się, iść spać","wstawać","golić się","myć zęby","rozbierać się"
+
+CZAS
+ZALICZONE
+"połowa","czas","noc","popołudnie","pora roku","rok","miesiąc","tydzień","dzień","godzina","minuta","sekunda","poniedziałek","styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","wiosna","lato","jesień","zima","dzisiaj","wczoraj","późno","wcześnie"
+BŁĘDY
+"rano(moriing)","wieczór(evning)","wtorek(thusday)","środa(wensday)","czwartek(thirsday)","sobota(saterday)","niedziela(sandy)","listopad(nowember)","jutro(tomorow)","kwadrans(quater)","wakacje(hollyday)"
+NIEZNANE
+"piątek","grudzień","data","zegar się późni","zegar się śpieszy","zegar","nastawić budzik","południe (godzina)","północ (godzina)","ostatnio","przedwczoraj","pojutrze","co drugi wieczór (drugą noc)","co dwa dni","jakiś czas temu","era, epoka","teraźniejszość","przeszłość","przyszłość","zeszły"
+LICZBY i miary
+ZALICZONE
+"zero","jeden","dwa","trzy","cztery","pięć","sześć","siedem","osiem","dziewięć","dziesięć","jedenaście","dwanaście","trzynaście","czternaście","szesnaście","siedemnaście","osiemnaście","dziewiętnaście","dwadzieścia","trzydzieści","sześćdziesiąt","siedemdziesiąt","osiemdziesiąt","dziewięćdziesiąt","numer","drugi"
+BŁĘDY
+"piętnaście(fivteen)","czterdzieści(fourty)","pięćdziesiąt(fifty)","sto(hundread)","tysiąc(touseand)","milion(milion)","pierwszy(thirst)","metr(meetr)"
+NIEZNANE
+"trzeci","czwarty","piąty","dziewiąty","dwunasty","dwudziesty","dwudziesty pierwszy","trzydziesty","metr kwadratowy","milimetr","centymetr","cal","kropla","litr","mila","kilometr","stopień temperatury"
+
+DOM
+ZALICZONE
+"ogród","klucz","pokój","sypialnia","łazienka","kuchnia","szafa","książka","regał","zlew","prysznic","stół","krzesło","łóżko","kanapa","okno","ściana","podłoga","parter","drzwi","garaż","dom","mieszkanie","otwierać","zamykać","mieszkać","ścierać kurz",
+BŁĘDY
+"lodówka(frige)","salon(leving room)","wanna(bathub)","sufit(selling)","piwnica(celer)","lustro(miroor)","zasłony(curtins)"
+NIEZNANE
+"pralka","dywan","podwórko (dziedziniec)","drabina","grzejnik","półka","odkurzacz","tapeta","toaleta","schody","fotel","biurko","meble","wazon","winda","śmieci","koc","prześcieradło","poduszka","ręcznik","trawnik","taras","balkon","kominek","komin","dach","strych","pudełko","wiadro","butelka","nożyczki","młotek","narzędzie","automatyczna sekretarka","wieszak","suszarka do włosów","ogrzewanie centralne","kaloryfer","klimatyzacja","doniczka","otwieracz do puszek","robot kuchenny","ekspres do kawy","sokowirówka","zamrażarka","zmywarka","mikrofalówka","piekarnik","kuchenka","toster","miska","plama","bałagan","ścierka","gąbka","płyn do zmywania naczyń","proszek do prania","mydło","prace domowe","szczoteczka do zębów","posprzątany","niechlujny","przytulny","wygodny","mierzyć, robić pomiar","budować","odnawiać","dekorować","wynajmować (komuś)","wynajmować (od kogoś)","podlewać rośliny","wyprowadzać psa na spacer","posprzątać zabawki","wieszać pranie","składać ubrania","zamiatać podłogę","robić pranie","uprzątnąć","czyścić","myć naczynia","prasować","hodować zwierzęta","ścielić łóżko","sprzątać"
+
+TURYSTYKA (środki transportu, kierunki świata, pytanie o drogę, opisywanie jak dojść w konkretne miejsce, miejsca w mieście)
+ZALICZONE
+"rower","przystanek autobusowy","autobus","pociąg","samochód","samolot","mapa"
+BŁĘDY
+"prom(fiwer)"
+NIEZNANE
+"wycieczka","lotnisko","metro","bagaż","turysta","lot","bilet","paszport","dworzec","walizka","bagaż podręczny","steward","biuro podróży","na pokładzie","karta pokładowa","miejsce przy przejściu","miejsce przy oknie","rejs","łódka","granica","wiza","peron","wakacje zorganizowane","podróżnik","jedzenie w puszce","buty trekkingowe","hamak","krem z filtrem","apteczka","kompas","scyzoryk","lina","plecak","ognisko","śpiwór","latarka","namiot","pole namiotowe","tory","tramwaj","myjnia samochodowa","pasażer","prawo jazdy","ulica jednokierunkowa","znak drogowy","pas ruchu","autostrada","odrzutowiec","helikopter","furgonetka","ciężarówka","skuter","motocykl","miejsce","kierunek","zachód (kierunek)","wschód (kierunek)","południe (kierunek)","północ (kierunek)","piknik","wysyłać kartkę","wysiadać z pociągu","wsiadać do autobusu","pakować","złapać autobus","spóźnić się na pociąg","zgłosić się do odprawy","zwiedzać","odwiedzać","zostać, zatrzymać się","latać","przyjeżdżać","wychodzić","iść na ryby","iść w góry","jechać pod namiot","wspinać się","pytać o drogę","zgubić się","dostać się do","lądować","podróżować","przyjeżdżać","rezerwować"
+
+MOWA
+ZALICZONE
+BŁĘDY
+NIEZNANE
+MOWA
+"do widzenia","dziękuję","Jak się masz?","dobry wieczór","dzień dobry (przed południem)","dzień dobry (po południu)","przepraszam (za coś)","przepraszam (z zapytaniem)","proszę (o coś)","tak","nie","cześć","Ile? (policzalne)","Kto?","Co?","Gdzie?","Jak?","nie ma za co","Dlaczego?","Ile? (niepoliczalne)","Kiedy?","przynajmniej","wcale","nawet","może","prawdopodobnie","z całą pewnością","z drugiej strony","z jednej strony","z powodu","w rezultacie","chyba że, jeśli nie","jednak","chociaż","więc","również, także","bardzo","tylko","część","grupa","dużo (czegoś)","para (czegoś)","prawie","wystarczająco","za dużo (niepoliczalne)","za dużo (policzalne)","za mało (niepoliczalne)","za mało (policzalne)","mało","nieco, trochę","niewiele","kilka","większość","następny","też","kłamstwo","prawda","rozłączać się (telefon)","odbierać telefon","dzwonić (telefon)","wołać, nazywać","błagać","wyjaśniać","oferować","sugerować","polecać","odmawiać","obiecać","komunikować się","rozmawiać","powiedzieć (komuś)","powiedzieć (coś)","zwracać pieniądze, spłacać","zapisać","oddzwaniać","dowiedzieć się","wiedzieć, znać","mówić, przemawiać","dogadywać się z kimś","dzwonić","Jak długo?","O której?","Skąd?","to"

@@ -1,0 +1,7 @@
+31.5:"głowa","włosy","ucho","oko","nos","ząb","usta","twarz","szyja","ramię","brzuch","plecy","ręka","noga","kolano","stopa","palec u nogi","palec u ręki","broda","łokieć"
+27.5:"kurtka","skarpetka","pasek","okulary","szalik","rękawiczka","but","spodnie","parasol","koszulka","sukienka","czapka","kapelusz","spódnica","koszula","płaszcz","torebka","guzik","wysokie obcasy","ubierać się"
+24.5:"rodzina","ojciec","matka","córka","syn","wujek","ciocia","brat","siostra","babcia","dziadek","rodzic","mężczyzna","kobieta","mąż","żona","dziecko","chłopiec","dziewczynka","kuzyn"
+21.5:"zwierzak domowy","zwierzę","kot","pies","ryba","chomik","krowa","koń","kaczka","osioł","małpa","ptak","papuga","kurczak","ślimak","motyl","mucha","lew","mysz","słoń"
+16.5:sok,herbata,woda,kawa,wino,śniadanie,obiad,kolacja,truskawka,jagoda,malina,owoc,warzywo,ciasto,sól,deser,ser żółty,masło,zupa,jedzenie
+10.5:jabłko,banan,pomidor,ziemniak,marchewka,cebula,czosnek,papryka,ogórek,mięso,ryż,makaron,chleb,śliwka,gruszka,brzoskwinia,pomarańcza,cytryna,jajko,mleko
+6.5: 1-20,30,40,50,60,70,80,90,100,1000,1000000

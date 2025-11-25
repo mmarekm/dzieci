@@ -1,0 +1,126 @@
+.kierunek
+{
+	display: inline-block;
+	text-align: center;
+	font-size: 50px;
+	margin: 40px;
+	border: 5px solid midnightblue;
+	padding: 30px;
+	border-radius: 30px;
+}
+.tytulm
+{
+	display: inline-block;
+	border: 1px solid white;
+	margin: 2px;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+body
+{
+	background-color: black;
+	color: lightcoral;
+	font-size: 20px;
+	line-height: 130%;
+	opacity: 0.94;
+	text-shadow: 1px 1px 1px rgba(255, 215, 0, 0.5);
+}
+a
+{
+	text-decoration: none;
+	color: lightgreen;
+}
+a:hover
+{
+	color: lightgreen;
+}
+a:visited
+{
+	color: lightgreen;
+}
+.odpowiedz ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+.czesc
+{
+	border: 2px solid yellow;
+	padding: 5px;
+	margin: 10px;
+}
+.dzial
+{
+	text-align: center;
+	margin: 20px;
+	color: white;
+	font-size: 33px;
+}
+.zagadnienie
+{
+	display: inline-block;
+	border: 2px solid gray;
+	width: calc(49% - 10px);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.pytanie
+{
+	border-bottom: 1px dotted white;
+	font-style: italic;
+	text-align: center;
+	color: cyan;
+	font-size: 22px;
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.tytul
+{
+	text-align: center;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid white;
+	padding: 10px;
+	font-size: 33px;
+	width: 70%;
+}
+
+@media (max-width: 480px) {
+  .div {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .zagadnienie {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .kierunek {
+    font-size: 30px;
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .tytul {
+    width: 90%;
+    font-size: 26px;
+    letter-spacing: 3px;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  .dzial {
+    font-size: 28px;
+  }
+  
+  .pytanie {
+    font-size: 20px;
+  }
+}
