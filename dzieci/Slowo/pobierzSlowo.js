@@ -54,10 +54,31 @@ function wypelnijWersety() {
                     let wersety_str = zakres.includes(',')
                         ? zakres.split(',')[1]
                         : zakres;
-                    const [od, do_] = wersety_str.includes('-')
-                        ? wersety_str.split('-').map(Number)
-                        : [Number(wersety_str), Number(wersety_str)];
-                    for (let i = od; i <= do_; i++) {
+                    if (/^\d+[a-z]$/.test(wersety_str)) {
+                        // pojedynczy klucz z litera np "15a"
+                        if (dane[rozdzial] && dane[rozdzial][wersety_str]) {
+                            tekst += dane[rozdzial][wersety_str] + ' ';
+                        }
+                    } else if (wersety_str.includes('-')) {
+                        // zakres np "1-14" lub "1-14a"
+                        const czesciZakresu = wersety_str.split('-');
+                        const od = Number(czesciZakresu[0]);
+                        const doStr = czesciZakresu[1];
+                        const doNum = parseInt(doStr);
+                        for (let i = od; i <= doNum; i++) {
+                            if (dane[rozdzial] && dane[rozdzial][String(i)]) {
+                                tekst += dane[rozdzial][String(i)] + ' ';
+                            }
+                        }
+                        // jesli koniec zakresu ma litere np "14a" - dodaj ten klucz
+                        if (/[a-z]$/.test(doStr)) {
+                            if (dane[rozdzial] && dane[rozdzial][doStr]) {
+                                tekst += dane[rozdzial][doStr] + ' ';
+                            }
+                        }
+                    } else {
+                        // pojedynczy werset bez litery
+                        const i = Number(wersety_str);
                         if (dane[rozdzial] && dane[rozdzial][String(i)]) {
                             tekst += dane[rozdzial][String(i)] + ' ';
                         }

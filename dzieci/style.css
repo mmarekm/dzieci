@@ -392,7 +392,7 @@ table {
     height: 1.5em;
 }
 .Ewangelia p {
-    font-style: italic;
+	font-family: Arial;
     color: darkred;
 }
 @media (max-width: 600px) {
