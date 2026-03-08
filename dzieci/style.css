@@ -376,3 +376,33 @@ table {
 .doSlowa a:hover, .doSlowaDzis a:hover, .doSlowaJutro a:hover, .doLekcjonarza a:hover {
     color: green;
 }
+.kontenerDzisSlowo {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    text-align: left;
+}
+#trescDzis p, #trescJutro p {
+    font-size: clamp(15px, 2.5vw, 20px);
+    line-height: 1.8;
+    margin-bottom: 8px;
+    color: black;
+}
+.odstep {
+    height: 1.5em;
+}
+.Ewangelia p {
+    font-style: italic;
+    color: darkred;
+}
+@media (max-width: 600px) {
+    .kontenerDzisSlowo {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #trescDzis p, #trescJutro p {
+        font-size: clamp(15px, 4.5vw, 19px);
+        line-height: 1.7;
+    }
+}
