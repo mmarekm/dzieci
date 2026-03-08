@@ -77,6 +77,7 @@ function pobierzFragment(nazwaPliku, idElementu) {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
                 element.innerHTML = doc.getElementById('fragment').innerHTML;
+				console.log('innerHTML:', element.innerHTML);
                 wypelnijWersety();
             })
             .catch(() => { element.innerHTML = ''; });
