@@ -1,11 +1,52 @@
-body
-{
-	background-color: silver;
-	font-family: Times New Roman;
-	font-size: 14px;
-	color: brown;
-	text-align: center;
-	padding: 10px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: silver;
+    font-family: Times New Roman;
+    font-size: 14px;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+.doSlowa {
+    width: 40%;
+    height: 10vh;
+    font-size: clamp(21px, 4.5vw, 36px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+	.doSlowa a, .doSlowa a:visited {
+		color: white;
+	}
+.doRozkladow {
+	width: 40%;
+	height: 10vh;
+	font-size: clamp(14px, 3vw, 24px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+a {
+	text-decoration: none;
+}
+@media (max-width: 600px) {
+	.doSlowa {
+        width: 80%;
+        font-size: clamp(24px, 7.5vw, 33px);
+    }
+	.doRozkladow {
+		width: 80%;
+		font-size: clamp(16px, 5vw, 22px);
+	}
 }
 #wszystko
 {
@@ -250,39 +291,31 @@ table {
     padding: 5px;
     border-width: 2px;
   }
-
-  .tytulTytuluPlanu,
-  .ktoryTydzien {
+  .tytulTytuluPlanu, .ktoryTydzien {
     position: static;
     text-align: center;
     font-size: 24px;
     margin-bottom: 10px;
   }
-
   .planSzczegolowy table {
     font-size: 14px;
   }
-
   .foto img {
     width: 100px;
     height: 100px;
   }
-
   td, th {
     padding: 4px;
     font-size: 13px;
   }
-
   .zadanie {
     padding: 4px;
   }
-
   #osTytul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 8px;
   }
-
   .przedmiot {
     text-align: center;
     padding: 5px;
@@ -290,4 +323,56 @@ table {
     background-color: #f5f5f5;
     border-radius: 5px;
   }
+}
+.kontenerSlowo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+}
+.lewaStrona {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-right: 1px solid white;
+}
+.prawaStrona {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+@media (max-width: 600px) {
+    .kontenerSlowo {
+        flex-direction: column;
+    }
+    .lewaStrona, .prawaStrona {
+        width: 100%;
+    }
+    .lewaStrona {
+        border-right: none;
+        border-bottom: 1px solid white;
+        padding-bottom: 20px;
+    }
+    .prawaStrona {
+        padding-top: 20px;
+    }
+	.doSlowaDzis, .doSlowaJutro, .doLekcjonarza {
+        font-size: clamp(20px, 6vw, 30px);
+    }
+}
+.doSlowaDzis, .doSlowaJutro, .doLekcjonarza {
+    font-size: clamp(21px, 3.5vw, 36px);
+    text-align: center;
+}
+.doSlowa a, .doSlowaDzis a, .doSlowaJutro a, .doLekcjonarza a, .doSlowa a:visited, .doSlowaDzis a:visited, .doSlowaJutro a:visited, .doLekcjonarza a:visited {
+    color: white;
+}
+.doSlowa a:hover, .doSlowaDzis a:hover, .doSlowaJutro a:hover, .doLekcjonarza a:hover {
+    color: green;
 }
