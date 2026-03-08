@@ -36,11 +36,7 @@ function wypelnijWersety() {
         const zakresy = czesci[1].split('.');
         const rozdzial = zakresy[0].split(',')[0];
         pobierzJson(ksiega).then(dane => {
-            const pierwszyKlucz = zakresy[0].includes(',')
-                ? zakresy[0].split(',')[1]
-                : zakresy[0];
-            const tekstoweKlucze = /[a-z]/.test(pierwszyKlucz);
-
+            const tekstoweKlucze = p.classList.contains('psalm');
             if (tekstoweKlucze) {
                 const linie = [];
                 zakresy.forEach(zakres => {
