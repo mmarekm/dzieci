@@ -2,7 +2,8 @@ const klucz = {
     '20260308': 'Ndz3WPA',
     '20260309': 'pn3WP',
     '20260310': 'wt3WP',
-    '20260311': 'sr3WP'
+    '20260311': 'sr3WP',
+	'20260312': 'cz3WP'
 };
 
 function dataDoStr(data) {

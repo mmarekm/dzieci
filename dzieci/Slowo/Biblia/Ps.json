@@ -1,5 +1,19 @@
 {
-    "42": {
+    "25": {
+		"4a": "Ukaż mi drogi Twoje, Panie,",
+		"4b": "naucz mnie chodzić ścieżkami, które wskazujesz.",
+		"5a": "Prowadź mnie w Twojej wierności i pouczaj,",
+		"5b": "bo Ty jesteś Bogiem, moim Zbawicielem. Cały dzień wyczekuję Cię z tęsknotą.",
+		"6a": "Wspomnij na swe miłosierdzie, Panie,",
+		"6b": "na swoją łaskę, która trwa od wieków.",
+		"7b": "lecz wspomnij mnie łaskawie",
+		"7c": "ze względu na swą dobroć, Panie!",
+		"8a": "Pan jest dobry i prawy,",
+		"8b": "wskazuje drogę błądzącym.",
+		"9a": "Pokornych prowadzi ku sprawiedliwości,",
+		"9b": "pokornym wskazuje drogę."
+	},
+	"42": {
 		"2a": "Jak łania pragnie źródlanej wody,",
 		"2b": "tak ja pragnę Ciebie, Boże.",
 		"3a": "Jestem spragniony Boga żywego!",
@@ -28,5 +42,19 @@
 		"8": "nie zatwardzajcie serc waszych jak w Meriba na pustyni w dniu Massa,",
 		"9a": "gdy Mnie kusili wasi ojcowie,",
 		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
-    }
+    },
+	"147": {
+		"12a": "Uwielbiaj, Jeruzalem, Pana,",
+		"12b": "sław twego Boga, Syjonie!",
+		"13a": "Bo umocnił zasuwy bram twoich,",
+		"13b": "pobłogosławił twoich synów w tobie.",
+		"15a": "On posyła swe rozkazy na ziemię",
+		"15b": "i szybko biegnie Jego słowo.",
+		"16a": "On sypie śniegiem jak wełną,",
+		"16b": "a szron jak popiół rozrzuca.",
+		"19a": "On oznajmił słowo swoje Jakubowi,",
+		"19b": "swoje nakazy i wyroki Izraelowi.",
+		"20a": "Nie uczynił tak żadnemu narodowi,",
+		"20b": "nie objawił im wyroków swoich."
+	}
 }
