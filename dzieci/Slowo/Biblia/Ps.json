@@ -1,10 +1,16 @@
 {
     "95": {
-        "1": "Chodźcie, śpiewajmy Panu , wzywajmy radośnie skałę naszego zbawienia.",
-        "2": "Zbliżmy się przed Jego oblicze z dziękczynieniem, radośnie śpiewajmy Mu psalmy.",
-        "6": "Wejdźcie! Oddajmy pokłon, padnijmy przed Nim, klęknijmy przed Panem, który nas stworzył.",
-        "7": "Bo On jest naszym Bogiem, my ludem Jego pastwiska i owcami rąk Jego. Dzisiaj, jeśli głos Jego usłyszycie,",
+        "1a": "Chodźcie, śpiewajmy Panu,",
+		"1b": "wzywajmy radośnie skałę naszego zbawienia.",
+        "2a": "Zbliżmy się przed Jego oblicze z dziękczynieniem,",
+		"2b": "radośnie śpiewajmy Mu psalmy.",
+        "6a": "Wejdźcie! Oddajmy pokłon, padnijmy przed Nim,",
+		"6b": "klęknijmy przed Panem, który nas stworzył.",
+        "7a": "Bo On jest naszym Bogiem,",
+		"7b": "my ludem Jego pastwiska i owcami rąk Jego.",
+		"7c": "Dzisiaj, jeśli głos Jego usłyszycie,",
 		"8": "nie zatwardzajcie serc waszych jak w Meriba na pustyni w dniu Massa,",
-		"9": "gdy Mnie kusili wasi ojcowie, doświadczali Mnie, choć widzieli dzieła moje."
+		"9a": "gdy Mnie kusili wasi ojcowie,",
+		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
     }
 }

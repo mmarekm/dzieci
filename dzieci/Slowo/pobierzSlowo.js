@@ -28,38 +28,47 @@ function pobierzJson(ksiega) {
 
 function wypelnijWersety() {
     const elementy = document.querySelectorAll('p.werset');
-    console.log('znaleziono elementów:', elementy.length);
     elementy.forEach(p => {
         const ref = p.getAttribute('data-ref');
-        console.log('ref:', ref);
         if (!ref) return;
         const czesci = ref.trim().split(' ');
         const ksiega = czesci[0];
         const zakresy = czesci[1].split('.');
         const rozdzial = zakresy[0].split(',')[0];
-        console.log('ksiega:', ksiega, 'rozdzial:', rozdzial, 'zakresy:', zakresy);
         pobierzJson(ksiega).then(dane => {
-            console.log('dane dla', ksiega, ':', dane);
-            let tekst = '';
-            zakresy.forEach(zakres => {
-                let wersety_str;
-                if (zakres.includes(',')) {
-                    wersety_str = zakres.split(',')[1];
-                } else {
-                    wersety_str = zakres;
-                }
-                const [od, do_] = wersety_str.includes('-')
-                    ? wersety_str.split('-').map(Number)
-                    : [Number(wersety_str), Number(wersety_str)];
-                console.log('zakres:', zakres, 'od:', od, 'do:', do_);
-                for (let i = od; i <= do_; i++) {
-                    if (dane[rozdzial] && dane[rozdzial][String(i)]) {
-                        tekst += dane[rozdzial][String(i)] + ' ';
+            const pierwszyKlucz = zakresy[0].includes(',')
+                ? zakresy[0].split(',')[1]
+                : zakresy[0];
+            const tekstoweKlucze = /[a-z]/.test(pierwszyKlucz);
+
+            if (tekstoweKlucze) {
+                const linie = [];
+                zakresy.forEach(zakres => {
+                    const klucz = zakres.includes(',')
+                        ? zakres.split(',')[1]
+                        : zakres;
+                    if (dane[rozdzial] && dane[rozdzial][klucz]) {
+                        linie.push(dane[rozdzial][klucz]);
                     }
-                }
-            });
-            console.log('tekst:', tekst);
-            p.textContent = tekst.trim();
+                });
+                p.innerHTML = linie.join('<br>');
+            } else {
+                let tekst = '';
+                zakresy.forEach(zakres => {
+                    let wersety_str = zakres.includes(',')
+                        ? zakres.split(',')[1]
+                        : zakres;
+                    const [od, do_] = wersety_str.includes('-')
+                        ? wersety_str.split('-').map(Number)
+                        : [Number(wersety_str), Number(wersety_str)];
+                    for (let i = od; i <= do_; i++) {
+                        if (dane[rozdzial] && dane[rozdzial][String(i)]) {
+                            tekst += dane[rozdzial][String(i)] + ' ';
+                        }
+                    }
+                });
+                p.textContent = tekst.trim();
+            }
         }).catch(() => {
             p.textContent = `Brak tekstu: ${ref}`;
         });
@@ -77,7 +86,6 @@ function pobierzFragment(nazwaPliku, idElementu) {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
                 element.innerHTML = doc.getElementById('fragment').innerHTML;
-				console.log('innerHTML:', element.innerHTML);
                 wypelnijWersety();
             })
             .catch(() => { element.innerHTML = ''; });
