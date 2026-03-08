@@ -28,16 +28,18 @@ function pobierzJson(ksiega) {
 
 function wypelnijWersety() {
     const elementy = document.querySelectorAll('p.werset');
+    console.log('znaleziono elementów:', elementy.length);
     elementy.forEach(p => {
         const ref = p.getAttribute('data-ref');
+        console.log('ref:', ref);
         if (!ref) return;
-
         const czesci = ref.trim().split(' ');
         const ksiega = czesci[0];
         const zakresy = czesci[1].split('.');
         const rozdzial = zakresy[0].split(',')[0];
-
+        console.log('ksiega:', ksiega, 'rozdzial:', rozdzial, 'zakresy:', zakresy);
         pobierzJson(ksiega).then(dane => {
+            console.log('dane dla', ksiega, ':', dane);
             let tekst = '';
             zakresy.forEach(zakres => {
                 let wersety_str;
@@ -49,12 +51,14 @@ function wypelnijWersety() {
                 const [od, do_] = wersety_str.includes('-')
                     ? wersety_str.split('-').map(Number)
                     : [Number(wersety_str), Number(wersety_str)];
+                console.log('zakres:', zakres, 'od:', od, 'do:', do_);
                 for (let i = od; i <= do_; i++) {
                     if (dane[rozdzial] && dane[rozdzial][String(i)]) {
                         tekst += dane[rozdzial][String(i)] + ' ';
                     }
                 }
             });
+            console.log('tekst:', tekst);
             p.textContent = tekst.trim();
         }).catch(() => {
             p.textContent = `Brak tekstu: ${ref}`;

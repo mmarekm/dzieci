@@ -1,0 +1,35 @@
+function wypelnijWersety() {
+    const elementy = document.querySelectorAll('p.werset');
+    elementy.forEach(p => {
+        const ref = p.getAttribute('data-ref');
+        if (!ref) return;
+
+        const czesci = ref.trim().split(' ');
+        const ksiega = czesci[0];
+        const zakresy = czesci[1].split('.');
+        const rozdzial = zakresy[0].split(',')[0];
+
+        pobierzJson(ksiega).then(dane => {
+            let tekst = '';
+            zakresy.forEach(zakres => {
+                let wersety_str;
+                if (zakres.includes(',')) {
+                    wersety_str = zakres.split(',')[1];
+                } else {
+                    wersety_str = zakres;
+                }
+                const [od, do_] = wersety_str.includes('-')
+                    ? wersety_str.split('-').map(Number)
+                    : [Number(wersety_str), Number(wersety_str)];
+                for (let i = od; i <= do_; i++) {
+                    if (dane[rozdzial] && dane[rozdzial][String(i)]) {
+                        tekst += dane[rozdzial][String(i)] + ' ';
+                    }
+                }
+            });
+            p.textContent = tekst.trim();
+        }).catch(() => {
+            p.textContent = `Brak tekstu: ${ref}`;
+        });
+    });
+}
