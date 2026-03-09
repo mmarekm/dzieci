@@ -1,5 +1,19 @@
 {
-    "25": {
+    "23": {
+		"1a": "Pan moim pasterzem,",
+		"1b": "nie brak mi niczego.",
+		"2a": "Pozwala mi leżeć na zielonych pastwiskach,",
+		"2b": "prowadzi mnie nad wody, bym odpoczął.",
+		"3a": "Ożywia mnie na nowo, prowadzi mnie po właściwych ścieżkach",
+		"3b": "przez wzgląd na swoje imię.",
+		"4a": "Choćbym kroczył ciemną doliną, zła się nie ulęknę, bo Ty jesteś ze mną!",
+		"4b": "Twój kij pasterski i laska dodają mi otuchy.",
+		"5a": "Zastawiasz przede mną stół wobec mych przeciwników.",
+		"5b": "Namaszczasz mi głowę olejkiem, a mój kielich jest napełniony.",
+		"6a": "Dobroć i łaska niech idą za mną przez wszystkie dni mego życia,",
+		"6b" : "abym zamieszkał w domuPana po najdłuższe czasy."
+	},
+	"25": {
 		"4a": "Ukaż mi drogi Twoje, Panie,",
 		"4b": "naucz mnie chodzić ścieżkami, które wskazujesz.",
 		"5a": "Prowadź mnie w Twojej wierności i pouczaj,",
@@ -28,6 +42,38 @@
 		"4b": "do Boga, który rozwesela moją młodość.",
 		"4c": "Będę Cię wysławiał przy wtórze liry,",
 		"4d": "Boże, mój Boże!"
+	},
+	"51": {
+		"3a": "Zmiłuj się nade mną, Boże, w łaskawości Twojej,",
+		"3b": "w ogromie Twojego miłosierdzia zgładź nieprawość moją.",
+		"4a": "Obmyj mnie zupełnie z mojej winy",
+		"4b": "i oczyść mnie z grzechu mojego.",
+		"18a": "Bo nie pragniesz, bym Ci składał ofiary,",
+		"18b": "ani nie masz upodobania w całopaleniach.",
+		"19a": "Ofiarą dla Boga jest duch skruszony;",
+		"19b": "udręczonym i uniżonym sercem Bóg nie pogardzi.",
+		"20a": "W Twej dobroci okaż łaskę Syjonowi,",
+		"20b": "aby odbudowano mury Jeruzalem.",
+		"21a": "Wtedy przyjmiesz należne ofiary,",
+		"21b": "dary i całopalenia,"
+	},
+	"81": {
+		"6c": "usłyszał język nieznany:",
+		"7a": "„Uwolniłem jego grzbiet od ciężarów,",
+		"7b": "jego ręce porzuciły kosze.",
+		"8a": "Wzywałeś mnie w ucisku, a Ja cię ocaliłem,",
+		"8b": "odpowiedziałem ci z grzmiącej chmury,",
+		"8c": "wypróbowałem cię przy Wodach Sprzeciwu.",
+		"9a": "Słuchaj, mój ludu, bo cię chcę napomnieć,",
+		"9b": "Izraelu, obyś Mnie posłuchał!",
+		"10a": "Niech nie będzie u ciebie obcego boga,",
+		"10b": "nie będziesz się kłaniał cudzemu bogu.",
+		"11a": "Ja jestem Panem , Bogiem twoim.",
+		"11b": "Ja wyprowadziłem cię z ziemi niewoli!",
+		"14a": "O, gdyby mój lud Mnie posłuchał,",
+		"14b": "gdyby Izrael kroczył drogami, które wskazałem,",
+		"17a": "Karmiłbym go obfitością zboża",
+		"17b": "i sycił miodem ze skały."
 	},
 	"95": {
         "1a": "Chodźcie, śpiewajmy Panu,",

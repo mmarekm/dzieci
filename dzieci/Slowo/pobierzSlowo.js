@@ -1,9 +1,11 @@
 const klucz = {
-    '20260308': 'Ndz3WPA',
     '20260309': 'pn3WP',
     '20260310': 'wt3WP',
     '20260311': 'sr3WP',
-	'20260312': 'cz3WP'
+	'20260312': 'cz3WP',
+	'20260313': 'pt3WP',
+	'20260314': 'sb3WP',
+	'20260315': 'Ndz4WPA'
 };
 
 function dataDoStr(data) {
@@ -56,29 +58,32 @@ function wypelnijWersety() {
                         ? zakres.split(',')[1]
                         : zakres;
                     if (/^\d+[a-z]$/.test(wersety_str)) {
-                        // pojedynczy klucz z litera np "15a"
                         if (dane[rozdzial] && dane[rozdzial][wersety_str]) {
                             tekst += dane[rozdzial][wersety_str] + ' ';
                         }
                     } else if (wersety_str.includes('-')) {
-                        // zakres np "1-14" lub "1-14a"
                         const czesciZakresu = wersety_str.split('-');
-                        const od = Number(czesciZakresu[0]);
+                        const odStr = czesciZakresu[0];
                         const doStr = czesciZakresu[1];
+                        const od = parseInt(odStr);
                         const doNum = parseInt(doStr);
-                        for (let i = od; i <= doNum; i++) {
+                        if (/[a-z]$/.test(odStr)) {
+                            if (dane[rozdzial] && dane[rozdzial][odStr]) {
+                                tekst += dane[rozdzial][odStr] + ' ';
+                            }
+                        }
+                        const odNum = /[a-z]$/.test(odStr) ? od + 1 : od;
+                        for (let i = odNum; i <= doNum; i++) {
                             if (dane[rozdzial] && dane[rozdzial][String(i)]) {
                                 tekst += dane[rozdzial][String(i)] + ' ';
                             }
                         }
-                        // jesli koniec zakresu ma litere np "14a" - dodaj ten klucz
                         if (/[a-z]$/.test(doStr)) {
                             if (dane[rozdzial] && dane[rozdzial][doStr]) {
                                 tekst += dane[rozdzial][doStr] + ' ';
                             }
                         }
                     } else {
-                        // pojedynczy werset bez litery
                         const i = Number(wersety_str);
                         if (dane[rozdzial] && dane[rozdzial][String(i)]) {
                             tekst += dane[rozdzial][String(i)] + ' ';
