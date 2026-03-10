@@ -4,14 +4,14 @@
 		"2b": "wybaw mnie od wszystkich prześladowców i mnie ocal,",
 		"3a": "by ktoś jak lew nie rzucił się do mego gardła,",
 		"3b": "gdy nie będzie odkupiciela ani wybawcy.",
-		"9b": "",
-		"9c": "",
-		"10a": "",
-		"10b": "",
-		"11a": "",
-		"11b": "",
-		"12a": "",
-		"12b": ""
+		"9b": "Osądź mnie, Panie, według mej sprawiedliwości",
+		"9c": "i zgodnie z moją niewinnością!",
+		"10a": "Nieprawość bezbożnych niech dojdzie do kresu, a sprawiedliwego umocnij,",
+		"10b": "sprawiedliwy Boże, który badasz serca i sumienie!",
+		"11a": "Bóg jest moją tarczą,",
+		"11b": "On zbawia ludzi prawego serca.",
+		"12a": "Bóg jest sędzią sprawiedliwym,",
+		"12b": "Bóg na zło oburza się codziennie."
 	},
 	"23": {
 		"1a": "Pan moim pasterzem,",
@@ -159,6 +159,24 @@
 		"9a": "gdy Mnie kusili wasi ojcowie,",
 		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
     },
+	"130": {
+		"1": "Z głębokości wołam do Ciebie, Panie ",
+		"2a": "",
+		"2b": "",
+		"2c": "",
+		"3a": "",
+		"3b": "",
+		"4a": "",
+		"4b": "",
+		"5": "",
+		"6a": "",
+		"6b": "",
+		"7a": "",
+		"7b": "",
+		"7c": "",
+		"8a": "",
+		"8b": ""
+	},
 	"145": {
 		"8a": "Miłosierny jest Pan i łaskawy,",
 		"8b": "cierpliwy i pełen litości.",
