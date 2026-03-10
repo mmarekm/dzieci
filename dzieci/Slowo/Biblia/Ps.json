@@ -1,5 +1,19 @@
 {
-    "23": {
+    "7": {
+		"2a": "Panie, Boże mój, w Tobie złożyłem nadzieję,",
+		"2b": "wybaw mnie od wszystkich prześladowców i mnie ocal,",
+		"3a": "by ktoś jak lew nie rzucił się do mego gardła,",
+		"3b": "gdy nie będzie odkupiciela ani wybawcy.",
+		"9b": "",
+		"9c": "",
+		"10a": "",
+		"10b": "",
+		"11a": "",
+		"11b": "",
+		"12a": "",
+		"12b": ""
+	},
+	"23": {
 		"1a": "Pan moim pasterzem,",
 		"1b": "nie brak mi niczego.",
 		"2a": "Pozwala mi leżeć na zielonych pastwiskach,",
@@ -27,6 +41,34 @@
 		"9a": "Pokornych prowadzi ku sprawiedliwości,",
 		"9b": "pokornym wskazuje drogę."
 	},
+	"30": {
+		"2a": "Panie, będę Cię wywyższać, bo mnie wybawiłeś",
+		"2b": "i nie uczyniłeś ze mnie uciechy mym wrogom.",
+		"4a": "Panie, wyprowadziłeś mnie z krainy umarłych",
+		"4b": "i przywróciłeś do życia spośród schodzących do grobu.",
+		"5a": "Śpiewajcie Panu, Jego wierni, sławcie Go,",
+		"5b": "wspominając Jego świętość.",
+		"6a": "Bo gniew Jego szybko przemija, a Jego łaskawość trwa przez całe życie.",
+		"6b": "Płacz nadchodzi wieczorem, a rankiem okrzyk radości.",
+		"11a": "Usłysz mnie, Panie, i zlituj się nade mną,",
+		"11b": "Panie, bądź moją pomocą!",
+		"12a": "Zamieniłeś moją żałobę w taniec,",
+		"13b": "Panie, mój Boże, będę Cię sławił na wieki!"
+	},
+	"34": {
+		"17a": "Od złoczyńców Pan się odwraca,",
+		"17b": "by nie zostało o nich wspomnienie na ziemi.",
+		"18a": "Pan słyszy wołających o pomoc",
+		"18b": "i uwolni ich ze wszystkich ucisków.",
+		"19a": "Pan jest blisko cierpiących udrękę,",
+		"19b": "wybawi złamanych na duchu.",
+		"20a": "Liczne są utrapienia sprawiedliwych,",
+		"20b": "lecz Pan ze wszystkich ich wyzwoli.",
+		"21a": "On strzeże wszystkich ich kości",
+		"21b": "i żadna nie będzie złamana.",
+		"23a": "Pan wybawia swoje sługi,",
+		"23b": "nie upadną ci, którzy Mu ufają."
+	},
 	"42": {
 		"2a": "Jak łania pragnie źródlanej wody,",
 		"2b": "tak ja pragnę Ciebie, Boże.",
@@ -42,6 +84,20 @@
 		"4b": "do Boga, który rozwesela moją młodość.",
 		"4c": "Będę Cię wysławiał przy wtórze liry,",
 		"4d": "Boże, mój Boże!"
+	},
+	"46": {
+		"2a": "Bóg jest dla nas schronieniem i mocą,",
+		"2b": "niezawodnym wsparciem w udrękach.",
+		"3a": "Dlatego nie będziemy się bać, gdy zadrży ziemia,",
+		"3b": "kiedy pośród morza zachwieją się góry;",
+		"5a": "Nurty rzeki rozweselają miasto Boże,",
+		"5b": "Najwyższy uświęcił swoje mieszkanie.",
+		"6a": "Bóg w jego wnętrzu, by się nie zachwiało,",
+		"6b": "Bóg je wspomoże o świcie.",
+		"8a": "Pan Zastępów jest z nami,",
+		"8b": "Bóg Jakuba – naszą twierdzą.",
+		"9a": "Przyjdźcie, zobaczcie dzieła Pana,",
+		"9b": "cuda, jakich dokonał na ziemi."
 	},
 	"51": {
 		"3a": "Zmiłuj się nade mną, Boże, w łaskawości Twojej,",
@@ -75,6 +131,20 @@
 		"17a": "Karmiłbym go obfitością zboża",
 		"17b": "i sycił miodem ze skały."
 	},
+	"89": {
+		"2a": "O Twoich łaskach, Panie, wiecznie będę śpiewać",
+		"2b": "i głosić Twoją wierność przez pokolenia.",
+		"3a": "Bo powiedziałeś: „Na wieki ugruntowana jest łaska!”.",
+		"3b": "W niebiosach utrwaliłeś swą wierność.",
+		"4a": "Zawarłem przymierze z moim wybrańcem,",
+		"4b": "przysiągłem memu słudze Dawidowi:",
+		"5a": "Twoje potomstwo będzie trwać na wieki,",
+		"5b": "zbuduję ci tron na wszystkie pokolenia.",
+		"27a": "Będzie Mnie wzywał: «Jesteś moim ojcem,",
+		"27b": "moim Bogiem i skałą ocalenia dla mnie».",
+		"29a": "Na wieki zachowam swą łaskę dla niego",
+		"29b": "i trwałe będzie moje z nim przymierze."
+	},
 	"95": {
         "1a": "Chodźcie, śpiewajmy Panu,",
 		"1b": "wzywajmy radośnie skałę naszego zbawienia.",
@@ -89,6 +159,20 @@
 		"9a": "gdy Mnie kusili wasi ojcowie,",
 		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
     },
+	"145": {
+		"8a": "Miłosierny jest Pan i łaskawy,",
+		"8b": "cierpliwy i pełen litości.",
+		"9a": "Dobry jest Pan dla wszystkich,",
+		"9b": "okazuje miłosierdzie wszystkim swoim dziełom.",
+		"13c": "Wierny jest Bóg w swoich słowach",
+		"13d": "i święty we wszystkich swoich dziełach.",
+		"14a": "Pan podtrzymuje tych, którzy upadają,",
+		"14b": "i podnosi wszystkich poniżonych.",
+		"17a": "Sprawiedliwy jest Pan na wszystkich swych drogach",
+		"17b": "i wierny we wszystkich swych dziełach.",
+		"18a": "Bliski jest Pan wszystkim, którzy Go wzywają,",
+		"18b": "wszystkim szczerze wołającym do Niego."
+	},
 	"147": {
 		"12a": "Uwielbiaj, Jeruzalem, Pana,",
 		"12b": "sław twego Boga, Syjonie!",

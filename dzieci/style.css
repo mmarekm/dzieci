@@ -330,50 +330,22 @@ table {
     width: 100%;
     max-width: 800px;
 }
-.lewaStrona {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
-    border-right: 1px solid white;
-}
-.prawaStrona {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-}
 @media (max-width: 600px) {
     .kontenerSlowo {
         flex-direction: column;
     }
-    .lewaStrona, .prawaStrona {
-        width: 100%;
-    }
-    .lewaStrona {
-        border-right: none;
-        border-bottom: 1px solid white;
-        padding-bottom: 20px;
-    }
-    .prawaStrona {
-        padding-top: 20px;
-    }
-	.doSlowaDzis, .doSlowaJutro, .doLekcjonarza {
+	.doSlowaDzis, .doSlowaJutro {
         font-size: clamp(20px, 6vw, 30px);
     }
 }
-.doSlowaDzis, .doSlowaJutro, .doLekcjonarza {
+.doSlowaDzis, .doSlowaJutro {
     font-size: clamp(21px, 3.5vw, 36px);
     text-align: center;
 }
-.doSlowa a, .doSlowaDzis a, .doSlowaJutro a, .doLekcjonarza a, .doSlowa a:visited, .doSlowaDzis a:visited, .doSlowaJutro a:visited, .doLekcjonarza a:visited {
+.doSlowa a, .doSlowaDzis a, .doSlowaJutro a, .doLekcjonarza a, .doSlowa a:visited, .doSlowaDzis a:visited, .doSlowaJutro a:visited {
     color: white;
 }
-.doSlowa a:hover, .doSlowaDzis a:hover, .doSlowaJutro a:hover, .doLekcjonarza a:hover {
+.doSlowa a:hover, .doSlowaDzis a:hover, .doSlowaJutro a:hover, {
     color: green;
 }
 .kontenerDzisSlowo {
