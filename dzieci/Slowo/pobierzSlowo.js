@@ -1,4 +1,4 @@
-const klucz = {'20260312':'cz3WP', '20260313':'pt3WP', '20260314':'sb3WP', '20260315':'Ndz4WPA', '20260316':'pn4WP', '20260317':'wt4WP', '20260318':'sr4WP', '20260319':'JozefaOblubiencaNMP', '20260320':'pt4WP', '20260321':'sb4WP', '20260322':'Ndz5WPA'};
+const klucz = {'20260314':'sb3WP', '20260315':'Ndz4WPA', '20260316':'pn4WP', '20260317':'wt4WP', '20260318':'sr4WP', '20260319':'JozefaOblubiencaNMP', '20260320':'pt4WP', '20260321':'sb4WP', '20260322':'Ndz5WPA'};
 
 function dataDoStr(data) {
     const rok = data.getFullYear();
