@@ -25,7 +25,7 @@
 		"5a": "Zastawiasz przede mną stół wobec mych przeciwników.",
 		"5b": "Namaszczasz mi głowę olejkiem, a mój kielich jest napełniony.",
 		"6a": "Dobroć i łaska niech idą za mną przez wszystkie dni mego życia,",
-		"6b" : "abym zamieszkał w domuPana po najdłuższe czasy."
+		"6b" : "abym zamieszkał w domu Pana po najdłuższe czasy."
 	},
 	"25": {
 		"4a": "Ukaż mi drogi Twoje, Panie,",
@@ -159,6 +159,24 @@
 		"9a": "gdy Mnie kusili wasi ojcowie,",
 		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
     },
+	"102": {
+		"2a": "Panie, wysłuchaj modlitwy mojej,",
+		"2b": "a wołanie moje niech do Ciebie przyjdzie!",
+		"3a": "Nie odwracaj ode mnie swego oblicza, nakłoń ku mnie ucha w dniu mojej niedoli,",
+		"3b": "kiedy Cię wzywam, szybko mnie wysłuchaj!",
+		"16a": "Bojaźń ogarnie narody przed Twoim imieniem, o Panie,",
+		"16b": "a wszystkich królów ziemi – bojaźń wobec Twej chwały",
+		"17a": "gdy Pan odbuduje Syjon",
+		"17b": "i ukaże się w swej wspaniałości,",
+		"18a": "gdy spojrzy na modlitwę poniżonych",
+		"18b": "i nie pogardzi ich prośbą.",
+		"19a": "Niech to zapiszą dla przyszłych pokoleń,",
+		"19b": "a lud, który będzie stworzony, niech wychwala Pana.",
+		"20a": "Gdyż wejrzał z wysokości swej świątyni,",
+		"20b": "Pan spojrzał z nieba na ziemię,",
+		"21a": "by usłyszeć jęki zakutych w kajdany",
+		"21b": "i rozwiązać na śmierć skazanych,"
+	},
 	"130": {
 		"1": "Z głębokości wołam do Ciebie, Panie ",
 		"2a": "Panie, wysłuchaj głosu mego!",
