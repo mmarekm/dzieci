@@ -1,4 +1,4 @@
-const klucz = {'20260315':'Ndz4WPA', '20260316':'pn4WP', '20260317':'wt4WP', '20260318':'sr4WP', '20260319':'JozefaOblubiencaNMP', '20260320':'pt4WP', '20260321':'sb4WP', '20260322':'Ndz5WPA', '20260323':'pn5WP', '20260324':'wt5WP'};
+const klucz = {'20260315':'Ndz4WPA', '20260316':'pn4WP', '20260317':'wt4WP', '20260318':'sr4WP', '20260319':'JozefaOblubiencaNMP', '20260320':'pt4WP', '20260321':'sb4WP', '20260322':'Ndz5WPA', '20260323':'pn5WP', '20260324':'wt5WP', '20260325':'ZwiastowaniePanskie', '20260326':'cz5WP', '20260327':'pt5WP', '20260328':'sb5WP', '20260329':'NdzPalmowaA', '20260330':'wielkiPn'};
 
 function dataDoStr(data) {
     const rok = data.getFullYear();
@@ -22,7 +22,7 @@ function pobierzJson(ksiega) {
 }
 
 function wypelnijWersety() {
-    const elementy = document.querySelectorAll('p.werset');
+    const elementy = document.querySelectorAll('.werset');
     elementy.forEach(p => {
         const ref = p.getAttribute('data-ref');
         if (!ref) return;

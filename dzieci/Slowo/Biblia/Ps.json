@@ -13,6 +13,38 @@
 		"12a": "Bóg jest sędzią sprawiedliwym,",
 		"12b": "Bóg na zło oburza się codziennie."
 	},
+	"18": {
+		"2": "Miłuję Cię, Panie, mocy moja,",
+		"3": "Panie, opoko moja, schronienie moje i mój wybawco, Boże mój, moja skało i moja nadziejo, tarczo moja, mocy zbawienia i moja twierdzo!",
+		"4a": "Niech Pan będzie uwielbiony! Wezwałem Go na pomoc,",
+		"4b": "On mnie uwolnił od wrogów.",
+		"5a": "Oplotły mnie więzy śmierci,",
+		"5b": "dosięgły mnie strumienie zagłady,",
+		"6a": "skrępowały mnie więzy krainy umarłych,",
+		"6b": "schwytały mnie sidła śmierci.",
+		"7a": "W moim ucisku wołałem do Pana,",
+		"7b": "mego Boga błagałem o pomoc,",
+		"7c": "a On mnie usłyszał w swojej świątyni,",
+		"7d": "moje błaganie dotarło do Jego uszu."
+	},
+	"22": {
+		"8a": "Drwią ze mnie wszyscy, którzy na mnie patrzą,",
+		"8b": "wykrzywiają usta i potrząsają głowami:",
+		"9a": "„Zaufał Panu , niechże go ocali,",
+		"9b": "niech go wybawi, jeśli go kocha!”.",
+		"17a": "Bo sfora psów mnie osaczyła,",
+		"17b": "obległa mnie zgraja złoczyńców.",
+		"17c": "Przebili moje ręce i nogi,",
+		"18a": "policzyć mogę wszystkie kości moje.",
+		"19a": "Dzielą między siebie moje ubranie,",
+		"19b": "a o moją szatę rzucają losy.",
+		"20a": "Ty zaś, Panie, nie stój w oddali!",
+		"20b": "Pomocy moja, śpiesz mi na ratunek!",
+		"23a": "Będę głosił Twoje imię moim braciom,",
+		"23b": "będę Cię chwalił pośród zgromadzenia!",
+		"24a": "Wychwalajcie Pana, Jego czciciele, niech Go sławi całe potomstwo Jakuba",
+		"24b": "i drży przed Nim potomstwo Izraela!"
+	},
 	"23": {
 		"1a": "Pan moim pasterzem,",
 		"1b": "nie brak mi niczego.",
@@ -25,7 +57,7 @@
 		"5a": "Zastawiasz przede mną stół wobec mych przeciwników.",
 		"5b": "Namaszczasz mi głowę olejkiem, a mój kielich jest napełniony.",
 		"6a": "Dobroć i łaska niech idą za mną przez wszystkie dni mego życia,",
-		"6b" : "abym zamieszkał w domu Pana po najdłuższe czasy."
+		"6b": "abym zamieszkał w domu Pana po najdłuższe czasy."
 	},
 	"25": {
 		"4a": "Ukaż mi drogi Twoje, Panie,",
@@ -40,6 +72,24 @@
 		"8b": "wskazuje drogę błądzącym.",
 		"9a": "Pokornych prowadzi ku sprawiedliwości,",
 		"9b": "pokornym wskazuje drogę."
+	},
+	"27": {
+		"1a": "Pan moim światłem i zbawieniem moim,",
+		"1b": "kogo więc mam się lękać?",
+		"1c": "Pan jest obrońcą mego życia,",
+		"1d": "przed kim więc mam odczuwać trwogę?",
+		"2a": "Gdy napadli mnie złoczyńcy,",
+		"2b": "by pożreć moje ciało,",
+		"2c": "to właśnie oni, moi wrogowie i prześladowcy,",
+		"2d": "potknęli się i upadli.",
+		"3a": "Choćby rozbili przeciwko mnie obóz,",
+		"3b": "moje serce się nie ulęknie,",
+		"3c": "choćby wybuchła przeciwko mnie wojna,",
+		"3d": "nawet wtedy będę ufał!",
+		"13a": "Wierzę, że będę oglądał dobroć Pana",
+		"13b": "w krainie żyjących.",
+		"14a": "Wyczekuj Pana, bądź dzielny!",
+		"14b": "Nabierz odwagi i wyczekuj Pana!"
 	},
 	"30": {
 		"2a": "Panie, będę Cię wywyższać, bo mnie wybawiłeś",
@@ -68,6 +118,19 @@
 		"21b": "i żadna nie będzie złamana.",
 		"23a": "Pan wybawia swoje sługi,",
 		"23b": "nie upadną ci, którzy Mu ufają."
+	},
+	"40": {
+		"7a": "Ofiar ani darów nie chciałeś, lecz otworzyłeś mi uszy;",
+		"7b": "nie żądałeś całopaleń ani ofiar przebłagalnych.",
+		"8a": "Wtedy powiedziałem: Oto przychodzę!",
+		"8b": "W zwoju księgi napisano o mnie:",
+		"9a": "Chcę wypełniać Twoją wolę, mój Boże,",
+		"9b": "a Twoje Prawo jest w mym wnętrzu.",
+		"10a": "Głoszę Twoją sprawiedliwość w wielkim zgromadzeniu. Nie powściągam warg moich,",
+		"10b": "Ty wiesz o tym, Panie!",
+		"11a": "Twojej sprawiedliwości nie ukryłem w mym sercu,",
+		"11b": "głoszę Twoją zbawczą wierność,",
+		"11c": "nie taiłem Twej wiernej łaskawości wobec wielkiego zgromadzenia."
 	},
 	"42": {
 		"2a": "Jak łania pragnie źródlanej wody,",
@@ -176,6 +239,20 @@
 		"20b": "Pan spojrzał z nieba na ziemię,",
 		"21a": "by usłyszeć jęki zakutych w kajdany",
 		"21b": "i rozwiązać na śmierć skazanych,"
+	},
+	"105": {
+		"4a": "Szukajcie woli Pana i Jego mocy,",
+		"4b": "zawsze pragnijcie być w Jego obecności.",
+		"5a": "Pamiętajcie o cudach, których dokonał,",
+		"5b": "o znakach i wyrokach ust Jego,",
+		"6a": "potomkowie Jego sługi, Abrahama,",
+		"6b": "synowie Jakuba, Jego wybrańcy.",
+		"7a": "On, Pan, jest Bogiem naszym,",
+		"7b": "On, który rządzi całym światem.",
+		"8a": "Pamięta na wieki o swoim przymierzu,",
+		"8b": "o obietnicy danej tysiącowi pokoleń.",
+		"9a": "Udzielił jej Abrahamowi",
+		"9b": "i potwierdził przysięgą Izaakowi."
 	},
 	"130": {
 		"1": "Z głębokości wołam do Ciebie, Panie ",
