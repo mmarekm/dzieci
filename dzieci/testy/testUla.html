@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Test – Język Angielski – Klasa 6</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', serif; font-size: 13px; color: #111; background: #fff; }
+
+  .print-btn {
+    display: block; margin: 18px auto; padding: 10px 32px;
+    background: #2c5f9e; color: #fff; border: none; border-radius: 6px;
+    font-size: 15px; cursor: pointer; font-family: sans-serif;
+  }
+  .print-btn:hover { background: #1a3f6f; }
+
+  .page {
+    width: 210mm; min-height: 297mm;
+    margin: 0 auto 30px auto;
+    padding: 18mm 18mm 18mm 18mm;
+    border: 1px solid #ccc;
+    page-break-after: always;
+  }
+
+  .header { text-align: center; margin-bottom: 14px; border-bottom: 2px solid #2c5f9e; padding-bottom: 8px; }
+  .header h1 { font-size: 17px; text-transform: uppercase; letter-spacing: 1px; color: #2c5f9e; }
+  .header p { font-size: 11px; color: #555; margin-top: 3px; }
+
+  .name-line { display: flex; gap: 20px; margin-bottom: 14px; font-size: 12px; }
+  .name-line span { flex: 1; border-bottom: 1px solid #333; padding-bottom: 1px; }
+
+  .section-title {
+    background: #2c5f9e; color: #fff; padding: 4px 10px;
+    font-size: 12px; font-weight: bold; margin: 14px 0 8px 0;
+    border-radius: 3px;
+  }
+  .task-title { font-weight: bold; font-size: 12px; margin: 10px 0 5px 0; }
+  .task-instruction { font-style: italic; font-size: 11px; color: #444; margin-bottom: 6px; }
+
+  .fill-line {
+    border-bottom: 1px solid #555; display: inline-block;
+    min-width: 80px; height: 14px; margin: 0 3px;
+  }
+  .fill-line-long { min-width: 130px; }
+  .fill-line-xl { min-width: 200px; }
+
+  ol, ul { padding-left: 18px; }
+  ol li, ul li { margin-bottom: 5px; line-height: 1.7; }
+
+  .sentence { margin-bottom: 7px; line-height: 1.9; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 14px; }
+
+  .match-table { width: 100%; border-collapse: collapse; margin-top: 5px; }
+  .match-table td { border: 1px solid #bbb; padding: 4px 8px; font-size: 12px; }
+  .match-table td:nth-child(2) { min-width: 50px; }
+
+  .box { border: 1px solid #aaa; padding: 6px 10px; margin-bottom: 6px; border-radius: 4px; font-size: 11.5px; }
+
+  .word-bank { border: 1px dashed #888; padding: 5px 10px; margin-bottom: 8px; font-size: 11.5px; border-radius: 4px; background: #f9f9f9; }
+  .word-bank b { font-size: 11px; color: #555; }
+
+  .verb-table { width: 100%; border-collapse: collapse; margin-top: 5px; }
+  .verb-table th { background: #dde8f5; font-size: 11.5px; padding: 4px 6px; border: 1px solid #bbb; }
+  .verb-table td { border: 1px solid #bbb; padding: 4px 6px; font-size: 12px; height: 22px; }
+  .verb-table td.given { background: #f0f0f0; }
+
+  .answer-line { border-bottom: 1px solid #555; min-width: 220px; display: block; height: 16px; margin-top: 3px; }
+
+  .points { float: right; font-size: 11px; color: #888; }
+
+  .rewrite li { margin-bottom: 14px; }
+
+  @media print {
+    .print-btn { display: none; }
+    .page { border: none; margin: 0; padding: 15mm 15mm 15mm 15mm; }
+    body { background: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== STRONA 1 ==================== -->
+<div class="page">
+  <div class="name-line">
+    <img src="tytulUla.png" style="width:100%; height:100%; object-fit:contain;" />
+  </div>
+
+  <div class="section-title">CZĘŚĆ A – SŁOWNICTWO (Vocabulary)</div>
+
+  <div class="task-title">Zadanie 1. Człowiek – wygląd i charakter <span class="points">/8 pkt</span></div>
+  <div class="task-instruction">Dopasuj angielskie przymiotniki do ich polskich odpowiedników. Wpisz odpowiednią literę.</div>
+  <table class="match-table">
+    <tr>
+      <td>1. brave</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>2. shy</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>3. generous</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>4. patient</td><td>&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td>5. stubborn</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>6. cheerful</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>7. reliable</td><td>&nbsp;&nbsp;&nbsp;</td>
+      <td>8. curious</td><td>&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+  </table>
+  <div class="word-bank" style="margin-top:6px;">
+    <b>Słownik:</b> &nbsp; a) cierpliwy &nbsp; b) nieśmiały &nbsp; c) odważny &nbsp; d) hojny &nbsp; e) uparty &nbsp; f) wesoły &nbsp; g) godny zaufania &nbsp; h) ciekawski
+  </div>
+
+  <div class="task-title">Zadanie 2. Dom i obowiązki domowe <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania odpowiednim wyrazem z ramki.</div>
+  <div class="word-bank"><b>Wyrazy:</b> &nbsp; do the washing up &nbsp;|&nbsp; vacuum &nbsp;|&nbsp; attic &nbsp;|&nbsp; terraced &nbsp;|&nbsp; wardrobe &nbsp;|&nbsp; fridge</div>
+  <ol>
+    <li>After dinner, it's my job to <span class="fill-line fill-line-long"></span>.</li>
+    <li>We keep old books in the <span class="fill-line"></span> upstairs.</li>
+    <li>I need to <span class="fill-line"></span> the living room carpet every Saturday.</li>
+    <li>Put the milk back in the <span class="fill-line"></span>, please.</li>
+    <li>She hangs her clothes in the <span class="fill-line"></span>.</li>
+    <li>They live in a <span class="fill-line"></span> house in the centre of town.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 3. Szkoła – przedmioty i rozkład zajęć <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Napisz angielskie nazwy przedmiotów szkolnych.</div>
+  <div class="two-col">
+    <div class="sentence">1. matematyka &nbsp;<span class="fill-line fill-line-long"></span></div>
+    <div class="sentence">2. przyroda / biologia &nbsp;<span class="fill-line fill-line-long"></span></div>
+    <div class="sentence">3. historia &nbsp;<span class="fill-line fill-line-long"></span></div>
+    <div class="sentence">4. wychowanie fizyczne &nbsp;<span class="fill-line fill-line-long"></span></div>
+    <div class="sentence">5. plastyka &nbsp;<span class="fill-line fill-line-long"></span></div>
+  </div>
+
+  <div class="task-title">Zadanie 4. Żywność i zdrowie <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Zakreśl właściwe słowo.</div>
+  <ol>
+    <li>You should eat more <b>fruit / fry</b> and vegetables to stay healthy.</li>
+    <li>I have a <b>headache / stomachache</b> – I ate too much cake.</li>
+    <li>You shouldn't drink so much <b>sugary / sugar</b> drinks.</li>
+    <li>He has got a <b>cold / flu</b> – he sneezes and has a runny nose.</li>
+    <li>The doctor told her to <b>rest / run</b> and drink lots of water.</li>
+    <li>For breakfast I usually have <b>scrambled / scrumbled</b> eggs.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 5. Sport, podróże, technologia <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania jednym słowem.</div>
+  <ol>
+    <li>You need a <span class="fill-line"></span> and a net to play volleyball.</li>
+    <li>We travelled to Paris by <span class="fill-line"></span> – it was a two-hour flight.</li>
+    <li>She posted a photo on social <span class="fill-line"></span>.</li>
+    <li>I use a <span class="fill-line"></span> to search for information on the Internet.</li>
+    <li>In swimming, you can compete in the <span class="fill-line"></span> or butterfly stroke.</li>
+  </ol>
+</div>
+
+<!-- ==================== STRONA 2 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ B – GRAMATYKA: Czasy teraźniejsze i przyszłe</div>
+
+  <div class="task-title">Zadanie 6. Present Simple vs Present Continuous <span class="points">/8 pkt</span></div>
+  <div class="task-instruction">Wstaw czasownik w nawiasie w odpowiedniej formie (Present Simple lub Present Continuous).</div>
+  <ol>
+    <li>Look! The children <span class="fill-line fill-line-long"></span> (play) in the garden right now.</li>
+    <li>She <span class="fill-line fill-line-long"></span> (not like) spicy food.</li>
+    <li>Where <span class="fill-line fill-line-long"></span> you (go) every morning?</li>
+    <li>They <span class="fill-line fill-line-long"></span> (study) for their test at the moment.</li>
+    <li>My dad <span class="fill-line fill-line-long"></span> (work) as a doctor.</li>
+    <li>I <span class="fill-line fill-line-long"></span> (meet) my dentist tomorrow – it's in my calendar.</li>
+    <li>She <span class="fill-line fill-line-long"></span> (want) to become a vet.</li>
+    <li>Listen! Someone <span class="fill-line fill-line-long"></span> (knock) at the door.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 7. Konstrukcje z -ing <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania, używając czasownika w nawiasie z końcówką -ing.</div>
+  <ol>
+    <li>I love <span class="fill-line fill-line-long"></span> (read) adventure books.</li>
+    <li>She doesn't mind <span class="fill-line fill-line-long"></span> (help) with the dishes.</li>
+    <li>Do you enjoy <span class="fill-line fill-line-long"></span> (swim) in the sea?</li>
+    <li>He hates <span class="fill-line fill-line-long"></span> (get up) early on Mondays.</li>
+    <li>They like <span class="fill-line fill-line-long"></span> (watch) films on weekends.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 8. be going to vs will <span class="points">/8 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania używając <i>be going to</i> lub <i>will</i> i czasownika w nawiasie.</div>
+  <ol>
+    <li>Look at those clouds! It <span class="fill-line fill-line-long"></span> (rain).</li>
+    <li>I think robots <span class="fill-line fill-line-long"></span> (do) most jobs in the future.</li>
+    <li>We <span class="fill-line fill-line-long"></span> (visit) our grandparents next Sunday – it's already planned.</li>
+    <li>She <span class="fill-line fill-line-long"></span> (not pass) the exam if she doesn't study.</li>
+    <li>— I'm cold. — I <span class="fill-line fill-line-long"></span> (close) the window for you.</li>
+    <li>They <span class="fill-line fill-line-long"></span> (move) to a new house – they've already signed the contract.</li>
+    <li><span class="fill-line fill-line-long"></span> you (help) me with this exercise, please?</li>
+    <li>I believe life <span class="fill-line fill-line-long"></span> (be) easier with AI in the future.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 9. Pytania z zaimkami pytającymi <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Ułóż pytania do podkreślonych części zdań.</div>
+  <ol>
+    <li>She goes to school <u>by bus</u>.<br><span class="answer-line"></span></li>
+    <li>He lives <u>in London</u>.<br><span class="answer-line"></span></li>
+    <li>They play football <u>on Saturdays</u>.<br><span class="answer-line"></span></li>
+    <li>She is wearing <u>a red dress</u>.<br><span class="answer-line"></span></li>
+    <li>He is <u>twelve</u> years old.<br><span class="answer-line"></span></li>
+  </ol>
+</div>
+
+<!-- ==================== STRONA 3 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ C – GRAMATYKA: Czasy przeszłe</div>
+
+  <div class="task-title">Zadanie 10. Past Simple – formy <span class="points">/8 pkt</span></div>
+  <div class="task-instruction">Wstaw czasownik w nawiasie w czasie Past Simple.</div>
+  <ol>
+    <li>Yesterday I <span class="fill-line fill-line-long"></span> (go) to the cinema with my friends.</li>
+    <li>She <span class="fill-line fill-line-long"></span> (not finish) her homework last night.</li>
+    <li>Where <span class="fill-line fill-line-long"></span> you (spend) your last holidays?</li>
+    <li>My parents <span class="fill-line fill-line-long"></span> (buy) a new car two weeks ago.</li>
+    <li>He <span class="fill-line fill-line-long"></span> (be) very tired after the match.</li>
+    <li>There <span class="fill-line fill-line-long"></span> (be) a big park near our old house.</li>
+    <li>They <span class="fill-line fill-line-long"></span> (not know) the answer to the question.</li>
+    <li><span class="fill-line fill-line-long"></span> she (win) the competition? – Yes, she did!</li>
+  </ol>
+
+  <div class="task-title">Zadanie 11. Past Continuous <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania czasownikiem w Past Continuous.</div>
+  <ol>
+    <li>At 8 o'clock last night, we <span class="fill-line fill-line-long"></span> (have) dinner.</li>
+    <li>She <span class="fill-line fill-line-long"></span> (not sleep) when I called her.</li>
+    <li>What <span class="fill-line fill-line-long"></span> they (do) when the teacher came in?</li>
+    <li>The boys <span class="fill-line fill-line-long"></span> (play) football all afternoon.</li>
+    <li>I <span class="fill-line fill-line-long"></span> (listen) to music when the storm started.</li>
+    <li><span class="fill-line fill-line-long"></span> it (rain) when you left the house?</li>
+  </ol>
+
+  <div class="task-title">Zadanie 12. Past Simple i Past Continuous z <i>when</i> <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Połącz zdania używając <i>when</i>. Użyj Past Simple i Past Continuous.</div>
+  <ol>
+    <li>I / walk to school. The accident / happen.<br><span class="answer-line"></span></li>
+    <li>She / cook dinner. The phone / ring.<br><span class="answer-line"></span></li>
+    <li>They / watch TV. The lights / go out.<br><span class="answer-line"></span></li>
+    <li>He / sleep. His mum / wake him up.<br><span class="answer-line"></span></li>
+    <li>We / swim. We / see a jellyfish.<br><span class="answer-line"></span></li>
+  </ol>
+
+  <div class="task-title">Zadanie 13. There was / There were <span class="points">/4 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania wpisując <i>there was, there wasn't, there were</i> lub <i>there weren't</i>.</div>
+  <ol>
+    <li><span class="fill-line"></span> a big shopping centre in our town, but it's closed now.</li>
+    <li><span class="fill-line"></span> any children in the park – it was empty.</li>
+    <li><span class="fill-line"></span> lots of animals in the zoo when we visited.</li>
+    <li><span class="fill-line"></span> a swimming pool in the old school.</li>
+  </ol>
+</div>
+
+<!-- ==================== STRONA 4 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ D – GRAMATYKA: Present Perfect i czasowniki modalne</div>
+
+  <div class="task-title">Zadanie 14. Present Perfect z <i>ever / never</i> <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Napisz zdania w Present Perfect używając podanych elementów.</div>
+  <ol>
+    <li>you / ever / eat / sushi? (pytanie)<br><span class="answer-line"></span></li>
+    <li>I / never / be / to England.<br><span class="answer-line"></span></li>
+    <li>she / ever / ride / a horse? (pytanie)<br><span class="answer-line"></span></li>
+    <li>We / never / win / a competition.<br><span class="answer-line"></span></li>
+    <li>He / ever / see / a real volcano? (pytanie)<br><span class="answer-line"></span></li>
+    <li>They / never / try / skiing.<br><span class="answer-line"></span></li>
+  </ol>
+
+  <div class="task-title">Zadanie 15. Czasowniki modalne <span class="points">/8 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania: <i>can, can't, should, shouldn't, must, mustn't, have to</i>.</div>
+  <ol>
+    <li>You <span class="fill-line"></span> eat in the library – it's against the rules.</li>
+    <li>I <span class="fill-line"></span> speak three languages: Polish, English and German.</li>
+    <li>You look tired. You <span class="fill-line"></span> go to bed earlier.</li>
+    <li>Students <span class="fill-line"></span> wear a uniform at this school – it's required.</li>
+    <li>She <span class="fill-line"></span> swim yet – she's only three years old.</li>
+    <li>You <span class="fill-line"></span> eat so much sugar – it's bad for your teeth.</li>
+    <li>He <span class="fill-line"></span> take medicine three times a day – the doctor said so.</li>
+    <li>Passengers <span class="fill-line"></span> smoke on the plane.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 16. Zwroty z <i>get</i> <span class="points">/4 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania odpowiednim zwrotem z <i>get</i>: <i>get tired, get angry, get better, get lost</i>.</div>
+  <ol>
+    <li>My dad always <span class="fill-line fill-line-long"></span> when I leave my room messy.</li>
+    <li>I hope you <span class="fill-line fill-line-long"></span> soon – drink lots of water and rest.</li>
+    <li>She often <span class="fill-line fill-line-long"></span> after a long day at school.</li>
+    <li>We didn't have a map, so we <span class="fill-line fill-line-long"></span> in the forest.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 17. Let's / How about <span class="points">/4 pkt</span></div>
+  <div class="task-instruction">Napisz propozycje używając <i>Let's…</i> lub <i>How about + -ing</i>.</div>
+  <ol>
+    <li>Zaproponuj wspólne pójście do kina: <span class="answer-line"></span></li>
+    <li>Zaproponuj grę w piłkę nożną: <span class="answer-line"></span></li>
+    <li>Zaproponuj zjedzenie pizzy na obiad: <span class="answer-line"></span></li>
+    <li>Zaproponuj jazdę na rowerze: <span class="answer-line"></span></li>
+  </ol>
+</div>
+
+<!-- ==================== STRONA 5 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ E – FORMY NIEREGULARNE CZASOWNIKÓW</div>
+
+  <div class="task-title">Zadanie 18. Trzy formy czasowników nieregularnych <span class="points">/20 pkt</span></div>
+  <div class="task-instruction">Uzupełnij tabelę brakującymi formami czasowników.</div>
+
+  <table class="verb-table">
+    <tr>
+      <th>Base form</th><th>Past Simple</th><th>Past Participle</th>
+      <th style="width:12px"></th>
+      <th>Base form</th><th>Past Simple</th><th>Past Participle</th>
+    </tr>
+    <tr>
+      <td class="given">be</td><td></td><td></td>
+      <td></td>
+      <td class="given">leave</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">break</td><td></td><td></td>
+      <td></td>
+      <td class="given">lose</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">buy</td><td></td><td></td>
+      <td></td>
+      <td class="given">make</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">come</td><td></td><td></td>
+      <td></td>
+      <td class="given">meet</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">do</td><td></td><td></td>
+      <td></td>
+      <td class="given">ride</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">drink</td><td></td><td></td>
+      <td></td>
+      <td class="given">run</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">eat</td><td></td><td></td>
+      <td></td>
+      <td class="given">see</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">fall</td><td></td><td></td>
+      <td></td>
+      <td class="given">sing</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">fly</td><td></td><td></td>
+      <td></td>
+      <td class="given">steal</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">forget</td><td></td><td></td>
+      <td></td>
+      <td class="given">swim</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">give</td><td></td><td></td>
+      <td></td>
+      <td class="given">take</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">go</td><td></td><td></td>
+      <td></td>
+      <td class="given">tell</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">hear</td><td></td><td></td>
+      <td></td>
+      <td class="given">throw</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">hurt</td><td></td><td></td>
+      <td></td>
+      <td class="given">wear</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="given">find</td><td></td><td></td>
+      <td></td>
+      <td class="given">write</td><td></td><td></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ==================== STRONA 6 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ F – PRZYMIOTNIKI, PRZYSŁÓWKI, RZECZOWNIKI, PRZEDIMKI, PRZYIMKI</div>
+
+  <div class="task-title">Zadanie 19. Stopniowanie przymiotników <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Uzupełnij tabelę.</div>
+  <table class="verb-table">
+    <tr><th>Podstawowy</th><th>Stopień wyższy</th><th>Stopień najwyższy</th></tr>
+    <tr><td class="given">big</td><td></td><td></td></tr>
+    <tr><td class="given">beautiful</td><td></td><td></td></tr>
+    <tr><td class="given">good</td><td></td><td></td></tr>
+    <tr><td class="given">fast</td><td></td><td></td></tr>
+    <tr><td class="given">bad</td><td></td><td></td></tr>
+    <tr><td class="given">comfortable</td><td></td><td></td></tr>
+  </table>
+
+  <div class="task-title">Zadanie 20. too / enough / as…as <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania: <i>too, enough</i> lub <i>as…as</i>.</div>
+  <ol>
+    <li>This bag is <span class="fill-line"></span> heavy for me to carry.</li>
+    <li>She isn't old <span class="fill-line"></span> to watch that film.</li>
+    <li>My brother is <span class="fill-line"></span> tall <span class="fill-line"></span> our dad now.</li>
+    <li>The soup is <span class="fill-line"></span> hot – wait a few minutes.</li>
+    <li>He didn't study hard <span class="fill-line"></span> to pass the test.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 21. Przysłówki sposobu <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Zamień przymiotnik na przysłówek i wstaw do zdania.</div>
+  <ol>
+    <li>She is a careful driver. → She drives <span class="fill-line fill-line-long"></span>.</li>
+    <li>He is a fast runner. → He runs <span class="fill-line fill-line-long"></span>.</li>
+    <li>They are quiet students. → They work <span class="fill-line fill-line-long"></span>.</li>
+    <li>She is a good singer. → She sings <span class="fill-line fill-line-long"></span>.</li>
+    <li>It was a sudden stop. → The car stopped <span class="fill-line fill-line-long"></span>.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 22. Przedimki a / an / the / – (zero) <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Wstaw odpowiedni przedimek lub pozostaw puste miejsce (–).</div>
+  <ol>
+    <li>I have <span class="fill-line"></span> dog and <span class="fill-line"></span> cat. <span class="fill-line"></span> dog is bigger.</li>
+    <li>She goes to school by <span class="fill-line"></span> bus every day.</li>
+    <li>Can you see <span class="fill-line"></span> moon tonight? It's beautiful!</li>
+    <li>We had <span class="fill-line"></span> amazing trip to <span class="fill-line"></span> USA last summer.</li>
+    <li>I usually have <span class="fill-line"></span> breakfast at 7 o'clock.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 23. Przyimki miejsca, czasu i sposobu <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Wstaw odpowiedni przyimek: <i>in, on, at, to, by, with, from, next to</i>.</div>
+  <ol>
+    <li>The lesson starts <span class="fill-line"></span> 8 o'clock <span class="fill-line"></span> Monday morning.</li>
+    <li>She travelled <span class="fill-line"></span> train from Warsaw <span class="fill-line"></span> Kraków.</li>
+    <li>The supermarket is <span class="fill-line"></span> the cinema, on the left.</li>
+    <li>I was born <span class="fill-line"></span> July <span class="fill-line"></span> 2013.</li>
+    <li>He cut the bread <span class="fill-line"></span> a sharp knife.</li>
+  </ol>
+</div>
+
+<!-- ==================== STRONA 7 ==================== -->
+<div class="page">
+  <div class="section-title">CZĘŚĆ G – ZDANIA ZŁOŻONE, SPÓJNIKI I ZAIMKI</div>
+
+  <div class="task-title">Zadanie 24. Spójniki <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Uzupełnij zdania spójnikiem: <i>and, or, because, if, while</i>.</div>
+  <ol>
+    <li>I like pizza <span class="fill-line"></span> pasta, but I don't like fish.</li>
+    <li>She was cooking dinner <span class="fill-line"></span> her brother was doing homework.</li>
+    <li>Do you want tea <span class="fill-line"></span> coffee?</li>
+    <li>You will fail the test <span class="fill-line"></span> you don't study.</li>
+    <li>He was tired <span class="fill-line"></span> he had worked all day.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 25. Zdania złożone – układanie <span class="points">/6 pkt</span></div>
+  <div class="task-instruction">Połącz dwa zdania w jedno, używając podanego spójnika.</div>
+  <ol class="rewrite">
+    <li>My sister was reading a book. I was watching TV. (<i>while</i>)<br><span class="answer-line"></span></li>
+    <li>She is happy. She won the competition. (<i>because</i>)<br><span class="answer-line"></span></li>
+    <li>You can come to my house. You finish your homework first. (<i>if</i>)<br><span class="answer-line"></span></li>
+    <li>He likes dogs. He doesn't like cats. (<i>but</i>)<br><span class="answer-line"></span></li>
+    <li>The phone rang. We were leaving the house. (<i>when</i>)<br><span class="answer-line"></span></li>
+    <li>She can swim. She can ride a horse. (<i>and</i>)<br><span class="answer-line"></span></li>
+  </ol>
+
+  <div class="task-title">Zadanie 26. Zaimki nieokreślone <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Wstaw: <i>some, any, everyone, everything, everywhere</i>.</div>
+  <ol>
+    <li>Is there <span class="fill-line"></span> milk in the fridge?</li>
+    <li>I'd like <span class="fill-line"></span> orange juice, please.</li>
+    <li><span class="fill-line"></span> in the class passed the test – great job!</li>
+    <li>She looked <span class="fill-line"></span> for her keys but couldn't find them.</li>
+    <li>Is <span class="fill-line"></span> ready? We're about to start.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 27. Rzeczowniki policzalne i niepoliczalne <span class="points">/5 pkt</span></div>
+  <div class="task-instruction">Zakreśl właściwe słowo.</div>
+  <ol>
+    <li>There is <b>a little / a few</b> sugar left in the bowl.</li>
+    <li>We need <b>much / many</b> eggs for this recipe.</li>
+    <li>She has <b>a lot of / much</b> friends at school.</li>
+    <li>There isn't <b>much / many</b> time left before the exam.</li>
+    <li>I only have <b>a few / a little</b> minutes – I'm in a hurry.</li>
+  </ol>
+
+  <div class="task-title">Zadanie 28. Wyrażenia przysłówkowe – narracja <span class="points">/4 pkt</span></div>
+  <div class="task-instruction">Ułóż zdania w logiczną historię, wpisując: <i>First, Then, After that, Finally</i>.</div>
+  <div class="box">
+    <p><span class="fill-line"></span>, I woke up and had breakfast.</p>
+    <p><span class="fill-line"></span>, I got dressed and packed my bag.</p>
+    <p><span class="fill-line"></span>, I walked to the bus stop.</p>
+    <p><span class="fill-line"></span>, I arrived at school just in time.</p>
+  </div>
+
+  <div style="margin-top:20px; text-align:center; font-size:12px; color:#555; border-top:1px solid #ccc; padding-top:10px;">
+    ★ &nbsp; Powodzenia! Good luck! &nbsp; ★<br>
+    <span style="font-size:10px;">Test przygotowany dla ucznia Kolegium Św. Rodziny w Łomiankach</span>
+  </div>
+</div>
+
+</body>
+</html>

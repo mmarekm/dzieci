@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: silver;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: brown;
+    text-align: center;
+}
+#wszystko {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+#content {
+    width: 100%;
+    margin-top: 5px;
+    border: 2px solid white;
+    text-align: left;
+}
+#uwagi {
+    width: 100%;
+    border: 1px dotted white;
+    font-size: 12px;
+}
+#siteTitle {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: black;
+}
+#osTytul, #osUla, #osBasia, #osAnia {
+    width: 100%;
+}
+.przedmiot {
+    display: inline-block;
+    width: 15%;
+    height: 50px;
+    padding-top: 20px;
+    border: 1px dotted white;
+    font-size: 22px;
+    color: blue;
+}
+.ramkaPierwsza {
+    float: left;
+    width: 6.55%;
+    height: 50px;
+    padding-top: 10px;
+    border: 1px dotted white;
+    font-size: 33px;
+    font-weight: 700;
+    color: green;
+}
+.ramka {
+    float: left;
+    width: 6.55%;
+    height: 50px;
+    padding-top: 10px;
+    border: 1px dotted white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.postepy {
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+}
+.postepy a, .postepy a:visited {
+    color: red;
+}
+.stanNauki {
+    float: left;
+    width: 33.2%;
+    border: 1px dotted white;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+.zagadnienia {
+    float: left;
+    width: 33.2%;
+    border: 1px dotted white;
+}
+.zagadnienie {
+    display: inline-block;
+    margin: 2px;
+    padding-right: 3px;
+    border-right: 1px dotted white;
+    font-size: 18px;
+}
+.pdf-container {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: 800px;
+    overflow: hidden;
+}
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.pdf-container:hover {
+    overflow-y: scroll;
+}
+.opis {
+    float: left;
+    width: 33.33%;
+    margin-top: 20px;
+    font-size: 33px;
+    font-weight: 700;
+    color: green;
+}
+.pilne {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.planLekcji {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.tytulPlanu {
+    position: relative;
+    min-height: 80px;
+}
+.tytulTytuluPlanu {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.ktoryTydzien {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 33px;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: beige;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th {
+    padding: 2px;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+.zadanie {
+    padding: 4px;
+}
+.dzien {
+    font-weight: bold;
+}
+.foto {
+    text-align: center;
+    vertical-align: middle;
+}
+.foto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid #ccc;
+}
+.biezacy td {
+    background-color: beige;
+    border-top: 2px solid gold;
+    border-bottom: 2px solid gold;
+}
+.juzByl {
+    opacity: 0.5;
+    background-color: dimgray;
+}
+a {
+    text-decoration: none;
+    color: green;
+}
+a:hover {
+    color: green;
+}
+a:visited {
+    color: green;
+}
+.doSlowa a, .doSlowa a:visited, .doSlowaDzis a, .doSlowaDzis a:visited, .doSlowaJutro a, .doSlowaJutro a:visited, .doLekcjonarza a {
+    color: white;
+}
+.doSlowa a:hover, .doSlowaDzis a:hover, .doSlowaJutro a:hover {
+    color: green;
+}
+.doSlowa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 10vh;
+    font-size: clamp(21px, 4.5vw, 36px);
+}
+.doRozkladow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 10vh;
+    font-size: clamp(14px, 3vw, 24px);
+}
+.doSlowaDzis, .doSlowaJutro {
+    font-size: clamp(21px, 3.5vw, 36px);
+    text-align: center;
+}
+.kontenerSlowo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    gap: 10%;
+}
+.kontenerDzisSlowo {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+}
+#trescDzis p, #trescJutro p {
+    margin-bottom: 8px;
+    font-size: clamp(15px, 2.5vw, 20px);
+    line-height: 1.8;
+    color: black;
+}
+.odstep {
+    height: 1.5em;
+}
+.Ewangelia {
+    font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+    color: darkred;
+}
+.alignCenter {
+    text-align: center;
+}
+.podstrona {
+    font-size: 20px;
+    text-align: left;
+}
+.werset {
+    color: black;
+    font-size: clamp(15px, 2.5vw, 20px);
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+    }
+    .planLekcji {
+        padding: 5px;
+        border-width: 2px;
+    }
+    .tytulTytuluPlanu, .ktoryTydzien {
+        position: static;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .planSzczegolowy table {
+        font-size: 14px;
+    }
+    .foto img {
+        width: 100px;
+        height: 100px;
+    }
+    td, th {
+        padding: 4px;
+        font-size: 13px;
+    }
+    .zadanie {
+        padding: 4px;
+    }
+    #osTytul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    .przedmiot {
+        padding: 5px;
+        font-size: 13px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 600px) {
+    .doSlowa {
+        width: 80%;
+        font-size: clamp(24px, 7.5vw, 33px);
+    }
+    .doRozkladow {
+        width: 80%;
+        font-size: clamp(16px, 5vw, 22px);
+    }
+    .doSlowaDzis, .doSlowaJutro {
+        font-size: clamp(20px, 6vw, 30px);
+    }
+    .kontenerSlowo {
+        flex-direction: column;
+    }
+    .kontenerDzisSlowo {
+        width: 100%;
+        padding: 10px;
+    }
+    #trescDzis p, #trescJutro p {
+        font-size: clamp(15px, 4.5vw, 19px);
+        line-height: 1.7;
+    }
+	.werset {
+    font-size: clamp(15px, 4.5vw, 19px);
+    line-height: 1.7;
+}
+}

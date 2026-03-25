@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dla Ani</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+    background: #fff;
+  }
+  .print-btn {
+    display: block; margin: 18px auto; padding: 10px 32px;
+    background: #e05a9a; color: #fff; border: none; border-radius: 20px;
+    font-size: 16px; cursor: pointer;
+  }
+  .print-btn:hover { background: #b03070; }
+  .name-page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 24px auto;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    page-break-after: always;
+  }
+  .name-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 24px auto;
+    border: 1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header {
+    width: 100%;
+    height: 18mm;
+    background: #fce4f0;
+    border-bottom: 3px solid #e05a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .page-header span {
+    font-size: 16px;
+    color: #c0306a;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .page-image {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 6mm;
+    overflow: hidden;
+  }
+  .page-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Obrócony obrazek landscape -> portrait */
+  .page-image img.rotated {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    /* szerokość obrazka landscape = wysokość dostępnego obszaru strony */
+    width: calc(297mm - 18mm - 10mm - 12mm);
+    transform: rotate(90deg);
+    transform-origin: center center;
+  }
+
+  .page-footer {
+    width: 100%;
+    height: 10mm;
+    background: #fce4f0;
+    border-top: 2px solid #f7b8d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8mm;
+    flex-shrink: 0;
+  }
+  .page-footer span {
+    font-size: 9px;
+    color: #c0306a;
+  }
+  @media print {
+    .print-btn { display: none; }
+    .name-page, .page {
+      border: none;
+      margin: 0;
+      width: 210mm;
+      height: 297mm;
+    }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">🖨️ Drukuj test Ani</button>
+
+<!-- STRONA TYTUŁOWA Z IMIENIEM -->
+<div class="name-page">
+  <img src="tytulAnia.png" alt="Tytuł – imię dziecka" />
+</div>
+
+<!-- STRONA 1 -->
+<div class="page">
+  <div class="page-header">
+    <span>🐓 KOLORUJ KURKI I KOGUTA! 🐓</span>
+  </div>
+  <div class="page-image">
+    <img src="strona1.png" alt="Kolorowanka – kurka, kogut, kurczątko" />
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<!-- STRONA 3 -->
+<div class="page">
+  <div class="page-header">
+    <span>🔵 POKOLORUJ WSZYSTKIE KURKI! 🔵</span>
+  </div>
+  <div class="page-image">
+    <img src="strona3.png" alt="Zakreślanie kurek" />
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<!-- STRONA 4 – obrazek landscape, obracamy o 90° -->
+<div class="page">
+  <div class="page-header">
+    <span>🎨 POKOLORUJ ZWIERZĄTKA! 🎨</span>
+  </div>
+  <div class="page-image">
+    <img src="strona4.png" class="rotated" alt="Kolorowanka – zwierzęta wiejskie" />
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<!-- STRONA 5 -->
+<div class="page">
+  <div class="page-header">
+    <span>⭐ POLICZ I ZAKREŚL GWIAZDKI! ⭐</span>
+  </div>
+  <div class="page-image">
+    <img src="strona5.png" alt="Liczenie zwierzątek i gwiazdki" />
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+</body>
+</html>

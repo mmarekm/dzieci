@@ -1,0 +1,120 @@
+const klucz = {'20260325':'ZwiastowaniePanskie', '20260326':'cz5WP', '20260327':'pt5WP', '20260328':'sb5WP', '20260329':'NdzPalmowaA', '20260330':'wielkiPn', '20260331':'wielkiWt', '20260401':'wielkaSr', '20260402':'wielkiCz', '20260403':'wielkiPt', '20260404':'WigiliaPaschalnaA', '20260405':'ZmartwychwstaniePanskie', '20260406':'PnWlk', '20260407':'WtWlk', '20260408':'SrWlk', '20260409':'CzWlk', '20260410':'PtWlk', '20260411':'SbWlk', '20260412':'Ndz2WlkA', '20260413':'pn2Wlk', '20260414':'wt2Wlk', '20260415':'sr2Wlk', '20260416':'cz2Wlk', '20260417':'pt2Wlk', '20260418':'sb2Wlk', '20260419':'Ndz3Wlk', '20260420':'pn3Wlk', '20260421':'wt3Wlk', '20260422':'sr3Wlk', '20260423':'WojciechaBiskupaMeczennikaPatronaPolski'};
+
+function dataDoStr(data) {
+    const rok = data.getFullYear();
+    const miesiac = String(data.getMonth() + 1).padStart(2, '0');
+    const dzien = String(data.getDate()).padStart(2, '0');
+    return `${rok}${miesiac}${dzien}`;
+}
+
+const cacheJson = {};
+
+function pobierzJson(ksiega) {
+    if (cacheJson[ksiega]) {
+        return Promise.resolve(cacheJson[ksiega]);
+    }
+    return fetch(`Biblia/${ksiega}.json`)
+        .then(r => r.json())
+        .then(dane => {
+            cacheJson[ksiega] = dane;
+            return dane;
+        });
+}
+
+function wypelnijWersety() {
+    const elementy = document.querySelectorAll('.werset');
+    elementy.forEach(p => {
+        const ref = p.getAttribute('data-ref');
+        if (!ref) return;
+        const czesci = ref.trim().split(' ');
+        const ksiega = czesci[0];
+        const zakresy = czesci[1].split('.');
+        const rozdzial = zakresy[0].split(',')[0];
+        pobierzJson(ksiega).then(dane => {
+            const tekstoweKlucze = p.classList.contains('psalm');
+            if (tekstoweKlucze) {
+                const linie = [];
+                zakresy.forEach(zakres => {
+                    const klucz = zakres.includes(',')
+                        ? zakres.split(',')[1]
+                        : zakres;
+                    if (dane[rozdzial] && dane[rozdzial][klucz]) {
+                        linie.push(dane[rozdzial][klucz]);
+                    }
+                });
+                p.innerHTML = linie.join('<br>');
+            } else {
+                let tekst = '';
+                zakresy.forEach(zakres => {
+                    let wersety_str = zakres.includes(',')
+                        ? zakres.split(',')[1]
+                        : zakres;
+                    if (/^\d+[a-z]$/.test(wersety_str)) {
+                        if (dane[rozdzial] && dane[rozdzial][wersety_str]) {
+                            tekst += dane[rozdzial][wersety_str] + ' ';
+                        }
+                    } else if (wersety_str.includes('-')) {
+                        const czesciZakresu = wersety_str.split('-');
+                        const odStr = czesciZakresu[0];
+                        const doStr = czesciZakresu[1];
+                        const od = parseInt(odStr);
+                        const doNum = parseInt(doStr);
+                        if (/[a-z]$/.test(odStr)) {
+                            if (dane[rozdzial] && dane[rozdzial][odStr]) {
+                                tekst += dane[rozdzial][odStr] + ' ';
+                            }
+                        }
+                        const odNum = /[a-z]$/.test(odStr) ? od + 1 : od;
+                        for (let i = odNum; i <= doNum; i++) {
+                            if (dane[rozdzial] && dane[rozdzial][String(i)]) {
+                                tekst += dane[rozdzial][String(i)] + ' ';
+                            }
+                        }
+                        if (/[a-z]$/.test(doStr)) {
+                            if (dane[rozdzial] && dane[rozdzial][doStr]) {
+                                tekst += dane[rozdzial][doStr] + ' ';
+                            }
+                        }
+                    } else {
+                        const i = Number(wersety_str);
+                        if (dane[rozdzial] && dane[rozdzial][String(i)]) {
+                            tekst += dane[rozdzial][String(i)] + ' ';
+                        }
+                    }
+                });
+                p.textContent = tekst.trim();
+            }
+        }).catch(() => {
+            p.textContent = `Brak tekstu: ${ref}`;
+        });
+    });
+}
+
+function pobierzFragment(nazwaPliku, idElementu) {
+    const element = document.getElementById(idElementu);
+    if (!element) return;
+
+    if (nazwaPliku) {
+        fetch(`Slowo/${nazwaPliku}.html`)
+            .then(r => r.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                element.innerHTML = doc.getElementById('fragment').innerHTML;
+                wypelnijWersety();
+            })
+            .catch(() => { element.innerHTML = ''; });
+    } else {
+        element.innerHTML = '';
+    }
+}
+
+const dzis = new Date();
+const jutro = new Date(dzis);
+jutro.setDate(dzis.getDate() + 1);
+
+const kluczDzis = klucz[dataDoStr(dzis)];
+const kluczJutro = klucz[dataDoStr(jutro)];
+
+pobierzFragment(kluczDzis, 'trescDzis');
+pobierzFragment(kluczJutro, 'trescJutro');
