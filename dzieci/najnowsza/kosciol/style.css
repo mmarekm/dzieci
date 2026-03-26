@@ -1,0 +1,51 @@
+body {
+	background-color: gold;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.kontener {
+	display: flex;
+	gap: 30px;
+	padding: 20px;
+}
+.nadzieja {
+	background-color: green;
+	flex: 1;
+}
+.hanba {
+	background-color: red;
+	flex: 1;
+}
+.elementListy {
+    font-size: 16px;
+    padding: 10px;
+    color: white;
+}
+.list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    line-height: 1.7;
+}
+blockquote {
+    border-left: 4px solid gray;
+    padding-left: 15px;
+    font-style: italic;
+    margin: 20px 0;
+}
+.przypisy {
+    font-size: 13px;
+    color: #444;
+}
+.zrodlo {
+    margin-top: 20px;
+    font-size: 13px;
+}
+@media (max-width: 600px) {
+    .kontener {
+        flex-direction: column;
+    }
+}
