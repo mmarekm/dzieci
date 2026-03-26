@@ -1,0 +1,286 @@
+html
+{
+	height: 100%;
+}
+.ledwoWidoczny
+{
+	font-size: 5px;
+}
+body
+{
+	background-color: gray;
+	font-family: Serif;
+	font-size: 24px;
+	color: black;
+}
+h4
+{
+	font-size: 48px;
+	color: red !important;
+}
+h5
+{
+	font-size: 33px;
+	color: yellow !important;
+}
+h6
+{
+	font-size: 26px;
+	color: springgreen !important;
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+table.wysrodkowana td
+{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+a:link
+{
+	color: lime;
+}
+a:visited
+{
+	color: lime;
+}
+a:hover
+{
+	color: red;
+}
+#polska
+{
+	text-align: center;
+	background-color: white;
+	padding: 40px;
+	margin: 60px 60px 0 60px;
+}
+#polska a
+{
+	color: red;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-size: 100px;
+	font-weight: 700;
+}
+.duzyDzial
+{
+	flex: 1 0 20%;
+	font-family: Blackadder ITC;
+	border: 3px solid lime;
+	background-color: brown;
+	color: black;
+	padding: 20px;
+	margin: 30px;
+	font-size: 33px;
+	text-align: center;
+}
+.malyDzial
+{
+	margin: 30px auto 30px auto;
+	padding: 20px;
+	font-size: 24px;
+	border: 2px solid gold;
+	text-align: center;
+	background-color: black;
+	opacity: 0.7;
+	width: 50%;
+}
+.container
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tresc
+{
+	flex: 1 0 40%;
+}
+.obrazy
+{
+	flex: 1 0 40%;
+}
+.spanowy
+{
+	font-weight: 300;
+	font-style: italic;
+}
+.przypis
+{
+	font-size: 10px;
+}
+.zObrazkiem
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 10px;
+}
+.naglowek
+{
+	text-align: center;
+	margin: 20px 0px 10px 0px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	font-size: 30px;
+	position: relative;
+	//animation: ruchNaglowka 2s ease-in-out infinite alternate;
+}
+
+@keyframes ruchNaglowka
+{
+	0%
+	{
+			left: 0%;
+	}
+	100%
+	{
+		left: 30%;
+	}
+}
+.kultura
+{
+	border: 2px solid black;
+	padding: 5px;
+}
+.nazwaKultury
+{
+	text-align: center;
+	border-bottom: 2px dotted black;
+	padding: 5px;
+	font-weight: 700;
+}
+.datyKultury
+{
+	float: left;
+	width: 20%;
+	border-right: 1px dotted black;
+}
+.opisKultury
+{
+	float: left;
+	width: 79%;
+	border-left: 1px dotted black;
+	padding-left: 5px;
+}
+.szczegolyKultury
+{
+	
+}
+
+table {
+	font-size: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: green;
+    font-weight: bold;
+}
+td {
+    vertical-align: top;
+}
+td:nth-child(3) {
+    width: 50%;
+}
+tbody tr:nth-child(odd) {
+    background-color: yellow;
+}
+tbody tr:nth-child(even) {
+    background-color: gold;
+}
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+@media (max-width: 768px)
+{
+    #polska
+    {
+        padding: 15px;
+        margin: 15px;
+    }
+    #polska a
+    {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    .duzyDzial
+    {
+        flex: 1 0 100%;
+        margin: 10px;
+        font-size: 22px;
+    }
+    .malyDzial
+    {
+        width: 90%;
+        font-size: 18px;
+        margin: 15px auto;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .tresc, .obrazy
+    {
+        flex: 1 0 100%;
+    }
+    .naglowek
+    {
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+    h4
+    {
+        font-size: 30px;
+    }
+    h5
+    {
+        font-size: 24px;
+    }
+    h6
+    {
+        font-size: 20px;
+    }
+    .datyKultury
+    {
+        float: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dotted black;
+    }
+    .opisKultury
+    {
+        float: none;
+        width: 100%;
+        border-left: none;
+        padding-left: 0;
+    }
+    table
+    {
+        font-size: 14px;
+    }
+    th, td
+    {
+        padding: 5px;
+    }
+    td:nth-child(3)
+    {
+        width: auto;
+    }
+    .zObrazkiem
+    {
+        flex-direction: column;
+    }
+}
