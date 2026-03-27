@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gray;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    color: whitesmoke;
+}
+.container {
+    width: 100%;
+}
+.wydarzenie {
+    background-color: rgba(0, 0, 0, 0.55);
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    line-height: 1.6;
+    border-radius: 4px;
+}
+.data {
+    font-weight: bold;
+    color: lightcoral;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .wydarzenie {
+        margin: 0 8px 12px 8px;
+        padding: 8px;
+    }
+}

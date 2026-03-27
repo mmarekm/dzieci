@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('kings.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    color: whitesmoke;
+}
+.container {
+    width: 100%;
+    padding: 20px;
+}
+.panel {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+a:link, a:visited {
+    color: gold;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+.tytulPanelu {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    color: gold;
+}
+.prowadzacyPanel {
+    text-align: center;
+    color: whitesmoke;
+    margin: 5px 0;
+}
+.uczestnicyPanelu {
+    text-align: center;
+    color: whitesmoke;
+    margin: 5px 0 20px 0;
+    font-style: italic;
+}
+.poczatekRelacji {
+    margin: 10px 20px;
+    color: whitesmoke;
+}
+.tezaPanelu {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 4px solid gold;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    .panel {
+        margin: 8px;
+        padding: 8px;
+    }
+	.tytulPanelu {
+        font-size: 22px;
+    }
+    .tezaPanelu {
+        margin: 8px;
+        padding: 8px;
+    }
+}
