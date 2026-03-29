@@ -53,11 +53,17 @@ a:hover {
     color: whitesmoke;
 }
 .tezaPanelu {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.55);
     margin: 10px 20px;
-    padding: 10px;
+    padding: 14px 16px;      /* było: 10px — trochę więcej oddechu */
     border-radius: 4px;
     border-left: 4px solid gold;
+    line-height: 1.6;        /* dodane — tekst nie jest stłoczony */
+}
+
+.tezaPanelu em {             /* dodane — kursywa złota jak tytuł */
+    color: gold;
+    font-style: italic;
 }
 @media (max-width: 600px) {
     body {

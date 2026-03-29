@@ -1,4 +1,4 @@
-const klucz = {'20260329':'NdzPalmowaA', '20260330':'wielkiPn', '20260331':'wielkiWt', '20260401':'wielkaSr', '20260402':'wielkiCz', '20260403':'wielkiPt', '20260404':'WigiliaPaschalnaA', '20260405':'ZmartwychwstaniePanskie', '20260406':'PnWlk', '20260407':'WtWlk', '20260408':'SrWlk', '20260409':'CzWlk', '20260410':'PtWlk', '20260411':'SbWlk', '20260412':'Ndz2WlkA', '20260413':'pn2Wlk', '20260414':'wt2Wlk', '20260415':'sr2Wlk', '20260416':'cz2Wlk', '20260417':'pt2Wlk', '20260418':'sb2Wlk', '20260419':'Ndz3WlkA', '20260420':'pn3Wlk', '20260421':'wt3Wlk', '20260422':'sr3Wlk', '20260423':'WojciechaBiskupaMeczennikaPatronaPolski', '20260424':'pt3Wlk', '20260425':'MarkaEwangelisty', '20260426':'Ndz4WlkA', '20260427':'pn4Wlk', '20260428':'wt4Wlk', '20260429':'KatarzynySienenskiej'};
+const klucz = {'20260329':'NdzPalmowaA', '20260330':'wielkiPn', '20260331':'wielkiWt', '20260401':'wielkaSr', '20260402':'wielkiCz', '20260403':'wielkiPt', '20260404':'WigiliaPaschalnaA', '20260405':'ZmartwychwstaniePanskie', '20260406':'PnWlk', '20260407':'WtWlk', '20260408':'SrWlk', '20260409':'CzWlk', '20260410':'PtWlk', '20260411':'SbWlk', '20260412':'Ndz2WlkA', '20260413':'pn2Wlk', '20260414':'wt2Wlk', '20260415':'sr2Wlk', '20260416':'cz2Wlk', '20260417':'pt2Wlk', '20260418':'sb2Wlk', '20260419':'Ndz3WlkA', '20260420':'pn3Wlk', '20260421':'wt3Wlk', '20260422':'sr3Wlk', '20260423':'WojciechaBiskupaMeczennikaPatronaPolski', '20260424':'pt3Wlk', '20260425':'MarkaEwangelisty', '20260426':'Ndz4WlkA', '20260427':'pn4Wlk', '20260428':'wt4Wlk', '20260429':'KatarzynySienenskiej', '20260430':'cz4Wlk', '20260501':['pt4Wlk', 'JozefaRzemieslnika']};
 
 function dataDoStr(data) {
     const rok = data.getFullYear();
@@ -94,19 +94,28 @@ function pobierzFragment(nazwaPliku, idElementu) {
     const element = document.getElementById(idElementu);
     if (!element) return;
 
-    if (nazwaPliku) {
-        fetch(`Slowo/${nazwaPliku}.html`)
+    const pliki = Array.isArray(nazwaPliku) ? nazwaPliku : (nazwaPliku ? [nazwaPliku] : []);
+
+    if (pliki.length === 0) {
+        element.innerHTML = '';
+        return;
+    }
+
+    element.innerHTML = '';
+
+    pliki.forEach(plik => {
+        fetch(`Slowo/${plik}.html`)
             .then(r => r.text())
             .then(html => {
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
-                element.innerHTML = doc.getElementById('fragment').innerHTML;
+                const div = document.createElement('div');
+                div.innerHTML = doc.getElementById('fragment').innerHTML;
+                element.appendChild(div);
                 wypelnijWersety();
             })
-            .catch(() => { element.innerHTML = ''; });
-    } else {
-        element.innerHTML = '';
-    }
+            .catch(() => {});
+    });
 }
 
 const dzis = new Date();

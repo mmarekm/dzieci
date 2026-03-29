@@ -15,7 +15,13 @@
 		"7a": "Ogłoszę postanowienie Pana. On rzekł do mnie: „Ty jesteś moim Synem,",
 		"7b": "Ja Ciebie dziś zrodziłem!",
 		"8a": "Proś Mnie, a dam Ci w dziedzictwo narody",
-		"8b": "i krańce ziemi w Twoje posiadanie."
+		"8b": "i krańce ziemi w Twoje posiadanie.",
+		"9a": "Będziesz je pasł laską żelazną,",
+		"9b": "skruszysz je jak gliniane naczynia”.",
+		"10a": "Teraz więc, królowie, zrozumcie,",
+		"10b": "przyjmijcie pouczenie, władcy ziemscy:",
+		"11a": "Służcie Panu z bojaźnią,",
+		"11b": "uwielbiajcie Go z drżeniem!"
 	},
 	"7": {
 		"2a": "Panie, Boże mój, w Tobie złożyłem nadzieję,",
@@ -425,6 +431,20 @@
 		"27b": "moim Bogiem i skałą ocalenia dla mnie».",
 		"29a": "Na wieki zachowam swą łaskę dla niego",
 		"29b": "i trwałe będzie moje z nim przymierze."
+	},
+	"90": {
+		"2a": "Zanim zrodziły się góry, nim powstał świat i ziemia,",
+		"2b": "od wieku po wiek Ty jesteś, Boże!",
+		"4a": "Bo tysiąc lat w Twoich oczach jest jak dzień wczorajszy, który minął,",
+		"4b": "i jak straż nocna.",
+		"12a": "Daj nam tak liczyć dni nasze,",
+		"12b": "byśmy nauczyli się żyć mądrze!",
+		"13a": "Powróć, Panie! Jak długo jeszcze?",
+		"13b": "Ulituj się nad Twoimi sługami!",
+		"14a": "Niech nas o świcie napełni Twoja łaska,",
+		"14b": "byśmy się mogli cieszyć przez wszystkie dni nasze!",
+		"16a": "Niech się ukaże Twym sługom Twoje dzieło,",
+		"16b": "a Twoja chwała nad ich synami!"
 	},
 	"93": {
 		"1a": "Pan jest królem, okrył się majestatem.",
