@@ -384,6 +384,20 @@
 		"17a": "Karmiłbym go obfitością zboża",
 		"17b": "i sycił miodem ze skały."
 	},
+	"87": {
+		"1": "Pan miłuje to, co założył na świętych górach:",
+		"2": "bramy Syjonu bardziej niż wszystkie namioty Jakuba.",
+		"3a": "Zaszczytne słowa mówią o Tobie,",
+		"3b": "o Miasto Boże!",
+		"4a": "Wymienię Rahab i Babilon wśród tych, co mnie znają. Oto Filistyni i Tyr, i Kusz:",
+		"4b": "oni tam się urodzili.",
+		"5a": "O Syjonie mówić się będzie: „Wszyscy co do jednego w nim się urodzili,",
+		"5b": "a On, Najwyższy, utwierdzi go”.",
+		"6a": "Pan zapisze w księdze narodów:",
+		"6b": "„Oni się tam urodzili!”.",
+		"7a": "I będą śpiewać wśród tańców:",
+		"7b": "„Wszystkie moje źródła są w tobie!”."
+	},
 	"89": {
 		"2a": "O Twoich łaskach, Panie, wiecznie będę śpiewać",
 		"2b": "i głosić Twoją wierność przez pokolenia.",
@@ -454,6 +468,28 @@
 		"20b": "Pan spojrzał z nieba na ziemię,",
 		"21a": "by usłyszeć jęki zakutych w kajdany",
 		"21b": "i rozwiązać na śmierć skazanych,"
+	},
+	"103": {
+		"1a": "Uwielbiaj, duszo moja, Pana,",
+		"1b": "i całe moje wnętrze – Jego święte imię.",
+		"2a": "Uwielbiaj, duszo moja, Pana,",
+		"2b": "nie zapominaj o tym, co dobrego ci uczynił.",
+		"3a": "On przebacza wszystkie twoje winy,",
+		"3b": "leczy wszystkie twe słabości.",
+		"4a": "On ocala od zguby twe życie,",
+		"4b": "wieńczy Cię łaską i miłosierdziem.",
+		"8a": "Miłosierny jest Pan i litościwy,",
+		"8b": "cierpliwy i pełen łaskawości.",
+		"9a": "Nie będzie się gniewał bez końca",
+		"9b": "ani nie będzie oburzony na wieki.",
+		"13a": "Jak ojciec lituje się nad dziećmi,",
+		"13b": "tak Pan lituje się nad swymi czcicielami.",
+		"14a": "Wie dobrze, z czego zostaliśmy stworzeni,",
+		"14b": "pamięta, że jesteśmy prochem.",
+		"17a": "Lecz łaska Pana przez wszystkie wieki nad Jego czcicielami,",
+		"17b": "a sprawiedliwość Jego nad ich potomstwem,",
+		"18a": "nad tymi, co zachowują Jego przymierze",
+		"18b": "i przestrzegają Jego przykazań."
 	},
 	"104": {
 		"1a": "Uwielbiaj, duszo moja, Pana!",
