@@ -591,6 +591,24 @@
 		"9a": "Udzielił jej Abrahamowi",
 		"9b": "i potwierdził przysięgą Izaakowi."
 	},
+	"113": {
+		"1a": "Słudzy, chwalcie Pana.",
+		"1b": "Chwalcie imię Pana!",
+		"2a": "Niech imię Pana będzie błogosławione,",
+		"2b": "teraz i na wieki.",
+		"3a": "Od wschodu słońca aż do zachodu,",
+		"3b": "niech będzie pochwalone imię Pana.",
+		"4a": "Pan wywyższony nad wszystkie narody,",
+		"4b": "ponad niebiosa Jego chwała.",
+		"5a": "Któż równy Panu, naszemu Bogu?",
+		"5b": "On mieszka na wysokościach,",
+		"6a": "a zniża się, by ujrzeć to,",
+		"6b": "co na niebie i na ziemi.",
+		"7a": "Podnosi z prochu nędzarza,",
+		"7b": "z gnoju wydobywa ubogiego,",
+		"8a": "by go posadzić z książętami,",
+		"8b": "z dostojnikami swojego ludu."
+	},
 	"115": {
 		"1a": "Nie nam, o Panie, nie nam, lecz Twemu imieniu daj chwałę",
 		"1b": "za Twoją łaskę i wierność.",
@@ -715,6 +733,19 @@
 		"8a": "To On odkupi Izraela",
 		"8b": "ze wszystkich jego przewinień."
 	},
+	"138": {
+		"1a": "Będę Cię sławił z całego serca,",
+		"1b": "będę Ci śpiewał psalm wobec mieszkańców niebios!",
+		"2a": "Pokłonię się przed Twoją świątynią",
+		"2b": "i będę sławił Twe imię za łaskę Twoją i wierność,",
+		"2c": "bo wywyższyłeś Twe słowo i imię ponad wszystko!",
+		"3a": "Kiedy Cię wzywałem, wysłuchałeś mnie,",
+		"3b": "pomnożyłeś moje siły!",
+		"7e": "i wybawiasz mnie swoją prawą ręką.",
+		"8a": "Pan za mnie tego dokona!",
+		"8b": "Panie, Twa łaska trwa na wieki,",
+		"8c": "nie porzucaj dzieła rąk Twoich!"
+	},
 	"145": {
 		"8a": "Miłosierny jest Pan i łaskawy,",
 		"8b": "cierpliwy i pełen litości.",
@@ -753,5 +784,35 @@
 		"19b": "swoje nakazy i wyroki Izraelowi.",
 		"20a": "Nie uczynił tak żadnemu narodowi,",
 		"20b": "nie objawił im wyroków swoich."
+	},
+	"148": {
+		"1a": "Chwalcie Pana z niebios,",
+		"1b": "chwalcie Go na wysokościach.",
+		"2a": "Chwalcie Go, wszyscy aniołowie Jego,",
+		"2b": "chwalcie Go, wszystkie Jego moce.",
+		"11a": "królowie ziemi i wszystkie ludy,",
+		"11b": "władcy i wszyscy rządzący na ziemi,",
+		"12a": "młodzieńcy i dziewczęta,",
+		"12b": "starcy razem z dziećmi.",
+		"13a": "Niech wychwalają imię Pana,",
+		"13b": "bo tylko Jego imię jest wzniosłe,",
+		"13c": "Jego majestat na ziemi i w niebie.",
+		"14a": "On przymnaża mocy swemu ludowi.",
+		"14b": "Chwała wszystkim Jego wiernym,",
+		"14c": "Izraelitom – ludowi, który jest Mu bliski."
+	},
+	"149": {
+		"1a": "Śpiewajcie Panu pieśń nową,",
+		"1b": "chwalcie Go w zgromadzeniu wiernych.",
+		"2a": "Niech cieszy się Izrael Stwórcą swoim,",
+		"2b": "a synowie Syjonu radują swym Królem.",
+		"3a": "Niech tańcem chwalą Jego imię,",
+		"3b": "niechaj Mu grają na bębnie i cytrze.",
+		"4a": "Bo Pan swój lud upodobał sobie,",
+		"4b": "pokornym daje zwycięstwo.",
+		"5a": "Niechaj się chlubią wierni chwałą Jego,",
+		"5b": "niech się radują na swych posłaniach.",
+		"6a": "Uwielbienie Boga niech gości w ich ustach,",
+		"9b": "to jest chluba wszystkich Jego wiernych."
 	}
 }
