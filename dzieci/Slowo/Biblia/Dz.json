@@ -23,6 +23,17 @@
 		"26": "Rozdali im więc losy. A los padł na Macieja. I dołączono go do grona jedenastu apostołów."
 	},
 	"2": {
+		"1": "Kiedy nadszedł dzień Pięćdziesiątnicy, byli wszyscy w tym samym miejscu.",
+		"2": "Nagle rozległ się szum z nieba, jakby gwałtownie wiejącego wiatru. I napełnił cały dom, w którym przebywali.",
+		"3": "Zobaczyli też języki podobne do ognia. Rozdzielały się one i na każdym z nich spoczął jeden.",
+		"4": "Wszystkich napełnił Duch Święty. Zaczęli mówić różnymi językami, tak jak im Duch pozwalał się wypowiadać.",
+		"5": "Przebywali wtedy w Jeruzalem mieszkańcy Judei i pobożni Żydzi ze wszystkich krajów świata.",
+		"6": "Kiedy usłyszeli ten szum, zebrali się tłumnie. Zdumieli się, gdyż każdy z nich słyszał, że przemawiają jego własną mową.",
+		"7": "Dziwiąc się temu bardzo, mówili: „Czyż ci wszyscy, którzy przemawiają, nie są Galilejczykami?",
+		"8": "Jak to więc możliwe, że każdy z nas słyszy swą ojczystą mowę?",
+		"9": "Są tu Partowie, Medowie, Elamici, mieszkańcy Mezopotamii, Judei, Kapadocji, Pontu, Azji,",
+		"10": "Frygii, Pamfilii, Egiptu, części Libii położonej w pobliżu Cyreny i przybysze z Rzymu.",
+		"11": "Są Żydzi oraz prozelici, Kreteńczycy oraz Arabowie, a słyszymy, jak w naszych językach mówią o wielkich dziełach Boga”.",
 		"14": "Wtedy wystąpił Piotr w otoczeniu Jedenastu. Donośnym głosem powiedział: „Judejczycy i wszyscy mieszkańcy Jeruzalem! Posłuchajcie uważnie, co wam powiem.",
 		"14a": "Wtedy wystąpił Piotr w otoczeniu Jedenastu. Donośnym głosem powiedział:",
 		"22b": "Jezus z Nazaretu był człowiekiem, którego Bóg uwierzytelnił wśród was poprzez cuda i niezwykłe znaki, jakich przez Niego dokonywał, o czym sami wiecie.",
@@ -400,6 +411,42 @@
 		"30": "Nawet pośród was pojawią się ludzie, którzy zaczną głosić kłamstwa, aby pociągnąć za sobą uczniów.",
 		"31": "Dlatego miejcie się na baczności i pamiętajcie, że przez trzy lata, dniem i nocą, nie przestawałem ze łzami napominać was wszystkich.",
 		"32": "Teraz polecam was Bogu i Jego słowu łaski. Ono może was umocnić i udzielić wam dóbr przeznaczonych dla wszystkich świętych.",
-		"36": "Kiedy to powiedział, ukląkł i modlił się razem ze wszystkimi."
+		"33": "Nigdy nie pragnąłem niczyjego srebra, złota ani ubrania.",
+		"34": "Sami wiecie, że własnymi rękami zarabiałem na utrzymanie moje i moich towarzyszy.",
+		"35": "Ciągle dawałem wam przykład, że trzeba stale się trudzić, by wspierać słabych, pamiętając o nauce Pana Jezusa, który powiedział: «Szczęście polega bardziej na dawaniu niż na braniu»”.",
+		"36": "Kiedy to powiedział, ukląkł i modlił się razem ze wszystkimi.",
+		"37": "A wszyscy zaczęli głośno płakać. Rzucali się Pawłowi na szyję i całowali go.",
+		"38": "Najbardziej zasmuciły ich słowa, że go już więcej nie zobaczą. Potem odprowadzili go na statek."
+	},
+	"22": {
+		"30": "Następnego dnia rozkazał zebrać się wyższym kapłanom i całej Wysokiej Radzie. Wówczas polecił rozwiązać i zaprowadzić przed nich Pawła. Chciał bowiem wiedzieć dokładnie, o co go Żydzi oskarżają."
+	},
+	"23": {
+		"6": "Paweł wiedząc, że część Wysokiej Rady stanowili saduceusze, a resztę faryzeusze zawołał przed Wysoką Radą: „Bracia! Sam jestem faryzeuszem i potomkiem faryzeuszów. Sądzą mnie zaś z powodu nadziei i zmartwychwstania umarłych”.",
+		"7": "Słowa te wywołały spór między faryzeuszami i saduceuszami. I doszło między nimi do rozłamu.",
+		"8": "Saduceusze bowiem twierdzą, że nie ma ani zmartwychwstania, ani anioła i ducha. Natomiast faryzeusze uznają jedno i drugie.",
+		"9": "Zrobiła się wielka wrzawa. Niektórzy nauczyciele Pisma ze stronnictwa faryzeuszów zaciekle protestowali, wołając: „Ten człowiek jest niewinny. Może rzeczywiście przemówił do niego anioł lub jakiś duch?”.",
+		"10": "Kiedy spór się zaostrzył, dowódca, obawiając się, by nie rozszarpano Pawła, rozkazał żołnierzom wkroczyć między nich i wyprowadzić go do koszar.",
+		"11": "Następnej nocy ukazał mu się Pan i powiedział: „Odwagi! Trzeba, abyś i w Rzymie zaświadczył o Mnie, tak jak uczyniłeś to w Jeruzalem”."
+	},
+	"25": {
+		"13": "Kilka dni później do Cezarei przybył król Agryppa i Berenike, aby powitać Festusa.",
+		"14": "Zatrzymali się tam na pewien czas. Wtedy Festus przedstawił królowi sprawę Pawła. „Feliks pozostawił w więzieniu tego człowieka – powiedział. –",
+		"15": "Kiedy byłem w Jerozolimie, wyżsi kapłani i starszyzna żydowska wnieśli na niego skargę i domagali się, abym wydał wyrok skazujący.",
+		"16": "Lecz odpowiedziałem im, że Rzymianie nie mają zwyczaju skazywać człowieka, zanim oskarżony nie stanie wobec oskarżycieli. Musi mieć bowiem możliwość obrony przed zarzutami.",
+		"17": "Gdy przybyli do mnie, zaraz następnego dnia rozpocząłem proces. Rozkazałem dowódcy przyprowadzić tego człowieka.",
+		"18": "Oskarżyciele nie przedstawili jednak żadnego zarzutu, który mógłbym uznać.",
+		"19": "Wiedli z nim tylko jakiś spór na tematy związane z ich religią i z jakimś Jezusem. On już wprawdzie umarł, ale Paweł zapewniał, że żyje.",
+		"20": "Nie wiedząc, jak rozstrzygnąć ten spór, zapytałem go, czy chciałby udać się do Jerozolimy i być tam w tej sprawie sądzony.",
+		"21": "Wtedy Paweł złożył odwołanie, żądając, abym go pozostawił w więzieniu, dopóki cesarz nie rozpatrzy jego sprawy. Rozkazałem go więc pilnować, dopóki go nie odeślę do cesarza”."
+	},
+	"28": {
+		"16": "W Rzymie pozwolono mu zamieszkać w domu prywatnym, ale pod strażą żołnierza.",
+		"17": "Po trzech dniach poprosił on do siebie ważniejszych przedstawicieli społeczności żydowskiej. A gdy przybyli, powiedział: „Bracia! Nie uczyniłem nic przeciwko mojemu narodowi ani ojczystym zwyczajom. A jednak uwięziono mnie w Jerozolimie i wydano Rzymianom.",
+		"18": "Oni po rozpatrzeniu mojej sprawy postanowili mnie zwolnić. Stwierdzili bowiem, że nie zasługuję na śmierć.",
+		"19": "Jednak Żydzi wystąpili przeciwko mnie bardzo stanowczo i dlatego musiałem odwołać się do cesarza. Nie zrobiłem tego, by oskarżać mój naród.",
+		"20": "Dlatego poprosiłem was do siebie, aby zobaczyć się z wami i powiedzieć, że to właśnie z powodu tej samej nadziei, jaką żyje Izrael, noszę kajdany”.",
+		"30": "Paweł pozostał jeszcze całe dwa lata w wynajętym przez siebie mieszkaniu. Przyjmował wszystkich, którzy przychodzili do niego.",
+		"31": "Odważnie i swobodnie nauczał o królestwie Bożym i o Panu Jezusie Chrystusie."
 	}
 }
