@@ -294,7 +294,9 @@
 		"10b": "Ty wiesz o tym, Panie!",
 		"11a": "Twojej sprawiedliwości nie ukryłem w mym sercu,",
 		"11b": "głoszę Twoją zbawczą wierność,",
-		"11c": "nie taiłem Twej wiernej łaskawości wobec wielkiego zgromadzenia."
+		"11c": "nie taiłem Twej wiernej łaskawości wobec wielkiego zgromadzenia.",
+		"17a": "Niech Tobą się radują i weselą wszyscy, którzy Ciebie szukają!",
+		"17b": "Miłośnicy Twego zbawienia niech zawsze mówią: „Pan jest wielki”."
 	},
 	"42": {
 		"2a": "Jak łania pragnie źródlanej wody,",
@@ -369,6 +371,20 @@
 		"20b": "aby odbudowano mury Jeruzalem.",
 		"21a": "Wtedy przyjmiesz należne ofiary,",
 		"21b": "dary i całopalenia,"
+	},
+	"63": {
+		"2a": "Boże, mój Boże, szukam Ciebie od świtu;",
+		"2b": "Ciebie pragnę całym sercem!",
+		"2c": "Do Ciebie tęskni moje ciało",
+		"2d": "jak pustynna, sucha i pozbawiona wody ziemia!",
+		"3a": "Jakże pragnę Cię ujrzeć w świątyni,",
+		"3b": "zobaczyć Twą moc i chwałę.",
+		"4a": "Bo łaska Twa lepsza nad życie;",
+		"4b": "moje wargi wielbić Cię będą.",
+		"5a": "Oto będę Cię wysławiał swym życiem",
+		"5b": "i w Twoje imię będę wznosił me ręce.",
+		"6a": "Będę się cieszył jak w wesołe święta,",
+		"6b": "radosnym uwielbieniem napełnię me usta."
 	},
 	"66": {
 		"1": "Radośnie sławcie Boga, wszystkie ziemie!",
@@ -520,6 +536,10 @@
 		"2b": "od wieku po wiek Ty jesteś, Boże!",
 		"4a": "Bo tysiąc lat w Twoich oczach jest jak dzień wczorajszy, który minął,",
 		"4b": "i jak straż nocna.",
+		"10a": "Miarą naszego życia jest lat siedemdziesiąt,",
+		"10b": "a jeśli mamy siły, to lat osiemdziesiąt.",
+		"10c": "Lecz większość z nich to trud i cierpienie,",
+		"10d": "bo prędko odchodzą, a my giniemy.",
 		"12a": "Daj nam tak liczyć dni nasze,",
 		"12b": "byśmy nauczyli się żyć mądrze!",
 		"13a": "Powróć, Panie! Jak długo jeszcze?",
@@ -528,6 +548,20 @@
 		"14b": "byśmy się mogli cieszyć przez wszystkie dni nasze!",
 		"16a": "Niech się ukaże Twym sługom Twoje dzieło,",
 		"16b": "a Twoja chwała nad ich synami!"
+	},
+	"91": {
+		"1a": "Kto mieszka pod opieką Najwyższego,",
+		"1b": "będzie przebywał pod osłoną Wszechmocnego.",
+		"2a": "Niech mówi do Pana: „Jesteś moim schronieniem i twierdzą!",
+		"2b": "Boże mój, Tobie zaufałem!”.",
+		"14a": "Skoro Mi zaufał, to go wybawię,",
+		"14b": "ochronię go, bo poznał moje imię.",
+		"15a": "Będzie Mnie wzywał,",
+		"15b": "a Ja go wysłucham,",
+		"15c": "będę z nim w nieszczęściu.",
+		"15d": "Wyzwolę go i otoczę chwałą.",
+		"16a": "Nasycę go dniami długimi",
+		"16b": "i ukażę mu moje zbawienie."
 	},
 	"93": {
 		"1a": "Pan jest królem, okrył się majestatem.",
@@ -565,7 +599,15 @@
 		"10a": "Mówcie wśród narodów,",
 		"10b": "że Pan jest królem.",
 		"10c": "On utwierdza świat, tak że się nie poruszy,",
-		"10d": "będzie sądził narody według słuszności."
+		"10d": "będzie sądził narody według słuszności.",
+		"11a": "Niech się cieszą niebiosa i weseli ziemia,",
+		"11b": "niech zadrży morze i to, co je wypełnia.",
+		"12a": "Niech się radują pola i wszystko, co na nich rośnie.",
+		"12b": "Niech wołają z radości wszystkie drzewa w lasach",
+		"13a": "przed Panem, który już się zbliża,",
+		"13b": "bo przychodzi, by osądzić ziemię.",
+		"13c": "Będzie rządził światem sprawiedliwie,",
+		"13d": "i narodami zgodnie ze swą prawdą."
 	},
 	"98": {
 		"1a": "Śpiewajcie Panu pieśń nową,",
@@ -819,6 +861,13 @@
 		"29b": "okaż mi łaskę poprzez Twoje Prawo!",
 		"30a": "Wybrałem drogę prawdy",
 		"30b": "i nie zapomniałem wyroków Twoich."
+	},
+	"123": {
+		"1": "Do Ciebie wznoszę oczy, który mieszkasz w niebie!",
+		"2a": "Jak oczy sług zwracają się na ręce panów,",
+		"2b": "jak oczy służącej na ręce jej pani,",
+		"2c": "tak oczy nasze – ku Panu, Bogu naszemu,",
+		"2d": "aby się zmiłował nad nami."
 	},
 	"126": {
 		"1a": "Gdy Pan odmienił los Syjonu,",
