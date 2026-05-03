@@ -390,6 +390,16 @@
 		"9a": "Bóg króluje nad narodami,",
 		"9b": "Bóg zasiada na swym świętym tronie."
 	},
+	"48": {
+		"2": "Wielki jest Pan i godzien uwielbienia w mieście naszego Boga, na swej świętej górze.",
+		"3a": "Piękne to wzgórze jest radością całej ziemi;",
+		"3b": "góra Syjon na krańcach północy jest miastem wielkiego Króla.",
+		"4": "Bóg w pałacach Syjonu okazał się twierdzą.",
+		"10a": "Rozważamy Twą łaskawość, Boże,",
+		"10b": "we wnętrzu Twojej świątyni.",
+		"11a": "Jak imię Twe, Boże, tak i chwała Twoja sięga po krańce ziemi,",
+		"11b": "Twoja prawa ręka jest pełna sprawiedliwości."
+	},
 	"50": {
 		"1a": "Pan jest Bogiem nad bogami;",
 		"1b": "przemawia i wzywa ziemię od wschodu aż po zachód słońca.",
@@ -434,6 +444,20 @@
 		"20b": "aby odbudowano mury Jeruzalem.",
 		"21a": "Wtedy przyjmiesz należne ofiary,",
 		"21b": "dary i całopalenia,"
+	},
+	"60": {
+		"3a": "Boże, odrzuciłeś nas i zniszczyłeś;",
+		"3b": "rozgniewałeś się, lecz powróć do nas!",
+		"4a": "Wstrząsnąłeś ziemią i rozdarłeś.",
+		"4b": "Ulecz jej pęknięcia, bo się chwieje.",
+		"5a": "Twardo się obszedłeś z Twoim ludem,",
+		"5b": "napoiłeś nas winem odurzającym.",
+		"12a": "Czyż Ty odrzuciłeś nas, Boże?",
+		"12b": "Czy już nie wyruszysz, Boże, z naszymi wojskami?",
+		"13a": "Udziel nam pomocy w utrapieniu,",
+		"13b": "bo złudne jest ludzkie wsparcie.",
+		"14a": "Mocą Boga odniesiemy zwycięstwo.",
+		"14b": "On podepcze nieprzyjaciół naszych."
 	},
 	"63": {
 		"2a": "Boże, mój Boże, szukam Ciebie od świtu;",
@@ -521,6 +545,13 @@
 		"9": "Stałem się obcy dla braci, nie chcą mnie znać synowie mej matki.",
 		"10a": "Bo gorliwość o Twój dom mnie pochłania",
 		"10b": "i spadły na mnie zniewagi znieważających Ciebie.",
+		"14a": "A ja modlę się do Ciebie, Panie,",
+		"14b": "w czasie zmiłowania, o Boże!",
+		"14c": "Wysłuchaj mnie w ogromie swego miłosierdzia,",
+		"14d": "w Twej zbawczej wierności!",
+		"17a": "Wysłuchaj mnie, Panie,",
+		"17b": "bo słodka jest Twa łaska.",
+		"17c": "Spójrz na mnie w ogromie Twego miłosierdzia.",
 		"21a": "Jestem złamany na duchu i z sił opadłem. Czekałem na współczucie, lecz bezskutecznie,",
 		"21b": "na pociechę, ale jej nie znalazłem.",
 		"22a": "Dodali żółci do mego pokarmu,",
@@ -528,7 +559,13 @@
 		"31a": "Będę chwalił pieśnią imię Boga,",
 		"31b": "wysławiał Go dziękczynieniem.",
 		"33": "Niech patrzą ubodzy i niech się radują! Niech ożyją serca chcących poznać wolę Boga!",
-		"34": "Gdyż Pan wysłuchał nędzarzy, nie wzgardził swoimi, co byli w niewoli."
+		"33a": "Niech patrzą ubodzy i niech się radują!",
+		"33b": "Niech ożyją serca chcących poznać wolę Boga!",
+		"34": "Gdyż Pan wysłuchał nędzarzy, nie wzgardził swoimi, co byli w niewoli.",
+		"34a": "Gdyż Pan wysłuchał nędzarzy,",
+		"34b": "nie wzgardził swoimi, co byli w niewoli.",
+		"35a": "Niech Go wielbią niebiosa i ziemia,",
+		"35b": "morze i wszystko, co w nich się porusza."
 	},
 	"71": {
 		"1a": "Panie, do Ciebie się uciekam,",
@@ -614,7 +651,17 @@
 		"27a": "Będzie Mnie wzywał: «Jesteś moim ojcem,",
 		"27b": "moim Bogiem i skałą ocalenia dla mnie».",
 		"29a": "Na wieki zachowam swą łaskę dla niego",
-		"29b": "i trwałe będzie moje z nim przymierze."
+		"29b": "i trwałe będzie moje z nim przymierze.",
+		"30a": "Na wieki umocnię jego potomstwo,",
+		"30b": "a jego tron – jak dni niebios.",
+		"31a": "Jeśli jego synowie porzucą moje prawo",
+		"31b": "i nie będą postępować według mych wyroków,",
+		"32a": "jeśli zlekceważą moje nakazy",
+		"32b": "i nie będą strzegli przykazań moich –",
+		"33a": "rózgą ich wychłostam za nieprawości",
+		"33b": "a biczami za zbrodnie.",
+		"34a": "Jednak nie odbiorę mojej łaski,",
+		"34b": "nie zawiodę w mej wierności."
 	},
 	"90": {
 		"2a": "Zanim zrodziły się góry, nim powstał świat i ziemia,",
@@ -1068,6 +1115,22 @@
 		"8a": "To On odkupi Izraela",
 		"8b": "ze wszystkich jego przewinień."
 	},
+	"132": {
+		"11a": "A Pan złożył Dawidowi nieodwołalną przysięgę",
+		"11b": "i od niej nie odstąpi:",
+		"11c": "„Potomka rodu twego posadzę na twoim tronie!",
+		"12a": "Jeśli twoi synowie zachowają moje przymierze",
+		"12b": "i moje nakazy, których ich nauczę,",
+		"12c": "to również ich synowie na wieki będą zasiadać na twym tronie!”.",
+		"13a": "Naprawdę Pan wybrał Syjon,",
+		"13b": "zapragnął go na mieszkanie dla siebie:",
+		"14a": "„Tu jest mój spoczynek na wieki wieków,",
+		"14b": "tu zamieszkam, zgodnie z mym pragnieniem!",
+		"17a": "Tam sprawię, że wyrośnie moc dla Dawida,",
+		"17b": "i przygotuję światło memu pomazańcowi.",
+		"18a": "Jego nieprzyjaciół okryję wstydem,",
+		"18b": "a nad nim zabłyśnie korona!”."
+	},
 	"138": {
 		"1a": "Będę Cię sławił z całego serca,",
 		"1b": "będę Ci śpiewał psalm wobec mieszkańców niebios!",
@@ -1080,6 +1143,19 @@
 		"8a": "Pan za mnie tego dokona!",
 		"8b": "Panie, Twa łaska trwa na wieki,",
 		"8c": "nie porzucaj dzieła rąk Twoich!"
+	},
+	"139": {
+		"1": "Przenikasz i znasz mnie, Panie.",
+		"2a": "Wiesz, kiedy kładę się i wstaję,",
+		"2b": "i czytasz z daleka w moich myślach.",
+		"3a": "Czuwasz nad moją pracą i odpoczynkiem",
+		"3b": "i wiesz o wszystkich drogach moich.",
+		"13a": "To Ty ukształtowałeś moje sumienie,",
+		"13b": "przygarnąłeś mnie już w łonie matki!",
+		"14a": "Będę Cię sławić, bo dokonujesz potężnych cudów;",
+		"14b": "przedziwne są Twe dzieła i dobrze je poznałem.",
+		"15a": "Nie była zakryta żadna kość przed Tobą,",
+		"15b": "kiedy powstawałem w ukryciu, tkany w głębinach ziemi!"
 	},
 	"145": {
 		"8a": "Miłosierny jest Pan i łaskawy,",
