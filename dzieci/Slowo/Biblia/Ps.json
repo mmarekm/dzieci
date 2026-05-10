@@ -207,6 +207,10 @@
 		"4b": "abym przebywał w domu Pana przez wszystkie dni mego życia.",
 		"4c": "Bym się wpatrywał we wspaniałość Pana",
 		"4d": "i mógł oglądać Jego świątynię.",
+		"7a": "Wołam: Usłysz mój głos, Panie,",
+		"7b": "zmiłuj się nade mną i mnie wysłuchaj!",
+		"8a": "Rozważam Twoje słowo:",
+		"8b": "„Trwajcie przy Mnie”.",
 		"13a": "Wierzę, że będę oglądał dobroć Pana",
 		"13b": "w krainie żyjących.",
 		"14a": "Wyczekuj Pana, bądź dzielny!",
@@ -405,8 +409,17 @@
 	"50": {
 		"1a": "Pan jest Bogiem nad bogami;",
 		"1b": "przemawia i wzywa ziemię od wschodu aż po zachód słońca.",
+		"7a": "„Posłuchaj, mój ludu, gdyż będę mówić,",
+		"7b": "i świadczyć będę przeciwko Tobie:",
+		"7c": "Ja jestem Bogiem, twoim Bogiem!",
 		"8a": "Nie będę cię ganił za twe ofiary,",
 		"8b": "twoje całopalenia są zawsze przede Mną.",
+		"9a": "Nie przyjmę cielców z twego domu",
+		"9b": "ani kozłów ze stad twoich.",
+		"10a": "Bo moje są wszystkie leśne zwierzęta,",
+		"10b": "stada na górach i woły.",
+		"11a": "Znam wszystkie ptaki powietrzne,",
+		"11b": "a polna zwierzyna jest moja.",
 		"12a": "Gdybym był głodny, nie mówiłbym ci o tym,",
 		"12b": "bo moim jest świat i to, co go wypełnia.",
 		"13a": "Czyż będę jadł mięso wołów",
@@ -414,7 +427,11 @@
 		"14a": "Złóż Bogu ofiarę uwielbienia",
 		"14b": "i wypełnij śluby złożone Najwyższemu.",
 		"15a": "Wzywaj Mnie w dniu utrapienia.",
-		"15b": "Ja cię ocalę, a ty Mnie uwielbisz."
+		"15b": "Ja cię ocalę, a ty Mnie uwielbisz.",
+		"16b": "„Czemu głosisz moje nakazy",
+		"16c": "i wymawiasz ustami moje przymierze,",
+		"17a": "skoro nienawidzisz karności",
+		"17b": "i lekceważysz moje słowa?"
 	},
 	"51": {
 		"3a": "Zmiłuj się nade mną, Boże, w łaskawości Twojej,",
@@ -650,6 +667,19 @@
 		"14b": "gdyby Izrael kroczył drogami, które wskazałem,",
 		"17a": "Karmiłbym go obfitością zboża",
 		"17b": "i sycił miodem ze skały."
+	},
+	"85": {
+		"9a": "Posłucham, co mówi Pan Bóg:",
+		"9b": "Oto ogłasza pokój swemu ludowi,",
+		"9c": "swoim wiernym i tym, którzy Mu ufają.",
+		"11a": "Spotkają się Łaska i Wierność,",
+		"11b": "ucałują się Sprawiedliwość i Pokój.",
+		"12a": "Wierność wyrośnie z ziemi,",
+		"12b": "a sprawiedliwość spojrzy z nieba.",
+		"13a": "Bo Pan użyczy łaski,",
+		"13b": "a ziemia nasza wyda owoc.",
+		"14a": "Przed Nim pójdzie Sprawiedliwość,",
+		"14b": "będzie wytyczać drogę Jego krokom."
 	},
 	"87": {
 		"1": "Pan miłuje to, co założył na świętych górach:",
