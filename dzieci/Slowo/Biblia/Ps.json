@@ -401,6 +401,20 @@
 		"4c": "Będę Cię wysławiał przy wtórze liry,",
 		"4d": "Boże, mój Boże!"
 	},
+	"45": {
+		"11a": "Posłuchaj, córko, spójrz i nakłoń ucha,",
+		"11b": "zapomnij o swym ludzie, o domu ojca swego.",
+		"12a": "Król pragnie twej piękności:",
+		"12b": "on jest panem twoim, oddaj Mu pokłon.",
+		"14a": "Cała godność we wnętrzu córki królewskiej,",
+		"14b": "okrytej płaszczem przetykanym złotem.",
+		"15a": "Za nią prowadzą do króla dziewice,",
+		"15b": "przedstawiają ci jej towarzyszki.",
+		"16a": "Wiodą je z weselem i radością,",
+		"16b": "wprowadzają do królewskiego pałacu.",
+		"17a": "Miejsce twoich ojców zajmą synowie,",
+		"17b": "ustanowisz ich książętami po całej ziemi."
+	},
 	"46": {
 		"2a": "Bóg jest dla nas schronieniem i mocą,",
 		"2b": "niezawodnym wsparciem w udrękach.",
@@ -549,7 +563,11 @@
 		"5a": "Oto będę Cię wysławiał swym życiem",
 		"5b": "i w Twoje imię będę wznosił me ręce.",
 		"6a": "Będę się cieszył jak w wesołe święta,",
-		"6b": "radosnym uwielbieniem napełnię me usta."
+		"6b": "radosnym uwielbieniem napełnię me usta.",
+		"8a": "bo stałeś się moją pomocą,",
+		"8b": "rozweselę się w cieniu Twych skrzydeł.",
+		"9a": "Sercem przylgnąłem do Ciebie,",
+		"9b": "Twoja prawa ręka mnie podtrzymuje."
 	},
 	"65": {
 		"10a": "Nawiedziłeś i napoiłeś ziemię,",
