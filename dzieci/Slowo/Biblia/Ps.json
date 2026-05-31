@@ -658,6 +658,9 @@
 		"36c": "Niech będzie Bóg błogosławiony!"
 	},
 	"69": {
+		"5a": "Liczniejsi od włosów na mej głowie są ci, co mnie nienawidzą bez powodu.",
+		"5b": "Umocnili się moi wrogowie, którzy niesprawiedliwie mnie dręczą.",
+		"5c": "Czy mam zapłacić za to, czego nie zabrałem?",
 		"8": "Bo ze względu na Ciebie znoszę szyderstwa, hańba twarz mi okrywa.",
 		"9": "Stałem się obcy dla braci, nie chcą mnie znać synowie mej matki.",
 		"10a": "Bo gorliwość o Twój dom mnie pochłania",
@@ -666,6 +669,11 @@
 		"14b": "w czasie zmiłowania, o Boże!",
 		"14c": "Wysłuchaj mnie w ogromie swego miłosierdzia,",
 		"14d": "w Twej zbawczej wierności!",
+		"15a": "Wyciągnij mnie z błota, bym nie ugrzązł;",
+		"15b": "ocal mnie od tych, co mnie nienawidzą;",
+		"15c": "wydobądź z wód głębokich.",
+		"16a": "Niech mnie nie zatopią wzburzone wody i nie pochłonie mnie głębina;",
+		"16b": "niech odmęt nie zamknie nade mną swej paszczy!",
 		"17a": "Wysłuchaj mnie, Panie,",
 		"17b": "bo słodka jest Twa łaska.",
 		"17c": "Spójrz na mnie w ogromie Twego miłosierdzia.",
@@ -1524,6 +1532,19 @@
 		"21a": "Niech usta moje głoszą chwałę Pana,",
 		"21b": "niech całe stworzenie wysławia Jego święte imię,",
 		"21c": "teraz i na wieki!"
+	},
+	"146": {
+		"1": "Uwielbiaj, duszo moja, Pana!",
+		"2a": "Będę wielbił Pana przez całe me życie,",
+		"2b": "będę grał memu Bogu, dopóki istnieję.",
+		"3a": "Nie polegajcie na władcach ani na synach ludzkich,",
+		"3b": "bo nie mogą ocalić.",
+		"4a": "Gdy duch ich opuści, powrócą do ziemi;",
+		"4b": "tego dnia przepadną wszystkie ich zamiary.",
+		"5a": "Szczęśliwy ten, kogo wspomaga Bóg Jakuba,",
+		"5b": "kto pokłada nadzieję w Panu, Bogu swoim.",
+		"6a": "On stworzył niebo i ziemię,",
+		"6b": "morze i wszystko, co w nich istnieje."
 	},
 	"147": {
 		"12a": "Uwielbiaj, Jeruzalem, Pana,",
