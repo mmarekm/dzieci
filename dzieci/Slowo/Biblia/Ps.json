@@ -66,7 +66,11 @@
 		"7a": "Wytracasz wszystkich, którzy mówią kłamstwa.",
 		"7b": "Pan się brzydzi człowiekiem krwawym i podstępnym.",
 		"8a": "A ja dzięki Twej wielkiej łasce wejdę do Twojego domu,",
-		"8b": "pokłonię się przed Twoją świątynią."
+		"8b": "pokłonię się przed Twoją świątynią.",
+		"12a": "A wszyscy, którzy Tobie ufają,",
+		"12b": "niech się weselą, na wieki niech się radują,",
+		"12c": "a Ty mieszkaj wśród nich!",
+		"12d": "Niech się chlubią Tobą wszyscy miłujący Twe imię,"
 	},
 	"7": {
 		"2a": "Panie, Boże mój, w Tobie złożyłem nadzieję,",
@@ -137,6 +141,12 @@
 		"5b": "jest wrogiem kochającego przemoc.",
 		"7a": "Pan bowiem jest sprawiedliwy i miłuje czyny prawe.",
 		"7b": "Uczciwi będą oglądać Jego oblicze."
+	},
+	"13": {
+		"6a": "Ja zaufałem Twojej łasce.",
+		"6b": "Moje serce rozweseli się Twoim zbawieniem,",
+		"6c": "będę śpiewał Panu,",
+		"6d": "który mnie ocalił."
 	},
 	"16": {
 		"1": "Zachowaj mnie, Boże, bo Tobie zaufałem!",
@@ -294,10 +304,14 @@
 	"31": {
 		"2a": "Panie, do Ciebie się uciekam, niech nie doznam zawodu na wieki!",
 		"2b": "Wybaw mnie, bo jesteś sprawiedliwy!",
+		"3a": "Nakłoń ku mnie ucha,",
+		"3b": "pospiesz, aby mnie ratować!",
 		"3c": "Bądź dla mnie skałą obronną,",
 		"3d": "twierdzą warowną, aby mnie wybawić!",
 		"4a": "Bo Ty jesteś moją opoką i twierdzą,",
 		"4b": "strzeż mnie i prowadź przez wzgląd na Twe imię.",
+		"5a": "Wyprowadź mnie z pułapki zastawionej na mnie,",
+		"5b": "bo Ty jesteś moją obroną.",
 		"6a": "W Twoje ręce oddaję ducha mego.",
 		"6b": "Ty mnie wykupiłeś, Panie, wierny Boże.",
 		"7b": "Ja pokładam ufność w Panu.",
@@ -813,6 +827,22 @@
 		"21b": "niech ubogi i nędzarz chwalą Twoje imię."
 	},
 	"78": {
+		"1a": "Ludu mój, słuchaj mojej nauki,",
+		"1b": "nakłoń ucha na słowa ust moich.",
+		"2a": "Otworzę moje usta dla przypowieści,",
+		"2b": "wypowiem rzeczy zakryte od początku.",
+		"34a": "Gdy ich zabijał, zwracali się do Niego,",
+		"34b": "nawracali się i tęsknie wypatrywali.",
+		"35a": "Przypomnieli sobie, że Bóg jest ich skałą,",
+		"35b": "że Bóg Najwyższy jest ich wybawcą.",
+		"36a": "Zwodzili Go ustami swymi,",
+		"36b": "kłamali Mu swym językiem.",
+		"37a": "Ich serca nie trwały przy Nim,",
+		"37b": "nie pozostali wierni Jego przymierzu.",
+		"38a": "Ale On był miłosierny,",
+		"38b": "przebaczał grzechy i nie wytracał.",
+		"38c": "Wielokrotnie gniew swój powściągał",
+		"38d": "i nie dawał upustu swej zapalczywości.",
 		"56a": "Ale buntownicy kusili Boga Najwyższego,",
 		"56b": "nie zachowywali Jego pouczeń.",
 		"57a": "Odwrócili się i byli niewierni jak ich przodkowie;",
@@ -886,11 +916,16 @@
 		"4c": "Królu mój i Boże mój!",
 		"5a": "Szczęśliwi, którzy mieszkają w Twoim domu,",
 		"5b": "nieustannie Cię wychwalają.",
+		"6a": "Szczęśliwi, którym sił dodajesz,",
+		"6b": "którzy w sercu zamierzyli pielgrzymkę.",
 		"10a": "Spójrz, o Boże, na naszą tarczę,",
 		"10b": "wejrzyj na oblicze Twego pomazańca!",
 		"11a": "Lepszy jeden dzień w Twoich dziedzińcach niż innych tysiące!",
 		"11b": "Wolę stać w progu domu Boga mego,",
-		"11c": "niż mieszkać w namiotach bezbożników!"
+		"11c": "niż mieszkać w namiotach bezbożników!",
+		"12a": "Doprawdy Pan jest słońcem i tarczą,",
+		"12b": "Bóg obdarza łaską i chwałą.",
+		"12c": "Pan nie odmawia dobrodziejstw tym, co postępują nienagannie."
 	},
 	"85": {
 		"2a": "Byłeś łaskawy dla Twej ziemi, Panie,",
@@ -1637,7 +1672,11 @@
 		"14a": "Będę Cię sławić, bo dokonujesz potężnych cudów;",
 		"14b": "przedziwne są Twe dzieła i dobrze je poznałem.",
 		"15a": "Nie była zakryta żadna kość przed Tobą,",
-		"15b": "kiedy powstawałem w ukryciu, tkany w głębinach ziemi!"
+		"15b": "kiedy powstawałem w ukryciu, tkany w głębinach ziemi!",
+		"23a": "Przeniknij i poznaj moje serce, Boże,",
+		"23b": "wypróbuj mnie i rozeznaj moje ścieżki!",
+		"24a": "Zobacz, czy idę drogą nieprawą,",
+		"24b": "poprowadź mnie drogą odwieczną!"
 	},
 	"145": {
 		"1a": "Będę Cię wielbił, Boże mój i Królu!",
@@ -1678,6 +1717,10 @@
 		"17b": "i wierny we wszystkich swych dziełach.",
 		"18a": "Bliski jest Pan wszystkim, którzy Go wzywają,",
 		"18b": "wszystkim szczerze wołającym do Niego.",
+		"19a": "Spełnia pragnienia bogobojnych,",
+		"19b": "wysłucha ich modłów i przyjdzie im z pomocą.",
+		"20a": "Pan strzeże wszystkich, którzy Go miłują,",
+		"20b": "lecz wszelką bezbożność wytraci.",
 		"21a": "Niech usta moje głoszą chwałę Pana,",
 		"21b": "niech całe stworzenie wysławia Jego święte imię,",
 		"21c": "teraz i na wieki!"
