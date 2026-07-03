@@ -345,6 +345,8 @@
 		"1b": "bo słuszne jest, by prawi śpiewali pieśń chwały!",
 		"2a": "Sławcie Pana na cytrze,",
 		"2b": "grajcie Mu na harfie o dziesięciu strunach.",
+		"3a": "Śpiewajcie dla Niego pieśń nową,",
+		"3b": "grajcie Mu pięknie z radością.",
 		"4a": "Bo słowo Pana jest prawe,",
 		"4b": "a każdy Jego czyn niezawodny.",
 		"5a": "On miłuje prawo i sprawiedliwość,",
@@ -1444,7 +1446,11 @@
 		"26a": "Chwała temu, który przychodzi w imię Pana!",
 		"26b": "Błogosławimy was z domu Pana.",
 		"27a": "Pan jest Bogiem",
-		"27b": "i nas oświeca!"
+		"27b": "i nas oświeca!",
+		"28a": "Ty jesteś moim Bogiem, będę Ci dziękował!",
+		"28b": "Ty jesteś moim Bogiem, będę Cię wysławiał!",
+		"29a": "Sławcie Pana, bo jest dobry,",
+		"29b": "bo Jego łaska na wieki!"
 	},
 	"119": {
 		"9a": "W jaki sposób młodzieniec prostuje swą drogę?",
