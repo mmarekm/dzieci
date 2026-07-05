@@ -254,6 +254,7 @@
 		"5b": "bo Ty jesteś Bogiem, moim Zbawicielem. Cały dzień wyczekuję Cię z tęsknotą.",
 		"6a": "Wspomnij na swe miłosierdzie, Panie,",
 		"6b": "na swoją łaskę, która trwa od wieków.",
+		"7a": "Nie pamiętaj grzechów moich i win mej młodości,",
 		"7b": "lecz wspomnij mnie łaskawie",
 		"7c": "ze względu na swą dobroć, Panie!",
 		"8a": "Pan jest dobry i prawy,",
@@ -617,6 +618,20 @@
 		"20b": "aby odbudowano mury Jeruzalem.",
 		"21a": "Wtedy przyjmiesz należne ofiary,",
 		"21b": "dary i całopalenia,"
+	},
+	"56": {
+		"3a": "Cały dzień depczą mnie wrogowie",
+		"3b": "i wielu mnie zwalcza.",
+		"10a": "Niech się cofną wrogowie, gdy Cię wezwę;",
+		"10b": "po tym poznam, że Bóg jest ze mną!",
+		"11a": "Bogu, którego słowo wielbię,",
+		"11b": "Panu, którego słowo wielbię,",
+		"12a": "Bogu ufam, nie będę się lękał;",
+		"12b": "cóż może mi uczynić człowiek?",
+		"13a": "Jestem świadom ślubów, które Ci złożyłem, Boże,",
+		"13b": "złożę Ci ofiary dziękczynne.",
+		"14a": "Bo ocaliłeś mnie od śmierci, a moje nogi ustrzegłeś od upadku,",
+		"14b": "bym pod Twą opieką mieszkał w krainie życia."
 	},
 	"59": {
 		"2a": "Od nieprzyjaciół moich ocal mnie, mój Boże,",
@@ -1029,8 +1044,14 @@
 	"90": {
 		"2a": "Zanim zrodziły się góry, nim powstał świat i ziemia,",
 		"2b": "od wieku po wiek Ty jesteś, Boże!",
+		"3a": "Zamieniasz w proch człowieka,",
+		"3b": "mówiąc: „Wracajcie, synowie ludzcy”.",
 		"4a": "Bo tysiąc lat w Twoich oczach jest jak dzień wczorajszy, który minął,",
 		"4b": "i jak straż nocna.",
+		"5a": "Kładziesz kres ich życiu i zasypiają.",
+		"5b": "Jak trawa, która wyrasta rankiem,",
+		"6a": "o świcie kwitnie i rośnie,",
+		"6b": "wieczorem więdnie i usycha.",
 		"10a": "Miarą naszego życia jest lat siedemdziesiąt,",
 		"10b": "a jeśli mamy siły, to lat osiemdziesiąt.",
 		"10c": "Lecz większość z nich to trud i cierpienie,",
@@ -1042,7 +1063,9 @@
 		"14a": "Niech nas o świcie napełni Twoja łaska,",
 		"14b": "byśmy się mogli cieszyć przez wszystkie dni nasze!",
 		"16a": "Niech się ukaże Twym sługom Twoje dzieło,",
-		"16b": "a Twoja chwała nad ich synami!"
+		"16b": "a Twoja chwała nad ich synami!",
+		"17a": "Niech słodycz Pana, Boga naszego, będzie nad nami!",
+		"17b": "Umocnij dzieło rąk naszych!"
 	},
 	"91": {
 		"1a": "Kto mieszka pod opieką Najwyższego,",
@@ -1453,6 +1476,8 @@
 		"29b": "bo Jego łaska na wieki!"
 	},
 	"119": {
+		"1a": "Szczęśliwi, których droga nieskalana,",
+		"1b": "którzy postępują zgodnie z Prawem Pana.",
 		"9a": "W jaki sposób młodzieniec prostuje swą drogę?",
 		"9b": "Zachowując Twoje słowa!",
 		"10a": "Całym sercem szukam Twojej woli;",
@@ -1476,8 +1501,14 @@
 		"29b": "okaż mi łaskę poprzez Twoje Prawo!",
 		"30a": "Wybrałem drogę prawdy",
 		"30b": "i nie zapomniałem wyroków Twoich.",
+		"34a": "Daj mi zrozumienie, bym mógł badać Twe Prawo",
+		"34b": "i przestrzegać go całym sercem.",
+		"35a": "Prowadź mnie ścieżką Twoich nakazów,",
+		"35b": "ponieważ ją ukochałem.",
 		"43a": "Nie odbieraj nigdy moim ustom słowa prawdy,",
 		"43b": "bo zaufałem Twoim wyrokom.",
+		"44a": "Będę zawsze przestrzegał Twego Prawa,",
+		"44b": "teraz i po wszystkie czasy.",
 		"57a": "Panie, Ty jesteś moim udziałem;",
 		"57b": "przyrzekłem strzec słów Twoich.",
 		"72a": "Lepsze jest dla mnie Prawo wydane przez Ciebie",
@@ -1490,6 +1521,8 @@
 		"79b": "którzy uznają Twe pouczenia.",
 		"80a": "Niech moje serce wytrwa bez skazy przy ustawach Twoich,",
 		"80b": "abym nie został zawstydzony.",
+		"89a": "Na wieki, o Panie,",
+		"89b": "Twoje słowo trwa w niebie.",
 		"95a": "Czyhali na mnie bezbożnicy, aby mnie zgubić;",
 		"95b": "zrozumiałem Twoje pouczenia.",
 		"97a": "Jakże miłuję Twoje Prawo,",
@@ -1506,6 +1539,8 @@
 		"102b": "gdyż Ty mnie pouczyłeś.",
 		"103a": "Jak słodkie dla mego podniebienia jest Twoje słowo,",
 		"103b": "słodsze niż miód dla ust moich.",
+		"104a": "Dzięki Twoim przykazaniom jestem rozumny,",
+		"104b": "toteż nienawidzę wszelkiej drogi kłamstwa.",
 		"111a": "Odziedziczyłem na wieki pouczenia Twoje,",
 		"111b": "gdyż są radością mego serca.",
 		"127a": "Toteż umiłowałem Twoje nakazy",
@@ -1524,6 +1559,8 @@
 		"160b": "wieczne są wyroki Twej sprawiedliwości.",
 		"161a": "Możni prześladują mnie bez przyczyny,",
 		"161b": "lecz moje serce lęka się tylko słów Twoich.",
+		"163a": "Nienawidzę kłamstwa i nim się brzydzę,",
+		"163b": "lecz Prawo Twoje miłuję.",
 		"165a": "Wielki pokój dla miłujących Twe Prawo,",
 		"165b": "tacy nie mogą się potknąć.",
 		"166a": "Wyczekuję Twego zbawienia, Panie,",
@@ -1586,6 +1623,18 @@
 		"6b": "niosąc ziarno,",
 		"6c": "lecz wracają z radością,",
 		"6d": "niosąc snopy!"
+	},
+	"128": {
+		"1a": "Szczęśliwy, kto oddaje cześć Panu,",
+		"1b": "kto kroczy drogami, które On wskazuje!",
+		"2a": "Będziesz spożywał owoce twych trudów,",
+		"2b": "powiedzie ci się i będziesz szczęśliwy.",
+		"3a": "Twoja małżonka jak płodna winorośl w zaciszu twego domostwa.",
+		"3b": "Twoje dzieci jak oliwne sadzonki dokoła twojego stołu.",
+		"4a": "Tak oto błogosławiony jest człowiek,",
+		"4b": "który oddaje cześć Panu!",
+		"5a": "Niech cię Pan błogosławi z Syjonu,",
+		"5b": "byś oglądał pomyślność Jeruzalem po wszystkie dni twego życia."
 	},
 	"130": {
 		"1": "Z głębokości wołam do Ciebie, Panie ",
@@ -1683,6 +1732,16 @@
 		"23b": "wypróbuj mnie i rozeznaj moje ścieżki!",
 		"24a": "Zobacz, czy idę drogą nieprawą,",
 		"24b": "poprowadź mnie drogą odwieczną!"
+	},
+	"144": {
+		"1a": "Błogosławiony Pan, moja skała!",
+		"2a": "On moim sprzymierzeńcem i schronieniem,",
+		"2b": "twierdzą moją i wybawieniem,",
+		"2c": "tarczą moją, za którą się chronię!",
+		"3a": "Panie, kim jest człowiek, że Ty zważasz na niego?",
+		"3b": "Kim syn człowieczy, że Ty o nim myślisz?",
+		"4a": "Człowiek jest podobny do tchnienia,",
+		"4b": "jego dni jak cień przemijają."
 	},
 	"145": {
 		"1a": "Będę Cię wielbił, Boże mój i Królu!",
