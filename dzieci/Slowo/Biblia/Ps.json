@@ -296,6 +296,10 @@
 		"7b": "zmiłuj się nade mną i mnie wysłuchaj!",
 		"8a": "Rozważam Twoje słowo:",
 		"8b": "„Trwajcie przy Mnie”.",
+		"8c": "Pragnę być przy Tobie, Panie.",
+		"9a": "Nie ukrywaj przede mną swojego oblicza,",
+		"9b": "nie odwracaj się w gniewie od swego sługi!",
+		"9c": "Bądź moją pomocą, nie zostawiaj mnie,",
 		"13a": "Wierzę, że będę oglądał dobroć Pana",
 		"13b": "w krainie żyjących.",
 		"14a": "Wyczekuj Pana, bądź dzielny!",
@@ -1011,6 +1015,20 @@
 		"6b": "„Oni się tam urodzili!”.",
 		"7a": "I będą śpiewać wśród tańców:",
 		"7b": "„Wszystkie moje źródła są w tobie!”."
+	},
+	"88": {
+		"10b": "Wołam do Ciebie, Panie, nieustannie,",
+		"10c": "wyciągam do Ciebie ręce.",
+		"11a": "Czy dla umarłych czynisz cuda?",
+		"11b": "Czy wstaną cienie, by sławić Ciebie?",
+		"12a": "Czy w grobie głosi się Twą łaskę,",
+		"12b": "a wierność Twoją wśród zagłady?",
+		"13a": "Czy pozna się Twe cuda w ciemnościach,",
+		"13b": "a sprawiedliwość w ziemi zapomnienia?",
+		"14a": "A ja wołam do Ciebie, Panie,",
+		"14b": "moja modlitwa uprzedza Cię rankiem!",
+		"15a": "Czemu odrzucasz mnie, Panie,",
+		"15b": "odwracasz ode mnie swe oblicze?"
 	},
 	"89": {
 		"2a": "O Twoich łaskach, Panie, wiecznie będę śpiewać",
