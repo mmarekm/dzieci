@@ -152,6 +152,20 @@
 		"6c": "będę śpiewał Panu,",
 		"6d": "który mnie ocalił."
 	},
+	"15": {
+		"1a": "Panie, kto zagości w Twym namiocie,",
+		"1b": "kto zamieszka na Twej świętej górze?",
+		"2a": "Ten, kto postępuje nienagannie, czyni sprawiedliwość,",
+		"2b": "kto mówi prawdę w swoim sercu,",
+		"3a": "kto swym językiem nie kłamie,",
+		"3b": "nie czyni zła bliźniemu",
+		"3c": "i nie znieważa sąsiada.",
+		"4b": "a szanuje bojących się Pana.",
+		"4c": "Dotrzymuje przysięgi, nawet niekorzystnej dla siebie.",
+		"5a": "Swych pieniędzy nie pożycza na lichwę",
+		"5b": "i nie da się przekupić, by szkodzić niewinnym.",
+		"5c": "Kto tak postępuje, pozostaje niezłomny."
+	},
 	"16": {
 		"1": "Zachowaj mnie, Boże, bo Tobie zaufałem!",
 		"2a": "Rzekłem Panu: Ty jesteś moim Panem,",
@@ -2029,5 +2043,18 @@
 		"5b": "niech się radują na swych posłaniach.",
 		"6a": "Uwielbienie Boga niech gości w ich ustach,",
 		"9b": "to jest chluba wszystkich Jego wiernych."
+	},
+	"150": {
+		"1a": "Chwalcie Boga w Jego świątyni,",
+		"1b": "chwalcie Go w Jego niebiańskiej twierdzy.",
+		"2a": "Chwalcie Go za Jego potężne dzieła,",
+		"2b": "chwalcie za niezmierną Jego wielkość.",
+		"3a": "Chwalcie Go dźwiękiem rogu,",
+		"3b": "chwalcie lirą i cytrą.",
+		"4a": "Chwalcie Go bębnem i tańcem,",
+		"4b": "chwalcie na strunach i flecie.",
+		"5a": "Chwalcie Go na dźwięcznych cymbałach,",
+		"5b": "chwalcie na cymbałach brzęczących.",
+		"6": "Wszystko co żyje, niech chwali Pana ."
 	}
 }
