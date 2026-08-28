@@ -1301,7 +1301,15 @@
 		"5a": "Grajcie Panu na cytrze,",
 		"5b": "na cytrze przy słowach psalmu.",
 		"6a": "Dźwiękami trąbek i rogu",
-		"6b": "chwalcie radośnie króla, Pana!"
+		"6b": "chwalcie radośnie króla, Pana!",
+		"7a": "Niech zagrzmi morze i to, co je wypełnia,",
+		"7b": "krąg ziemi i jego mieszkańcy.",
+		"8a": "Niech rzeki klaszczą w dłonie,",
+		"8b": "niech się cieszą góry",
+		"9a": "przed Panem, bo przychodzi,",
+		"9b": "by osądzić ziemię.",
+		"9c": "Będzie rządził światem sprawiedliwie",
+		"9d": "i narodami zgodnie z prawością."
 	},
 	"100": {
 		"2a": "służcie Panu z weselem,",
@@ -1769,6 +1777,19 @@
 		"2b": "jak oczy służącej na ręce jej pani,",
 		"2c": "tak oczy nasze – ku Panu, Bogu naszemu,",
 		"2d": "aby się zmiłował nad nami."
+	},
+	"124": {
+		"2a": "gdyby Pan nie był z nami,",
+		"2b": "kiedy przeciw nam powstali ludzie,",
+		"3a": "wtedy żywcem by nas pożarli,",
+		"3b": "w zapale swej wściekłości,",
+		"4a": "wtedy pochłonęłaby nas woda",
+		"4b": "i potok by nas zalał,",
+		"5": "wtedy by nas porwały kipiące topiele.",
+		"7a": "Jesteśmy jak ptak, który się wyrwał z sidła ptaszników.",
+		"7b": "Sidło się zerwało, a myśmy ocaleli.",
+		"8a": "Wspomożenie nasze w imieniu Pana,",
+		"8b": "który stworzył niebo i ziemię."
 	},
 	"126": {
 		"1a": "Gdy Pan odmienił los Syjonu,",
