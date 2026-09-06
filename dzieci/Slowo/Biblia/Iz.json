@@ -134,6 +134,18 @@
 		"25": "Na każdej wielkiej górze i na każdym wysokim pagórku pojawią się strumienie i potoki wody w dniu wielkiej rzezi, gdy runą warowne wieże.",
 		"26": "Blask księżyca będzie jak światło słońca, a światło słońca – siedmiokroć silniejsze, równe światłu siedmiu dni, w dniu, gdy Pan opatrzy stłuczenia swojego ludu i uleczy zadane mu rany."
 	},
+	"35": {
+		"1": "Niech się raduje pustynia i ziemia wyschnięta! Niech step się weseli i rozkwita jak krokus!",
+		"2": "Niech bujnym okryje się kwieciem! Niech się cieszy, raduje i weseli! Dana jej będzie chwała Libanu, wspaniałość Karmelu i Szaronu. Zobaczą chwałę Pana, wspaniałość Boga naszego.",
+		"3": "Pokrzepcie omdlałe ręce! Wzmocnijcie osłabione kolana!",
+		"4": "Mówcie małodusznym: „Bądźcie mężni! Nie bójcie się! Oto wasz Bóg! Nadchodzi odpłata, Boża nagroda. On sam przybędzie i was wybawi”.",
+		"5": "Wtedy przejrzą oczy niewidomych, otworzą się uszy głuchych.",
+		"6": "Wtedy kulawy wyskoczy jak jeleń, a język niemych przemówi radośnie. Wody wytrysną na pustyni i strumienie na suchym stepie.",
+		"7": "Wyschnięta ziemia stanie się jeziorem, kraina spragniona – zdrojem wód. Legowiska szakali porosną trzciną i papirusem.",
+		"8": "Będzie tam usypana droga i nazwą ją „Drogą świętą”. Nie będzie nią chodził nieczysty. Będzie ona dla tych, którzy kroczą drogą. Nierozumni nie będą tam krążyć.",
+		"9": "Lwa tam już nie będzie, żaden drapieżnik nie znajdzie się na tej drodze, lecz pójdą nią wyzwoleni.",
+		"10": "Odkupieni przez Pana powrócą i przyjdą na Syjon z weselem. Wieczna radość zagości na ich twarzach. Ogarnie ich szczęście i radość, a udręka i smutek ulecą daleko."
+	},
 	"38": {
 		"1": "W tym czasie Ezechiasz śmiertelnie zachorował. Wtedy przyszedł do niego prorok Izajasz, syn Amosa, i powiedział mu: „Tak mówi Pan : «Wydaj ostatnie polecenia dla swojego domu. Jesteś bowiem umierający i już nie wyzdrowiejesz»”.",
 		"2": "Ezechiasz odwrócił się twarzą do ściany i zaczął modlić się do Pana:",
@@ -166,7 +178,24 @@
 		"5": "Wtedy objawi się chwała Pana i ujrzy ją każde stworzenie. Tak orzekły usta Pana!”.",
 		"9": "Wyjdź na górę wysoką, zwiastunko dobrej nowiny, Syjonie! Niech zabrzmi donośnie twój głos, zwiastunko dobrej nowiny, Jerozolimo! Niech zabrzmi, nie bój się! Mów miastom Judy: „Oto wasz Bóg!”.",
 		"10": "Oto Pan Bóg nadchodzi z mocą, a Jego ramię ustanawia swą władzę. Oto z Nim idzie Jego nagroda, a przed Nim Jego zapłata.",
-		"11": "Jak pasterz pasie On swą trzodę, swoim ramieniem gromadzi jagnięta, nosi je na swej piersi, owce karmiące prowadzi ostrożnie."
+		"11": "Jak pasterz pasie On swą trzodę, swoim ramieniem gromadzi jagnięta, nosi je na swej piersi, owce karmiące prowadzi ostrożnie.",
+		"25": "„Do kogo Mnie porównacie, do kogo mogę być przyrównany?” – pyta Święty.",
+		"26": "Podnieście w górę swoje oczy i patrzcie! Kto to stworzył? Ten, co zastępy gwiazd w szykach prowadzi i wszystkie nazywa po imieniu. Przed taką potęgą i wszechmocną siłą nikt się nie uchyli!",
+		"27": "Dlaczego mówisz, Jakubie, i twierdzisz, Izraelu: „Zakryta jest moja droga przed Panem , moja skarga nie dociera do mojego Boga”.",
+		"28": "Czy nie wiesz i nie słyszałeś? Pan jest Bogiem Wiecznym, Stwórcą całego świata. Nie męczy się i nie nuży, niezgłębiona jest Jego mądrość.",
+		"29": "On daje moc strudzonemu i przymnaża sił bezsilnemu.",
+		"30": "Młodzieńcy męczą się i ustają, młodzi słaniają się i upadają,",
+		"31": "lecz ci, którzy ufają Panu, odzyskają siłę, tak jak orłom odrastają utracone pióra. Biegną, lecz się nie męczą, idą, ale nie słabną."
+	},
+	"41": {
+		"13": "Ponieważ Ja, Pan, jestem twoim Bogiem, tym, który mocno ujął cię za prawą rękę, który ci mówi: Nie bój się! Ja pomagam tobie!",
+		"14": "Nie bój się, robaku, Jakubie, nieboraku, Izraelu! Ja jestem twoją pomocą! – wyrocznia Pana . Jestem twoim odkupicielem – Święty Izraela!",
+		"15": "Oto zamieniłem cię w sanie młockarskie, nowe, uzbrojone w zęby. Będziesz młócił i kruszył góry, a wzgórza zetrzesz jak plewy.",
+		"16": "Przewiejesz je, a wiatr je uniesie i rozmiecie je gwałtowny wicher. A ty rozradujesz się w Panu, będziesz się chlubił Świętym Izraela.",
+		"17": "Ubodzy i biedni poszukują wody, ale jej nie ma; ich język wysechł z pragnienia. Ja, Pan, im odpowiem. Ja, Bóg Izraela, ich nie opuszczę.",
+		"18": "Na bezdrzewnych wzgórzach każę wytrysnąć strumieniom, a pośród dolin krynicom. Pustynię zamienię w jeziora, a bezwodną ziemię w zielone oazy.",
+		"19": "Na pustyni posadzę cedry, akacje, mirty i drzewa oliwne. Zadrzewię step cyprysami, wiązami i bukszpanami,",
+		"20": "żeby zobaczyli i poznali, wzięli sobie do serca i zrozumieli wszyscy, że ręka Pana tego dokonała i stworzył to Święty Izraela."
 	},
 	"42": {
 		"1": "Oto mój sługa, którego wspieram, mój wybrany, którego sobie upodobałem. Zesłałem na niego mojego ducha, a on zaniesie narodom sprawiedliwość.",
@@ -182,6 +211,11 @@
 		"4": "Ze względu na mojego sługę Jakuba i mego wybrańca Izraela, wzywam cię po imieniu, nadaję ci zaszczytny tytuł, chociaż Mnie nie znasz.",
 		"5": "Ja jestem Panem i nie ma innego, oprócz Mnie nie ma boga! Przepasuję cię do walki, chociaż Mnie nie znasz,",
 		"6": "aby poznano od wschodu aż po zachód, że oprócz Mnie nie ma nikogo! Ja jestem Panem i nie ma innego."
+	},
+	"48": {
+		"17": "Tak mówi Pan, twój odkupiciel, Święty Izraela: „Ja, Pan, jestem twoim Bogiem! Uczę cię tego, co jest dla ciebie pożyteczne, prowadzę drogą, którą powinieneś kroczyć.",
+		"18": "Gdybyś z uwagą słuchał moich przykazań, twój pokój byłby jak rzeka, a twoja sprawiedliwość jak fale morza.",
+		"19": "Twój ród byłby liczny jak piasek, a twoje potomstwo jak jego ziarnka. Jego imię nie byłoby wytępione ani zgładzone przede Mną”."
 	},
 	"49": {
 		"1": "Słuchajcie mnie, wyspy! Uważajcie pilnie, dalekie ludy! Pan wezwał mnie w łonie matki i w jej wnętrznościach nadał mi imię.",
@@ -272,6 +306,7 @@
 	"61": {
 		"1": "Duch Pana Boga nade mną, bo Pan mnie namaścił, abym ubogim głosił dobrą nowinę. Posłał mnie, abym opatrzył rany złamanych na duchu, abym ogłosił więźniom wyzwolenie, a zniewolonych uczynił wolnymi,",
 		"2": "abym ogłosił rok łaski od Pana i dzień odpłaty naszego Boga, abym pocieszał wszystkich pogrążonych w żałobie,",
+		"2a": "abym ogłosił rok łaski od Pana",
 		"3a": "niósł radość opłakującym Syjon, dał im diadem zamiast popiołu, olejek radości zamiast żałoby, płaszcz chwały zamiast przygnębienia!",
 		"6a": "A o was będą mówić „kapłani Pana” i będą was nazywać sługami naszego Boga.",
 		"8b": "Dam im uczciwą zapłatę i zawrę z nimi wieczne przymierze!",
