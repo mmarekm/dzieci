@@ -875,6 +875,7 @@
 		"3b": "domem ucieczki, abyś mnie wybawił!",
 		"3c": "Bo Ty jesteś moją opoką i twierdzą.",
 		"4": "Boże mój, wyrwij mnie z mocy bezbożnego, z ręki występnego i ciemiężyciela.",
+		"4a": "Boże mój, wyrwij mnie z mocy bezbożnego,",
 		"5a": "Gdyż Ty jesteś nadzieją moją, Panie,",
 		"5b": "Boże, ucieczko moja od młodości.",
 		"6a": "Od łona matki opieram się na Tobie,",
@@ -897,6 +898,10 @@
 		"1b": "naucz go Twojej sprawiedliwości,",
 		"2a": "aby sądził lud Twój sprawiedliwie",
 		"2b": "i godziwie Twoich ubogich.",
+		"3a": "Niech góry przyniosą Jego ludowi pokój,",
+		"3b": "a pagórki sprawiedliwość.",
+		"4a": "On obroni ubogich spośród ludu,",
+		"4b": "ocali synów nędzarzy,",
 		"7a": "Za dni Jego zakwitnie sprawiedliwość",
 		"7b": "i pełnia pokoju, póki nie braknie księżyca.",
 		"8a": "Będzie panował od morza do morza,",
@@ -908,7 +913,11 @@
 		"17a": "Niech jego imię trwa na wieki,",
 		"17b": "dłużej niż słońce niech trwa jego imię.",
 		"17c": "Jego błogosławieństwa niech życzą sobie wszystkie ludy ziemi",
-		"17d": "i wszystkie narody niech go zwą szczęśliwym”."
+		"17d": "i wszystkie narody niech go zwą szczęśliwym”.",
+		"18a": "Błogosławiony Pan Bóg, Bóg Izraela,",
+		"18b": "który sam czyni cuda.",
+		"19a": "Błogosławione na wieki Jego chwalebne imię!",
+		"19b": "Niech ziemia cała będzie pełna Jego chwały!"
 	},
 	"74": {
 		"1a": "Boże, dlaczego odrzuciłeś nas na zawsze?",
