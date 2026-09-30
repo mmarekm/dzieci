@@ -1,0 +1,94 @@
+:root {
+    --tlo-strony: #fdf6e3;
+    --karta: #fffdf7;
+    --akcent: #e07a3f;        /* pomarańcz: tytuł i pytania */
+    --akcent-jasny: #fdebd9;
+    --zielony: #4a9d6b;       /* odpowiedzi */
+    --zielony-jasny: #eaf6ee;
+    --tekst: #3a3226;
+}
+
+.zagadnienie {
+    width: min(1100px, calc(100% - 40px));
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--karta);
+    color: var(--tekst);
+    font-family: 'Nunito', sans-serif;
+    border: 3px solid var(--akcent);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--akcent-jasny);
+
+    /* układ: pytanie | odpowiedź */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 28px;
+    row-gap: 12px;
+    align-items: start;
+}
+
+.duzyPunkt {
+    grid-column: 1 / -1;            /* tytuł na całą szerokość */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--akcent);
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 3px dashed var(--akcent);
+}
+
+.pytanie {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-top: 14px;
+    padding: 12px 16px 12px 48px;
+    position: relative;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+}
+.pytanie::before {
+    content: "❓";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+}
+
+.odpowiedz {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--zielony-jasny);
+    border-left: 6px solid var(--zielony);
+    border-radius: 12px;
+}
+
+@media (max-width: 700px) {
+    .zagadnienie {
+        display: block;             /* telefon: wszystko jedno pod drugim */
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 16px;
+        border-width: 2px;
+        border-radius: 14px;
+        box-shadow: 3px 3px 0 var(--akcent-jasny);
+    }
+    .duzyPunkt {
+        font-size: 23px;
+    }
+    .pytanie {
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .odpowiedz {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+}
