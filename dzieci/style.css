@@ -75,12 +75,12 @@ body {
     cursor: pointer;
 }
 .postepy {
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
     vertical-align: middle;
 }
 .postepy a, .postepy a:visited {
-    color: red;
+    color: green;
 }
 .stanNauki {
     float: left;
@@ -159,8 +159,7 @@ table {
     border-collapse: collapse;
 }
 td, th {
-    padding: 2px;
-    border: 1px solid black;
+    padding: 3px;
     text-align: left;
     vertical-align: top;
 }

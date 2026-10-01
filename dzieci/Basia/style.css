@@ -1,13 +1,12 @@
 :root {
     --tlo-strony: #fdf6e3;
     --karta: #fffdf7;
-    --akcent: #e07a3f;        /* pomarańcz: tytuł i pytania */
+    --akcent: #e07a3f;
     --akcent-jasny: #fdebd9;
-    --zielony: #4a9d6b;       /* odpowiedzi */
+    --zielony: #4a9d6b;
     --zielony-jasny: #eaf6ee;
     --tekst: #3a3226;
 }
-
 .zagadnienie {
     width: min(1100px, calc(100% - 40px));
     margin: 30px auto;
@@ -19,17 +18,14 @@
     border: 3px solid var(--akcent);
     border-radius: 20px;
     box-shadow: 6px 6px 0 var(--akcent-jasny);
-
-    /* układ: pytanie | odpowiedź */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 28px;
     row-gap: 12px;
     align-items: start;
 }
-
 .duzyPunkt {
-    grid-column: 1 / -1;            /* tytuł na całą szerokość */
+    grid-column: 1 / -1;
     font-family: 'Fredoka', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -38,7 +34,6 @@
     padding-bottom: 12px;
     border-bottom: 3px dashed var(--akcent);
 }
-
 .pytanie {
     font-family: 'Fredoka', sans-serif;
     font-size: 21px;
@@ -57,7 +52,6 @@
     left: 14px;
     top: 12px;
 }
-
 .odpowiedz {
     font-size: 18px;
     line-height: 1.6;
@@ -70,7 +64,7 @@
 
 @media (max-width: 700px) {
     .zagadnienie {
-        display: block;             /* telefon: wszystko jedno pod drugim */
+        display: block;
         width: calc(100% - 20px);
         margin: 10px auto;
         padding: 16px;
