@@ -10,9 +10,8 @@
     --tekst: #3a3226;
 }
 
-/* ===== KARTA (wspólna) ===== */
-.zagadnienie,
-.zadaniaFizyka {
+/* ===== KARTA ===== */
+.zagadnienie {
     width: min(1100px, calc(100% - 40px));
     margin: 30px auto;
     padding: 30px;
@@ -114,8 +113,15 @@
     border-radius: 50%;
 }
 
+/* ===== ZADANIA (zagnieżdżone w .zagadnienie) ===== */
 .zadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 3px dashed var(--akcent);
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
     counter-reset: zadanie;
 }
 
@@ -149,8 +155,9 @@
 }
 
 /* ostatnie zadanie na całą szerokość, gdy zostaje samo w wierszu
-   (działa przy nieparzystej liczbie zadań i nagłówku .duzyPunkt na początku) */
-.zadanieFizyka:nth-child(even):has(+ .pulapkiZadaniaFizyka) {
+   (nieparzysta liczba zadań, bez nagłówka .duzyPunkt w środku;
+   jeśli dodasz nagłówek, zmień odd na even) */
+.zadanieFizyka:nth-child(odd):has(+ .pulapkiZadaniaFizyka) {
     grid-column: 1 / -1;
 }
 
@@ -203,8 +210,7 @@
 
 /* ===== TELEFON ===== */
 @media (max-width: 700px) {
-    .zagadnienie,
-    .zadaniaFizyka {
+    .zagadnienie {
         display: block;
         width: calc(100% - 20px);
         margin: 10px auto;
@@ -243,6 +249,13 @@
     .pytanieMapa li {
         font-size: 16px;
         padding: 8px 12px 8px 46px;
+    }
+
+    .zadaniaFizyka {
+        display: block;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top-width: 2px;
     }
 
     .zadanieFizyka {
