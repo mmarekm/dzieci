@@ -5,9 +5,14 @@
     --akcent-jasny: #fdebd9;
     --zielony: #4a9d6b;
     --zielony-jasny: #eaf6ee;
+    --ostrzezenie: #d9534f;
+    --ostrzezenie-jasny: #fdeceb;
     --tekst: #3a3226;
 }
-.zagadnienie {
+
+/* ===== KARTA (wspólna) ===== */
+.zagadnienie,
+.zadaniaFizyka {
     width: min(1100px, calc(100% - 40px));
     margin: 30px auto;
     padding: 30px;
@@ -24,6 +29,7 @@
     row-gap: 12px;
     align-items: start;
 }
+
 .duzyPunkt {
     grid-column: 1 / -1;
     font-family: 'Fredoka', sans-serif;
@@ -34,6 +40,8 @@
     padding-bottom: 12px;
     border-bottom: 3px dashed var(--akcent);
 }
+
+/* ===== PYTANIA I ODPOWIEDZI ===== */
 .pytanie {
     font-family: 'Fredoka', sans-serif;
     font-size: 21px;
@@ -46,12 +54,14 @@
     border-left: 6px solid var(--akcent);
     border-radius: 12px;
 }
+
 .pytanie::before {
     content: "❓";
     position: absolute;
     left: 14px;
     top: 12px;
 }
+
 .odpowiedz {
     font-size: 18px;
     line-height: 1.6;
@@ -61,6 +71,8 @@
     border-left: 6px solid var(--zielony);
     border-radius: 12px;
 }
+
+/* ===== MAPA ===== */
 .pytanieMapa {
     grid-column: 1 / -1;
     margin-top: 14px;
@@ -69,17 +81,17 @@
     border-left: 6px solid var(--akcent);
     border-radius: 12px;
 }
+
 .pytanieMapa ul {
     list-style: none;
-    counter-reset: punkt;
     margin: 0;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px 24px;
 }
+
 .pytanieMapa li {
-    counter-increment: punkt;
     position: relative;
     padding: 10px 14px 10px 52px;
     background: var(--karta);
@@ -89,6 +101,7 @@
     font-weight: 500;
     line-height: 1.4;
 }
+
 .pytanieMapa li::before {
     content: "";
     position: absolute;
@@ -100,8 +113,98 @@
     background: var(--akcent);
     border-radius: 50%;
 }
+
+.zadaniaFizyka {
+    grid-template-columns: 1fr 1fr;
+    counter-reset: zadanie;
+}
+
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    padding: 14px 16px 14px 62px;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.zadanieFizyka::before {
+    content: counter(zadanie);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: var(--akcent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 34px;
+}
+
+/* ostatnie zadanie na całą szerokość, gdy zostaje samo w wierszu
+   (działa przy nieparzystej liczbie zadań i nagłówku .duzyPunkt na początku) */
+.zadanieFizyka:nth-child(even):has(+ .pulapkiZadaniaFizyka) {
+    grid-column: 1 / -1;
+}
+
+/* ===== PUŁAPKI ===== */
+.pulapkiZadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    padding: 18px 20px;
+    background: var(--ostrzezenie-jasny);
+    border-left: 6px solid var(--ostrzezenie);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.pulapkiZadaniaFizyka::before {
+    content: "⚠️ Uwaga na pułapki!";
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ostrzezenie);
+}
+
+.pulapkaZadaniaFizyka {
+    position: relative;
+    padding: 10px 14px 10px 46px;
+    background: var(--karta);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pulapkaZadaniaFizyka::before {
+    content: "✖";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: var(--ostrzezenie);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* ===== TELEFON ===== */
 @media (max-width: 700px) {
-    .zagadnienie {
+    .zagadnienie,
+    .zadaniaFizyka {
         display: block;
         width: calc(100% - 20px);
         margin: 10px auto;
@@ -110,29 +213,62 @@
         border-radius: 14px;
         box-shadow: 3px 3px 0 var(--akcent-jasny);
     }
+
     .duzyPunkt {
         font-size: 23px;
     }
+
     .pytanie {
         font-size: 18px;
         margin-top: 18px;
         margin-bottom: 8px;
     }
+
     .odpowiedz {
         font-size: 16px;
         line-height: 1.5;
         margin-top: 0;
     }
-	    .pytanieMapa {
+
+    .pytanieMapa {
         margin-top: 18px;
         padding: 12px;
     }
+
     .pytanieMapa ul {
         grid-template-columns: 1fr;
         gap: 8px;
     }
+
     .pytanieMapa li {
         font-size: 16px;
         padding: 8px 12px 8px 46px;
+    }
+
+    .zadanieFizyka {
+        font-size: 16px;
+        padding: 12px 12px 12px 54px;
+        margin-top: 10px;
+    }
+
+    .zadanieFizyka::before {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        left: 12px;
+    }
+
+    .pulapkiZadaniaFizyka {
+        margin-top: 18px;
+        padding: 12px;
+    }
+
+    .pulapkiZadaniaFizyka::before {
+        font-size: 19px;
+    }
+
+    .pulapkaZadaniaFizyka {
+        font-size: 16px;
     }
 }
