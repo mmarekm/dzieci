@@ -2,16 +2,13 @@
     size: A4;
     margin: 10mm;
 }
-
 :root {
-    --kolumny: 2;          /* 1 = jedna kolumna, 3 = bardzo gęsto */
-    --czcionka: 9.5pt;     /* 9pt = jeszcze gęściej, 10.5pt = czytelniej */
+    --kolumny: 2;          
+    --czcionka: 9.5pt;
 }
-
 * {
     box-sizing: border-box;
 }
-
 html, body {
     margin: 0;
     padding: 0;
@@ -23,15 +20,12 @@ html, body {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
 }
-
-/* Treść płynie w kolumnach, więc strona wypełnia się do końca */
 body {
     column-count: var(--kolumny);
     column-gap: 8mm;
     column-rule: 0.5pt solid #bbb;
     column-fill: auto;
 }
-
 .zagadnienie {
     display: block;
     margin: 0 0 3mm 0;
@@ -40,7 +34,6 @@ body {
     box-shadow: none;
     background: none;
 }
-
 .duzyPunkt {
     font-size: 11pt;
     font-weight: bold;
@@ -50,30 +43,25 @@ body {
     break-after: avoid;
     page-break-after: avoid;
 }
-
 .pytanie {
     font-weight: bold;
     margin: 1.5mm 0 0.3mm 0;
     padding: 0;
-    break-after: avoid;          /* pytanie nie zostanie samo na dole kolumny */
+    break-after: avoid;
     page-break-after: avoid;
 }
-
-.pytanie::before {
+    .pytanie::before {
     content: "▸ ";
 }
-
 .odpowiedz {
     margin: 0 0 1mm 0;
     padding: 0 0 0 2mm;
     border-left: 1.5pt solid #888;
-    break-inside: avoid;         /* odpowiedź nie rozetnie się między kolumnami */
+    break-inside: avoid;
     page-break-inside: avoid;
     orphans: 2;
     widows: 2;
 }
-
-/* Podgląd na ekranie: wygląda jak kartka A4 */
 @media screen {
     body {
         width: 210mm;
@@ -83,8 +71,6 @@ body {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     }
 }
-
-/* Telefon: jedna kolumna */
 @media screen and (max-width: 700px) {
     body {
         width: auto;
