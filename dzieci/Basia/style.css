@@ -6,6 +6,12 @@
     --zielony: #4a9d6b;
     --zielony-jasny: #eaf6ee;
     --tekst: #3a3226;
+	--zolty: #e0a800;
+    --zolty-jasny: #fff4cc;
+}
+body {
+    background: var(--tlo-strony);
+    margin: 0;
 }
 .zagadnienie {
     width: min(1100px, calc(100% - 40px));
@@ -100,6 +106,33 @@
     background: var(--akcent);
     border-radius: 50%;
 }
+.wazneInfoHistoria {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    padding: 14px 18px 14px 52px;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    background: var(--zolty-jasny);
+    border: 2px dashed var(--zolty);
+    border-left: 6px solid var(--zolty);
+    border-radius: 12px;
+}
+.wazneInfoHistoria::before {
+    content: "💡";
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-size: 22px;
+}
+.odpowiedz ul {
+    margin: 0;
+    padding-left: 22px;
+}
+.odpowiedz li {
+    margin-bottom: 4px;
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;
@@ -134,5 +167,15 @@
     .pytanieMapa li {
         font-size: 16px;
         padding: 8px 12px 8px 46px;
+    }
+	.wazneInfoHistoria {
+        font-size: 15px;
+        padding: 10px 12px 10px 44px;
+        margin-top: 18px;
+    }
+		.wazneInfoHistoria::before {
+        left: 12px;
+        top: 9px;
+        font-size: 19px;
     }
 }

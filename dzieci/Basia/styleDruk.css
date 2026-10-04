@@ -62,6 +62,26 @@ body {
     orphans: 2;
     widows: 2;
 }
+.wazneInfoHistoria {
+    margin: 1.5mm 0 1mm 0;
+    padding: 1mm 2mm;
+    border: 1pt solid #000;
+    font-style: italic;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.wazneInfoHistoria::before {
+    content: "! ";
+    font-weight: bold;
+    font-style: normal;
+}
+.odpowiedz ul {
+    margin: 0;
+    padding-left: 4mm;
+}
+.odpowiedz li {
+    margin-bottom: 0.5mm;
+}
 @media screen {
     body {
         width: 210mm;
