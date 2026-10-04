@@ -4,7 +4,7 @@
 }
 :root {
     --kolumny: 2;
-    --czcionka: 9.5pt;
+    --czcionka: 9pt;
 }
 * {
     box-sizing: border-box;
@@ -34,6 +34,18 @@ body {
     box-shadow: none;
     background: none;
 }
+.uwagaOrganizacyjnaFizyka {
+    column-span: all;
+    display: block;
+    margin: 0 0 3mm 0;
+    padding: 1.5mm 3mm;
+    border: 1pt solid #000;
+    background: #eee;
+    font-weight: bold;
+    text-align: center;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
 .duzyPunkt {
     font-size: 11pt;
     font-weight: bold;
@@ -43,6 +55,31 @@ body {
     break-after: avoid;
     page-break-after: avoid;
 }
+.wzoryFizyka {
+    display: block;
+    margin: 1mm 0 2mm 0;
+    padding: 1mm 2mm;
+    border: 1pt solid #000;
+    background: #f2f2f2;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+    .wzoryFizyka::before {
+    content: "Wzory";
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0.5mm 0;
+    }
+.wzorFizyka {
+    margin: 0 0 0.5mm 0;
+    padding: 0 0 0.5mm 0;
+    border-bottom: 0.5pt dotted #888;
+    font-weight: bold;
+}
+    .wzorFizyka:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    }
 .pytanie {
     font-weight: bold;
     margin: 1.5mm 0 0.3mm 0;
@@ -61,6 +98,9 @@ body {
     page-break-inside: avoid;
     orphans: 2;
     widows: 2;
+}
+.odpowiedz a {
+    display: none;
 }
 .odpowiedz ul,
 .odpowiedz ol {

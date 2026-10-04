@@ -8,7 +8,11 @@
     --ostrzezenie: #d9534f;
     --ostrzezenie-jasny: #fdeceb;
     --tekst: #3a3226;
+	--akcent-ciemny: #b85a22;
+	--wzor: #e9f1fb;
+    --wzor-ciemny: #3b6fb0;
 }
+body { margin: 0; background: var(--tlo-strony); }
 .zagadnienie {
     width: min(1100px, calc(100% - 40px));
     margin: 30px auto;
@@ -26,6 +30,36 @@
     row-gap: 12px;
     align-items: start;
 }
+.uwagaOrganizacyjnaFizyka {
+    width: min(1100px, calc(100% - 40px));
+    margin: 30px auto 0;
+    padding: 16px 20px 16px 66px;
+    box-sizing: border-box;
+    position: relative;
+    background: var(--akcent-jasny);
+    color: var(--tekst);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    border: 3px solid var(--akcent);
+    border-radius: 16px;
+}
+    .uwagaOrganizacyjnaFizyka::before {
+    content: "✍️";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: var(--karta);
+    border: 2px solid var(--akcent);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    }
 .duzyPunkt {
     grid-column: 1 / -1;
     font-family: 'Fredoka', sans-serif;
@@ -35,6 +69,35 @@
     margin-bottom: 10px;
     padding-bottom: 12px;
     border-bottom: 3px dashed var(--akcent);
+}
+.wzoryFizyka {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    padding: 18px 20px;
+    background: var(--wzor);
+    border-left: 6px solid var(--wzor-ciemny);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px 14px;
+}
+    .wzoryFizyka::before {
+    content: "📐 W Z O R Y";
+    grid-column: 1 / -1;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--wzor-ciemny);
+    }
+.wzorFizyka {
+    padding: 10px 14px;
+    background: var(--karta);
+    border: 2px solid var(--wzor-ciemny);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
 }
 .pytanie {
     font-family: 'Fredoka', sans-serif;
@@ -63,6 +126,43 @@
     border-left: 6px solid var(--zielony);
     border-radius: 12px;
 }
+.odpowiedz a {
+    display: inline-block;
+    margin: 2px 0 2px 6px;
+    padding: 2px 14px 2px 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--akcent-ciemny);
+    background: var(--karta);
+    border: 2px solid var(--akcent);
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 2px 2px 0 var(--akcent-jasny);
+    transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+    .odpowiedz a::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 0.75em;
+    vertical-align: 1px;
+    }
+    .odpowiedz a:hover,
+    .odpowiedz a:focus-visible {
+    background: var(--akcent);
+    color: #fff;
+    transform: translateY(-1px);
+    }
+    .odpowiedz a:focus-visible {
+    outline: 3px solid var(--akcent-jasny);
+    outline-offset: 2px;
+    }
+    .odpowiedz a:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    }
 .odpowiedz ul,
 .odpowiedz ol {
     margin: 0;
@@ -167,6 +267,9 @@
     .zadanieFizyka:nth-child(odd):has(+ .pulapkiZadaniaFizyka) {
     grid-column: 1 / -1;
     }
+	.zadanieFizyka:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
 .pulapkiZadaniaFizyka {
     grid-column: 1 / -1;
     margin-top: 14px;
@@ -219,8 +322,36 @@
         border-radius: 14px;
         box-shadow: 3px 3px 0 var(--akcent-jasny);
     }
+	.uwagaOrganizacyjnaFizyka {
+        width: calc(100% - 20px);
+        margin: 10px auto 0;
+        padding: 12px 12px 12px 56px;
+        font-size: 16px;
+        border-width: 2px;
+        border-radius: 14px;
+    }
+        .uwagaOrganizacyjnaFizyka::before {
+        left: 10px;
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+        line-height: 30px;
+        }
     .duzyPunkt {
         font-size: 23px;
+    }
+	.wzoryFizyka {
+        margin-top: 14px;
+        padding: 12px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+        .wzoryFizyka::before {
+        font-size: 19px;
+        }
+    .wzorFizyka {
+        font-size: 16px;
+        padding: 8px 10px;
     }
     .pytanie {
         font-size: 18px;
