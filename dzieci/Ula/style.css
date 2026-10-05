@@ -11,6 +11,8 @@
 	--akcent-ciemny: #b85a22;
 	--wzor: #e9f1fb;
     --wzor-ciemny: #3b6fb0;
+	--zolty: #e0a800;
+    --zolty-jasny: #fff4cc;
 }
 body { margin: 0; background: var(--tlo-strony); }
 .zagadnienie {
@@ -312,6 +314,26 @@ body { margin: 0; background: var(--tlo-strony); }
     text-align: center;
     line-height: 24px;
     }
+	.wazneInfoHistoria {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    padding: 14px 18px 14px 52px;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    background: var(--zolty-jasny);
+    border: 2px dashed var(--zolty);
+    border-left: 6px solid var(--zolty);
+    border-radius: 12px;
+}
+.wazneInfoHistoria::before {
+    content: "💡";
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-size: 22px;
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;
@@ -402,5 +424,15 @@ body { margin: 0; background: var(--tlo-strony); }
         }
     .pulapkaZadaniaFizyka {
         font-size: 16px;
+    }
+	.wazneInfoHistoria {
+        font-size: 15px;
+        padding: 10px 12px 10px 44px;
+        margin-top: 18px;
+    }
+		.wazneInfoHistoria::before {
+        left: 12px;
+        top: 9px;
+        font-size: 19px;
     }
 }
