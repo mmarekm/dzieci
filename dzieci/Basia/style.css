@@ -133,6 +133,46 @@ body {
 .odpowiedz li {
     margin-bottom: 4px;
 }
+.zadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 3px dashed var(--akcent);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    counter-reset: zadanie;
+}
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    padding: 14px 16px 14px 62px;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+    .zadanieFizyka::before {
+    content: counter(zadanie);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: var(--akcent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 34px;
+    }
+	.zadanieFizyka:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;
@@ -178,4 +218,22 @@ body {
         top: 9px;
         font-size: 19px;
     }
+	    .zadaniaFizyka {
+        display: block;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top-width: 2px;
+    }
+    .zadanieFizyka {
+        font-size: 16px;
+        padding: 12px 12px 12px 54px;
+        margin-top: 10px;
+    }
+        .zadanieFizyka::before {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        left: 12px;
+        }
 }

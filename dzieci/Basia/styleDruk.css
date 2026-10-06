@@ -82,6 +82,37 @@ body {
 .odpowiedz li {
     margin-bottom: 0.5mm;
 }
+.zadaniaFizyka {
+    display: block;
+    margin: 3mm 0 0 0;
+    padding: 1mm 0 0 0;
+    border-top: 1pt dashed #000;
+    counter-reset: zadanie;
+}
+    .zadaniaFizyka::before {
+    content: "Zadania";
+    display: block;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 0 0 1mm 0;
+    break-after: avoid;
+    page-break-after: avoid;
+    }
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    margin: 0 0 1mm 0;
+    padding: 0 0 0 5mm;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+    .zadanieFizyka::before {
+    content: counter(zadanie) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    }
 @media screen {
     body {
         width: 210mm;
