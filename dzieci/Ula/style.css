@@ -413,6 +413,17 @@ body { margin: 0; background: var(--tlo-strony); }
     font-weight: 700;
     background: var(--karta);
 }
+.odpowiedz p + .tabelaChemia { margin-top: 8px; }
+.tabelaChemia + p { margin-top: 8px; }
+.zadanieFizyka .tabelaChemia {
+    margin-top: 8px;
+    background: var(--karta);
+}
+.zadanieFizyka .tabelaChemia td {
+    height: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;

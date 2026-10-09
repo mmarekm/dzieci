@@ -260,6 +260,12 @@ body {
 .tabelaChemia td:first-child {
     font-weight: bold;
 }
+.zadanieFizyka .tabelaChemia {
+    margin-top: 1mm;
+}
+.zadanieFizyka .tabelaChemia td {
+    height: 6mm;
+}
 @media screen {
     body {
         width: 210mm;
