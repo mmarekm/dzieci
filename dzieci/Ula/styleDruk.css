@@ -213,6 +213,53 @@ body {
     break-after: avoid;
     page-break-after: avoid;
 }
+.atom {
+    white-space: nowrap;
+    font-weight: bold;
+}
+.atom .liczbyChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 0.3pt;
+    font-size: 0.7em;
+    font-weight: bold;
+    line-height: 1.05;
+    vertical-align: 0.5em;
+}
+.strzalkaChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5mm;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+.strzalkaChemia span:first-child {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+.tabelaChemia {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.tabelaChemia th,
+.tabelaChemia td {
+    padding: 0.5mm 1mm;
+    border: 0.5pt solid #000;
+    text-align: left;
+    vertical-align: top;
+}
+.tabelaChemia th {
+    background: #eee;
+    font-weight: bold;
+}
+.tabelaChemia td:first-child {
+    font-weight: bold;
+}
 @media screen {
     body {
         width: 210mm;

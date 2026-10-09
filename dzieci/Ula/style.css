@@ -361,6 +361,58 @@ body { margin: 0; background: var(--tlo-strony); }
 .malyPunkt .odpowiedz {
     margin-top: 8px;
 }
+.atom {
+    white-space: nowrap;
+    font-weight: 700;
+}
+.atom .liczbyChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.65em;
+    font-weight: 600;
+    line-height: 1.05;
+    color: var(--akcent-ciemny);
+    vertical-align: 0.5em;
+}
+.strzalkaChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6px;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+.strzalkaChemia span:first-child {
+    font-size: 0.75em;
+    color: var(--akcent-ciemny);
+    font-weight: 700;
+}
+.tabelaChemia {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.tabelaChemia th,
+.tabelaChemia td {
+    padding: 8px 10px;
+    border: 2px solid var(--zielony);
+    text-align: left;
+    vertical-align: top;
+}
+.tabelaChemia th {
+    background: var(--karta);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    color: var(--akcent-ciemny);
+}
+.tabelaChemia td:first-child {
+    font-weight: 700;
+    background: var(--karta);
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;
@@ -469,4 +521,11 @@ body { margin: 0; background: var(--tlo-strony); }
     .malyPunktTytul {
         font-size: 19px;
     }
+	.tabelaChemia {
+    font-size: 13px;
+}
+.tabelaChemia th,
+.tabelaChemia td {
+    padding: 5px 6px;
+}
 }
