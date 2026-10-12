@@ -452,50 +452,315 @@
 		</div>	
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">13. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+		<div class="duzyPunkt">13. Arkusz kalkulacyjny: tabela, komórka, formuła.</div>
+		<div class="pytanie">Co to jest arkusz kalkulacyjny?</div>
+		<div class="odpowiedz">Program do tworzenia tabel i wykonywania obliczeń, np. Excel, LibreOffice Calc lub Arkusze Google. Wyniki obliczeń aktualizują się automatycznie po zmianie danych.</div>
+		<div class="pytanie">Jak zbudowany jest arkusz?</div>
+		<div class="odpowiedz">
+			<ul>
+				<li>Skoroszyt – cały plik, który może zawierać kilka arkuszy.</li>
+				<li>Arkusz – tabela złożona z wierszy i kolumn.</li>
+				<li>Komórka – miejsce na dane, np. A1 (kolumna A, wiersz 1).</li>
+				<li>Zakres – grupa komórek, np. A1:A5.</li>
+				<li>Pasek formuły: pole nad tabelą, w którym widać zawartość zaznaczonej komórki.</li>
+			</ul>
+			<p>W komórkach można wpisywać tekst, liczby, daty i formuły.</p>
+		</div>
+		<div class="pytanie">Co to jest formuła?</div>
+		<div class="odpowiedz">Formuła to zapis obliczenia, który zaczyna się od znaku <b>=</b>. Może korzystać z wartości wpisanych w innych komórkach.</div>
+		<div class="pytanie">Jakie są istotne funkcje?</div>
+		<div class="odpowiedz">
+			<ul>
+				<li>działania matematyczne – np. =A1+B1</li>
+				<li>=SUMA(A1:A5) – suma liczb.</li>
+				<li>=ŚREDNIA(A1:A5) – średnia arytmetyczna.</li>
+				<li>=MIN(A1:A5) – najmniejsza wartość.</li>
+				<li>=MAX(A1:A5) – największa wartość.</li>
+				<li>=JEŻELI(B2>=5;"zdane";"niezdane"): sprawdza warunek</li>
+			</ul>
+			<p>Formuły można kopiować do kolejnych komórek, przeciągając uchwyt wypełniania w prawym dolnym rogu zaznaczenia.</p>
+		</div>
+		<div class="pytanie">Jak formatować tabelę?</div>
+		<div class="odpowiedz">Można zmieniać czcionkę, kolor i obramowanie komórek, wyrównanie tekstu oraz format danych, np. walutę, procent lub datę. Szerokość kolumny dopasowuje się przez przeciągnięcie jej granicy.</div>
+		<div class="zadaniaFizyka">
+			<div class="zadanieFizyka">Wpisz do komórek A1, A2 i A3 liczby 10, 20 i 30. W A4 oblicz sumę, a w A5 średnią.</div>
+			<div class="zadanieFizyka">Utwórz tabelę zakupów z kolumnami: produkt, cena, ilość i wartość. Oblicz wartość każdego zakupu i sumę wszystkich zakupów.</div>
+			<div class="zadanieFizyka">Wpisz pięć wartości do komórek B2:B6. Oblicz najmniejszą i największą wartość.</div>
+			<div class="zadanieFizyka">Podaj adres komórki znajdującej się w kolumnie C i wierszu 7.</div>
+		</div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">14. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">14. Arkusz kalkulacyjny: rodzaje wykresów.</div>
+	  <div class="pytanie">Po co tworzymy wykresy?</div>
+	  <div class="odpowiedz">Wykres to graficzne przedstawienie danych z tabeli. Ułatwia porównywanie wartości i obserwowanie zmian.</div>
+	  <div class="pytanie">Jak wstawić wykres?</div>
+	  <div class="odpowiedz">Zaznacz dane wraz z nagłówkami, a następnie wybierz <b>Wstawianie → Wykres</b> i odpowiedni rodzaj.</div>
+	  <div class="pytanie">Jakie są podstawowe rodzaje wykresów?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Kolumnowy – porównywanie wartości, np. ocen uczniów.</li>
+		  <li>Słupkowy – porównywanie wartości za pomocą poziomych słupków, np. wyników drużyn.</li>
+		  <li>Liniowy – przedstawianie zmian w czasie, np. temperatury w ciągu tygodnia.</li>
+		  <li>Kołowy – pokazywanie udziału poszczególnych części w całości, np. ulubionych owoców w klasie.</li>
+		  <li>Punktowy – pokazywanie zależności między dwiema wartościami, np. wzrostu i długości stopy.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Z czego składa się wykres?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Tytuł – informuje, co przedstawia wykres.</li>
+		  <li>Osie – pokazują kategorie i wartości.</li>
+		  <li>Legenda – objaśnia oznaczenia i kolory, gdy jest potrzebna.</li>
+		  <li>Etykiety danych – wyświetlają wartości bezpośrednio na wykresie.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Jak poprawić wygląd wykresu?</div>
+	  <div class="odpowiedz">Można dodać tytuł, opisy osi i etykiety danych, zmienić kolory oraz styl wykresu, a także zmienić jego rozmiar i położenie.</div>
+	  <div class="pytanie">Przykład: ulubione owoce w klasie</div>
+	  <div class="odpowiedz">
+		<table>
+		  <tr><th>Owoc</th><th>Liczba osób</th></tr>
+		  <tr><td>Jabłko</td><td>8</td></tr>
+		  <tr><td>Banan</td><td>6</td></tr>
+		  <tr><td>Truskawka</td><td>10</td></tr>
+		  <tr><td>Winogrono</td><td>4</td></tr>
+		</table>
+		<p>Wykres kolumnowy pozwoli porównać liczbę osób, a kołowy pokaże udział każdego owocu w całości.</p>
+	  </div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Przygotuj tabelę temperatur z siedmiu dni i przedstaw dane na wykresie liniowym.</div>
+		<div class="zadanieFizyka">Utwórz tabelę ulubionych sportów w klasie i przedstaw wyniki na wykresie kołowym.</div>
+		<div class="zadanieFizyka">Dodaj do wykresu tytuł i etykiety danych, a następnie zmień jego kolory.</div>
+		<div class="zadanieFizyka">Wybierz rodzaj wykresu, który najlepiej pokaże zmiany liczby uczniów w szkole w ciągu pięciu lat. Uzasadnij wybór.</div>
+	  </div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">15. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">15. Arkusz kalkulacyjny: wstawianie grafiki.</div>
+	  <div class="pytanie">Po co wstawiamy grafikę do arkusza?</div>
+	  <div class="odpowiedz">Grafika może uatrakcyjnić arkusz, zilustrować dane lub wyróżnić ważne informacje.</div>
+	  <div class="pytanie">Jakie elementy graficzne można wstawić?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Obrazy – zdjęcia i ilustracje.</li>
+		  <li>Kształty – np. strzałki, prostokąty i dymki.</li>
+		  <li>Ikony – gotowe symbole.</li>
+		  <li>SmartArt – schematy i diagramy.</li>
+		  <li>Pole tekstowe – tekst umieszczony niezależnie od komórek.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Jak wstawić obraz?</div>
+	  <div class="odpowiedz">Wstawianie → Obrazy → To urządzenie, wskaż plik i kliknij <b>Wstaw</b>. Obraz pojawia się nad komórkami, można go przesuwać i zmieniać jego rozmiar.</div>
+	  <div class="pytanie">Jak edytować obraz?</div>
+	  <div class="odpowiedz">
+		<p>Po zaznaczeniu obrazu można:</p>
+		<ul>
+		  <li>zmienić rozmiar i położenie,</li>
+		  <li>przyciąć obraz lub obrócić go,</li>
+		  <li>zmienić obramowanie i wygląd.</li>
+		</ul>
+		<p>Aby zachować proporcje obrazu, zmieniaj jego rozmiar za pomocą uchwytów w rogach.</p>
+	  </div>
+	  <div class="pytanie">Jak wstawić i edytować kształt?</div>
+	  <div class="odpowiedz">Wstawianie → Kształty, wskaż figurę i przeciągnij ją na arkuszu. W karcie <b>Format kształtu</b> można zmienić jej kolor i obramowanie. Do kształtu można też dodać tekst.</div>
+	  <div class="pytanie">Do czego przydają się kształty i pola tekstowe?</div>
+	  <div class="odpowiedz">Można nimi tworzyć tytuły, podpisy, ramki wyróżniające ważne dane oraz strzałki i dymki objaśniające wykresy.</div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Utwórz tabelę „Moje ulubione zwierzęta” i wstaw obok zdjęcie jednego z nich.</div>
+		<div class="zadanieFizyka">Dodaj tytuł tabeli w polu tekstowym i nadaj mu kolorowe tło.</div>
+		<div class="zadanieFizyka">Wstaw do arkusza strzałkę i dymek z napisem „Najwyższy wynik”.</div>
+		<div class="zadanieFizyka">Zmień rozmiar obrazu, zachowując jego proporcje.</div>
+	  </div>
+	</div>
+
+	<div class="zagadnienie">
+	  <div class="duzyPunkt">16. Arkusz kalkulacyjny: analizowanie danych.</div>
+	  <div class="pytanie">Co to jest analiza danych?</div>
+	  <div class="odpowiedz">Analiza danych polega na ich porządkowaniu, obliczaniu i wyciąganiu wniosków, np. ustaleniu średniego wyniku lub najczęściej wybieranej odpowiedzi.</div>
+	  <div class="pytanie">Jakie funkcje pomagają analizować dane?</div>
+	  <div class="odpowiedz">=SUMA( ) (suma), =ŚREDNIA( ) (średnia), =MIN( ) i =MAX( ) (najmniejsza i największa wartość), =ILE.LICZB( ) (liczba komórek z liczbami).
+	  </div>
+	  <div class="pytanie">Co to jest sortowanie?</div>
+	  <div class="odpowiedz">Sortowanie polega na układaniu danych w określonej kolejności, np. alfabetycznie lub od największej wartości do najmniejszej. Wybierz <b>Dane → Sortuj</b>.</div>
+	  <div class="pytanie">Co to jest filtrowanie?</div>
+	  <div class="odpowiedz">Filtrowanie pozwala wyświetlić tylko wiersze spełniające wybrane warunki, np. osoby z oceną 5. Wybierz <b>Dane → Filtruj</b>. Pozostałe dane nie są usuwane.</div>
+	  <div class="pytanie">Co to jest formatowanie warunkowe?</div>
+	  <div class="odpowiedz">To automatyczne wyróżnianie komórek na podstawie ich wartości, np. kolorowanie wysokich wyników na zielono. Wybierz <b>Narzędzia główne → Formatowanie warunkowe</b>.</div>
+	  <div class="pytanie">Jak wykorzystać wykres w analizie danych?</div>
+	  <div class="odpowiedz">Wykres pomaga porównywać wartości i dostrzegać różnice lub zmiany. Rodzaj wykresu należy dopasować do przedstawianych danych.</div>
+	  <div class="pytanie">Czym różnią się dane od wniosków?</div>
+	  <div class="odpowiedz"><b>Dane</b> to liczby i fakty, a <b>wniosek</b> to informacja, którą można na ich podstawie wyciągnąć. Wniosek powinien wynikać z danych.</div>
+	  <div class="pytanie">Przykład analizy wyników sprawdzianu</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li><b>=ŚREDNIA(B2:B11)</b> – średni wynik uczniów.</li>
+		  <li><b>=MAX(B2:B11)</b> i <b>=MIN(B2:B11)</b> – najwyższy i najniższy wynik.</li>
+		  <li><b>Sortowanie</b> – uporządkowanie wyników od najwyższego do najniższego.</li>
+		  <li><b>Filtrowanie</b> – wyświetlenie tylko wyników spełniających wybrany warunek.</li>
+		  <li><b>Wykres</b> – graficzne porównanie wyników.</li>
+		</ul>
+	  </div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Wpisz pięć ocen i oblicz ich średnią, wartość największą oraz najmniejszą.</div>
+		<div class="zadanieFizyka">Posortuj listę uczniów alfabetycznie, a następnie według wyników od najwyższego do najniższego.</div>
+		<div class="zadanieFizyka">Przygotuj wyniki ankiety „Ulubiony przedmiot”, oblicz liczbę odpowiedzi i przedstaw je na wykresie.</div>
+		<div class="zadanieFizyka">Przefiltruj tabelę ocen tak, aby wyświetlała tylko oceny 5 i 6.</div>
+		<div class="zadanieFizyka">Na podstawie przygotowanego wykresu sformułuj jeden lub dwa wnioski.</div>
+	  </div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">16. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">17. Grafika rastrowa i grafika wektorowa.</div>
+	  <div class="pytanie">Co to jest grafika komputerowa?</div>
+	  <div class="odpowiedz">To obrazy tworzone, edytowane i wyświetlane za pomocą komputera. Dzielimy ją na rastrową i wektorową.</div>
+	  <div class="pytanie">Co to jest grafika rastrowa?</div>
+	  <div class="odpowiedz">
+		<p>Obraz zbudowany z małych kolorowych punktów, czyli <b>pikseli</b>. Stosuje się ją przede wszystkim do zdjęć.</p>
+		<ul>
+		  <li><b>Rozdzielczość</b> – liczba pikseli w obrazie, np. 1920 × 1080.</li>
+		  <li>Po dużym powiększeniu obraz może stać się rozmyty i widoczne stają się piksele.</li>
+		  <li><b>Formaty:</b> JPG, PNG, GIF, BMP.</li>
+		  <li><b>Programy:</b> Paint, GIMP, Photoshop.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Co to jest grafika wektorowa?</div>
+	  <div class="odpowiedz">
+		<p>Obraz zbudowany z kształtów, linii i krzywych opisanych matematycznie. Nadaje się np. do tworzenia logo, ikon i schematów.</p>
+		<ul>
+		  <li>Można ją powiększać bez utraty ostrości.</li>
+		  <li>Łatwo edytować jej poszczególne elementy.</li>
+		  <li><b>Formaty:</b> SVG, AI, CDR.</li>
+		  <li><b>Programy:</b> Inkscape, Adobe Illustrator.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Czym różni się grafika rastrowa od wektorowej?</div>
+	  <div class="odpowiedz">
+		<table>
+		  <tr><th>Cecha</th><th>Rastrowa</th><th>Wektorowa</th></tr>
+		  <tr><td>Budowa</td><td>Piksele</td><td>Kształty i linie</td></tr>
+		  <tr><td>Powiększanie</td><td>Może tracić ostrość</td><td>Bez utraty ostrości</td></tr>
+		  <tr><td>Zastosowanie</td><td>Zdjęcia</td><td>Logo, ikony, schematy</td></tr>
+		  <tr><td>Przykładowe formaty</td><td>JPG, PNG</td><td>SVG</td></tr>
+		</table>
+	  </div>
+	  <div class="pytanie">Jak rozpoznać różnicę w praktyce?</div>
+	  <div class="odpowiedz">Powiększ zdjęcie rastrowe i obserwuj piksele. Następnie powiększ grafikę wektorową — jej krawędzie pozostaną gładkie.</div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Podaj po dwa przykłady formatów grafiki rastrowej i wektorowej.</div>
+		<div class="zadanieFizyka">Wybierz rodzaj grafiki odpowiedni do zdjęcia, logo i mapy. Uzasadnij wybór.</div>
+		<div class="zadanieFizyka">Powiększ obraz rastrowy i wektorowy, a następnie porównaj ich wygląd.</div>
+		<div class="zadanieFizyka">Wyjaśnij, dlaczego logo wektorowe nadaje się do umieszczenia zarówno na wizytówce, jak i na dużym banerze.</div>
+	  </div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">17. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">18. Klipart i biblioteki obrazków.</div>
+	  <div class="pytanie">Co to jest klipart?</div>
+	  <div class="odpowiedz">Klipart to gotowy rysunek, ilustracja lub symbol, który można wstawić do dokumentu, prezentacji albo arkusza.</div>
+	  <div class="pytanie">Co to są biblioteki obrazków?</div>
+	  <div class="odpowiedz">To zbiory gotowych zdjęć, ilustracji, ikon i klipartów. Mogą być bezpłatne lub płatne.</div>
+	  <div class="pytanie">Gdzie można znaleźć obrazki?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>W programach biurowych – np. Wstawianie → Ikony lub Obrazy online.</li>
+		  <li>W internecie – np. Pixabay, Pexels, Unsplash, Wikimedia Commons.</li>
+		  <li>W programach graficznych – np. biblioteka duszków i teł w Scratchu.</li>
+		  <li>We własnych zbiorach – zdjęcia i rysunki wykonane samodzielnie.</li>
+		</ul>
+		<p>Przed wykorzystaniem obrazka z internetu sprawdź jego licencję</p>.
+	  </div>
+	  <div class="pytanie">Jak wstawić obrazek do dokumentu?</div>
+	  <div class="odpowiedz">Wstawianie → Ikony / Obrazy online albo pobierz plik z legalnego źródła i wstaw go z komputera. Rozmiar obrazka zmieniaj za pomocą uchwytów w rogach, aby zachować proporcje.</div>
+	  <div class="pytanie">Dlaczego nie wolno używać dowolnego obrazka z internetu?</div>
+	  <div class="odpowiedz">Obrazki mogą być chronione prawem autorskim. Przed ich wykorzystaniem trzeba sprawdzić warunki licencji i przestrzegać zasad korzystania z materiału.</div>
+	  <div class="pytanie">Jak podać źródło obrazka?</div>
+	  <div class="odpowiedz">Jeśli licencja tego wymaga, podaj autora, źródło i wymagane informacje o licencji.</div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Wstaw do dokumentu dwie ikony pasujące do tematu „Moje hobby”.</div>
+		<div class="zadanieFizyka">Znajdź w bezpłatnej bibliotece zdjęcie jabłka, sprawdź warunki jego wykorzystania i zapisz źródło.</div>
+		<div class="zadanieFizyka">Wyjaśnij, czym różni się klipart od zdjęcia.</div>
+		<div class="zadanieFizyka">Wyjaśnij, dlaczego nie każdy obrazek znaleziony w wyszukiwarce można wykorzystać w swojej pracy.</div>
+	  </div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">18. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">19. Fotografowanie i edycja zdjęć.</div>
+	  <div class="pytanie">Jak zrobić dobre zdjęcie?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Światło – korzystaj z naturalnego oświetlenia i unikaj fotografowania pod słońce.</li>
+		  <li>Ostrość – dotknij ekranu w miejscu, które ma być ostre, i trzymaj telefon stabilnie.</li>
+		  <li>Kompozycja – zadbaj o kadr i spokojne tło. Pomocna jest zasada trzecich: podziel kadr na dziewięć części i umieść ważny obiekt w pobliżu przecięcia linii.</li>
+		  <li>Perspektywa – fotografuj z różnych wysokości, aby uzyskać różne efekty.</li>
+		  <li>Zbliżenie – jeśli to możliwe, podejdź bliżej zamiast mocno używać zoomu.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Jakie są rodzaje zdjęć?</div>
+	  <div class="odpowiedz">Portret, pejzaż (krajobraz), makro (zbliżenie małego obiektu), fotografia przyrodnicza, reportażowa i produktowa.</div>
+	  <div class="pytanie">O czym pamiętać, fotografując ludzi?</div>
+	  <div class="odpowiedz">Szanuj prywatność innych. Przed publikacją zdjęcia umożliwiającego rozpoznanie osoby zadbaj o wymaganą zgodę. Szczególną ochroną należy objąć wizerunek dzieci. Pamiętaj też, że plik może zawierać ukryte informacje, np. datę lub lokalizację GPS. Przed publikacją sprawdź ustawienia prywatności.</div>
+	  <div class="pytanie">Co to jest edycja zdjęć?</div>
+	  <div class="odpowiedz">To poprawianie lub zmienianie zdjęć za pomocą programu albo aplikacji, np. Paint, Zdjęcia w Windows, GIMP, Canva lub edytora w telefonie.</div>
+	  <div class="pytanie">Jakie są podstawowe operacje edycji zdjęć?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li><b>Kadrowanie</b> – usuwanie niepotrzebnych fragmentów zdjęcia.</li>
+		  <li><b>Obrót</b> – zmiana położenia zdjęcia.</li>
+		  <li><b>Zmiana rozmiaru</b> – zmniejszanie lub powiększanie obrazu z zachowaniem proporcji.</li>
+		  <li><b>Jasność i kontrast</b> – poprawianie wyglądu jasnych i ciemnych obszarów.</li>
+		  <li><b>Filtry</b> – nadawanie zdjęciu określonego wyglądu, np. czarno-białego.</li>
+		  <li><b>Retusz</b> – usuwanie wybranych niedoskonałości obrazu.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Jak zapisywać zdjęcia po edycji?</div>
+	  <div class="odpowiedz">Zachowaj oryginał i zapisuj edytowaną wersję jako osobny plik. Do zdjęć najczęściej używa się formatu JPG, a PNG przydaje się m.in. wtedy, gdy potrzebne jest przezroczyste tło.</div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Zrób zdjęcie wybranego przedmiotu, stosując zasadę trzecich.</div>
+		<div class="zadanieFizyka">Przytnij zdjęcie tak, aby lepiej eksponowało najważniejszy obiekt.</div>
+		<div class="zadanieFizyka">Popraw jasność i kontrast zdjęcia, a następnie porównaj je z oryginałem.</div>
+		<div class="zadanieFizyka">Utwórz czarno-białą wersję zdjęcia i zapisz ją jako osobny plik.</div>
+		<div class="zadanieFizyka">Zmniejsz zdjęcie, zachowując jego proporcje, aby można było wstawić je do dokumentu.</div>
+	  </div>
+	</div>	
+	<div class="zagadnienie">
+	  <div class="duzyPunkt">20. Własność intelektualna.</div>
+	  <div class="pytanie">Co to są prawa autorskie?</div>
+	  <div class="odpowiedz">Chronią utwory stworzone przez ludzi, np. teksty, zdjęcia, muzykę, filmy, gry i programy. Powstają automatycznie, bez konieczności rejestracji.</div>
+	  <div class="pytanie">Co to jest plagiat i piractwo?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Plagiat – przedstawienie cudzej pracy jako własnej.</li>
+		  <li>Piractwo – nielegalne kopiowanie lub rozpowszechnianie utworów, np. filmów i programów.</li>
+		</ul>
+	  </div>
+	  <div class="pytanie">Co to jest licencja?</div>
+	  <div class="odpowiedz">Licencja określa zasady korzystania z utworu. Przed użyciem cudzego zdjęcia, tekstu lub muzyki sprawdź, na co pozwala jego licencja. Np. licencje <b>Creative Commons (CC)</b>.</div>
+	  <div class="pytanie">Jak korzystać z cudzych materiałów?</div>
+	  <div class="odpowiedz">
+		<ul>
+		  <li>Podawaj autora i źródło, zgodnie z wymaganiami licencji.</li>
+		  <li>Cytaty wyraźnie oznaczaj i podawaj ich źródło.</li>
+		  <li>Nie przedstawiaj cudzej pracy jako własnej.</li>
+		  <li>Jeśli nie masz pewności, czy możesz wykorzystać materiał, sprawdź licencję lub zapytaj nauczyciela.</li>
+		</ul>
+	  </div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Wyjaśnij, czym różnią się plagiat i piractwo.</div>
+		<div class="zadanieFizyka">Co należy zrobić przed wykorzystaniem zdjęcia znalezionego w internecie?</div>
+		<div class="zadanieFizyka">Wyjaśnij, dlaczego trzeba podawać źródła wykorzystanych materiałów.</div>
+	  </div>
 	</div>
 	<div class="zagadnienie">
-		<div class="duzyPunkt">19. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
+	  <div class="duzyPunkt">21. Nagrywanie i edytowanie dźwięku.</div>
+	  <div class="pytanie">Jak nagrać dźwięk?</div>
+	  <div class="odpowiedz">Potrzebujesz mikrofonu i programu, np. Audacity. Nagrywaj w cichym pomieszczeniu, a potem odsłuchaj nagranie.</div>
+	  <div class="pytanie">Jak edytować dźwięk w Audacity?</div>
+	  <div class="odpowiedz">Możesz wycinać fragmenty, usuwać ciszę, zmieniać głośność, redukować szumy, dodawać płynne wejście i wyjście oraz łączyć głos z muzyką.</div>
+	  <div class="pytanie">Jakie są formaty dźwięku?</div>
+	  <div class="odpowiedz"><b>MP3</b> – mniejszy plik ze stratą jakości; <b>WAV</b> – zwykle większy plik o wysokiej jakości. Projekt Audacity (.aup3) służy do dalszej edycji.</div>
+	  <div class="pytanie">O czym pamiętać?</div>
+	  <div class="odpowiedz">Zachowaj oryginał, sprawdź licencję muzyki i uzyskaj zgodę na nagranie czyjegoś głosu. Gotowe nagranie wyeksportuj do pliku audio.</div>
+	  <div class="zadaniaFizyka">
+		<div class="zadanieFizyka">Nagraj krótki opis zwierzęcia, wytnij pomyłki i zapisz jako MP3.</div>
+		<div class="zadanieFizyka">Połącz głos z muzyką w tle tak, aby głos był dobrze słyszalny.</div>
+		<div class="zadanieFizyka">Dodaj Fade In i Fade Out.</div>
+	  </div>
 	</div>
-	<div class="zagadnienie">
-		<div class="duzyPunkt">20. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
-	</div>
-	<div class="zagadnienie">
-		<div class="duzyPunkt">21. </div>
-		<div class="pytanie"></div>
-		<div class="odpowiedz"></div>
-	</div>
-	-->
 </body>
 </html>
