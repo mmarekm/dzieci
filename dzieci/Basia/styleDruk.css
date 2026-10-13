@@ -113,6 +113,48 @@ body {
     top: 0;
     font-weight: bold;
     }
+.duzyDzial {
+    margin: 3mm 0 2mm 0;
+    padding: 1mm 2mm;
+    font-size: 12.5pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    text-align: center;
+    border: 1.5pt dashed #000;
+    border-top: 2.5pt solid #000;
+    border-bottom: 2.5pt solid #000;
+    background: #eee;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+.pulapkiZadaniaFizyka {
+    margin: 2mm 0 0 0;
+    padding: 1mm 2mm;
+    border: 1pt solid #000;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+    .pulapkiZadaniaFizyka::before {
+    content: "Uwaga na pułapki!";
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0.5mm 0;
+    }
+.pulapkaZadaniaFizyka {
+    position: relative;
+    margin: 0 0 0.5mm 0;
+    padding: 0 0 0 4mm;
+}
+    .pulapkaZadaniaFizyka::before {
+    content: "×";
+    position: absolute;
+    left: 0.5mm;
+    top: 0;
+    font-weight: bold;
+    }
 @media screen {
     body {
         width: 210mm;

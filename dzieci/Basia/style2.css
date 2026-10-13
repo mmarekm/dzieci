@@ -1,0 +1,707 @@
+/* ============================================================
+   style2.css – wersja "nauka na imprezie"
+   Naklejki, grube obrysy, twarde cienie, neony na nocnym tle.
+   Te same klasy co w pierwszym stylu, wystarczy podmienić plik.
+   (@import możesz usunąć, jeśli fonty ładujesz w <head>)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+    --noc: #24104d;
+    --tusz: #14061f;
+    --papier: #fffaf0;
+    --roz: #ff4fa3;
+    --roz-jasny: #ffd6ea;
+    --limonka: #c6ff3d;
+    --limonka-jasna: #eeffb8;
+    --cyjan: #38d9f5;
+    --cyjan-jasny: #d6f7ff;
+    --zolty: #ffd93d;
+    --ostrzezenie: #ff3b4e;
+    --ostrzezenie-jasny: #ffe1e4;
+    --cien: 4px 4px 0 var(--tusz);
+    --cien-duzy: 8px 8px 0 var(--tusz);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--noc);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.09) 2px, transparent 2px);
+    background-size: 28px 28px;
+}
+
+/* ---------- karta zagadnienia ---------- */
+.zagadnienie {
+    width: min(1100px, calc(100% - 40px));
+    margin: 36px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--papier);
+    color: var(--tusz);
+    font-family: 'Rubik', sans-serif;
+    border: 4px solid var(--tusz);
+    border-radius: 22px;
+    box-shadow: 8px 8px 0 var(--roz);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 28px;
+    row-gap: 18px;
+    align-items: start;
+}
+
+/* numer + tytuł jako przekrzywiona naklejka */
+.duzyPunkt {
+    grid-column: 1 / -1;
+    justify-self: start;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--tusz);
+    background: var(--limonka);
+    border: 4px solid var(--tusz);
+    border-radius: 14px;
+    box-shadow: var(--cien);
+    padding: 6px 20px 8px;
+    margin: -48px 0 6px -12px;
+    transform: rotate(-1.5deg);
+}
+
+/* ---------- pytanie i odpowiedź ---------- */
+.pytanie {
+    position: relative;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.35;
+    padding: 12px 16px 12px 52px;
+    background: var(--zolty);
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+}
+.pytanie::before {
+    content: "🤔";
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    font-size: 24px;
+}
+
+.odpowiedz {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 12px 16px;
+    background: var(--cyjan-jasny);
+    border: 3px solid var(--tusz);
+    border-radius: 16px 16px 16px 4px;
+    box-shadow: var(--cien);
+}
+.odpowiedz ul {
+    margin: 0;
+    padding-left: 22px;
+}
+.odpowiedz li {
+    margin-bottom: 4px;
+}
+.odpowiedz li::marker {
+    color: var(--roz);
+    font-weight: 700;
+}
+
+/* ---------- pytania do mapy ---------- */
+.pytanieMapa {
+    grid-column: 1 / -1;
+    padding: 18px 20px;
+    background: var(--roz-jasny);
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+}
+.pytanieMapa ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 24px;
+}
+.pytanieMapa li {
+    position: relative;
+    padding: 10px 14px 10px 54px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 12px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.pytanieMapa li::before {
+    content: "★";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: var(--roz);
+    color: #fff;
+    border: 2px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* ---------- ważna informacja (karteczka) ---------- */
+.wazneInfoHistoria {
+    grid-column: 1 / -1;
+    position: relative;
+    padding: 14px 18px 14px 56px;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    background: var(--limonka-jasna);
+    border: 3px dashed var(--tusz);
+    border-radius: 14px;
+    box-shadow: var(--cien);
+    transform: rotate(-0.5deg);
+}
+.wazneInfoHistoria::before {
+    content: "🔥";
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    font-size: 26px;
+}
+
+/* ---------- zadania ---------- */
+.zadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding-top: 22px;
+    border-top: 4px dashed var(--roz);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+    counter-reset: zadanie;
+}
+.zadaniaFizyka::before {
+    content: "🎮 Czas na zadania!";
+    grid-column: 1 / -1;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 24px;
+    color: var(--roz);
+    text-shadow: 2px 2px 0 var(--tusz);
+}
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    padding: 14px 16px 14px 66px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+    font-family: 'Lilita One', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.zadanieFizyka::before {
+    content: counter(zadanie);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-6deg);
+    width: 38px;
+    height: 38px;
+    background: var(--cyjan);
+    color: var(--tusz);
+    border: 3px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+}
+.zadanieFizyka:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+.zadanieFizyka:nth-child(odd):has(+ .pulapkiZadaniaFizyka) {
+    grid-column: 1 / -1;
+}
+
+/* ---------- pułapki ---------- */
+.pulapkiZadaniaFizyka {
+    grid-column: 1 / -1;
+    padding: 18px 20px;
+    background: var(--ostrzezenie-jasny);
+    border: 3px dashed var(--ostrzezenie);
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+.pulapkiZadaniaFizyka::before {
+    content: "🙈 Tu wszyscy się wywalają!";
+    font-family: 'Lilita One', sans-serif;
+    font-size: 22px;
+    color: var(--ostrzezenie);
+}
+.pulapkaZadaniaFizyka {
+    position: relative;
+    padding: 10px 14px 10px 52px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--tusz);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.pulapkaZadaniaFizyka::before {
+    content: "✖";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: var(--ostrzezenie);
+    color: #fff;
+    border: 2px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* ---------- baner działu ---------- */
+.duzyDzial {
+    position: relative;
+    box-sizing: border-box;
+    width: min(1100px, calc(100% - 40px));
+    margin: 56px auto 22px auto;
+    padding: 18px 28px 20px 84px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 3px 3px 0 var(--tusz);
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--roz) 0 22px,
+        #ff6fb4 22px 44px
+    );
+    border: 4px solid var(--tusz);
+    border-radius: 22px;
+    box-shadow: var(--cien-duzy), 8px 8px 0 4px var(--limonka);
+    transform: rotate(-1deg);
+}
+.duzyDzial::before {
+    content: "🎉";
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+    font-size: 40px;
+    text-shadow: none;
+}
+
+/* ---------- efekty po najechaniu myszką ----------
+   Działają tylko tam, gdzie jest mysz, i tylko gdy użytkownik
+   nie wyłączył animacji w systemie. Na telefonie nic się nie dzieje. */
+@keyframes wiggle {
+    0%   { transform: rotate(-1.5deg) scale(1); }
+    25%  { transform: rotate(4deg) scale(1.08); }
+    50%  { transform: rotate(-4deg) scale(1.08); }
+    75%  { transform: rotate(3deg) scale(1.05); }
+    100% { transform: rotate(1.5deg) scale(1.05); }
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-6px) rotate(-1deg); }
+    40% { transform: translateX(6px) rotate(1deg); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+}
+@keyframes paski {
+    from { background-position: 0 0; }
+    to   { background-position: 62.23px 0; }
+}
+@keyframes skok {
+    0%, 100% { transform: translateY(-50%) rotate(-10deg) scale(1); }
+    40% { transform: translateY(-85%) rotate(20deg) scale(1.3); }
+    70% { transform: translateY(-40%) rotate(-20deg) scale(1.1); }
+}
+@keyframes buzka {
+    0%, 100% { transform: rotate(0) scale(1); }
+    30% { transform: rotate(-15deg) scale(1.4); }
+    60% { transform: rotate(12deg) scale(1.25); }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+
+    /* karta: cień zmienia kolor i "odskakuje" */
+    .zagadnienie {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .zagadnienie:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 12px 12px 0 var(--cyjan);
+    }
+
+    /* naklejka z numerem: trzęsie się i robi różowa */
+    .duzyPunkt {
+        transition: background 0.2s ease;
+    }
+    .duzyPunkt:hover {
+        background: var(--roz);
+        color: #fff;
+        text-shadow: 2px 2px 0 var(--tusz);
+        animation: wiggle 0.5s ease forwards;
+    }
+
+    /* pytanie: podskakuje, a myśląca buźka zamienia się w żarówkę */
+    .pytanie {
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+    .pytanie:hover {
+        transform: translate(-3px, -5px) rotate(-1deg);
+        box-shadow: 8px 10px 0 var(--tusz);
+        background: #ffb84d;
+    }
+    .pytanie:hover::before {
+        content: "💡";
+    }
+
+    /* odpowiedź: wyskakuje naklejka "super!" */
+    .odpowiedz {
+        position: relative;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-radius 0.25s ease;
+    }
+    .odpowiedz::after {
+        content: "👍";
+        position: absolute;
+        top: -18px;
+        right: -12px;
+        font-size: 30px;
+        transform: scale(0) rotate(-40deg);
+        transition: transform 0.25s cubic-bezier(0.34, 1.8, 0.64, 1);
+        pointer-events: none;
+    }
+    .odpowiedz:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 7px 7px 0 var(--tusz);
+        background: #b9efff;
+        border-radius: 16px 16px 4px 16px;
+    }
+    .odpowiedz:hover::after {
+        transform: scale(1) rotate(12deg);
+    }
+
+    /* pytania do mapy: kafelek jedzie w prawo, gwiazdka robi piruet */
+    .pytanieMapa li {
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .pytanieMapa li::before {
+        transition: transform 0.5s ease, background 0.2s ease;
+    }
+    .pytanieMapa li:hover {
+        transform: translateX(8px);
+        background: var(--limonka-jasna);
+    }
+    .pytanieMapa li:hover::before {
+        transform: translateY(-50%) rotate(360deg) scale(1.2);
+        background: var(--zolty);
+    }
+
+    /* ważna informacja: prostuje się, rośnie, ogień buzuje */
+    .wazneInfoHistoria {
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+    .wazneInfoHistoria:hover {
+        transform: rotate(0.6deg) scale(1.02);
+        background: var(--zolty);
+        box-shadow: 7px 7px 0 var(--tusz);
+    }
+    .wazneInfoHistoria:hover::before {
+        animation: buzka 0.6s ease infinite;
+    }
+
+    /* nagłówek zadań: rozciąga się, gdy najedziesz na cały blok zadań */
+    .zadaniaFizyka::before {
+        transition: letter-spacing 0.3s ease, color 0.3s ease;
+    }
+    .zadaniaFizyka:hover::before {
+        letter-spacing: 2px;
+        color: var(--limonka);
+    }
+
+    /* zadanie: wciska się w stół, a numerek kręci się jak moneta */
+    .zadanieFizyka {
+        transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+    }
+    .zadanieFizyka::before {
+        transition: transform 0.5s ease, background 0.2s ease;
+    }
+    .zadanieFizyka:hover {
+        transform: translate(3px, 3px);
+        box-shadow: 1px 1px 0 var(--tusz);
+        background: var(--cyjan-jasny);
+    }
+    .zadanieFizyka:hover::before {
+        transform: translateY(-50%) rotate(360deg) scale(1.2);
+        background: var(--limonka);
+    }
+
+    /* pułapki: cały blok wściekle się czerwieni */
+    .pulapkiZadaniaFizyka {
+        transition: border-style 0.2s ease, background 0.2s ease;
+    }
+    .pulapkiZadaniaFizyka:hover {
+        border-style: solid;
+        background: #ffc9cf;
+    }
+
+    /* pojedyncza pułapka: trzęsie się, a ✖ wybucha */
+    .pulapkaZadaniaFizyka:hover {
+        animation: shake 0.4s ease;
+        background: #fff3b0;
+    }
+    .pulapkaZadaniaFizyka:hover::before {
+        content: "💥";
+        background: transparent;
+        border-color: transparent;
+        font-size: 24px;
+    }
+
+    /* baner działu: paski jadą jak na słupku fryzjera, konfetti skacze */
+    .duzyDzial {
+        background-size: 62.23px 62.23px;
+        transition: transform 0.25s ease;
+    }
+    .duzyDzial:hover {
+        transform: rotate(1deg) scale(1.02);
+        animation: paski 1s linear infinite;
+    }
+    .duzyDzial:hover::before {
+        animation: skok 0.7s ease infinite;
+    }
+}
+
+/* ---------- telefon ---------- */
+@media (max-width: 700px) {
+    .zagadnienie {
+        display: block;
+        width: calc(100% - 28px);
+        margin: 34px auto 18px;
+        padding: 16px;
+        border-width: 3px;
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 var(--roz);
+    }
+    .duzyPunkt {
+        font-size: 21px;
+        padding: 5px 14px 7px;
+        margin: -34px 0 10px -4px;
+        border-width: 3px;
+    }
+    .pytanie {
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        padding: 10px 12px 10px 46px;
+    }
+    .pytanie::before {
+        left: 12px;
+        top: 8px;
+        font-size: 22px;
+    }
+    .odpowiedz {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 6px;
+    }
+    .pytanieMapa {
+        margin-top: 18px;
+        padding: 12px;
+    }
+    .pytanieMapa ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .pytanieMapa li {
+        font-size: 16px;
+        padding: 8px 12px 8px 50px;
+    }
+    .wazneInfoHistoria {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 10px 12px 10px 46px;
+        transform: none;
+    }
+    .wazneInfoHistoria::before {
+        left: 12px;
+        top: 8px;
+        font-size: 22px;
+    }
+    .zadaniaFizyka {
+        display: block;
+        margin-top: 22px;
+        padding-top: 16px;
+        border-top-width: 3px;
+    }
+    .zadaniaFizyka::before {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 21px;
+    }
+    .zadanieFizyka {
+        font-size: 16px;
+        padding: 12px 12px 12px 56px;
+        margin-top: 12px;
+    }
+    .zadanieFizyka::before {
+        width: 32px;
+        height: 32px;
+        line-height: 26px;
+        font-size: 17px;
+        left: 12px;
+    }
+    .duzyDzial {
+        width: calc(100% - 28px);
+        margin: 40px auto 14px;
+        padding: 12px 14px 14px 56px;
+        font-size: 22px;
+        border-width: 3px;
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 var(--tusz), 5px 5px 0 3px var(--limonka);
+        transform: none;
+    }
+    .duzyDzial::before {
+        left: 14px;
+        font-size: 28px;
+    }
+    .pulapkiZadaniaFizyka {
+        margin-top: 18px;
+        padding: 12px;
+    }
+    .pulapkiZadaniaFizyka::before {
+        font-size: 19px;
+    }
+    .pulapkaZadaniaFizyka {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+/* ---------- efekty na telefonie: dotknięcie palcem ---------- */
+@media (hover: none) and (pointer: coarse) and (prefers-reduced-motion: no-preference) {
+
+    .zagadnienie, .duzyPunkt, .pytanie, .odpowiedz, .pytanieMapa li,
+    .wazneInfoHistoria, .zadanieFizyka, .pulapkaZadaniaFizyka, .duzyDzial {
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .duzyPunkt:active {
+        background: var(--roz);
+        color: #fff;
+        animation: wiggle 0.5s ease forwards;
+    }
+
+    .pytanie:active {
+        transform: translate(-2px, -3px) rotate(-1deg);
+        box-shadow: 6px 7px 0 var(--tusz);
+        background: #ffb84d;
+    }
+    .pytanie:active::before {
+        content: "💡";
+    }
+
+    .odpowiedz {
+        position: relative;
+    }
+    .odpowiedz::after {
+        content: "👍";
+        position: absolute;
+        top: -16px;
+        right: -6px;
+        font-size: 28px;
+        transform: scale(0) rotate(-40deg);
+        transition: transform 0.25s cubic-bezier(0.34, 1.8, 0.64, 1);
+        pointer-events: none;
+    }
+    .odpowiedz:active {
+        background: #b9efff;
+        transform: translate(-2px, -2px);
+    }
+    .odpowiedz:active::after {
+        transform: scale(1) rotate(12deg);
+    }
+
+    .pytanieMapa li:active {
+        transform: translateX(6px);
+        background: var(--limonka-jasna);
+    }
+
+    .wazneInfoHistoria:active {
+        transform: rotate(0.6deg) scale(1.02);
+        background: var(--zolty);
+    }
+    .wazneInfoHistoria:active::before {
+        animation: buzka 0.6s ease infinite;
+    }
+
+    .zadanieFizyka:active {
+        transform: translate(3px, 3px);
+        box-shadow: 1px 1px 0 var(--tusz);
+        background: var(--cyjan-jasny);
+    }
+
+    .pulapkaZadaniaFizyka:active {
+        animation: shake 0.4s ease;
+        background: #fff3b0;
+    }
+    .pulapkaZadaniaFizyka:active::before {
+        content: "💥";
+        background: transparent;
+        border-color: transparent;
+        font-size: 22px;
+    }
+
+    .duzyDzial {
+        background-size: 62.23px 62.23px;
+    }
+    .duzyDzial:active {
+        transform: rotate(1deg) scale(1.02);
+        animation: paski 1s linear infinite;
+    }
+    .duzyDzial:active::before {
+        animation: skok 0.7s ease infinite;
+    }
+}
+
+/* ---------- wjazd naklejek przy przewijaniu (Chrome na Androidzie) ---------- */
+@keyframes wjazd {
+    from {
+        opacity: 0;
+        transform: translateY(24px) rotate(-6deg) scale(0.9);
+    }
+}
+@supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+        .duzyPunkt,
+        .duzyDzial,
+        .wazneInfoHistoria {
+            animation: wjazd linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 60%;
+        }
+    }
+}

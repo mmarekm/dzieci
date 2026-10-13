@@ -1,0 +1,810 @@
+/* ============================================================
+   style3.css – "nauka na imprezie", wersja z grubej beczki
+   Wygląd jak w style2, ale efekty po najechaniu myszką (:hover)
+   i po dotknięciu palcem (:active) są dużo bardziej szalone:
+   galareta, konfetti, iskry, bicie serca, monety, wybuchy, glitch,
+   a przy banerze działu zmienia się nawet tło całej strony.
+
+   Wszystkie animacje są skończone (nic nie kręci się w nieskończoność),
+   więc na telefonie po dotknięciu efekt odegra się raz.
+   Efekty są wyłączone, gdy ktoś ma w systemie wyłączone animacje.
+   (@import możesz usunąć, jeśli fonty ładujesz w <head>)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+    --noc: #24104d;
+    --noc-impreza: #4a1d96;
+    --tusz: #14061f;
+    --papier: #fffaf0;
+    --roz: #ff4fa3;
+    --roz-jasny: #ffd6ea;
+    --limonka: #c6ff3d;
+    --limonka-jasna: #eeffb8;
+    --cyjan: #38d9f5;
+    --cyjan-jasny: #d6f7ff;
+    --zolty: #ffd93d;
+    --fiolet: #8a5cff;
+    --ostrzezenie: #ff3b4e;
+    --ostrzezenie-jasny: #ffe1e4;
+    --cien: 4px 4px 0 var(--tusz);
+    --cien-duzy: 8px 8px 0 var(--tusz);
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--noc);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.09) 2px, transparent 2px);
+    background-size: 28px 28px;
+    transition: background-color 0.5s ease;
+}
+
+/* ---------- karta zagadnienia ---------- */
+.zagadnienie {
+    width: min(1100px, calc(100% - 40px));
+    margin: 36px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--papier);
+    color: var(--tusz);
+    font-family: 'Rubik', sans-serif;
+    border: 4px solid var(--tusz);
+    border-radius: 22px;
+    box-shadow: 8px 8px 0 var(--roz);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 28px;
+    row-gap: 18px;
+    align-items: start;
+}
+
+/* numer + tytuł jako przekrzywiona naklejka */
+.duzyPunkt {
+    grid-column: 1 / -1;
+    justify-self: start;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--tusz);
+    background: var(--limonka);
+    border: 4px solid var(--tusz);
+    border-radius: 14px;
+    box-shadow: var(--cien);
+    padding: 6px 20px 8px;
+    margin: -48px 0 6px -12px;
+    transform: rotate(-1.5deg);
+}
+
+/* ---------- pytanie i odpowiedź ---------- */
+.pytanie {
+    position: relative;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.35;
+    padding: 12px 16px 12px 52px;
+    background: var(--zolty);
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+}
+.pytanie::before {
+    content: "🤔";
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    font-size: 24px;
+}
+.pytanie::after {
+    content: "✨";
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    font-size: 22px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.odpowiedz {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 12px 16px;
+    background: var(--cyjan-jasny);
+    border: 3px solid var(--tusz);
+    border-radius: 16px 16px 16px 4px;
+    box-shadow: var(--cien);
+}
+.odpowiedz::before {
+    content: "👍";
+    position: absolute;
+    top: -18px;
+    right: -12px;
+    z-index: 3;
+    font-size: 30px;
+    transform: scale(0) rotate(-40deg);
+    pointer-events: none;
+}
+.odpowiedz::after {
+    content: "";
+    position: absolute;
+    right: 28px;
+    top: -4px;
+    z-index: 2;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--roz);
+    box-shadow:
+        -34px -22px 0 var(--cyjan),
+        30px -28px 0 var(--zolty),
+        -58px 6px 0 var(--limonka),
+        54px 4px 0 var(--roz),
+        -20px -44px 0 var(--fiolet),
+        18px -48px 0 var(--ostrzezenie),
+        -46px -38px 0 var(--zolty),
+        44px -40px 0 var(--cyjan);
+    opacity: 0;
+    pointer-events: none;
+}
+.odpowiedz ul {
+    margin: 0;
+    padding-left: 22px;
+}
+.odpowiedz li {
+    margin-bottom: 4px;
+}
+.odpowiedz li::marker {
+    color: var(--roz);
+    font-weight: 700;
+}
+
+/* ---------- pytania do mapy ---------- */
+.pytanieMapa {
+    grid-column: 1 / -1;
+    padding: 18px 20px;
+    background: var(--roz-jasny);
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+}
+.pytanieMapa ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 24px;
+}
+.pytanieMapa li {
+    position: relative;
+    transform-origin: left center;
+    padding: 10px 14px 10px 54px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 12px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.pytanieMapa li::before {
+    content: "★";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: var(--roz);
+    color: #fff;
+    border: 2px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* ---------- ważna informacja (karteczka) ---------- */
+.wazneInfoHistoria {
+    grid-column: 1 / -1;
+    position: relative;
+    padding: 14px 18px 14px 56px;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    background: var(--limonka-jasna);
+    border: 3px dashed var(--tusz);
+    border-radius: 14px;
+    box-shadow: var(--cien);
+    transform: rotate(-0.5deg);
+}
+.wazneInfoHistoria::before {
+    content: "🔥";
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    font-size: 26px;
+}
+
+/* ---------- zadania ---------- */
+.zadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding-top: 22px;
+    border-top: 4px dashed var(--roz);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px 16px;
+    counter-reset: zadanie;
+}
+.zadaniaFizyka::before {
+    content: "🎮 Czas na zadania!";
+    grid-column: 1 / -1;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 24px;
+    color: var(--roz);
+    text-shadow: 2px 2px 0 var(--tusz);
+}
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    padding: 14px 16px 14px 66px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 16px;
+    box-shadow: var(--cien);
+    font-family: 'Lilita One', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.zadanieFizyka::before {
+    content: counter(zadanie);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-6deg);
+    width: 38px;
+    height: 38px;
+    background: var(--cyjan);
+    color: var(--tusz);
+    border: 3px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+}
+.zadanieFizyka:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+.zadanieFizyka:nth-child(odd):has(+ .pulapkiZadaniaFizyka) {
+    grid-column: 1 / -1;
+}
+
+/* ---------- pułapki ---------- */
+.pulapkiZadaniaFizyka {
+    grid-column: 1 / -1;
+    padding: 18px 20px;
+    background: var(--ostrzezenie-jasny);
+    border: 3px dashed var(--ostrzezenie);
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+.pulapkiZadaniaFizyka::before {
+    content: "🙈 Tu wszyscy się wywalają!";
+    font-family: 'Lilita One', sans-serif;
+    font-size: 22px;
+    color: var(--ostrzezenie);
+}
+.pulapkaZadaniaFizyka {
+    position: relative;
+    padding: 10px 14px 10px 52px;
+    background: #fff;
+    border: 3px solid var(--tusz);
+    border-radius: 12px;
+    box-shadow: 3px 3px 0 var(--tusz);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+.pulapkaZadaniaFizyka::before {
+    content: "✖";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: var(--ostrzezenie);
+    color: #fff;
+    border: 2px solid var(--tusz);
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 22px;
+}
+
+/* ---------- baner działu ---------- */
+.duzyDzial {
+    position: relative;
+    box-sizing: border-box;
+    width: min(1100px, calc(100% - 40px));
+    margin: 56px auto 22px auto;
+    padding: 18px 28px 20px 84px;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 3px 3px 0 var(--tusz);
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--roz) 0 22px,
+        #ff6fb4 22px 44px
+    );
+    background-size: 62.23px 62.23px;
+    border: 4px solid var(--tusz);
+    border-radius: 22px;
+    box-shadow: var(--cien-duzy), 8px 8px 0 4px var(--limonka);
+    transform: rotate(-1deg);
+}
+.duzyDzial::before {
+    content: "🎉";
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-10deg);
+    font-size: 40px;
+    text-shadow: none;
+}
+.duzyDzial::after {
+    content: "";
+    position: absolute;
+    right: 90px;
+    top: 50%;
+    z-index: 2;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--limonka);
+    box-shadow:
+        -60px -34px 0 var(--cyjan),
+        50px -40px 0 var(--zolty),
+        -110px 10px 0 #fff,
+        100px 14px 0 var(--limonka),
+        -30px -62px 0 var(--fiolet),
+        30px -66px 0 #fff,
+        -90px -50px 0 var(--zolty),
+        84px -56px 0 var(--cyjan),
+        -20px 44px 0 var(--limonka),
+        40px 46px 0 var(--fiolet);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ---------- telefon ---------- */
+@media (max-width: 700px) {
+    .zagadnienie {
+        display: block;
+        width: calc(100% - 28px);
+        margin: 34px auto 18px;
+        padding: 16px;
+        border-width: 3px;
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 var(--roz);
+    }
+    .duzyPunkt {
+        font-size: 21px;
+        padding: 5px 14px 7px;
+        margin: -34px 0 10px -4px;
+        border-width: 3px;
+    }
+    .pytanie {
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 12px;
+        padding: 10px 12px 10px 46px;
+    }
+    .pytanie::before {
+        left: 12px;
+        top: 8px;
+        font-size: 22px;
+    }
+    .odpowiedz {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 6px;
+    }
+    .odpowiedz::after {
+        right: 40px;
+    }
+    .pytanieMapa {
+        margin-top: 18px;
+        padding: 12px;
+    }
+    .pytanieMapa ul {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .pytanieMapa li {
+        font-size: 16px;
+        padding: 8px 12px 8px 50px;
+    }
+    .wazneInfoHistoria {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 10px 12px 10px 46px;
+        transform: none;
+    }
+    .wazneInfoHistoria::before {
+        left: 12px;
+        top: 8px;
+        font-size: 22px;
+    }
+    .zadaniaFizyka {
+        display: block;
+        margin-top: 22px;
+        padding-top: 16px;
+        border-top-width: 3px;
+    }
+    .zadaniaFizyka::before {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 21px;
+    }
+    .zadanieFizyka {
+        font-size: 16px;
+        padding: 12px 12px 12px 56px;
+        margin-top: 12px;
+    }
+    .zadanieFizyka::before {
+        width: 32px;
+        height: 32px;
+        line-height: 26px;
+        font-size: 17px;
+        left: 12px;
+    }
+    .duzyDzial {
+        width: calc(100% - 28px);
+        margin: 40px auto 14px;
+        padding: 12px 14px 14px 56px;
+        font-size: 22px;
+        border-width: 3px;
+        border-radius: 16px;
+        box-shadow: 5px 5px 0 var(--tusz), 5px 5px 0 3px var(--limonka);
+        transform: none;
+    }
+    .duzyDzial::before {
+        left: 14px;
+        font-size: 28px;
+    }
+    .duzyDzial::after {
+        right: 50px;
+        transform-origin: center;
+    }
+    .pulapkiZadaniaFizyka {
+        margin-top: 18px;
+        padding: 12px;
+    }
+    .pulapkiZadaniaFizyka::before {
+        font-size: 19px;
+    }
+    .pulapkaZadaniaFizyka {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+/* ============================================================
+   EFEKTY: najechanie myszką (:hover) i dotknięcie palcem (:active)
+   ============================================================ */
+
+/* ---------- klatki kluczowe ---------- */
+@keyframes wiggle {
+    0%   { transform: rotate(-1.5deg) scale(1); }
+    25%  { transform: rotate(5deg) scale(1.12); }
+    50%  { transform: rotate(-5deg) scale(1.12); }
+    75%  { transform: rotate(3deg) scale(1.06); }
+    100% { transform: rotate(1.5deg) scale(1.05); }
+}
+@keyframes teczaTlo {
+    0%   { background: var(--limonka); }
+    20%  { background: var(--roz); }
+    40%  { background: var(--cyjan); }
+    60%  { background: var(--zolty); }
+    80%  { background: var(--fiolet); }
+    100% { background: var(--roz); }
+}
+@keyframes cienTecza {
+    0%   { box-shadow: 12px 12px 0 var(--roz); }
+    25%  { box-shadow: 12px 12px 0 var(--zolty); }
+    50%  { box-shadow: 12px 12px 0 var(--limonka); }
+    75%  { box-shadow: 12px 12px 0 var(--fiolet); }
+    100% { box-shadow: 12px 12px 0 var(--cyjan); }
+}
+@keyframes galareta {
+    0%   { transform: translate(0, 0) scale(1); }
+    30%  { transform: translate(var(--dx, 0), calc(var(--dy, 0) - 5px)) scale(1.07, 0.93); }
+    55%  { transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.96, 1.05); }
+    80%  { transform: translate(var(--dx, 0), var(--dy, 0)) scale(1.02, 0.99); }
+    100% { transform: translate(var(--dx, 0), var(--dy, 0)) rotate(var(--rot, 0deg)) scale(1); }
+}
+@keyframes iskry {
+    0%   { opacity: 0; transform: translateY(0) rotate(0) scale(0.5); }
+    30%  { opacity: 1; }
+    100% { opacity: 0; transform: translateY(-36px) rotate(60deg) scale(1.5); }
+}
+@keyframes konfetti {
+    0%   { opacity: 1; transform: scale(0.1) translateY(24px) rotate(0); }
+    60%  { opacity: 1; }
+    100% { opacity: 0; transform: scale(1.7) translateY(-14px) rotate(80deg); }
+}
+@keyframes konfettiBaner {
+    0%   { opacity: 1; transform: scale(0.1) rotate(0); }
+    60%  { opacity: 1; }
+    100% { opacity: 0; transform: scale(1.8) rotate(120deg); }
+}
+@keyframes hustawka {
+    0%   { transform: translateX(0) rotate(0); }
+    30%  { transform: translateX(16px) rotate(-3deg); }
+    60%  { transform: translateX(8px) rotate(1.5deg); }
+    100% { transform: translateX(10px) rotate(-1.5deg); }
+}
+@keyframes bije {
+    0%   { transform: rotate(-0.5deg) scale(1); }
+    15%  { transform: rotate(0.6deg) scale(1.09); }
+    30%  { transform: rotate(0.6deg) scale(1.02); }
+    45%  { transform: rotate(0.6deg) scale(1.09); }
+    60%  { transform: rotate(0.6deg) scale(1.02); }
+    100% { transform: rotate(0.6deg) scale(1.02); }
+}
+@keyframes alarmZolty {
+    0%   { background: var(--limonka-jasna); }
+    25%  { background: var(--zolty); }
+    50%  { background: var(--roz-jasny); }
+    75%  { background: var(--zolty); }
+    100% { background: var(--zolty); }
+}
+@keyframes buzka {
+    0%, 100% { transform: rotate(0) scale(1); }
+    30% { transform: rotate(-15deg) scale(1.5); }
+    60% { transform: rotate(12deg) scale(1.3); }
+}
+@keyframes wcisk {
+    0%   { transform: translate(0, 0) scale(1); }
+    30%  { transform: translate(5px, 5px) scale(0.97); }
+    60%  { transform: translate(1px, 1px) scale(1.02); }
+    100% { transform: translate(3px, 3px) scale(1); }
+}
+@keyframes szarpie {
+    0%, 100% { transform: translate(0, 0) rotate(0); }
+    10% { transform: translate(-8px, 2px) rotate(-1.5deg); }
+    20% { transform: translate(8px, -2px) rotate(1.5deg); }
+    30% { transform: translate(-7px, 1px) rotate(-1deg); }
+    40% { transform: translate(7px, -1px) rotate(1deg); }
+    50% { transform: translate(-5px, 0); }
+    60% { transform: translate(5px, 0); }
+    70% { transform: translate(-3px, 0); }
+    80% { transform: translate(3px, 0); }
+}
+@keyframes alarm {
+    0%   { background: var(--ostrzezenie-jasny); }
+    25%  { background: #ffa8b1; }
+    50%  { background: var(--ostrzezenie-jasny); }
+    75%  { background: #ffa8b1; }
+    100% { background: #ffc9cf; }
+}
+@keyframes paski {
+    from { background-position: 0 0; }
+    to   { background-position: 62.23px 0; }
+}
+@keyframes skok {
+    0%, 100% { transform: translateY(-50%) rotate(-10deg) scale(1); }
+    40% { transform: translateY(-95%) rotate(25deg) scale(1.4); }
+    70% { transform: translateY(-40%) rotate(-25deg) scale(1.15); }
+}
+@keyframes glitch {
+    0%, 100% { text-shadow: 3px 3px 0 var(--tusz); }
+    15% { text-shadow: -4px 0 var(--cyjan), 4px 0 var(--limonka), 3px 3px 0 var(--tusz); }
+    30% { text-shadow: 4px -2px var(--cyjan), -4px 2px var(--limonka), 3px 3px 0 var(--tusz); }
+    45% { text-shadow: -2px 3px var(--fiolet), 3px -3px var(--zolty), 3px 3px 0 var(--tusz); }
+    60% { text-shadow: 3px 3px 0 var(--tusz); }
+    75% { text-shadow: -4px 0 var(--zolty), 4px 0 var(--cyjan), 3px 3px 0 var(--tusz); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    /* płynne przejścia dla wszystkiego, co się zmienia */
+    .zagadnienie { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .pytanie { transition: background 0.2s ease, box-shadow 0.2s ease; }
+    .odpowiedz { transition: background 0.2s ease, box-shadow 0.2s ease, border-radius 0.3s ease; }
+    .odpowiedz::before { transition: transform 0.35s cubic-bezier(0.34, 1.9, 0.64, 1); }
+    .pytanieMapa li { transition: background 0.2s ease; }
+    .pytanieMapa li::before { transition: transform 0.7s ease, background 0.2s ease; }
+    .wazneInfoHistoria { transition: box-shadow 0.2s ease; }
+    .zadaniaFizyka::before { transition: letter-spacing 0.3s ease, color 0.3s ease; }
+    .zadanieFizyka { transition: background 0.2s ease, box-shadow 0.15s ease; }
+    .zadanieFizyka::before { transition: transform 0.8s ease, background 0.2s ease; }
+    .pulapkiZadaniaFizyka { transition: border-style 0.2s ease; }
+    .pulapkaZadaniaFizyka { transition: background 0.2s ease; }
+    .duzyDzial { transition: transform 0.25s ease; }
+
+    /* karta: cień zmienia kolory jak światła na dyskotece */
+    .zagadnienie:hover,
+    .zagadnienie:active {
+        transform: translate(-3px, -3px);
+        box-shadow: 12px 12px 0 var(--cyjan);
+        animation: cienTecza 2s linear;
+    }
+
+    /* naklejka z numerem: wariuje i miga wszystkimi kolorami */
+    .duzyPunkt:hover,
+    .duzyPunkt:active {
+        background: var(--roz);
+        animation: wiggle 0.6s ease forwards, teczaTlo 1.4s linear;
+    }
+
+    /* pytanie: galareta, żarówka zamiast buźki i lecące iskry */
+    .pytanie:hover,
+    .pytanie:active {
+        --dx: -3px;
+        --dy: -5px;
+        --rot: -1deg;
+        background: #ffb84d;
+        box-shadow: 8px 10px 0 var(--tusz);
+        animation: galareta 0.55s ease forwards;
+    }
+    .pytanie:hover::before,
+    .pytanie:active::before {
+        content: "💡";
+        animation: buzka 0.6s ease 2;
+    }
+    .pytanie:hover::after,
+    .pytanie:active::after {
+        animation: iskry 1s ease-out;
+    }
+
+    /* odpowiedź: galareta, wyskakuje łapka i strzela konfetti */
+    .odpowiedz:hover,
+    .odpowiedz:active {
+        --dx: -3px;
+        --dy: -3px;
+        background: #b9efff;
+        box-shadow: 7px 7px 0 var(--tusz);
+        border-radius: 16px 16px 4px 16px;
+        animation: galareta 0.55s ease forwards;
+    }
+    .odpowiedz:hover::before,
+    .odpowiedz:active::before {
+        transform: scale(1.1) rotate(12deg);
+    }
+    .odpowiedz:hover::after,
+    .odpowiedz:active::after {
+        animation: konfetti 0.8s ease-out;
+    }
+
+    /* pytania do mapy: huśtawka, gwiazdka robi dwa pełne obroty */
+    .pytanieMapa li:hover,
+    .pytanieMapa li:active {
+        background: var(--limonka-jasna);
+        animation: hustawka 0.8s ease forwards;
+    }
+    .pytanieMapa li:hover::before,
+    .pytanieMapa li:active::before {
+        transform: translateY(-50%) rotate(720deg) scale(1.3);
+        background: var(--zolty);
+    }
+
+    /* ważna informacja: bicie serca, alarmowe migotanie i szalejący ogień */
+    .wazneInfoHistoria:hover,
+    .wazneInfoHistoria:active {
+        background: var(--zolty);
+        box-shadow: 7px 7px 0 var(--tusz);
+        animation: bije 1.2s ease forwards, alarmZolty 1.2s linear;
+    }
+    .wazneInfoHistoria:hover::before,
+    .wazneInfoHistoria:active::before {
+        animation: buzka 0.6s ease 4;
+    }
+
+    /* nagłówek zadań: rozciąga się, gdy najedziesz na blok zadań */
+    .zadaniaFizyka:hover::before,
+    .zadaniaFizyka:active::before {
+        letter-spacing: 2px;
+        color: var(--limonka);
+    }
+
+    /* zadanie: wciska się w stół, a numerek kręci się jak moneta */
+    .zadanieFizyka:hover,
+    .zadanieFizyka:active {
+        background: var(--cyjan-jasny);
+        box-shadow: 1px 1px 0 var(--tusz);
+        animation: wcisk 0.5s ease forwards;
+    }
+    .zadanieFizyka:hover::before,
+    .zadanieFizyka:active::before {
+        transform: translateY(-50%) rotateY(720deg) scale(1.25);
+        background: var(--limonka);
+    }
+
+    /* blok pułapek: czerwone światła alarmowe */
+    .pulapkiZadaniaFizyka:hover,
+    .pulapkiZadaniaFizyka:active {
+        border-style: solid;
+        animation: alarm 0.8s linear forwards;
+    }
+    .pulapkiZadaniaFizyka:hover::before,
+    .pulapkiZadaniaFizyka:active::before {
+        animation: szarpie 0.6s ease;
+    }
+
+    /* pojedyncza pułapka: trzęsienie ziemi, przekreślenie i wybuch */
+    .pulapkaZadaniaFizyka:hover,
+    .pulapkaZadaniaFizyka:active {
+        background: #fff3b0;
+        text-decoration: line-through wavy var(--ostrzezenie);
+        text-decoration-thickness: 2px;
+        animation: szarpie 0.5s ease;
+    }
+    .pulapkaZadaniaFizyka:hover::before,
+    .pulapkaZadaniaFizyka:active::before {
+        content: "💥";
+        background: transparent;
+        border-color: transparent;
+        font-size: 24px;
+        animation: buzka 0.5s ease 2;
+    }
+
+    /* baner działu: jadące paski, glitch, skaczące konfetti i wybuch kolorów */
+    .duzyDzial:hover,
+    .duzyDzial:active {
+        transform: rotate(1deg) scale(1.03);
+        animation: paski 1s linear 6, glitch 0.8s linear;
+    }
+    .duzyDzial:hover::before,
+    .duzyDzial:active::before {
+        animation: skok 0.7s ease 4;
+    }
+    .duzyDzial:hover::after,
+    .duzyDzial:active::after {
+        animation: konfettiBaner 0.9s ease-out;
+    }
+
+    /* impreza na całej stronie: tło rozjaśnia się, gdy najedziesz na baner */
+    body:has(.duzyDzial:hover),
+    body:has(.duzyDzial:active) {
+        background-color: var(--noc-impreza);
+    }
+}
+
+/* ---------- wjazd elementów przy przewijaniu (bez JavaScriptu) ---------- */
+@keyframes wjazd {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotate(-8deg) scale(0.85);
+    }
+}
+@supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+        .duzyPunkt,
+        .duzyDzial,
+        .wazneInfoHistoria,
+        .zadanieFizyka,
+        .pulapkiZadaniaFizyka {
+            animation: wjazd linear both;
+            animation-timeline: view();
+            animation-range: entry 0% entry 60%;
+        }
+    }
+}
