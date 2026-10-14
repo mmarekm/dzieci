@@ -424,6 +424,33 @@ body { margin: 0; background: var(--tlo-strony); }
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
 }
+.duzyDzial {
+    width: min(1100px, calc(100% - 40px));
+    margin: 40px auto 10px auto;
+    padding: 18px 28px 18px 72px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    background: var(--akcent);
+    border: 4px dashed var(--akcent);
+    outline: 4px solid var(--akcent-jasny);
+    outline-offset: -12px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--akcent-jasny);
+    text-align: left;
+}
+.duzyDzial::before {
+    content: "📚";
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 34px;
+}
 @media (max-width: 700px) {
     .zagadnienie {
         display: block;
@@ -539,4 +566,19 @@ body { margin: 0; background: var(--tlo-strony); }
 .tabelaChemia td {
     padding: 5px 6px;
 }
+.duzyDzial {
+        width: calc(100% - 20px);
+        margin: 24px auto 6px auto;
+        padding: 12px 14px 12px 52px;
+        font-size: 22px;
+        border-width: 3px;
+        outline-width: 3px;
+        outline-offset: -8px;
+        border-radius: 14px;
+        box-shadow: 3px 3px 0 var(--akcent-jasny);
+    }
+    .duzyDzial::before {
+        left: 14px;
+        font-size: 24px;
+    }
 }
