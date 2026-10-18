@@ -362,9 +362,9 @@ body {
     font-weight: 400;
     cursor: auto;
 }
-.odpowiedz li.maCiekawostke:hover .ciekawostkaHistoryczna,
-.odpowiedz li.maCiekawostke:focus-within .ciekawostkaHistoryczna,
-.odpowiedz li.maCiekawostke.otwarta .ciekawostkaHistoryczna {
+.odpowiedz li.maCiekawostke:hover .miejsceNaCiekawostke .ciekawostkaHistoryczna,
+.odpowiedz li.maCiekawostke:focus-within .miejsceNaCiekawostke .ciekawostkaHistoryczna,
+.odpowiedz li.maCiekawostke.otwarta .miejsceNaCiekawostke .ciekawostkaHistoryczna {
     display: block;
 }
 .naglowekCiekawostki {
