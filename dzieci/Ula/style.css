@@ -15,6 +15,7 @@
     --zolty-jasny: #fff4cc;
 }
 body { margin: 0; background: var(--tlo-strony); }
+a:has(> .zagadnienie) { text-decoration: none; }
 .zagadnienie {
     width: min(1100px, calc(100% - 40px));
     margin: 30px auto;
@@ -71,6 +72,11 @@ body { margin: 0; background: var(--tlo-strony); }
     margin-bottom: 10px;
     padding-bottom: 12px;
     border-bottom: 3px dashed var(--akcent);
+}
+.duzyPunkt + .zadaniaFizyka {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
 }
 .wzoryFizyka {
     grid-column: 1 / -1;
