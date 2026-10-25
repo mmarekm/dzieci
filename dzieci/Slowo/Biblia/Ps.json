@@ -234,7 +234,9 @@
 		"10a": "Bojaźń Pana jest czysta, trwa na wieki.",
 		"10b": "Sądy Pana są słuszne, wszystkie są sprawiedliwe.",
 		"11a": "Godniejsze pożądania niż złoto i mnóstwo drogich kamieni,",
-		"11b": "słodsze od miodu, od słodyczy, która sączy się z plastra."
+		"11b": "słodsze od miodu, od słodyczy, która sączy się z plastra.",
+		"15a": "Niech będą Ci miłe słowa ust moich i myśli mego serca,",
+		"15b": "Panie mój, moja skało i odkupicielu!"
 	},
 	"22": {
 		"8a": "Drwią ze mnie wszyscy, którzy na mnie patrzą,",
@@ -952,6 +954,19 @@
 		"1b": "nakłoń ucha na słowa ust moich.",
 		"2a": "Otworzę moje usta dla przypowieści,",
 		"2b": "wypowiem rzeczy zakryte od początku.",
+		"3a": "Tego, cośmy słyszeli i poznali,",
+		"3b": "co opowiedzieli nam ojcowie,",
+		"4b": "lecz opowiemy przyszłemu potomstwu",
+		"4c": "o przesławnych czynach i potędze Pana",
+		"6a": "Aby je poznali dalsi potomkowie,",
+		"6b": "synowie, którzy się narodzą.",
+		"7a": "Niech w Bogu złożą nadzieję,",
+		"7b": "nie zapominają o Bożych dziełach,",
+		"7c": "lecz przestrzegają Jego przykazań.",
+		"8a": "Niechaj nie będą jak ich przodkowie,",
+		"8b": "pokolenie krnąbrne i zbuntowane,",
+		"8c": "pokolenie, które nie było prawe w sercu",
+		"8d": "i w duchu nie zawierzyło Bogu.",
 		"34a": "Gdy ich zabijał, zwracali się do Niego,",
 		"34b": "nawracali się i tęsknie wypatrywali.",
 		"35a": "Przypomnieli sobie, że Bóg jest ich skałą,",
@@ -1272,7 +1287,11 @@
 		"7c": "Dzisiaj, jeśli głos Jego usłyszycie,",
 		"8": "nie zatwardzajcie serc waszych jak w Meriba na pustyni w dniu Massa,",
 		"9a": "gdy Mnie kusili wasi ojcowie,",
-		"9b": "doświadczali Mnie, choć widzieli dzieła moje."
+		"9b": "doświadczali Mnie, choć widzieli dzieła moje.",
+		"10a": "Przez czterdzieści lat budziło we Mnie odrazę to pokolenie,",
+		"10b": "więc powiedziałem: To lud, który błądzi w sercu i moich dróg nie zna.",
+		"11a": "Toteż przysiągłem zagniewany,",
+		"11b": "że nie wejdą do mego odpoczynku!"
     },
 	"96": {
 		"1a": "Śpiewajcie Panu pieśń nową,",
