@@ -504,6 +504,8 @@
 	"40": {
 		"2a": "Z tęsknotą czekałem na Pana,",
 		"2b": "a On zwrócił na mnie uwagę i wysłuchał mojej prośby.",
+		"4a": "Natchnął mnie do śpiewania pieśni nowej,",
+		"4b": "hymnu dla naszego Boga.",
 		"5a": "Szczęśliwy człowiek, który ufność złożył w Panu,",
 		"5b": "nie naśladuje pysznych i omotanych kłamstwem.",
 		"7a": "Ofiar ani darów nie chciałeś, lecz otworzyłeś mi uszy;",
@@ -1529,6 +1531,16 @@
 		"8b": "za cuda wobec synów ludzkich.",
 		"9a": "Bo nasycił zgłodniałych,",
 		"9b": "a łaknących napełnił dobrami."
+	},
+	"110": {
+		"1a": "Pan rzekł do mojego Pana: „Usiądź po mojej prawej stronie,",
+		"1b": "aż położę twych wrogów jako podnóżek pod twoje stopy”.",
+		"2a": "Niech Pan rozciągnie z Syjonu moc twego berła!",
+		"2b": "„Panuj nad wrogami twymi!",
+		"3a": "Tobie dana jest władza w dniu twej potęgi we wspaniałej świątyni.",
+		"3b": "Z łona przed jutrzenką zrodziłem cię jak rosę!”.",
+		"4a": "Pan przysiągł i nie będzie żałował:",
+		"4b": "„Ty jesteś kapłanem na wieki na wzór Melchizedeka”."
 	},
 	"111": {
 		"1a": "Będę Cię sławił, Panie, z całego serca",
