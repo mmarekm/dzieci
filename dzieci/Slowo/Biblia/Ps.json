@@ -281,7 +281,7 @@
 		"5a": "Zastawiasz przede mną stół wobec mych przeciwników.",
 		"5b": "Namaszczasz mi głowę olejkiem, a mój kielich jest napełniony.",
 		"6a": "Dobroć i łaska niech idą za mną przez wszystkie dni mego życia,",
-		"6b": "abym zamieszkał w domu Pana po najdłuższe czasy."
+		"6b": "abym zamieszkał w domu Pana po najdłuższe czasy."		
 	},
 	"24": {
 		"1a": "Do Pana należy ziemia i wszystko, co ją napełnia,",
@@ -295,7 +295,17 @@
 		"5a": "On otrzyma błogosławieństwo od Pana",
 		"5b": "i sprawiedliwość od Boga, Zbawcy swego.",
 		"6a": "To spotka ludzi, co się do Niego zwracają,",
-		"6b": "którzy pragną być w obecności Boga Jakuba."
+		"6b": "którzy pragną być w obecności Boga Jakuba.",
+		"7a": "Bramy, podnieście swe głowy!",
+		"7b": "Powstańcie, wrota odwieczne!",
+		"7c": "Niech wejdzie Król chwały!",
+		"8a": "Kto jest tym Królem chwały?",
+		"8b": "Pan mocny i potężny, Pan potężny w boju!",
+		"9a": "Bramy, podnieście swe głowy!",
+		"9b": "Powstańcie, wrota odwieczne!",
+		"9c": "Niech wejdzie Król chwały!",
+		"10a": "Kto jest tym Królem chwały?",
+		"10b": "Pan Zastępów – On jest Królem chwały!"
 	},
 	"25": {
 		"4a": "Ukaż mi drogi Twoje, Panie,",
@@ -394,6 +404,12 @@
 		"21b": "przed spiskiem ludzi.",
 		"21c": "Ustrzeżesz ich w Twoim namiocie",
 		"21d": "przed kłótliwymi językami.",
+		"22a": "Niech Pan będzie błogosławiony,",
+		"22b": "bo w mieście warownym okazał swą cudowną łaskę!",
+		"23a": "Gdy byłem przerażony, mówiłem:",
+		"23b": "Odrzuciłeś mnie sprzed oblicza swego.",
+		"23c": "Ty jednak wysłuchałeś mej głośnej modlitwy,",
+		"23d": "gdy wołałem do Ciebie.",
 		"24a": "Miłujcie Pana, wszyscy Jego święci,",
 		"24b": "bo Pan strzeże swych wiernych",
 		"24c": "i odpłaci tym, którzy postępują wyniośle!",
