@@ -1,0 +1,186 @@
+@page {
+	size: A4;
+	margin: 10mm;
+}
+
+:root {
+	--czcionka: 9pt;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #000;
+	font-size: var(--czcionka);
+	line-height: 1.25;
+	-webkit-print-color-adjust: exact;
+	print-color-adjust: exact;
+}
+
+body {
+	padding: 0;
+}
+
+/* ---------- tabela ---------- */
+.tabela-wrap {
+	max-width: none;
+	margin: 0;
+	overflow: visible;
+	border-radius: 0;
+	box-shadow: none;
+	background: none;
+}
+
+.plan {
+	width: 100%;
+	font-size: var(--czcionka);
+}
+
+.plan caption {
+	padding: 1.5mm 2mm;
+	font-size: 12pt;
+	letter-spacing: 0;
+	color: #000;
+	background: #e6eef3;
+	border: 1pt solid #000;
+}
+
+.plan thead th {
+	padding: 1mm 2mm;
+	font-size: 8pt;
+	letter-spacing: 0.3pt;
+	color: #000;
+	background: #eee;
+	border-bottom: 1pt solid #000;
+}
+
+.plan td {
+	padding: 1mm 2mm;
+	border-bottom: 0.5pt solid #999;
+}
+
+.plan tr {
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.plan thead {
+	display: table-header-group;
+}
+
+.kol-dzien { width: 11mm; }
+.kol-data  { width: 24mm; }
+
+.data {
+	white-space: normal;
+	color: #000;
+}
+
+.dzien {
+	color: #000;
+}
+
+/* paski etapów: cieńsze, tło bardzo jasne */
+.e1 td:first-child,
+.e2 td:first-child,
+.e3 td:first-child,
+.e4 td:first-child,
+.zapas td:first-child,
+.powtorka td:first-child {
+	border-left-width: 3pt;
+}
+
+.plan tbody tr:hover td {
+	filter: none;
+}
+
+/* ---------- porady ---------- */
+.porada {
+	margin-top: 1mm;
+	padding: 0.7mm 2mm 0.7mm 5mm;
+	font-size: 7.5pt;
+	line-height: 1.2;
+	color: #000;
+	background: none;
+	border: 0.5pt dashed #666;
+	border-radius: 0;
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.porada::before {
+	content: "▸";
+	left: 1.5mm;
+	top: 0.5mm;
+	font-size: 8pt;
+}
+
+.porada strong {
+	color: #000;
+}
+
+/* ---------- rady podczas nauki ---------- */
+.radyPodczasNauki {
+	max-width: none;
+	margin: 4mm 0 0;
+	padding: 2mm 3mm 3mm;
+	background: none;
+	border: 1pt solid #000;
+	border-top-width: 2.5pt;
+	border-radius: 0;
+	box-shadow: none;
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.radyPodczasNauki h2 {
+	margin: 0 0 2mm;
+	font-size: 11pt;
+	letter-spacing: 0;
+	color: #000;
+}
+
+.rady-lista {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2mm;
+}
+
+.rady-lista li {
+	margin: 0;
+	padding: 1.5mm 2mm 1.5mm 9mm;
+	border-radius: 0;
+	border-left-width: 2.5pt;
+	break-inside: avoid;
+	page-break-inside: avoid;
+}
+
+.rady-lista li::before {
+	left: 2mm;
+	width: 5mm;
+	height: 5mm;
+	line-height: 5mm;
+	font-size: 8pt;
+	color: #fff;
+	background: #000;
+}
+
+.rady-lista h3 {
+	margin: 0 0 0.5mm;
+	font-size: 9pt;
+}
+
+.rady-lista p {
+	font-size: 8pt;
+	color: #000;
+}
+
+.rada-czas {
+	margin: 0 0 0 2mm;
+	padding: 0 1.5mm;
+	font-size: 7pt;
+	color: #000;
+	background: #eee;
+	border: 0.5pt solid #888;
+}

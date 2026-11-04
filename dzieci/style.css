@@ -333,3 +333,21 @@ a:visited {
     line-height: 1.7;
 }
 }
+.postepy a.egzamin, .postepy a.egzamin:visited {
+    display: block;
+    width: fit-content;
+    margin: 6px auto 0;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 999px;
+}
+.postepy a.egzamin:hover {
+    color: green;
+    background-color: beige;
+}

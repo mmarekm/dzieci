@@ -149,6 +149,7 @@ body {
 .rady-lista li:nth-child(2) { background: #fffaf0; border-left-color: #e8b95a; }
 .rady-lista li:nth-child(3) { background: #f2f7fa; border-left-color: #6fa8c7; }
 .rady-lista li:nth-child(4) { background: #fbf5f6; border-left-color: #d98a95; }
+.rady-lista li:nth-child(5) { background: #f3f0fa; border-left-color: #7b86c9; }
 
 .rady-lista li:last-child {
 	margin-bottom: 0;
@@ -206,4 +207,44 @@ body {
 	.rady-lista li::before { left: 12px; width: 32px; height: 32px; line-height: 32px; font-size: 16px; }
 	.rady-lista h3 { font-size: 16px; }
 	.rady-lista p { font-size: 14px; }
+}
+.porada {
+	margin-top: 10px;
+	padding: 9px 12px 9px 38px;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4b5963;
+	background: #fffbea;
+	border: 1px dashed #e0c56e;
+	border-radius: 8px;
+}
+
+.porada::before {
+	content: "💡";
+	position: absolute;
+	left: 11px;
+	top: 8px;
+	font-size: 16px;
+}
+
+.porada strong {
+	color: #8a6d1a;
+}
+
+.porada em {
+	font-style: normal;
+	font-weight: 600;
+	color: #2f3a44;
+}
+
+@media (max-width: 600px) {
+	.porada {
+		font-size: 13px;
+		padding: 8px 10px 8px 32px;
+	}
+	.porada::before {
+		left: 9px;
+		font-size: 14px;
+	}
 }
