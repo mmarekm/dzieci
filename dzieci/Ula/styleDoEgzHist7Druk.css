@@ -184,3 +184,4 @@ body {
 	background: #eee;
 	border: 0.5pt solid #888;
 }
+.tabela-wrap + .tabela-wrap { margin-top: 4mm; }
