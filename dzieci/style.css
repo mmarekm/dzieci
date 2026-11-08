@@ -351,3 +351,30 @@ a:visited {
     color: green;
     background-color: beige;
 }
+.linkDoPlanu {
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.linkDoPlanu a, .linkDoPlanu a:visited {
+    display: inline-block;
+    padding: 12px 32px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: black;
+    background-color: gold;
+    border: 2px solid black;
+    border-radius: 999px;
+}
+.linkDoPlanu a:hover {
+    color: green;
+    background-color: beige;
+}
+@media (max-width: 600px) {
+    .linkDoPlanu a, .linkDoPlanu a:visited {
+        display: block;
+        padding: 14px 10px;
+        font-size: 20px;
+    }
+}
