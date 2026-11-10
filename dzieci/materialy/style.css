@@ -1,0 +1,590 @@
+:root {
+    --tlo-strony: #fdf6e3;
+    --karta: #fffdf7;
+    --akcent: #e07a3f;
+    --akcent-jasny: #fdebd9;
+    --zielony: #4a9d6b;
+    --zielony-jasny: #eaf6ee;
+    --ostrzezenie: #d9534f;
+    --ostrzezenie-jasny: #fdeceb;
+    --tekst: #3a3226;
+	--akcent-ciemny: #b85a22;
+	--wzor: #e9f1fb;
+    --wzor-ciemny: #3b6fb0;
+	--zolty: #e0a800;
+    --zolty-jasny: #fff4cc;
+}
+body { margin: 0; background: var(--tlo-strony); }
+a:has(> .zagadnienie) { text-decoration: none; }
+.zagadnienie {
+    width: min(1100px, calc(100% - 40px));
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--karta);
+    color: var(--tekst);
+    font-family: 'Nunito', sans-serif;
+    border: 3px solid var(--akcent);
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--akcent-jasny);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 28px;
+    row-gap: 12px;
+    align-items: start;
+}
+.uwagaOrganizacyjnaFizyka {
+    width: min(1100px, calc(100% - 40px));
+    margin: 30px auto 0;
+    padding: 16px 20px 16px 66px;
+    box-sizing: border-box;
+    position: relative;
+    background: var(--akcent-jasny);
+    color: var(--tekst);
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.45;
+    border: 3px solid var(--akcent);
+    border-radius: 16px;
+}
+    .uwagaOrganizacyjnaFizyka::before {
+    content: "✍️";
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 38px;
+    background: var(--karta);
+    border: 2px solid var(--akcent);
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    }
+.duzyPunkt {
+    grid-column: 1 / -1;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--akcent);
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+    border-bottom: 3px dashed var(--akcent);
+}
+.duzyPunkt + .zadaniaFizyka {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+.wzoryFizyka {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    padding: 18px 20px;
+    background: var(--wzor);
+    border-left: 6px solid var(--wzor-ciemny);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 10px 14px;
+}
+    .wzoryFizyka::before {
+    content: "📐 W Z O R Y";
+    grid-column: 1 / -1;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--wzor-ciemny);
+    }
+.wzorFizyka {
+    padding: 10px 14px;
+    background: var(--karta);
+    border: 2px solid var(--wzor-ciemny);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+.pytanie {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.35;
+    margin-top: 14px;
+    padding: 12px 16px 12px 48px;
+    position: relative;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+}
+    .pytanie::before {
+    content: "❓";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    }
+.odpowiedz {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 14px;
+    padding: 12px 16px;
+    background: var(--zielony-jasny);
+    border-left: 6px solid var(--zielony);
+    border-radius: 12px;
+}
+.odpowiedz a {
+    display: inline-block;
+    margin: 2px 0 2px 6px;
+    padding: 2px 14px 2px 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--akcent-ciemny);
+    background: var(--karta);
+    border: 2px solid var(--akcent);
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 2px 2px 0 var(--akcent-jasny);
+    transition: transform 0.15s, background 0.15s, color 0.15s;
+}
+    .odpowiedz a::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 0.75em;
+    vertical-align: 1px;
+    }
+    .odpowiedz a:hover,
+    .odpowiedz a:focus-visible {
+    background: var(--akcent);
+    color: #fff;
+    transform: translateY(-1px);
+    }
+    .odpowiedz a:focus-visible {
+    outline: 3px solid var(--akcent-jasny);
+    outline-offset: 2px;
+    }
+    .odpowiedz a:active {
+    transform: translateY(1px);
+    box-shadow: none;
+    }
+.odpowiedz ul,
+.odpowiedz ol {
+    margin: 0;
+    padding-left: 24px;
+}
+.odpowiedz li {
+    margin-top: 6px;
+    padding-left: 4px;
+}
+.odpowiedz li:first-child {
+    margin-top: 0;
+}
+.odpowiedz ul li::marker {
+    color: var(--zielony);
+}
+.odpowiedz ol li::marker {
+    color: var(--zielony);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+}
+.odpowiedz ol + p,
+.odpowiedz ul + p {
+    margin: 12px 0 0;
+}
+.odpowiedz p {
+    margin: 0;
+}
+.pytanieMapa {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    padding: 18px 20px;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+}
+.pytanieMapa ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+}
+.pytanieMapa li {
+    position: relative;
+    padding: 10px 14px 10px 52px;
+    background: var(--karta);
+    border-radius: 10px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+    .pytanieMapa li::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: var(--akcent);
+    border-radius: 50%;
+    }
+.zadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 3px dashed var(--akcent);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    counter-reset: zadanie;
+}
+.zadanieFizyka {
+    counter-increment: zadanie;
+    position: relative;
+    padding: 14px 16px 14px 62px;
+    background: var(--akcent-jasny);
+    border-left: 6px solid var(--akcent);
+    border-radius: 12px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+    .zadanieFizyka::before {
+    content: counter(zadanie);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: var(--akcent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 34px;
+    }
+    .zadanieFizyka:nth-child(odd):has(+ .pulapkiZadaniaFizyka) {
+    grid-column: 1 / -1;
+    }
+	.zadanieFizyka:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+}
+.pulapkiZadaniaFizyka {
+    grid-column: 1 / -1;
+    margin-top: 14px;
+    padding: 18px 20px;
+    background: var(--ostrzezenie-jasny);
+    border-left: 6px solid var(--ostrzezenie);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+    .pulapkiZadaniaFizyka::before {
+    content: "⚠️ Uwaga na pułapki!";
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--ostrzezenie);
+    }
+.pulapkaZadaniaFizyka {
+    position: relative;
+    padding: 10px 14px 10px 46px;
+    background: var(--karta);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+    .pulapkaZadaniaFizyka::before {
+    content: "✖";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background: var(--ostrzezenie);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 24px;
+    }
+	.wazneInfoHistoria {
+    grid-column: 1 / -1;
+    margin-top: 18px;
+    padding: 14px 18px 14px 52px;
+    position: relative;
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 600;
+    background: var(--zolty-jasny);
+    border: 2px dashed var(--zolty);
+    border-left: 6px solid var(--zolty);
+    border-radius: 12px;
+}
+.wazneInfoHistoria::before {
+    content: "💡";
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-size: 22px;
+}
+.malyPunkt {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 28px;
+    row-gap: 0;
+    align-items: start;
+    margin-top: 8px;
+    padding: 12px 16px;
+    background: #fff8ed;
+    border: 2px solid var(--akcent-jasny);
+    border-radius: 12px;
+}
+.malyPunktTytul {
+    grid-column: 1 / -1;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--akcent-ciemny);
+    margin: 0 0 8px 0;
+    padding: 0 0 8px 0;
+    border-bottom: 2px dashed var(--akcent);
+}
+.malyPunkt .pytanie,
+.malyPunkt .odpowiedz {
+    margin-top: 8px;
+}
+.atom {
+    white-space: nowrap;
+    font-weight: 700;
+}
+.atom .liczbyChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.65em;
+    font-weight: 600;
+    line-height: 1.05;
+    color: var(--akcent-ciemny);
+    vertical-align: 0.5em;
+}
+.strzalkaChemia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6px;
+    vertical-align: middle;
+    line-height: 1.1;
+}
+.strzalkaChemia span:first-child {
+    font-size: 0.75em;
+    color: var(--akcent-ciemny);
+    font-weight: 700;
+}
+.tabelaChemia {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.tabelaChemia th,
+.tabelaChemia td {
+    padding: 8px 10px;
+    border: 2px solid var(--zielony);
+    text-align: left;
+    vertical-align: top;
+}
+.tabelaChemia th {
+    background: var(--karta);
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    color: var(--akcent-ciemny);
+}
+.tabelaChemia td:first-child {
+    font-weight: 700;
+    background: var(--karta);
+}
+.odpowiedz p + .tabelaChemia { margin-top: 8px; }
+.tabelaChemia + p { margin-top: 8px; }
+.zadanieFizyka .tabelaChemia {
+    margin-top: 8px;
+    background: var(--karta);
+}
+.zadanieFizyka .tabelaChemia td {
+    height: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+.duzyDzial {
+    width: min(1100px, calc(100% - 40px));
+    margin: 40px auto 10px auto;
+    padding: 18px 28px 18px 72px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    background: var(--akcent);
+    border: 4px dashed var(--akcent);
+    outline: 4px solid var(--akcent-jasny);
+    outline-offset: -12px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 0 var(--akcent-jasny);
+    text-align: left;
+}
+.duzyDzial::before {
+    content: "📚";
+    position: absolute;
+    left: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 34px;
+}
+@media (max-width: 700px) {
+    .zagadnienie {
+        display: block;
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 16px;
+        border-width: 2px;
+        border-radius: 14px;
+        box-shadow: 3px 3px 0 var(--akcent-jasny);
+    }
+	.uwagaOrganizacyjnaFizyka {
+        width: calc(100% - 20px);
+        margin: 10px auto 0;
+        padding: 12px 12px 12px 56px;
+        font-size: 16px;
+        border-width: 2px;
+        border-radius: 14px;
+    }
+        .uwagaOrganizacyjnaFizyka::before {
+        left: 10px;
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+        line-height: 30px;
+        }
+    .duzyPunkt {
+        font-size: 23px;
+    }
+	.wzoryFizyka {
+        margin-top: 14px;
+        padding: 12px;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+        .wzoryFizyka::before {
+        font-size: 19px;
+        }
+    .wzorFizyka {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+    .pytanie {
+        font-size: 18px;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+    .odpowiedz {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 0;
+    }
+    .pytanieMapa {
+        margin-top: 18px;
+        padding: 12px;
+    }
+    .pytanieMapa ul {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .pytanieMapa li {
+        font-size: 16px;
+        padding: 8px 12px 8px 46px;
+    }
+    .zadaniaFizyka {
+        display: block;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top-width: 2px;
+    }
+    .zadanieFizyka {
+        font-size: 16px;
+        padding: 12px 12px 12px 54px;
+        margin-top: 10px;
+    }
+        .zadanieFizyka::before {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        left: 12px;
+        }
+    .pulapkiZadaniaFizyka {
+        margin-top: 18px;
+        padding: 12px;
+    }
+        .pulapkiZadaniaFizyka::before {
+        font-size: 19px;
+        }
+    .pulapkaZadaniaFizyka {
+        font-size: 16px;
+    }
+	.wazneInfoHistoria {
+        font-size: 15px;
+        padding: 10px 12px 10px 44px;
+        margin-top: 18px;
+    }
+		.wazneInfoHistoria::before {
+        left: 12px;
+        top: 9px;
+        font-size: 19px;
+    }
+	.malyPunkt {
+        display: block;
+        padding: 10px;
+    }
+    .malyPunktTytul {
+        font-size: 19px;
+    }
+	.tabelaChemia {
+    font-size: 13px;
+}
+.tabelaChemia th,
+.tabelaChemia td {
+    padding: 5px 6px;
+}
+.duzyDzial {
+        width: calc(100% - 20px);
+        margin: 24px auto 6px auto;
+        padding: 12px 14px 12px 52px;
+        font-size: 22px;
+        border-width: 3px;
+        outline-width: 3px;
+        outline-offset: -8px;
+        border-radius: 14px;
+        box-shadow: 3px 3px 0 var(--akcent-jasny);
+    }
+    .duzyDzial::before {
+        left: 14px;
+        font-size: 24px;
+    }
+}

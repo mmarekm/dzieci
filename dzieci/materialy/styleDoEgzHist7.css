@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 30px 15px;
+	background: #f4f1ea;
+	font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+	color: #2f3a44;
+	line-height: 1.5;
+}
+
+.tabela-wrap {
+	max-width: 900px;
+	margin: 0 auto;
+	overflow-x: auto;
+	border-radius: 14px;
+	box-shadow: 0 6px 20px rgba(60, 50, 30, 0.12);
+	background: #ffffff;
+}
+
+.plan {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 16px;
+}
+
+.plan caption {
+	padding: 18px 12px;
+	font-size: 22px;
+	font-weight: 600;
+	color: #ffffff;
+	background: #3f6e8c;
+	letter-spacing: 0.5px;
+}
+
+.plan thead th {
+	padding: 12px 14px;
+	text-align: left;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #3f6e8c;
+	background: #e6eef3;
+	border-bottom: 2px solid #c9d9e3;
+}
+
+.plan td {
+	padding: 12px 14px;
+	border-bottom: 1px solid #ece8de;
+	vertical-align: top;
+}
+
+.kol-dzien { width: 70px; }
+.kol-data  { width: 150px; }
+
+.dzien {
+	font-weight: 700;
+	text-align: center;
+	color: #3f6e8c;
+}
+
+.data {
+	white-space: nowrap;
+	color: #5b6770;
+}
+
+.zakres {
+	color: #2f3a44;
+}
+
+/* kolory etapów (lewy pasek + delikatne tło) */
+.e1 td { background: #ffffff; }
+.e1 td:first-child { border-left: 6px solid #6fa8c7; }
+
+.e2 td { background: #f7faf4; }
+.e2 td:first-child { border-left: 6px solid #8fbf7f; }
+
+.e3 td { background: #fffaf0; }
+.e3 td:first-child { border-left: 6px solid #e8b95a; }
+
+.e4 td { background: #fbf5f6; }
+.e4 td:first-child { border-left: 6px solid #d98a95; }
+
+/* dzień zapasowy */
+.zapas td {
+	background: #f1f1f1;
+	font-style: italic;
+}
+.zapas td:first-child { border-left: 6px solid #a9a9a9; }
+
+/* powtórka generalna */
+.powtorka td {
+	background: #eef0fa;
+	font-weight: 600;
+}
+.powtorka td:first-child { border-left: 6px solid #7b86c9; }
+
+/* delikatne podświetlenie po najechaniu myszką */
+.plan tbody tr:hover td {
+	filter: brightness(0.97);
+}
+
+/* telefon */
+@media (max-width: 600px) {
+	body { padding: 15px 8px; }
+	.plan { font-size: 14px; }
+	.plan caption { font-size: 18px; }
+	.plan td, .plan thead th { padding: 10px 8px; }
+	.kol-data { width: 100px; }
+	.data { white-space: normal; }
+}
+.radyPodczasNauki {
+	max-width: 900px;
+	margin: 30px auto 0;
+	padding: 24px 26px 28px;
+	background: #ffffff;
+	border-radius: 14px;
+	box-shadow: 0 6px 20px rgba(60, 50, 30, 0.12);
+	border-top: 6px solid #3f6e8c;
+}
+
+.radyPodczasNauki h2 {
+	margin: 0 0 20px;
+	font-size: 22px;
+	font-weight: 600;
+	color: #3f6e8c;
+	letter-spacing: 0.5px;
+}
+
+.rady-lista {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	counter-reset: krok;
+}
+
+.rady-lista li {
+	position: relative;
+	counter-increment: krok;
+	margin-bottom: 14px;
+	padding: 14px 16px 14px 68px;
+	background: #f7faf4;
+	border-radius: 10px;
+	border-left: 5px solid #8fbf7f;
+}
+
+.rady-lista li:nth-child(2) { background: #fffaf0; border-left-color: #e8b95a; }
+.rady-lista li:nth-child(3) { background: #f2f7fa; border-left-color: #6fa8c7; }
+.rady-lista li:nth-child(4) { background: #fbf5f6; border-left-color: #d98a95; }
+.rady-lista li:nth-child(5) { background: #f3f0fa; border-left-color: #7b86c9; }
+
+.rady-lista li:last-child {
+	margin-bottom: 0;
+}
+
+/* numer w kółku */
+.rady-lista li::before {
+	content: counter(krok);
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	color: #ffffff;
+	background: #3f6e8c;
+	border-radius: 50%;
+}
+
+.rady-lista h3 {
+	margin: 0 0 4px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #2f3a44;
+}
+
+.rady-lista p {
+	margin: 0;
+	font-size: 15px;
+	color: #4b5963;
+}
+
+/* plakietka z czasem */
+.rada-czas {
+	float: right;
+	margin: 0 0 6px 10px;
+	padding: 3px 10px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #3f6e8c;
+	background: #e6eef3;
+	border-radius: 999px;
+	white-space: nowrap;
+}
+
+/* telefon */
+@media (max-width: 600px) {
+	.radyPodczasNauki { padding: 18px 14px 20px; margin-top: 20px; }
+	.radyPodczasNauki h2 { font-size: 18px; }
+	.rady-lista li { padding: 12px 12px 12px 56px; }
+	.rady-lista li::before { left: 12px; width: 32px; height: 32px; line-height: 32px; font-size: 16px; }
+	.rady-lista h3 { font-size: 16px; }
+	.rady-lista p { font-size: 14px; }
+}
+.porada {
+	margin-top: 10px;
+	padding: 9px 12px 9px 38px;
+	position: relative;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4b5963;
+	background: #fffbea;
+	border: 1px dashed #e0c56e;
+	border-radius: 8px;
+}
+
+.porada::before {
+	content: "💡";
+	position: absolute;
+	left: 11px;
+	top: 8px;
+	font-size: 16px;
+}
+
+.porada strong {
+	color: #8a6d1a;
+}
+
+.porada em {
+	font-style: normal;
+	font-weight: 600;
+	color: #2f3a44;
+}
+
+@media (max-width: 600px) {
+	.porada {
+		font-size: 13px;
+		padding: 8px 10px 8px 32px;
+	}
+	.porada::before {
+		left: 9px;
+		font-size: 14px;
+	}
+}
+.tabela-wrap + .tabela-wrap {
+	margin-top: 30px;
+}
