@@ -478,6 +478,8 @@
 		"10b": "gdyż bogobojni nie zaznają biedy.",
 		"11a": "Bogaci popadli w biedę i zaznali głodu,",
 		"11b": "a szukającym woli Pana niczego nie zabraknie.",
+		"16a": "Oczy Pana zwrócone ku sprawiedliwym,",
+		"16b": "a Jego uszy słyszą ich błaganie.",
 		"17a": "Od złoczyńców Pan się odwraca,",
 		"17b": "by nie zostało o nich wspomnienie na ziemi.",
 		"18a": "Pan słyszy wołających o pomoc",
@@ -1674,7 +1676,9 @@
 		"17a": "Tobie złożę ofiarę uwielbienia",
 		"17b": "i wezwę imienia Pana!",
 		"18a": "Moje śluby wypełnię przed Panem",
-		"18b": "wobec całego Jego ludu,"
+		"18b": "wobec całego Jego ludu,",
+		"19a": "w dziedzińcach domu Pana,",
+		"19b": "pośrodku ciebie, Jeruzalem!"
 	},
 	"117": {
 		"1a": "Sławcie Pana, wszystkie narody,",
@@ -1735,6 +1739,13 @@
 		"1b": "którzy postępują zgodnie z Prawem Pana.",
 		"2a": "Szczęśliwi, którzy słuchają Jego pouczeń,",
 		"2b": "całym sercem szukają Jego woli.",
+		"4a": "Ty dałeś swoje przykazania,",
+		"4b": "aby przestrzegano ich pilnie.",
+		"5": "Oby moje drogi prowadziły do zachowywania Twoich ustaw!",
+		"7a": "Sławić Cię będę, Panie, szczerym sercem,",
+		"7b": "gdy się nauczę Twoich sprawiedliwych wyroków.",
+		"8a": "Będę przestrzegał ustaw Twoich,",
+		"8b": "abyś mnie nigdy nie odrzucił.",
 		"9a": "W jaki sposób młodzieniec prostuje swą drogę?",
 		"9b": "Zachowując Twoje słowa!",
 		"10a": "Całym sercem szukam Twojej woli;",
