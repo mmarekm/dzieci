@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprawdzian z biologii</title>
+<style>
+:root {
+  --czcionka: 7.6pt;
+  --tekst: #222;
+  --naglowek: #4527a0;
+  --akcent: #5e35b1;
+  --linia: #c9c3d8;
+}
+@page { size: A4 portrait; margin: 6mm; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #fff; }
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, Arial, sans-serif;
+  font-size: var(--czcionka);
+  line-height: 1.12;
+  color: var(--tekst);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.kontener { width: 198mm; margin: 0 auto; }
+h1 { font-size: 14pt; color: var(--naglowek); text-align: center; margin: 0 0 1.5mm; }
+.meta { display:flex; justify-content:space-between; gap:2mm; padding:1.2mm 2mm; border:0.45mm solid var(--naglowek); border-radius:2mm; font-weight:700; margin-bottom:1.5mm; }
+.instrukcja { margin-bottom:2mm; }
+.czesc { color:var(--naglowek); font-size:10pt; font-weight:800; border-bottom:0.6mm solid var(--naglowek); padding:1.2mm 0 .7mm; margin:2mm 0 1.2mm; break-after:avoid; }
+.zadanie { margin:0 0 1.5mm; break-inside:avoid; }
+.zadanie p { margin:0 0 .55mm; }
+.zadanie strong { color:#24134f; }
+.opcje { display:grid; grid-template-columns:1fr 1fr; column-gap:2mm; row-gap:.35mm; margin:.5mm 0 0 2mm; }
+.opcje div { break-inside:avoid; }
+.linia { border-bottom:.25mm dotted #999; display:inline-block; min-width:15mm; height:2.5mm; vertical-align:bottom; }
+.odpowiedz { border-bottom:.25mm dotted #aaa; height:3mm; margin:.3mm 0; }
+table { width:100%; border-collapse:collapse; margin:.7mm 0; font-size: .96em; }
+th,td { border:.25mm solid #aaa; padding:.55mm 1mm; vertical-align:top; }
+th { background:#f0edf7; font-weight:700; }
+.pytania { columns:2; column-gap:5mm; column-rule:.25mm solid #ddd; }
+.pytania > .czesc { column-span:all; }
+.pytania > .meta, .pytania > .instrukcja { column-span:all; }
+.tekstRamki { font-style:italic; margin:.5mm 0; }
+.stopka { text-align:center; font-weight:800; color:var(--naglowek); margin-top:2mm; }
+@media screen { body { background:#eee; padding:8mm 0; } .kontener { background:#fff; padding:0; } }
+@media print { .kontener { width:auto; margin:0; } }
+</style>
+</head>
+<body>
+<div class="kontener">
+<h1>Sprawdzian z biologii</h1>
+<div class="meta"><span>Czas pracy: 90 minut</span><span>Maksymalna liczba punktów: 100</span><span>Twój wynik: ……… / 100</span></div>
+<p class="instrukcja">Czytaj uważnie polecenia. W zadaniach zamkniętych zaznacz jedną poprawną odpowiedź, o ile polecenie nie mówi inaczej. W zadaniach otwartych odpowiadaj pełnymi zdaniami.</p>
+
+<div class="pytania">
+<h2 class="czesc">Część I. Zadania zamknięte (20 pkt)</h2>
+<p>W zadaniach 1–20 wybierz jedną poprawną odpowiedź. Za każde zadanie możesz otrzymać 1 pkt.</p>
+
+<section class="zadanie"><p><strong>Zadanie 1.</strong> Homeostaza to:</p><div class="opcje"><div>A. rozkład pokarmu na proste związki.</div><div>B. utrzymywanie względnie stałych warunków wewnątrz organizmu.</div><div>C. usuwanie z organizmu zbędnych produktów przemiany materii.</div><div>D. wytwarzanie energii w komórkach.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 2.</strong> W skórze właściwej znajdują się:</p><div class="opcje"><div>A. martwe, zrogowaciałe komórki i melanina.</div><div>B. wyłącznie tkanka tłuszczowa.</div><div>C. naczynia krwionośne, receptory oraz gruczoły potowe i łojowe.</div><div>D. wyłącznie komórki, które się dzielą.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 3.</strong> Krew zaliczamy do tkanki:</p><div class="opcje"><div>A. nabłonkowej.</div><div>B. łącznej.</div><div>C. mięśniowej.</div><div>D. nerwowej.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 4.</strong> Tkanka mięśniowa gładka:</p><div class="opcje"><div>A. buduje mięśnie szkieletowe i kurczy się zależnie od naszej woli.</div><div>B. buduje serce i pracuje bez przerwy.</div><div>C. znajduje się w ścianach narządów wewnętrznych i kurczy się niezależnie od naszej woli.</div><div>D. łączy mięśnie z kośćmi.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 5.</strong> Staw łokciowy to staw:</p><div class="opcje"><div>A. kulisty, umożliwiający ruch we wszystkich kierunkach.</div><div>B. zawiasowy, umożliwiający zginanie i prostowanie.</div><div>C. nieruchomy, zwany szwem.</div><div>D. półruchomy, taki jak połączenia między kręgami.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 6.</strong> Boczne skrzywienie kręgosłupa nazywamy:</p><div class="opcje"><div>A. kifozą.</div><div>B. lordozą.</div><div>C. skoliozą.</div><div>D. płaskostopiem.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 7.</strong> Okostna:</p><div class="opcje"><div>A. wytwarza krwinki.</div><div>B. magazynuje tłuszcz.</div><div>C. zawiera naczynia krwionośne i nerwy oraz umożliwia wzrost i zrastanie kości.</div><div>D. zmniejsza tarcie w stawie.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 8.</strong> Kości dzieci są bardziej elastyczne niż kości osób starszych, ponieważ zawierają:</p><div class="opcje"><div>A. więcej soli wapnia i fosforu.</div><div>B. mniej białka kolagenu.</div><div>C. więcej substancji organicznych.</div><div>D. wyłącznie istotę zbitą.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 9.</strong> Który składnik pokarmowy dostarcza najwięcej energii w przeliczeniu na 1 g?</p><div class="opcje"><div>A. białka</div><div>B. cukry proste</div><div>C. cukry złożone</div><div>D. tłuszcze</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 10.</strong> Niedobór witaminy D w dzieciństwie powoduje:</p><div class="opcje"><div>A. szkorbut.</div><div>B. kurzą ślepotę.</div><div>C. krzywicę.</div><div>D. wole.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 11.</strong> Pepsyna jest enzymem, który działa w:</p><div class="opcje"><div>A. jamie ustnej i rozkłada skrobię.</div><div>B. żołądku i rozpoczyna trawienie białek.</div><div>C. jelicie cienkim i trawi tłuszcze.</div><div>D. jelicie grubym i wchłania wodę.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 12.</strong> Kosmki jelitowe:</p><div class="opcje"><div>A. wytwarzają żółć.</div><div>B. zabijają bakterie z pokarmu.</div><div>C. zwiększają powierzchnię wchłaniania w jelicie cienkim.</div><div>D. rozdrabniają pokarm.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 13.</strong> Czerwone krwinki:</p><div class="opcje"><div>A. mają jądro komórkowe i pochłaniają bakterie.</div><div>B. nie mają jądra i są wypełnione hemoglobiną.</div><div>C. biorą udział w krzepnięciu krwi.</div><div>D. są fragmentami komórek.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 14.</strong> Krew bogata w tlen płynie w:</p><div class="opcje"><div>A. tętnicy płucnej.</div><div>B. żyłach głównych.</div><div>C. żyłach płucnych.</div><div>D. prawym przedsionku.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 15.</strong> Który z procesów jest wydzielaniem, a nie wydalaniem?</p><div class="opcje"><div>A. oddawanie dwutlenku węgla w wydechu</div><div>B. usuwanie mocznika z moczem</div><div>C. wytwarzanie łoju przez gruczoły łojowe</div><div>D. usuwanie nadmiaru soli z potem</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 16.</strong> Limfocyty B:</p><div class="opcje"><div>A. niszczą zakażone komórki.</div><div>B. transportują tlen.</div><div>C. wytwarzają przeciwciała.</div><div>D. uczestniczą w krzepnięciu krwi.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 17.</strong> Podczas wdechu:</p><div class="opcje"><div>A. przepona się unosi, a żebra opadają.</div><div>B. przepona się obniża, a żebra unoszą się, więc klatka piersiowa się powiększa.</div><div>C. przepona i żebra pozostają w bezruchu.</div><div>D. ciśnienie w płucach rośnie i powietrze wypływa na zewnątrz.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 18.</strong> Główną rolą mitochondriów jest:</p><div class="opcje"><div>A. przeprowadzanie fotosyntezy.</div><div>B. wytwarzanie ATP w procesie oddychania komórkowego.</div><div>C. produkcja białek.</div><div>D. przechowywanie informacji genetycznej.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 19.</strong> Filtracja krwi, w wyniku której powstaje mocz pierwotny, zachodzi w:</p><div class="opcje"><div>A. pęcherzu moczowym.</div><div>B. moczowodzie.</div><div>C. kłębuszku nerkowym.</div><div>D. cewce moczowej.</div></div></section>
+<section class="zadanie"><p><strong>Zadanie 20.</strong> Hormonem, który obniża poziom glukozy we krwi, jest:</p><div class="opcje"><div>A. glukagon.</div><div>B. adrenalina.</div><div>C. insulina.</div><div>D. tyroksyna.</div></div></section>
+
+<h2 class="czesc">Część II. Prawda czy fałsz? (8 pkt)</h2>
+<p><strong>Zadanie 21.</strong> Oceń prawdziwość zdań. Wpisz P (prawda) lub F (fałsz).</p>
+<table><tr><th>Zdanie</th><th>P / F</th></tr>
+<tr><td>a) Móżdżek odpowiada za równowagę i koordynację ruchów.</td><td></td></tr>
+<tr><td>b) Hormony docierają do narządów docelowych za pośrednictwem nerwów.</td><td></td></tr>
+<tr><td>c) Odruch kolanowy jest odruchem warunkowym.</td><td></td></tr>
+<tr><td>d) Neurony pośredniczące znajdują się w mózgu i rdzeniu kręgowym.</td><td></td></tr></table>
+<p><strong>Zadanie 22.</strong> Oceń prawdziwość zdań. Wpisz P (prawda) lub F (fałsz).</p>
+<table><tr><th>Zdanie</th><th>P / F</th></tr>
+<tr><td>a) Plemnik i komórka jajowa mają po 23 chromosomy, a zygota ma ich 46.</td><td></td></tr>
+<tr><td>b) Dzięki łożysku krew matki i krew dziecka mieszają się ze sobą.</td><td></td></tr>
+<tr><td>c) Odporność bierna jest długotrwała.</td><td></td></tr>
+<tr><td>d) Wirus HIV niszczy limfocyty T i osłabia odporność.</td><td></td></tr></table>
+
+<h2 class="czesc">Część III. Dobieranie, porządkowanie i uzupełnianie (26 pkt)</h2>
+<p><strong>Zadanie 23. (2 pkt)</strong> Ułóż poziomy organizacji ciała człowieka od najmniejszego do największego. Wpisz numery od 1 do 5.</p>
+<p>…… układ narządów &nbsp; …… komórka &nbsp; …… organizm &nbsp; …… narząd &nbsp; …… tkanka</p>
+<p><strong>Zadanie 24. (4 pkt)</strong> Do każdego opisu (1–4) dopasuj rodzaj tkanki (A–D). Wpisz literę.</p>
+<p>A. nabłonkowa &nbsp; B. łączna &nbsp; C. mięśniowa &nbsp; D. nerwowa</p>
+<table><tr><th>Opis</th><th>Tkanka</th></tr>
+<tr><td>1. Zbudowana z neuronów i komórek glejowych; przewodzi impulsy.</td><td></td></tr>
+<tr><td>2. Tworzą ją m.in. kość, chrząstka i tkanka tłuszczowa.</td><td></td></tr>
+<tr><td>3. Tworzy naskórek i gruczoły ślinowe; komórki ściśle przylegają do siebie.</td><td></td></tr>
+<tr><td>4. Zbudowana z komórek zdolnych do kurczenia się.</td><td></td></tr></table>
+<p><strong>Zadanie 25. (3 pkt)</strong> Uzupełnij schemat małego (płucnego) obiegu krwi.</p>
+<p>prawa komora → (a) ……………………………… → płuca → (b) ……………………………… → (c) ………………………………</p>
+<p><strong>Zadanie 26. (6 pkt)</strong> Uzupełnij tabelę dotyczącą witamin. Za każde poprawne wpisanie 1 pkt.</p>
+<table><tr><th>Witamina</th><th>Jedna jej funkcja w organizmie</th><th>Choroba spowodowana niedoborem</th></tr>
+<tr><td>A</td><td></td><td></td></tr><tr><td>C</td><td></td><td></td></tr><tr><td>D</td><td></td><td></td></tr></table>
+<p><strong>Zadanie 27. (5 pkt)</strong> Do każdego gruczołu dokrewnego (1–5) dopasuj hormon (A–E) lub jego działanie.</p>
+<table><tr><th>Gruczoł</th><th>Litera</th></tr>
+<tr><td>1. przysadka mózgowa</td><td></td></tr><tr><td>2. tarczyca</td><td></td></tr><tr><td>3. trzustka</td><td></td></tr><tr><td>4. nadnercza</td><td></td></tr><tr><td>5. szyszynka</td><td></td></tr></table>
+<p>A. insulina, obniża poziom glukozy we krwi &nbsp; B. melatonina, reguluje rytm snu i czuwania &nbsp; C. hormon wzrostu &nbsp; D. adrenalina, przygotowuje do walki lub ucieczki &nbsp; E. tyroksyna, przyspiesza przemianę materii</p>
+<p><strong>Zadanie 28. (6 pkt)</strong> Uzupełnij tekst o trawieniu wyrazami z ramki. Uwaga: w ramce są dwa wyrazy zbędne.</p>
+<p class="tekstRamki">amylaza, wątroba, jelito grube, żółć, aminokwasy, glukoza, trzustka, pepsyna</p>
+<p>Trawienie skrobi zaczyna się w jamie ustnej, gdzie enzym zwany …………………………… (1) zawarty w ślinie rozkłada ją na cukry prostsze. Końcowym produktem trawienia cukrów złożonych jest …………………………… (2), a białek – …………………………… (3). Sok trawienny zawierający enzymy trawiące wszystkie składniki pokarmowe wytwarza …………………………… (4). Tłuszcze rozbija na drobne kropelki …………………………… (5), która jest wytwarzana w …………………………… (6) i nie jest enzymem.</p>
+
+<h2 class="czesc">Część IV. Zadania otwarte (46 pkt)</h2>
+<p><strong>Zadanie 29. (4 pkt)</strong> Wyjaśnij, jak reaguje skóra w celu utrzymania stałej temperatury ciała:</p>
+<p>a) w upalny dzień (2 pkt) ………………………………………………………………………………………………………</p>
+<p>b) w czasie mrozu (2 pkt) ………………………………………………………………………………………………………</p>
+<p><strong>Zadanie 30. (3 pkt)</strong> Wyjaśnij, dlaczego mięśnie szkieletowe pracują w parach przeciwstawnych (antagonistycznie). Opisz, co dzieje się z mięśniami ramienia (biceps i triceps) podczas prostowania ręki w łokciu.</p>
+<p><strong>Zadanie 31. (4 pkt)</strong> Wady postawy najczęściej wynikają ze sposobu życia.</p>
+<p>a) Podaj dwa przykłady nawyków lub zachowań, które sprzyjają powstawaniu wad postawy. (2 pkt)</p>
+<p>b) Podaj dwa sposoby zapobiegania wadom postawy. (2 pkt)</p>
+<p><strong>Zadanie 32. (4 pkt)</strong> Tabela przedstawia skład powietrza wdychanego i wydychanego przez człowieka.</p>
+<table><tr><th>Składnik</th><th>Powietrze wdychane</th><th>Powietrze wydychane</th></tr>
+<tr><td>Tlen</td><td>ok. 21%</td><td>ok. 16%</td></tr>
+<tr><td>Dwutlenek węgla</td><td>ok. 0,04%</td><td>ok. 4%</td></tr>
+<tr><td>Para wodna</td><td>mała ilość</td><td>większa ilość</td></tr></table>
+<p>a) Wyjaśnij, dlaczego w powietrzu wydychanym jest mniej tlenu niż we wdychanym. (1 pkt)</p>
+<p>b) Wyjaśnij, skąd w powietrzu wydychanym bierze się więcej dwutlenku węgla. (2 pkt)</p>
+<p>c) Sformułuj wniosek dotyczący tego, czy organizm zużywa cały tlen z wdychanego powietrza. (1 pkt)</p>
+<p><strong>Zadanie 33. (3 pkt)</strong></p>
+<p>a) Podaj dwie cechy budowy czerwonej krwinki, które sprawiają, że jest przystosowana do transportu tlenu. (2 pkt)</p>
+<p>b) Podaj, w którym miejscu organizmu powstają krwinki. (1 pkt)</p>
+<p><strong>Zadanie 34. (4 pkt)</strong></p>
+<p>a) Zapisz słownie lub wzorem równanie oddychania tlenowego. (2 pkt)</p>
+<p>b) Wyjaśnij, czym różni się wymiana gazowa od oddychania komórkowego. (2 pkt)</p>
+<p><strong>Zadanie 35. (5 pkt)</strong> Opisz powstawanie moczu.</p>
+<p>a) Podaj nazwę pierwszego etapu powstawania moczu, miejsce, w którym zachodzi, i nazwę moczu, który wtedy powstaje. (2 pkt)</p>
+<p>b) Wyjaśnij, na czym polega wchłanianie zwrotne i dlaczego jest potrzebne organizmowi. (2 pkt)</p>
+<p>c) Porównaj ilość moczu pierwotnego i ostatecznego powstającego w ciągu doby. (1 pkt)</p>
+<p><strong>Zadanie 36. (3 pkt)</strong></p>
+<p>a) Uzupełnij łuk odruchowy: receptor → …………………… → …………………… → …………………… → mięsień (efektor). (2 pkt)</p>
+<p>b) Podaj jeden przykład odruchu bezwarunkowego i wyjaśnij, dlaczego odruchy tego typu chronią organizm. (1 pkt)</p>
+<p><strong>Zadanie 37. (2 pkt)</strong> Podaj dwie różnice w działaniu układu nerwowego i układu hormonalnego.</p>
+<p><strong>Zadanie 38. (6 pkt)</strong> W upalny dzień Kasia biegła przez godzinę w parku. Na końcu trasy była spocona, zmęczona, a jej serce biło bardzo szybko.</p>
+<p>a) Wyjaśnij, jaką rolę pełni pot i dlaczego po takim wysiłku Kasia powinna napić się wody. (2 pkt)</p>
+<p>b) Wyjaśnij, dlaczego podczas biegu serce bije szybciej oraz jakie substancje krew dostarcza komórkom mięśniowym. (2 pkt)</p>
+<p>c) Wyjaśnij, co dzieje się w mitochondriach komórek mięśniowych podczas biegu i jaki proces zachodzi w mięśniach, gdy przy bardzo intensywnym wysiłku brakuje tlenu. (2 pkt)</p>
+<p><strong>Zadanie 39. (4 pkt)</strong></p>
+<p>a) Wyjaśnij, jaką funkcję pełni wątroba w organizmie człowieka. (2 pkt)</p>
+<p>b) Wyjaśnij, dlaczego trzustka jest zaliczana zarówno do gruczołów trawiennych, jak i dokrewnych. (2 pkt)</p>
+<p><strong>Zadanie 40. (4 pkt)</strong></p>
+<p>a) Ułóż w kolejności chronologicznej etapy początku rozwoju człowieka. Wpisz numery od 1 do 4. (2 pkt)</p>
+<p>…… zagnieżdżenie zarodka w ścianie macicy &nbsp; …… bruzdkowanie &nbsp; …… zapłodnienie &nbsp; …… powstanie zygoty</p>
+<p>b) Podaj dwie funkcje łożyska w rozwoju dziecka. (2 pkt)</p>
+</div>
+<p class="stopka">Powodzenia!</p>
+</div>
+</body>
+</html>
