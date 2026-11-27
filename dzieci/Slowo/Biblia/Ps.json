@@ -52,7 +52,9 @@
 		"7a": "Wielu mówi: „Kto nam ukaże to, co dobre?”.",
 		"7b": "Panie, rozjaśnij nas światłem Twego oblicza!",
 		"8a": "Wlałeś w moje serce radość, większą",
-		"8b": "niż w czasie obfitych zbiorów zboża i wina."
+		"8b": "niż w czasie obfitych zbiorów zboża i wina.",
+		"9a": "Spokojnie kładę się i zasypiam,",
+		"9b": "bo Ty sam, Panie, sprawiasz, że odpoczywam bezpiecznie!"
 	},
 	"5": {
 		"2a": "Usłysz, Panie, moje słowa,",
@@ -817,8 +819,16 @@
 		"6b": "pieszo przeszli przez rzekę.",
 		"6c": "Dlatego Nim się radujmy!",
 		"7a": "On w swej potędze panuje na wieki.",
+		"8a": "Wysławiajcie, narody, naszego Boga,",
+		"8b": "rozgłaszajcie Jego chwałę.",
+		"9a": "On nas zachował przy życiu",
+		"9b": "i nie pozwolił, by stało się nam coś złego.",
 		"16a": "Przyjdźcie i słuchajcie, wszyscy bojący się Boga,",
 		"16b": "opowiem, co dla mnie uczynił.",
+		"17a": "Do Niego wołałem ustami moimi,",
+		"17b": "wielbiłem Go moim językiem.",
+		"19a": "A jednak Bóg mnie wysłuchał,",
+		"19b": "przychylił się do mej głośnej modlitwy.",
 		"20a": "Niech będzie Bóg błogosławiony, bo nie odtrącił mojej modlitwy",
 		"20b": "ani swej łaski mi nie odmówił!"
 	},
@@ -1698,6 +1708,8 @@
 		"12b": "za wszystko, co mi wyświadczył?",
 		"13a": "Podniosę kielich zbawienia",
 		"13b": "i wezwę imienia Pana.",
+		"14a": "Moje śluby wypełnię przed Panem",
+		"14b": "wobec całego Jego ludu.",
 		"15a": "Cenna jest dla Pana",
 		"15b": "śmierć Jego wiernych.",
 		"16a": "O Panie, jestem sługą Twoim, Twym sługą i synem Twej służebnicy;",
